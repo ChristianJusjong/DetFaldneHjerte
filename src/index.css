@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;800&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,400;1,600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* 
+      Theme: Immersive High Fantasy 
+      Palette: Deep Earth, Mystic Gold, Blood Crimson, Parchment
+    */
+    --color-bg-dark: #1a1d21;
+    /* Deep Slate */
+    --color-surface: #25282e;
+    /* Stonework */
+    --color-surface-light: #2f333a;
+    /* Lighter Stone */
+
+    --color-text-main: #e2e8f0;
+    /* Off-white/Parchment-light */
+    --color-text-dim: #94a3b8;
+    /* Slate-400 */
+
+    --color-accent-superia: #ffd700;
+    /* Mystic Gold (was Teal) */
+    --color-accent-inferia: #8a1c1c;
+    /* Blood Crimson (was Red) */
+
+    --color-border: #475569;
+    /* Slate-600 */
+
+    --sidebar-width: 280px;
+  }
+
+  body {
+    background-color: var(--color-bg-dark);
+    /* Subtle noise/grain texture */
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+    color: var(--color-text-main);
+    font-family: 'Crimson Pro', serif;
+    /* Default to body serif */
+    margin: 0;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    /* Slightly larger for readability */
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Cinzel', serif;
+    letter-spacing: 0.05em;
+  }
+}
+
+/* Scrollbar Customization - Iron Style */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f1115;
+  border-left: 1px solid #333;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #475569;
+  border: 1px solid #1e293b;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.4);
+  }
+
+  70% {
+    box-shadow: 0 0 0 10px rgba(255, 215, 0, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 215, 0, 0);
+  }
+}
+
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+/* Utility for 'gold-text' gradients */
+.text-gold-gradient {
+  background: linear-gradient(to right, #ffd700, #fdb931);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

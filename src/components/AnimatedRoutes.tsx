@@ -1,0 +1,51 @@
+import { Routes, Route, useLocation } from 'react-router-dom';
+import { AnimatePresence, motion } from 'framer-motion';
+
+// Pages
+import { HomePage } from '../pages/HomePage';
+import { ContinentPage } from '../pages/ContinentPage';
+import { ConflictPage } from '../pages/ConflictPage';
+import { ReligionPage } from '../pages/ReligionPage';
+import { RacesPage } from '../pages/RacesPage';
+import { OrganizationsPage } from '../pages/OrganizationsPage';
+import { TravelPage } from '../pages/TravelPage';
+import { BestiaryPage } from '../pages/BestiaryPage';
+import { CityPage } from '../pages/CityPage';
+import { RegionPage } from '../pages/RegionPage';
+import { MapPage } from '../pages/MapPage';
+
+const PageTransition = ({ children }: { children: React.ReactNode }) => {
+    return (
+        <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -20 }}
+            transition={{ duration: 0.3, ease: 'easeInOut' }}
+            className="w-full"
+        >
+            {children}
+        </motion.div>
+    );
+};
+
+export const AnimatedRoutes = () => {
+    const location = useLocation();
+
+    return (
+        <AnimatePresence mode="wait">
+            <Routes location={location} key={location.pathname}>
+                <Route path="/" element={<PageTransition><HomePage /></PageTransition>} />
+                <Route path="/continent/:continentId" element={<PageTransition><ContinentPage /></PageTransition>} />
+                <Route path="/continent/:continentId/:regionId" element={<PageTransition><RegionPage /></PageTransition>} />
+                <Route path="/continent/:continentId/:regionId/:cityId" element={<PageTransition><CityPage /></PageTransition>} />
+                <Route path="/conflict" element={<PageTransition><ConflictPage /></PageTransition>} />
+                <Route path="/religion" element={<PageTransition><ReligionPage /></PageTransition>} />
+                <Route path="/races" element={<PageTransition><RacesPage /></PageTransition>} />
+                <Route path="/organizations" element={<PageTransition><OrganizationsPage /></PageTransition>} />
+                <Route path="/travel" element={<PageTransition><TravelPage /></PageTransition>} />
+                <Route path="/map" element={<PageTransition><MapPage /></PageTransition>} />
+                <Route path="/bestiary" element={<PageTransition><BestiaryPage /></PageTransition>} />
+            </Routes>
+        </AnimatePresence>
+    );
+};
