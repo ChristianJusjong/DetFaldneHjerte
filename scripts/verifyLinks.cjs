@@ -60,18 +60,16 @@ if (lore.organizations) {
     });
 }
 
-// Fractions
-if (lore.conflict && lore.conflict.fractions) {
-    // These might not have dedicated pages yet, checking assumptions
-    lore.conflict.fractions.forEach(f => {
-        // register(f.name, `/conflict#${slugify(f.name)}`, 'fraction', `Fraction: ${f.name}`);
-    });
-}
-
 // Sort terms by length desc (longest match first)
 terms.sort((a, b) => b.term.length - a.term.length);
 
 console.log(`Registered ${terms.length} terms.`);
+
+// DEBUG: Find "Ly"
+const lyTerms = terms.filter(t => t.term.startsWith('Ly'));
+console.log('--- DEBUG: Terms starting with "Ly" ---');
+lyTerms.forEach(t => console.log(`Term: "${t.term}", URL: ${t.url}, Type: ${t.type}`));
+console.log('---------------------------------------');
 
 // 2. Scan All Text Fields
 const issues = [];
@@ -85,9 +83,6 @@ const scanText = (text, location) => {
     let match;
     while ((match = mdLinkRegex.exec(text)) !== null) {
         const [full, label, url] = match;
-        // Verify URL validity
-        // Normalize URL for checking (remove anchors for basic route check?)
-        // simplified check
         if (!url.startsWith('/') && !url.startsWith('http')) {
             warnings.push(`[${location}] Relative/Invalid link found: ${full}`);
         }
@@ -126,7 +121,6 @@ const IGNORE_WORDS = new Set(['De', 'Det', 'En', 'Et', 'Jeg', 'Du', 'Han', 'Hun'
 
 const scanForMisses = (text, location) => {
     if (!text) return;
-    // Look for Capitalized Words or Phrases, excluding start of sentences ideally, but rough check ok
     // Regex for "Word" or "Word Word"
     const capitalizedRegex = /\b[A-ZÆØÅ][a-zæøå]+\b/g;
     let match;
@@ -134,8 +128,9 @@ const scanForMisses = (text, location) => {
         const word = match[0];
         if (IGNORE_WORDS.has(word)) continue;
 
-        // If it's already a term, ignore
-        const isTerm = terms.some(t => t.term.toLowerCase() === word.toLowerCase() || t.term.toLowerCase().includes(word.toLowerCase()));
+        // Simulating SmartLink's new boundary check: \bTerm\b
+        // EXACT match checking (case insensitive)
+        const isTerm = terms.some(t => t.term.toLowerCase() === word.toLowerCase());
         if (!isTerm) {
             const count = potentialMisses.get(word) || 0;
             potentialMisses.set(word, count + 1);
@@ -144,30 +139,12 @@ const scanForMisses = (text, location) => {
 }
 
 console.log('--- Scanning for Missed Links ---');
-traverse(lore, 'lore'); // Re-scan for misses is slightly inefficient but easier to code
-// Actually traverse already scans, let's inject valid logic or just re-run traverse logic with new scanner if I separate them. 
-// For simplicity in this edit tool, I'll just add the scanner call to the existing traverse or re-traverse.
+traverse(lore, 'lore');
 
-// Let's re-traverse to keep it clean in this script logic block
-const traverseForMisses = (obj) => {
-    if (!obj) return;
-    if (typeof obj === 'string') {
-        scanForMisses(obj);
-    } else if (Array.isArray(obj)) {
-        obj.forEach(item => traverseForMisses(item));
-    } else if (typeof obj === 'object') {
-        Object.keys(obj).forEach(key => {
-            if (key === 'image' || key === 'id' || key === 'color') return;
-            traverseForMisses(obj[key]);
-        });
-    }
-};
-traverseForMisses(lore);
-
+// Only print high frequency misses
 console.log('--- Potential Unlinked Entities (Freq > 2) ---');
 potentialMisses.forEach((count, word) => {
     if (count > 2) {
         console.log(`${word} (${count})`);
     }
 });
-

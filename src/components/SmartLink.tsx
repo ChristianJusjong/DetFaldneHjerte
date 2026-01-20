@@ -78,10 +78,15 @@ export const SmartLink = ({ text, context }: SmartLinkProps) => {
         const sortedTerms = Array.from(termMap.keys()).sort((a, b) => b.length - a.length);
         if (sortedTerms.length === 0) return [text];
 
-        // Create a single regex pattern: (Term1|Term2|Term3)
+        // Create a single regex pattern: \b(Term1|Term2|Term3)\b
         // We escape special chars (like parens in names)
         const pattern = sortedTerms.map(t => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|');
-        const regex = new RegExp(`(${pattern})`, 'gi');
+        // Use word boundaries to prevent partial matches like "Ly" inside "Lys-Siden"
+        // Note: Special handling might be needed for terms with special chars at boundaries, but standard \b works for most names.
+        // However, some fantasy names might have hyphens or other symbols. \b matches between word \w and non-word \W.
+        // If a name ends in a vowel and the text continues with a hyphen, \b might match or not depending on context.
+        // For "Lys-Siden", "Ly" matches part of "Lys". "s" is a word char, so \bLy\b would NOT match "Lys".
+        const regex = new RegExp(`\\b(${pattern})\\b`, 'gi');
 
         const split = text.split(regex);
 
