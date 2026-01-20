@@ -11,7 +11,7 @@ const App = () => {
       <div className="app-container">
         <SoundController />
         <Sidebar />
-        <main className="main-content">
+        <main className="main-content lg:ml-[280px] min-h-screen transition-all duration-300">
           <AnimatedRoutes />
         </main>
         <AIOracle />
