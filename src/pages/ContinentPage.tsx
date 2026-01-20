@@ -11,6 +11,7 @@ export const ContinentPage = () => {
     // 1. Get Params
     const { continentId } = useParams<{ continentId: string }>();
     const data = getLore();
+    const linkContext = { continentId };
 
     // 2. Find Continent
     const continent = data.planes
@@ -61,7 +62,7 @@ export const ContinentPage = () => {
                 )}
 
                 <div className="text-lg leading-relaxed text-gray-300 space-y-4">
-                    <p><SmartLink text={continent.description} /></p>
+                    <p><SmartLink text={continent.description} context={linkContext} /></p>
                 </div>
 
                 {/* Social Dynamics */}
@@ -83,7 +84,7 @@ export const ContinentPage = () => {
                             {Object.entries(continent.socialDynamics).map(([key, value]) => (
                                 <div key={key} className="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-3">
                                     <strong className="text-white capitalize min-w-[120px]">{key}: </strong>
-                                    <span className="text-text-dim"><SmartLink text={value} /></span>
+                                    <span className="text-text-dim"><SmartLink text={value} context={linkContext} /></span>
                                 </div>
                             ))}
                         </div>
@@ -124,7 +125,7 @@ export const ContinentPage = () => {
                                 style={{ borderLeft: `3px solid ${continent.color}` }}
                             >
                                 <h3 className="text-2xl font-bold text-white mb-2">{race.name}</h3>
-                                <p className="text-gray-300 leading-relaxed"><SmartLink text={race.description} /></p>
+                                <p className="text-gray-300 leading-relaxed"><SmartLink text={race.description} context={linkContext} /></p>
                             </div>
                         ))}
                     </div>

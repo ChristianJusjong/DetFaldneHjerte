@@ -3,84 +3,135 @@ import { Link } from 'react-router-dom';
 import { getLore } from '../utils/data';
 import { slugify } from '../utils/helpers';
 
-export const SmartLink = ({ text }: { text: string }) => {
+interface SmartLinkProps {
+    text: string;
+    context?: {
+        continentId?: string;
+        regionId?: string;
+    };
+}
+
+interface TermCandidate {
+    url: string;
+    type: string;
+    continentId?: string;
+    regionId?: string;
+}
+
+export const SmartLink = ({ text, context }: SmartLinkProps) => {
     if (!text) return null;
 
     // Memoize the terms dictionary so it's only built once
-    const terms = useMemo(() => {
+    const termMap = useMemo(() => {
         const data = getLore();
-        const t: { term: string; url: string; type: string }[] = [];
+        const map = new Map<string, TermCandidate[]>();
+
+        const addTerm = (term: string, candidate: TermCandidate) => {
+            if (!term) return;
+            // Clean term? strictly, we use it as is for matching
+            const existing = map.get(term) || [];
+            existing.push(candidate);
+            map.set(term, existing);
+        };
 
         // Continents
         data.planes.forEach(p => p.continents.forEach(c => {
-            t.push({ term: c.name, url: `/continent/${c.id}`, type: 'continent' });
+            addTerm(c.name, { url: `/continent/${c.id}`, type: 'continent', continentId: c.id });
+
             // Races
             c.races.forEach(r => {
-                t.push({ term: r.name, url: `/races#${slugify(r.name)}`, type: 'race' });
+                addTerm(r.name, { url: `/races#${slugify(r.name)}`, type: 'race', continentId: c.id });
+            });
+
+            // Regions
+            c.regions.forEach(reg => {
+                addTerm(reg.name, { url: `/continent/${c.id}/${slugify(reg.name)}`, type: 'region', continentId: c.id, regionId: slugify(reg.name) });
+
+                // Cities
+                reg.cities.forEach(city => {
+                    addTerm(city.name, {
+                        url: `/continent/${c.id}/${slugify(reg.name)}/${slugify(city.name)}`,
+                        type: 'city',
+                        continentId: c.id,
+                        regionId: slugify(reg.name)
+                    });
+                });
             });
         }));
 
         // Gods
         data.religion.gods.forEach(g => {
-            // "Pelor (The Shining One)" -> "Pelor"
-            t.push({ term: g.name.split(' (')[0], url: `/religion#${slugify(g.name)}`, type: 'god' });
+            const name = g.name.split(' (')[0];
+            addTerm(name, { url: `/religion#${slugify(g.name)}`, type: 'god' });
         });
 
         // Organizations
         data.organizations?.forEach(o => {
-            t.push({ term: o.name, url: `/organizations#${slugify(o.name)}`, type: 'org' });
+            addTerm(o.name, { url: `/organizations#${slugify(o.name)}`, type: 'org' });
         });
 
-        // Regions & Cities (Deep linking)
-        data.planes.forEach(p => p.continents.forEach(c => {
-            c.regions.forEach(reg => {
-                t.push({ term: reg.name, url: `/continent/${c.id}/${slugify(reg.name)}`, type: 'region' });
-
-                reg.cities.forEach(city => {
-                    t.push({ term: city.name, url: `/continent/${c.id}/${slugify(reg.name)}/${slugify(city.name)}`, type: 'city' });
-                });
-            });
-        }));
-
-        // Sort by length desc to prioritize longer matches (e.g. "High Elf" before "Elf")
-        return t.sort((a, b) => b.term.length - a.term.length);
+        return map;
     }, []);
 
     // Create a master regex for all terms
-    // We escape special regex characters in terms just in case
     const parts = useMemo(() => {
-        if (terms.length === 0) return [text];
+        const sortedTerms = Array.from(termMap.keys()).sort((a, b) => b.length - a.length);
+        if (sortedTerms.length === 0) return [text];
 
         // Create a single regex pattern: (Term1|Term2|Term3)
         // We escape special chars (like parens in names)
-        const pattern = terms.map(t => t.term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|');
+        const pattern = sortedTerms.map(t => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|');
         const regex = new RegExp(`(${pattern})`, 'gi');
 
         const split = text.split(regex);
 
         return split.map((part, i) => {
             // Check if this part matches any term (case insensitive)
-            const match = terms.find(t => t.term.toLowerCase() === part.toLowerCase());
+            // We need to find the exact key that matched (since we use 'gi', the casing in 'part' might differ from key)
+            const matchedKey = sortedTerms.find(t => t.toLowerCase() === part.toLowerCase());
 
-            if (match) {
-                let color = 'var(--color-accent-inferia)'; // default
-                if (match.type === 'continent') color = '#f1c40f';
-                if (match.type === 'god') color = 'var(--color-accent-superia)';
-                if (match.type === 'region' || match.type === 'city') color = '#2ecc71';
+            if (matchedKey) {
+                const candidates = termMap.get(matchedKey) || [];
 
-                return (
-                    <Link
-                        key={`${match.term}-${i}`}
-                        to={match.url}
-                        style={{ color: color, fontWeight: 500, textDecoration: 'none', borderBottom: `1px dotted ${color}` }}
-                    >
-                        {part}
-                    </Link>
-                );
+                // Context Resolution Strategy:
+                // 1. Exact match on RegionID (most specific)
+                // 2. Exact match on ContinentID
+                // 3. First available
+
+                let bestMatch = candidates[0];
+                if (context && candidates.length > 1) {
+                    const regionMatch = candidates.find(c => c.regionId && c.regionId === context.regionId);
+                    if (regionMatch) {
+                        bestMatch = regionMatch;
+                    } else {
+                        const continentMatch = candidates.find(c => c.continentId && c.continentId === context.continentId);
+                        if (continentMatch) {
+                            bestMatch = continentMatch;
+                        }
+                    }
+                }
+
+                if (bestMatch) {
+                    let color = 'var(--color-accent-inferia)'; // default
+                    if (bestMatch.type === 'continent') color = '#f1c40f';
+                    if (bestMatch.type === 'god') color = 'var(--color-accent-superia)';
+                    if (bestMatch.type === 'region' || bestMatch.type === 'city') color = '#2ecc71';
+
+                    return (
+                        <Link
+                            key={`${matchedKey}-${i}`}
+                            to={bestMatch.url}
+                            style={{ color: color, fontWeight: 500, textDecoration: 'none', borderBottom: `1px dotted ${color}` }}
+                            title={`${bestMatch.type} (${matchedKey})`}
+                        >
+                            {part}
+                        </Link>
+                    );
+                }
             }
             return part;
         });
-    }, [text, terms]);
+    }, [text, termMap, context]);
 
     return <>{parts}</>;
 };

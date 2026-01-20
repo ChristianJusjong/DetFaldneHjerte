@@ -12,6 +12,7 @@ export const RegionPage = () => {
     const { continentId, regionId } = useParams<{ continentId: string; regionId: string }>();
     const navigate = useNavigate();
     const data = getLore();
+    const linkContext = { continentId, regionId };
 
     // 1. Find Continent
     const continent = data.planes
@@ -65,7 +66,7 @@ export const RegionPage = () => {
                             </div>
 
                             <p className="text-lg leading-relaxed text-gray-200">
-                                <SmartLink text={region.desc} />
+                                <SmartLink text={region.desc} context={linkContext} />
                             </p>
                         </div>
                     </div>

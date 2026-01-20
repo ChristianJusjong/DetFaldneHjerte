@@ -18,6 +18,12 @@ export const CityPage = () => {
     const [region, setRegion] = useState<Region | null>(null);
     const [continent, setContinent] = useState<Continent | null>(null);
 
+    // Memoize context for SmartLinks
+    const linkContext = continent ? {
+        continentId: continent.id,
+        regionId: region ? slugify(region.name) : undefined
+    } : undefined;
+
     useEffect(() => {
         if (!id) return;
 
@@ -95,12 +101,12 @@ export const CityPage = () => {
                             <h3 className="flex items-center gap-2 text-xl font-bold mb-4" style={{ color: continentColor }}>
                                 <Info size={18} /> Om Byen
                             </h3>
-                            <p className="text-gray-300 leading-relaxed mb-6"><SmartLink text={city.desc} /></p>
+                            <p className="text-gray-300 leading-relaxed mb-6"><SmartLink text={city.desc} context={linkContext} /></p>
 
                             {city.layout && (
                                 <div className="mb-6">
                                     <h4 className="text-lg font-bold text-white mb-2">Byens Struktur</h4>
-                                    <p className="text-gray-300 leading-relaxed"><SmartLink text={city.layout} /></p>
+                                    <p className="text-gray-300 leading-relaxed"><SmartLink text={city.layout} context={linkContext} /></p>
                                 </div>
                             )}
 
