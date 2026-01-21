@@ -27,7 +27,22 @@
               "description": "Høje, blege og alvorlige. Deres vener lyser svagt blåt, når de tænker. De styrer de store spiral-byer med logik og ro.",
               "mechanic": "Hilser ved at røre tindinger. Mange har geometriske tatoveringer.",
               "motto": "Stilhed før storm.",
-              "image": "/assets/races/hoej-vismaendene.png"
+              "image": "/assets/races/hoej-vismaendene.png",
+              "manual": {
+                "stats": "INT +2, WIS +1",
+                "alignment": "Lawful Neutral",
+                "abilities": [
+                  {
+                    "name": "Logisk Sind",
+                    "desc": "Advantage på Intelligence/Wisdom saves."
+                  },
+                  {
+                    "name": "Tanke-Link",
+                    "desc": "Kan kommunikere telepatisk med andre Vismænd (30 fod)."
+                  }
+                ],
+                "ecology": "Lever i isolerede tårne og studerer universet."
+              }
             },
             {
               "name": "Husk-Dværgene",
@@ -35,7 +50,22 @@
               "description": "De graver ikke efter guld, men efter 'Mnemocyt' - forstenede minder fra Titanens tid. Deres skæg flettes med glødende krystaller, der indeholder deres forfædres visdom. De glemmer aldrig en fornærmelse og betaler altid gæld.",
               "mechanic": "Kan 'læse' historien i en sten ved at slikke på den. Har fordel på Historie-tjek vedrørende stenarbejde.",
               "motto": "Glem intet, tilgiv intet.",
-              "image": "/assets/races/husk-dvaergene.png"
+              "image": "/assets/races/husk-dvaergene.png",
+              "manual": {
+                "stats": "CON +2, INT +1",
+                "alignment": "Lawful Good",
+                "abilities": [
+                  {
+                    "name": "Sten-Hukommelse",
+                    "desc": "Kan se 24 timer tilbage i tiden ved at røre ved sten."
+                  },
+                  {
+                    "name": "Dværg-Resistens",
+                    "desc": "Advantage på saves mod gift."
+                  }
+                ],
+                "ecology": "Bor i dybe, arkiverede miner fyldt med historie."
+              }
             },
             {
               "name": "Glimt-Gnomer",
@@ -43,7 +73,22 @@
               "description": "Små, hyper-energiske opfindere med hår der altid står til alle sider pga. statisk elektricitet. De bor i de farligste stormzoner og mener, at de bedste ideer kommer, når man får stød. Deres teknologi er en blanding af kobbertråd og krystal.",
               "mechanic": "Taler ekstremt hurtigt. Kan generere små stød (Shocking Grasp) når de bliver begejstrede.",
               "motto": "Lynet slår aldrig ned samme sted... men jeg gør!",
-              "image": "/assets/races/glimt-gnomer.png"
+              "image": "/assets/races/glimt-gnomer.png",
+              "manual": {
+                "stats": "INT +2, DEX +1",
+                "alignment": "Chaotic Good",
+                "abilities": [
+                  {
+                    "name": "Statisk Opladning",
+                    "desc": "Kan kaste 'Shocking Grasp' som cantrip."
+                  },
+                  {
+                    "name": "Opfinder",
+                    "desc": "Kan lave små mekaniske dimser på 1 time."
+                  }
+                ],
+                "ecology": "Bor i laboratorier nær lynafledere."
+              }
             }
           ],
           "regions": [
@@ -79,6 +124,12 @@
                   ],
                   "inhabitants": [
                     {
+                      "name": "Stor-Vismand Neuro",
+                      "role": "Leder af Tanke-Kollektivet",
+                      "desc": "En ældgammel Høj-Vismand hvis hjerne er koblet direkte til byens krystal-netværk.",
+                      "wants": "At opnå den perfekte tanke"
+                    },
+                    {
                       "name": "Lyowen",
                       "role": "Vismand",
                       "desc": "En lav person med intense øjne.",
@@ -99,7 +150,7 @@
                   ]
                 },
                 {
-                  "name": "Porten",
+                  "name": "Nord-Porten",
                   "desc": "Fæstning af bureaukrati. Man skal bestå en eksamen for at komme ind.",
                   "rumor": "Vagterne bestikkes ikke med guld, men med sjældne bøger.",
                   "layout": "Udhugget i selve klippen i store spiralmønstre.",
@@ -507,7 +558,7 @@
               ]
             },
             {
-              "name": "Skygge-Siden",
+              "name": "Skygge-Dalen",
               "capital": "Spejlet",
               "desc": "Bagsiden af bjerget, hvor solen sjældent rammer. Spionernes hjem.",
               "cities": [
@@ -530,6 +581,12 @@
                     }
                   ],
                   "inhabitants": [
+                    {
+                      "name": "Nerven",
+                      "role": "Leder af Fantom-Oprøret",
+                      "desc": "Ingen kender hans ansigt. Han er en stemme i skyggerne.",
+                      "wants": "At vælte systemet"
+                    },
                     {
                       "name": "Vinix",
                       "role": "Bibliotekar",
@@ -679,7 +736,22 @@
               "description": "Deres hud skinner som perlemor og bryder lyset i regnbuer. De betragter livet som et teaterstykke, og deres følelser manifesterer sig som farver i luften omkring dem. Sandhed er for dem det smukkeste, man kan sige.",
               "mechanic": "Immune overfor blænding. Kan kaste 'Color Spray' en gang om dagen.",
               "motto": "Verden skal ses i alle farver.",
-              "image": "/assets/races/prisme-elvere.png"
+              "image": "/assets/races/prisme-elvere.png",
+              "manual": {
+                "stats": "CHA +2, DEX +1",
+                "alignment": "Chaotic Good",
+                "abilities": [
+                  {
+                    "name": "Farve-Skift",
+                    "desc": "Advantage på Stealth checks i stærkt lys."
+                  },
+                  {
+                    "name": "Fey Step",
+                    "desc": "Kan teleportere 30 fod som bonus action (med lys-effekt)."
+                  }
+                ],
+                "ecology": "Lever i krystal-skove ved søens bred."
+              }
             },
             {
               "name": "Skygge-Vandrerne",
@@ -687,7 +759,22 @@
               "description": "Lever ved den mørke søbred, hvor lyset ikke når. De bærer ceremonielle bind for øjnene for at vise, at de ser den 'indre sandhed' fremfor illusioner. Deres stemmer er svage, som hvisken i mørket.",
               "mechanic": "Har Blindsight (10ft) men er sårbare i stærkt lys. Mestre i snigmyrde.",
               "motto": "Mørket lyver aldrig.",
-              "image": "/assets/races/skygge-vandrerne.png"
+              "image": "/assets/races/skygge-vandrerne.png",
+              "manual": {
+                "stats": "DEX +2, WIS +1",
+                "alignment": "Lawful Neutral",
+                "abilities": [
+                  {
+                    "name": "Blind-Syn",
+                    "desc": "Kan se usynlige væsener inden for 10 fod."
+                  },
+                  {
+                    "name": "Skygge-Skridt",
+                    "desc": "Advantage på Stealth i mørke."
+                  }
+                ],
+                "ecology": "Bor i underjordiske huler nær søens mørke bred."
+              }
             },
             {
               "name": "Glas-Ridderne",
@@ -695,7 +782,22 @@
               "description": "Mennesker forstærket med glas-lemmer og linser. De vogter grænserne og ser alt.",
               "mechanic": "Bruger spejlskjolde og lys-våben.",
               "motto": "Vi ser alt.",
-              "image": "/assets/races/glas-ridderne.png"
+              "image": "/assets/races/glas-ridderne.png",
+              "manual": {
+                "stats": "CON +2, STR +1",
+                "alignment": "Lawful Neutral",
+                "abilities": [
+                  {
+                    "name": "Refleksion",
+                    "desc": "Kan bruge Reaction til at kaste 'Shield' (+5 AC)."
+                  },
+                  {
+                    "name": "Levende Glas",
+                    "desc": "Immunitet mod sygdom og gift."
+                  }
+                ],
+                "ecology": "Vogter grænserne og spiser sjældent."
+              }
             }
           ],
           "regions": [
@@ -1509,21 +1611,66 @@
               "reskin": "Goliath",
               "description": "Enorme folk med hud som strakt læder. De kommunikerer over store afstande ved at slå rytmer på deres egne hule brystkasser, en lyd der kan knuse sten tæt på. De ser ord som fysiske ting.",
               "mechanic": "Immune mod tordenskade. Kan råbe/tromme så alle inden for 10km kan høre det.",
-              "motto": "Vi er rytmen."
+              "motto": "Vi er rytmen.",
+              "manual": {
+                "stats": "STR +2, CON +1",
+                "alignment": "True Neutral",
+                "abilities": [
+                  {
+                    "name": "Stenens Hud",
+                    "desc": "Kan bruge Reaction til at reducere skade med 1d12 + Con."
+                  },
+                  {
+                    "name": "Lyd-Bølge",
+                    "desc": "Kan kaste 'Thunderwave' en gang per short rest."
+                  }
+                ],
+                "ecology": "Lever på de store sletter og spiser lyd-absorberende mos."
+              }
             },
             {
               "name": "Vind-Dansere",
               "reskin": "Air Genasi eller Monks",
               "description": "Slanke og lette, med knogler hule som fugles. De lever hele deres liv på liner spændt mellem bjergtoppene og rører aldrig jorden. De taler syngende for at overøve vinden.",
               "mechanic": "Mestre i balance. Kan falde langsomt (Feather Fall) naturligt.",
-              "motto": "Gå aldrig ned."
+              "motto": "Gå aldrig ned.",
+              "manual": {
+                "stats": "DEX +2, WIS +1",
+                "alignment": "Chaotic Good",
+                "abilities": [
+                  {
+                    "name": "Lethed",
+                    "desc": "Kan gå på liner og tynde grene uden balance-check."
+                  },
+                  {
+                    "name": "Vindens Barn",
+                    "desc": "Kan levitere 1 tomme over faste overflader."
+                  }
+                ],
+                "ecology": "Bor i reder på bjergtoppene."
+              }
             },
             {
               "name": "Lyd-Samlerne",
               "reskin": "Kenku/Bards",
               "description": "Små væsener med store tragt-ører og lange fingre. De fanger lyde i magiske glasflasker - alt fra en elskers suk til tordenskrald - og sælger dem på markederne. De har ingen egen stemme, men taler i stjålne lyde.",
               "mechanic": "Perfekt efterligning (Mimicry). Kan kaste 'Thunderwave' ved at knuse en flaske.",
-              "motto": "Hørte du det?"
+              "motto": "Hørte du det?",
+              "manual": {
+                "stats": "DEX +2, CHA +1",
+                "alignment": "Chaotic Neutral",
+                "abilities": [
+                  {
+                    "name": "Mimik",
+                    "desc": "Kan efterligne enhver lyd de har hørt."
+                  },
+                  {
+                    "name": "Lyd-Bombe",
+                    "desc": "Kan kaste en flaske med lyd som en granat (1d6 thunder)."
+                  }
+                ],
+                "ecology": "Klunser-samfund i de dybe kløfter."
+              }
             }
           ],
           "regions": [
@@ -2285,21 +2432,66 @@
               "reskin": "Halfling (Charisma)",
               "description": "Den herskende klasse i det fede højland. De er buttede, sirligt klædte og lever for den næste banket. For dem er et dårligt måltid værre end døden, og de afgør krige over dessert. De har et sprog kun for mad.",
               "mechanic": "Kan smage gift. Har 'Chef's feat' (Gourmet) naturligt. Charmerende men grådige.",
-              "motto": "Smag på livet."
+              "motto": "Smag på livet.",
+              "manual": {
+                "stats": "CHA +2, CON +1",
+                "alignment": "Lawful Neutral",
+                "abilities": [
+                  {
+                    "name": "Gourmet",
+                    "desc": "Kan identificere enhver ingrediens i mad/drikke."
+                  },
+                  {
+                    "name": "Sølv-Tunge",
+                    "desc": "Advantage på Persuasion checks under et måltid."
+                  }
+                ],
+                "ecology": "Lever i luksus og styrer handelen."
+              }
             },
             {
               "name": "Kæde-Folket",
               "reskin": "Half-Orc / Dwarf",
               "description": "Muskuløse arbejdere tatoveret med jern-blæk. De lever i kløfterne og bruger enorme kæder til at holde det ustabile kontinent samlet under jordskælv. De taler sjældent, men deres ord har vægt som bly.",
               "mechanic": "Tavse og stærke. Verdens bedste brydere. Har advantage mod at blive væltet.",
-              "motto": "Vi holder fast."
+              "motto": "Vi holder fast.",
+              "manual": {
+                "stats": "STR +2, CON +1",
+                "alignment": "Lawful Good",
+                "abilities": [
+                  {
+                    "name": "Urokkelig",
+                    "desc": "Kan ikke skubbes eller væltes mod sin vilje."
+                  },
+                  {
+                    "name": "Jern-Greb",
+                    "desc": "Advantage på Grapple checks."
+                  }
+                ],
+                "ecology": "Bor i miner og kløfter, arbejder døgnet rundt."
+              }
             },
             {
               "name": "Gift-Tungerne",
               "reskin": "Yuan-Ti / Rogue",
               "description": "Slangelignende intrigemagere fra sumpen. De er smukke men koldblodige. De lyver aldrig direkte, men vildleder altid med halve sandheder. Deres spyt er let bedøvende.",
               "mechanic": "Immune mod gift. Kan kaste 'Suggestion' en gang om dagen ved at hviske.",
-              "motto": "Sandheden kan gradbøjes."
+              "motto": "Sandheden kan gradbøjes.",
+              "manual": {
+                "stats": "CHA +2, INT +1",
+                "alignment": "Neutral Evil",
+                "abilities": [
+                  {
+                    "name": "Gift-Immunitet",
+                    "desc": "Immun overfor forgiftning."
+                  },
+                  {
+                    "name": "Hviskende Løgn",
+                    "desc": "Kan kaste 'Message' cantrip. Modtageren tror det er deres egne tanker."
+                  }
+                ],
+                "ecology": "Lever i sumpe og fungerer som spioner."
+              }
             }
           ],
           "regions": [
@@ -2711,6 +2903,12 @@
                     }
                   ],
                   "inhabitants": [
+                    {
+                      "name": "Fyrstinde Silke",
+                      "role": "Leder af Guld-Lauget",
+                      "desc": "En hensynsløs forretningskvinde klædt i det fineste edderkoppesilke.",
+                      "wants": "At købe hele verden"
+                    },
                     {
                       "name": "Zindor",
                       "role": "Diplomat",
@@ -3237,21 +3435,66 @@
               "reskin": "Eladrin / Echo Knight",
               "description": "Yndefulde alfer der altid fødes i par, bundet sammen af en lysende tråd kun de kan se. Hvis den ene dør, falmer den anden. De deler tanker og smerte, og taler ofte i kor.",
               "mechanic": "Kan teleportere til deres tvilling. Stærkere magi når de holder i hånd.",
-              "motto": "To kroppe, en sjæl."
+              "motto": "To kroppe, en sjæl.",
+              "manual": {
+                "stats": "CHA +2, DEX +1",
+                "alignment": "Chaotic Good",
+                "abilities": [
+                  {
+                    "name": "Sjæle-Bånd",
+                    "desc": "Kan altid vide hvor tvillingen er. Telepati ubegrænset rækkevidde."
+                  },
+                  {
+                    "name": "Byt Plads",
+                    "desc": "Kan bruge Bonus Action til at bytte plads med tvilling (hvis synlig)."
+                  }
+                ],
+                "ecology": "Lever i byer bygget af lys og drømme."
+              }
             },
             {
               "name": "Form-Vandrere",
               "reskin": "Changeling / Plasmoid",
               "description": "Kaotiske væsener af flydende 'Ur-suppe'. De har ingen fast form eller køn, og skifter udseende som andre skifter tøj. De er nysgerrige som børn og forstår ikke konceptet 'ejendom'.",
               "mechanic": "Kan skifte form konstant. Kan klemme sig gennem sprækker på 1 tomme.",
-              "motto": "Hvorfor nøjes med en form?"
+              "motto": "Hvorfor nøjes med en form?",
+              "manual": {
+                "stats": "CHA +2, CON +1",
+                "alignment": "Chaotic Neutral",
+                "abilities": [
+                  {
+                    "name": "Flydende Form",
+                    "desc": "Advantage på Escape Artist. Kan passere gennem smalle sprækker."
+                  },
+                  {
+                    "name": "Lån Ansigt",
+                    "desc": "Kan perfekt efterligne en person de har rørt ved."
+                  }
+                ],
+                "ecology": "Vandrer frit og har ingen faste hjem."
+              }
             },
             {
               "name": "Skal-Riddere",
               "reskin": "Tortle / Warforged",
               "description": "Store, tunge vogtere med hvidt, keramik-agtigt panser der minder om æggeskaller. De er født til at beskytte 'det nye' og fungerer som levende skjolde for de svage.",
               "mechanic": "Høj AC. Kan trække sig ind i skallen. Bonushandling: Beskyt allieret.",
-              "motto": "Beskyt livet."
+              "motto": "Beskyt livet.",
+              "manual": {
+                "stats": "CON +2, WIS +1",
+                "alignment": "Lawful Good",
+                "abilities": [
+                  {
+                    "name": "Levende Skjold",
+                    "desc": "AC er 17 (ingen Dex mod). Kan ikke bære rustning."
+                  },
+                  {
+                    "name": "Forsvarer",
+                    "desc": "Kan bruge Reaction til at tage skaden for en allieret inden for 5 fod."
+                  }
+                ],
+                "ecology": "Lever i klostre og fungerer som vogtere for de svage."
+              }
             }
           ],
           "regions": [
@@ -3507,7 +3750,7 @@
                   ]
                 },
                 {
-                  "name": "Bruddet",
+                  "name": "Sten-Bruddet",
                   "desc": "Mineby for hærde-mineraler.",
                   "layout": "Huse der ændrer form efter beboernes humør.",
                   "shops": [
@@ -3615,7 +3858,7 @@
                   ]
                 },
                 {
-                  "name": "Udkigget",
+                  "name": "Hav-Udkigget",
                   "desc": "Militærpost mod himlen.",
                   "layout": "Bygget på undersiden af en svæve-ø.",
                   "shops": [
@@ -4101,21 +4344,67 @@
               "reskin": "Water Genasi (Blood)",
               "description": "Amfibie-folk med dybrød hud, der lever under overfladen på de tykke blod-floder. De ser fremtiden i strømmen og bruger blodmagi til at helbrede eller skade. De betragter vandet som et levende væsen.",
               "mechanic": "Kan trække vejret under vand. Kan kaste 'Shape Water' (men med blod/vand).",
-              "motto": "Blodet flyder, livet består."
+              "motto": "Blodet flyder, livet består.",
+              "image": "/assets/races/flod-heksene.png",
+              "manual": {
+                "stats": "WIS +2, CON +1",
+                "alignment": "True Neutral",
+                "abilities": [
+                  {
+                    "name": "Blod-Sans",
+                    "desc": "Kan lugte blod i vand på 1 km afstand."
+                  },
+                  {
+                    "name": "Profeti",
+                    "desc": "Kan kaste 'Augury' en gang om dagen ved at se i vand."
+                  }
+                ],
+                "ecology": "Bor i huler under vandfaldene."
+              }
             },
             {
               "name": "Svampe-Folket",
               "reskin": "Spore Druid / Firbolg",
               "description": "Langsomme, blide kæmper overgroet med mos og farverige svampe. De taler sjældent, men udsender duft-sporer der deler følelser. De planter de døde, så de genopstår som træer i skoven.",
               "mechanic": "Kan tale med planter. Udsender spillesporer som reaktion.",
-              "motto": "Døden er gødning."
+              "motto": "Døden er gødning.",
+              "manual": {
+                "stats": "WIS +2, STR +1",
+                "alignment": "Neutral Good",
+                "abilities": [
+                  {
+                    "name": "Spore-Sky",
+                    "desc": "Reaktion: 10ft radius sky der giver 1d4 poison skade."
+                  },
+                  {
+                    "name": "Natur-Taler",
+                    "desc": "Kan kommunikere med planter og svampe."
+                  }
+                ],
+                "ecology": "Vandrer i skoven og passer på cyklussen."
+              }
             },
             {
               "name": "Vild-Bæsterne",
               "reskin": "Shifter / Beast Barbarian",
               "description": "Muterede jægere, en brutal blanding af menneske og rovdyr. De har ingen byer, men vandrer i flokke. De respekterer kun styrke og spiser, hvad de dræber. Deres kroppe er dækket af ar.",
               "mechanic": "Har 'Darkvision'. Kan gå i bersærk og få dyriske træk (kløer/tænder).",
-              "motto": "Jagt eller bliv jagtet."
+              "motto": "Jagt eller bliv jagtet.",
+              "manual": {
+                "stats": "STR +2, DEX +1",
+                "alignment": "Chaotic Neutral",
+                "abilities": [
+                  {
+                    "name": "Jæger-Instinkt",
+                    "desc": "Advantage på Survival checks."
+                  },
+                  {
+                    "name": "Blod-Tørst",
+                    "desc": "Kan bevæge sig mod sårede fjender som Bonus Action."
+                  }
+                ],
+                "ecology": "Nomader der følger byttedyrene."
+              }
             }
           ],
           "regions": [
@@ -4395,6 +4684,50 @@
                       "desc": "En smuk person med lysende øjne.",
                       "wants": "At helbrede skoven"
                     }
+                  ],
+                  "races": [
+                    {
+                      "name": "Glas-Ridderne",
+                      "description": "Folk hvis hud er blevet gennemsigtig og hård som glas af magisk stråling.",
+                      "reskin": "Warforged / Human",
+                      "mechanic": "AC +1 (Naturlig rustning).",
+                      "manual": {
+                        "stats": "CON +2, STR +1",
+                        "alignment": "Neutral Good",
+                        "abilities": [
+                          {
+                            "name": "Krystal-Hud",
+                            "desc": "AC regnes som 13 + Dex mod. (max 2) hvis man ikke bærer rustning."
+                          },
+                          {
+                            "name": "Lys-Refleksion",
+                            "desc": "Kan bruge en reaction til at blænde en angriber (disadvantage på attack)."
+                          }
+                        ],
+                        "ecology": "Spiser primært mineraler og lys."
+                      }
+                    },
+                    {
+                      "name": "Prisme-Elvere",
+                      "description": "Elvere der skifter farve efter humør og lysindfald.",
+                      "reskin": "Eladrin",
+                      "mechanic": "Kan kaste 'Color Spray' en gang om dagen.",
+                      "manual": {
+                        "stats": "CHA +2, DEX +1",
+                        "alignment": "Chaotic Good",
+                        "abilities": [
+                          {
+                            "name": "Farve-Skift",
+                            "desc": "Advantage på Stealth checks i stærkt lys."
+                          },
+                          {
+                            "name": "Fey Step",
+                            "desc": "Kan teleportere 30 fod som bonus action (med lys-effekt)."
+                          }
+                        ],
+                        "ecology": "Lever i krystal-skove ved søens bred."
+                      }
+                    }
                   ]
                 },
                 {
@@ -4540,7 +4873,7 @@
                   ]
                 },
                 {
-                  "name": "Lejren",
+                  "name": "Jungle-Lejren",
                   "desc": "Hovedkvarter for Vild-Bæsterne.",
                   "layout": "Træhuse bygget ind i gigantiske trærødder.",
                   "shops": [
@@ -4739,7 +5072,7 @@
                   ]
                 },
                 {
-                  "name": "Minen",
+                  "name": "Mur-Minen",
                   "desc": "Udvinder levende metal.",
                   "layout": "Platforme i trækronerne.",
                   "shops": [
@@ -4790,7 +5123,7 @@
                   ]
                 },
                 {
-                  "name": "Udkigget",
+                  "name": "Mur-Udkigget",
                   "desc": "Træningslejr for krigere.",
                   "layout": "Huler bag ved blod-røde vandfald.",
                   "shops": [
@@ -4893,7 +5226,7 @@
               "desc": "Udgangen mod Sumpen. Svampe dominerer.",
               "cities": [
                 {
-                  "name": "Porten",
+                  "name": "Skov-Porten",
                   "desc": "Grænsekontrol. Lyser af neonsvampe.",
                   "layout": "Træhuse bygget ind i gigantiske trærødder.",
                   "shops": [
@@ -4995,7 +5328,7 @@
                   ]
                 },
                 {
-                  "name": "Tågen",
+                  "name": "Mose-Tågen",
                   "desc": "Indhyllet i gul sporesky.",
                   "layout": "Træhuse bygget ind i gigantiske trærødder.",
                   "shops": [
@@ -5046,7 +5379,7 @@
                   ]
                 },
                 {
-                  "name": "Udløbet",
+                  "name": "Skov-Udløbet",
                   "desc": "Sidste havn før sumpen.",
                   "layout": "Træhuse bygget ind i gigantiske trærødder.",
                   "shops": [
@@ -5070,6 +5403,12 @@
                     }
                   ],
                   "inhabitants": [
+                    {
+                      "name": "Matriark Gorm",
+                      "role": "Leder af Ur-Stammen",
+                      "desc": "En enorm krigerkvinde med ar fra kampe mod monstre.",
+                      "wants": "At naturen skal herske igen"
+                    },
                     {
                       "name": "Zinra",
                       "role": "Svampe-dyrker",
@@ -5118,21 +5457,67 @@
               "reskin": "Vedalken / Warforged",
               "description": "Klinisk rene, høje humanoider der bor i forseglede tårne. De har udskiftet deres hud med hvidt porcelæn og har filtre indbygget i lungerne. De rører aldrig ved 'uren' natur uden handsker.",
               "mechanic": "Immune mod sygdom. Har advantage på saves mod giftgasser. Følelseskolde.",
-              "motto": "Hold dig ren."
+              "motto": "Hold dig ren.",
+              "manual": {
+                "stats": "INT +2, WIS +1",
+                "alignment": "Lawful Neutral",
+                "abilities": [
+                  {
+                    "name": "Steril",
+                    "desc": "Advantage på saves mod sygdom og poison."
+                  },
+                  {
+                    "name": "Kold Logik",
+                    "desc": "Kan undertrykke Charme og Frightened effekter."
+                  }
+                ],
+                "ecology": "Bor i sterile tårne og filtrerer luften."
+              }
             },
             {
               "name": "Krystal-Kæmper",
               "reskin": "Earth Genasi",
               "description": "Nomader lavet af gule, brummende saltkrystaller. De vandrer i ørkenen og bærer tunge byrder som bodsøvelse. Når de dør, splintres de til værdifuldt støv.",
               "mechanic": "Kan kaste dele af deres egen krop som våben (skader dem selv lidt). Høj AC.",
-              "motto": "Vi bærer vægten."
+              "motto": "Vi bærer vægten.",
+              "manual": {
+                "stats": "STR +2, CON +1",
+                "alignment": "True Neutral",
+                "abilities": [
+                  {
+                    "name": "Salt-Hud",
+                    "desc": "Resistance mod Acid skade."
+                  },
+                  {
+                    "name": "Krystal-Kast",
+                    "desc": "Ranged attack med egen krop (1d6 + Str). Tager 1 skade selv."
+                  }
+                ],
+                "ecology": "Vandrer i saltørkenerne."
+              }
             },
             {
               "name": "Skrot-Alkymister",
               "reskin": "Goblin / Artificer",
               "description": "Små, grønne folk der lever inde i de uendelige rørsystemer. De bærer altid lappede hazmat-dragter og masker. De kan bygge bomber ud af mudder og rust.",
               "mechanic": "Resistance mod syre. Kan identificere potions ved at lugte til dem.",
-              "motto": "Alt kan bruges."
+              "motto": "Alt kan bruges.",
+              "image": "/assets/races/skrot-alkymister.png",
+              "manual": {
+                "stats": "INT +2, DEX +1",
+                "alignment": "Chaotic Neutral",
+                "abilities": [
+                  {
+                    "name": "Skrot-Bombe",
+                    "desc": "Kan lave en improviseret bombe (1d6 fire/acid) på 1 min."
+                  },
+                  {
+                    "name": "Kemi-Næse",
+                    "desc": "Kan smage gift/potion-effekter i luften."
+                  }
+                ],
+                "ecology": "Bor overalt hvor der er affald og rør."
+              }
             }
           ],
           "regions": [
@@ -5700,7 +6085,7 @@
               ]
             },
             {
-              "name": "Udløbet",
+              "name": "Deltaet",
               "capital": "Den Gyldne Havn",
               "desc": "Havn for giftigt vand og skumle typer.",
               "cities": [
@@ -6043,6 +6428,31 @@
       "name": "Sump-Syndikatet",
       "desc": "Kriminelle der sælger ulovlige eliksirer.",
       "loyalty": "Profit"
+    },
+    {
+      "name": "Scroll-Smedenes Laug",
+      "desc": "De magiske skrivere der styrer al viden i Tanke-Tinderne. De kan omskrive love og hukommelse.",
+      "loyalty": "Tanke-Tinderne"
+    },
+    {
+      "name": "Gift-Blandernes Cirkel",
+      "desc": "En hemmelig orden i Skygge-Siden, der mestrer kunsten at helbrede og dræbe uden spor.",
+      "loyalty": "Ur-Skoven"
+    },
+    {
+      "name": "Jern-Vagten",
+      "desc": "Beskytterne af handelsruterne, der rider på pansrede kæmpe-biller. De er neutrale i konflikten.",
+      "loyalty": "Neutral"
+    },
+    {
+      "name": "Skal-Ridderne",
+      "desc": "En orden af krigere på Tvillinge-Øerne, der bærer rustning lavet af gigantiske krabbe-skaller. De beskytter 'Orden'.",
+      "loyalty": "Tvillinge-Øerne (Orden)"
+    },
+    {
+      "name": "Form-Vandrerne",
+      "desc": "En sekt af Sjæle-Tvillinger, der har mestret kunsten at ændre fysisk form. De tilbeder 'Kaos'.",
+      "loyalty": "Tvillinge-Øerne (Kaos)"
     }
   ],
   "bestiary": [
@@ -6060,6 +6470,36 @@
       "name": "Skygger",
       "desc": "Væsener der suger farve og glæde ud af verden.",
       "ability": "Spreder fortvivlelse."
+    },
+    {
+      "name": "Prisme-Falk",
+      "desc": "Rovfugle af levende glas, der jager over Lys-Siden. De er usynlige i direkte sollys.",
+      "ability": "Blænder bytte med lysglimt."
+    },
+    {
+      "name": "Logik-Golem",
+      "desc": "Automatoner bygget til at opretholde ro og orden. De forstår ikke nåde, kun regler.",
+      "ability": "Immun overfor illusioner."
+    },
+    {
+      "name": "Storm-Ål",
+      "desc": "Gigantiske elektriske ål, der svømmer i skyerne omkring Storm-Fladen.",
+      "ability": "Kan udløse kæde-lyn."
+    },
+    {
+      "name": "Mycelium-Hund",
+      "desc": "Ådselædere skabt af knogler og svampevækst. De jager i flok og lugter frygt.",
+      "ability": "Inficerer sår med sporer."
+    },
+    {
+      "name": "Ekko-Skygge",
+      "desc": "Væsener der gemmer sig i grotter og efterligner stemmer for at lokke rejsende i døden.",
+      "ability": "Stemme-mimikry."
+    },
+    {
+      "name": "Sump-Drage",
+      "desc": "Små, vingeløse drager der lever i Slam-Sumpen. Deres spyt er stærkt ætsende.",
+      "ability": "Spytter syre."
     }
   ],
   "travel": [
@@ -6077,6 +6517,21 @@
       "name": "Lyn-Portene",
       "desc": "Teleportering. Øjeblikkelig rejse.",
       "cost": "Kun for eliten (Kræver pas)"
+    },
+    {
+      "name": "Luftskibe",
+      "desc": "Skibe hængt op i store balloner af let-gas eller bundet til tæmmede sky-hvaler. Rejser mellem bjergtoppene.",
+      "cost": "Middel (Udsat for pirater)"
+    },
+    {
+      "name": "Kæmpe-Biller",
+      "desc": "Karavaner på ryggen af enorme, pansrede biller. Det sikreste valg gennem junglen og sumpen.",
+      "cost": "Lav (Langsomt)"
+    },
+    {
+      "name": "Skygge-Vandring",
+      "desc": "En farlig genvej gennem skygge-planet. Bruges af spioner og smuglere, men man risikerer at fare vild for evigt.",
+      "cost": "Sjæle-fragmenter"
     }
   ],
   "religion": {

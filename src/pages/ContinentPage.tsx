@@ -1,5 +1,6 @@
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { ArrowLeft } from 'lucide-react';
 import { SmartLink } from '../components/SmartLink';
 import { slugify } from '../utils/helpers';
 import { getLore } from '../utils/data';
@@ -13,12 +14,11 @@ export const ContinentPage = () => {
     const data = getLore();
     const linkContext = { continentId };
 
-    // 2. Find Continent
-    const continent = data.planes
-        .flatMap(p => p.continents)
-        .find(c => c.id === continentId);
+    // 2. Find Continent & Plane
+    const plane = data.planes.find(p => p.continents.some(c => c.id === continentId));
+    const continent = plane?.continents.find(c => c.id === continentId);
 
-    if (!continent) {
+    if (!continent || !plane) {
         return <div className="p-8 text-white">Kontinent ikke fundet ({continentId})</div>;
     }
 
@@ -33,6 +33,14 @@ export const ContinentPage = () => {
             <MysticCard>
                 {/* Header */}
                 <header className="mb-8 relative">
+                    <Link
+                        to={`/plane/${plane.id}`}
+                        className="flex items-center gap-2 text-text-dim hover:text-white transition-colors mb-6 no-underline w-fit"
+                    >
+                        <ArrowLeft size={20} />
+                        Tilbage til {plane.name}
+                    </Link>
+
                     <div className="flex items-start justify-between gap-4">
                         <div>
                             <h1

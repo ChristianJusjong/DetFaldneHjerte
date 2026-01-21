@@ -96,8 +96,7 @@ export const Sidebar = () => {
                             { to: "/", icon: <Globe size={18} />, label: "Verdenshistorie" },
                             { to: "/religion", icon: <Sun size={18} />, label: "Pulsens Treenighed" },
                             { to: "/conflict", icon: <Sparkles size={18} className="text-inferia" />, label: "Protokol Apatia" },
-                            { to: "/travel", icon: <Wind size={18} />, label: "Rejsemetoder" },
-                            { to: "/map", icon: <MapIcon size={18} />, label: "Verdenskort" }
+                            { to: "/travel", icon: <Wind size={18} />, label: "Rejsemetoder" }
                         ].map(item => (
                             <Link
                                 key={item.to}
@@ -116,9 +115,9 @@ export const Sidebar = () => {
                     <SidebarGroup title="Geografi" icon={<MapIcon size={16} className="text-text-dim" />} defaultOpen={false}>
                         {data.planes.map(plane => (
                             <div key={plane.id} className="mb-4 last:mb-0 pl-2 border-l border-white/5">
-                                <div className="px-2 py-1 text-[10px] font-bold text-text-dim uppercase tracking-[0.2em] mb-1 opacity-70">
+                                <Link to={`/plane/${plane.id}`} className="block px-2 py-1 text-[10px] font-bold text-text-dim uppercase tracking-[0.2em] mb-1 opacity-70 hover:opacity-100 hover:text-white transition-opacity no-underline" onClick={handleNavClick}>
                                     {plane.name}
-                                </div>
+                                </Link>
                                 {plane.continents.map(cont => (
                                     <Link
                                         key={cont.id}

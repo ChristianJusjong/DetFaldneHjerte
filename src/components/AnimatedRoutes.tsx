@@ -3,6 +3,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 
 // Pages
 import { HomePage } from '../pages/HomePage';
+import { PlanePage } from '../pages/PlanePage';
 import { ContinentPage } from '../pages/ContinentPage';
 import { ConflictPage } from '../pages/ConflictPage';
 import { ReligionPage } from '../pages/ReligionPage';
@@ -12,7 +13,6 @@ import { TravelPage } from '../pages/TravelPage';
 import { BestiaryPage } from '../pages/BestiaryPage';
 import { CityPage } from '../pages/CityPage';
 import { RegionPage } from '../pages/RegionPage';
-import { MapPage } from '../pages/MapPage';
 
 const PageTransition = ({ children }: { children: React.ReactNode }) => {
     return (
@@ -35,6 +35,7 @@ export const AnimatedRoutes = () => {
         <AnimatePresence mode="wait">
             <Routes location={location} key={location.pathname}>
                 <Route path="/" element={<PageTransition><HomePage /></PageTransition>} />
+                <Route path="/plane/:planeId" element={<PageTransition><PlanePage /></PageTransition>} />
                 <Route path="/continent/:continentId" element={<PageTransition><ContinentPage /></PageTransition>} />
                 <Route path="/continent/:continentId/:regionId" element={<PageTransition><RegionPage /></PageTransition>} />
                 <Route path="/continent/:continentId/:regionId/:cityId" element={<PageTransition><CityPage /></PageTransition>} />
@@ -43,7 +44,6 @@ export const AnimatedRoutes = () => {
                 <Route path="/races" element={<PageTransition><RacesPage /></PageTransition>} />
                 <Route path="/organizations" element={<PageTransition><OrganizationsPage /></PageTransition>} />
                 <Route path="/travel" element={<PageTransition><TravelPage /></PageTransition>} />
-                <Route path="/map" element={<PageTransition><MapPage /></PageTransition>} />
                 <Route path="/bestiary" element={<PageTransition><BestiaryPage /></PageTransition>} />
             </Routes>
         </AnimatePresence>

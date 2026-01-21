@@ -34,30 +34,34 @@ export const SmartLink = ({ text, context }: SmartLinkProps) => {
             map.set(term, existing);
         };
 
-        // Continents
-        data.planes.forEach(p => p.continents.forEach(c => {
-            addTerm(c.name, { url: `/continent/${c.id}`, type: 'continent', continentId: c.id });
+        // Planes & Continents
+        data.planes.forEach(p => {
+            addTerm(p.name, { url: `/plane/${p.id}`, type: 'plane' });
 
-            // Races
-            c.races.forEach(r => {
-                addTerm(r.name, { url: `/races#${slugify(r.name)}`, type: 'race', continentId: c.id });
-            });
+            p.continents.forEach(c => {
+                addTerm(c.name, { url: `/continent/${c.id}`, type: 'continent', continentId: c.id });
 
-            // Regions
-            c.regions.forEach(reg => {
-                addTerm(reg.name, { url: `/continent/${c.id}/${slugify(reg.name)}`, type: 'region', continentId: c.id, regionId: slugify(reg.name) });
+                // Races
+                c.races.forEach(r => {
+                    addTerm(r.name, { url: `/races#${slugify(r.name)}`, type: 'race', continentId: c.id });
+                });
 
-                // Cities
-                reg.cities.forEach(city => {
-                    addTerm(city.name, {
-                        url: `/continent/${c.id}/${slugify(reg.name)}/${slugify(city.name)}`,
-                        type: 'city',
-                        continentId: c.id,
-                        regionId: slugify(reg.name)
+                // Regions
+                c.regions.forEach(reg => {
+                    addTerm(reg.name, { url: `/continent/${c.id}/${slugify(reg.name)}`, type: 'region', continentId: c.id, regionId: slugify(reg.name) });
+
+                    // Cities
+                    reg.cities.forEach(city => {
+                        addTerm(city.name, {
+                            url: `/continent/${c.id}/${slugify(reg.name)}/${slugify(city.name)}`,
+                            type: 'city',
+                            continentId: c.id,
+                            regionId: slugify(reg.name)
+                        });
                     });
                 });
             });
-        }));
+        });
 
         // Gods
         data.religion.gods.forEach(g => {
@@ -118,6 +122,7 @@ export const SmartLink = ({ text, context }: SmartLinkProps) => {
 
                 if (bestMatch) {
                     let color = 'var(--color-accent-inferia)'; // default
+                    if (bestMatch.type === 'plane') color = '#ffffff';
                     if (bestMatch.type === 'continent') color = '#f1c40f';
                     if (bestMatch.type === 'god') color = 'var(--color-accent-superia)';
                     if (bestMatch.type === 'region' || bestMatch.type === 'city') color = '#2ecc71';
