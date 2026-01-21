@@ -1,4 +1,5 @@
 import { BrowserRouter as Router } from 'react-router-dom';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import { Sidebar } from './components/Sidebar';
 import { AIOracle } from './components/AIOracle';
 import { SearchModal } from './components/SearchModal';
@@ -16,6 +17,7 @@ const App = () => {
         </main>
         <AIOracle />
         <SearchModal />
+        <SpeedInsights />
       </div>
     </Router>
   );
