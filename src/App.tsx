@@ -4,7 +4,7 @@ import { AIOracle } from './components/AIOracle';
 import { SearchModal } from './components/SearchModal';
 import { AnimatedRoutes } from './components/AnimatedRoutes';
 import { SoundController } from './components/SoundController';
-import { Sidebar } from './components/Sidebar'; // Keeping purely for tool access logic if needed later, but removing from view
+// Keeping purely for tool access logic if needed later, but removing from view
 
 import { NPCGenerator } from './components/NPCGenerator';
 import { DMScreen } from './components/DMScreen';
