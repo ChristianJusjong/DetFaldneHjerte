@@ -61,6 +61,7 @@ export const CityPage = () => {
 
     const continentColor = continent.color || '#fff';
     const mapPath = city.mapImage || `/assets/cities/${slugify(city.name)}.png`;
+    const heroImage = city.image || mapPath;
 
     // Flatten assets for display in current UI structure
     // const allAssets = city.districts.flatMap(d => d.assets);
@@ -84,7 +85,7 @@ export const CityPage = () => {
 
                 <div className="relative w-full h-80 rounded-3xl overflow-hidden mb-8 border border-white/10 shadow-premium">
                     <ImageWithFallback
-                        src={mapPath}
+                        src={heroImage}
                         alt={city.name}
                         className="w-full h-full object-cover"
                         fallbackText={`Kort over ${city.name}`}

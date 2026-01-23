@@ -569,7 +569,7 @@
                   "battlemapImage": "/assets/maps/battlemaps/nord-porten-encounter.png"
                 },
                 {
-                  "name": "Akademiet",
+                  "mapImage": "/assets/maps/cities/akademiet.png",
                   "desc": "Universitetsby hvor eksamener afgøres ved duel.",
                   "rumor": "En studerende forsvandt i går efter at have læst 'Den Forbudte Ligning'.",
                   "layout": "Består af høje tårne forbundet med lyn-afledere.",
@@ -825,7 +825,7 @@
               "desc": "Dybe dale fyldt med ekkoer af fortiden. Hjemsted for Husk-Dværgene.",
               "cities": [
                 {
-                  "name": "Boghvælvet",
+                  "mapImage": "/assets/maps/cities/boghvaelvet.png",
                   "desc": "Verdens største bibliotek, hugget ind i klippen.",
                   "layout": "Bygget vertikalt op ad bjergsiden med svævebaner.",
                   "districts": [
@@ -1393,7 +1393,7 @@
               "desc": "Et fladt plateau under evig storm. Jorden er svedet sort af lynnedslag, og luften lugter af ozon. Her fanges energien til hele riget.",
               "cities": [
                 {
-                  "name": "Gnister",
+                  "mapImage": "/assets/maps/cities/gnister.png",
                   "desc": "By af kobber og lynafledere. Larmer konstant.",
                   "layout": "Udhugget i selve klippen i store spiralmønstre.",
                   "districts": [
@@ -2055,7 +2055,7 @@
               "desc": "En verden under jorden, oplyst af bioluminescerende svampe og krystaller. Her lever de, der foretrækker mørket.",
               "cities": [
                 {
-                  "name": "Spejlet",
+                  "mapImage": "/assets/maps/cities/spejlet.png",
                   "desc": "By af linser, der reflekterer stjernelys.",
                   "layout": "En labyrint af biblioteker og læsesale.",
                   "districts": [
@@ -2356,7 +2356,7 @@
               "desc": "Hvor bjerget møder havet. Livlig handel og smugleri.",
               "cities": [
                 {
-                  "name": "Havne-Porten",
+                  "mapImage": "/assets/maps/cities/havne-porten.png",
                   "desc": "Beskidt men festlig by. Porten til resten af verden.",
                   "layout": "Bygget vertikalt op ad bjergsiden med svævebaner.",
                   "districts": [
@@ -2798,7 +2798,7 @@
               "desc": "Den farverige skovzone. Træerne er af krystal.",
               "cities": [
                 {
-                  "name": "Regnbuen",
+                  "mapImage": "/assets/maps/cities/regnbuen.png",
                   "desc": "Bygget af farvet glas, der synger i vinden. Gaderne lyser om natten.",
                   "rumor": "En seriemorder myrder folk og gør dem grå og farveløse.",
                   "layout": "Huse lavet af envejs-spejle.",
@@ -3684,7 +3684,7 @@
               "desc": "Ydre ørken af hvidt salt. Blændende lyst. Glas-Riddernes domæne.",
               "cities": [
                 {
-                  "name": "Sølv-Muren",
+                  "mapImage": "/assets/maps/cities/soelv-muren.png",
                   "desc": "Fæstning af poleret stål. Solbriller påbudt.",
                   "layout": "Skjult bag en permanent illusion.",
                   "districts": [
