@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Sparkles, Scroll } from 'lucide-react';
 import { SmartLink } from '../components/SmartLink';
@@ -76,23 +77,25 @@ export const HomePage = () => {
                     )}
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
-                        <motion.a
-                            href="/plane/lyssiden"
-                            className="block p-8 rounded-2xl bg-superia/5 border border-superia/10 hover:bg-superia/10 hover:border-superia/30 transition-all group cursor-pointer"
-                            whileHover={{ scale: 1.02 }}
-                        >
-                            <h3 className="text-2xl font-serif font-bold text-superia border-b border-superia/20 pb-2 mb-4 group-hover:border-superia/50 transition-colors">Lys-Siden (Superia)</h3>
-                            <p className="text-gray-400 group-hover:text-gray-300">Den øvre flade af logik og orden. Hvor de oplyste byer rækker mod stjernerne og magien er kodificeret.</p>
-                        </motion.a>
+                        <Link to="/plane/lyssiden" className="block no-underline">
+                            <motion.div
+                                className="h-full p-8 rounded-2xl bg-superia/5 border border-superia/10 hover:bg-superia/10 hover:border-superia/30 transition-all group cursor-pointer"
+                                whileHover={{ scale: 1.02 }}
+                            >
+                                <h3 className="text-2xl font-serif font-bold text-superia border-b border-superia/20 pb-2 mb-4 group-hover:border-superia/50 transition-colors">Lys-Siden (Superia)</h3>
+                                <p className="text-gray-400 group-hover:text-gray-300">Den øvre flade af logik og orden. Hvor de oplyste byer rækker mod stjernerne og magien er kodificeret.</p>
+                            </motion.div>
+                        </Link>
 
-                        <motion.a
-                            href="/plane/skyggesiden"
-                            className="block p-8 rounded-2xl bg-inferia/5 border border-inferia/10 hover:bg-inferia/10 hover:border-inferia/30 transition-all group cursor-pointer"
-                            whileHover={{ scale: 1.02 }}
-                        >
-                            <h3 className="text-2xl font-serif font-bold text-inferia border-b border-inferia/20 pb-2 mb-4 group-hover:border-inferia/50 transition-colors">Skygge-Siden (Inferia)</h3>
-                            <p className="text-gray-400 group-hover:text-gray-300">Den nedre flade af instinkt og biologi. Hvor ur-skoven gror vildt under månen og blodet synger.</p>
-                        </motion.a>
+                        <Link to="/plane/skyggesiden" className="block no-underline">
+                            <motion.div
+                                className="h-full p-8 rounded-2xl bg-inferia/5 border border-inferia/10 hover:bg-inferia/10 hover:border-inferia/30 transition-all group cursor-pointer"
+                                whileHover={{ scale: 1.02 }}
+                            >
+                                <h3 className="text-2xl font-serif font-bold text-inferia border-b border-inferia/20 pb-2 mb-4 group-hover:border-inferia/50 transition-colors">Skygge-Siden (Inferia)</h3>
+                                <p className="text-gray-400 group-hover:text-gray-300">Den nedre flade af instinkt og biologi. Hvor ur-skoven gror vildt under månen og blodet synger.</p>
+                            </motion.div>
+                        </Link>
                     </div>
                 </div>
             </MysticCard>

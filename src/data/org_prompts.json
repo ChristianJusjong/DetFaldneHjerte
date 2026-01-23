@@ -1,0 +1,39 @@
+{
+  "organizations": [
+    {
+      "id": "de-hvide-vogtere",
+      "name": "De Hvide Vogtere",
+      "prompt": "Concept art of the symbol or emblem for De Hvide Vogtere. Symbol or headquarters of De Hvide Vogtere. Description: undefined. Minimalist fantasy icon, high contrast, suitable for a flag or shield. White background, vector style art. --ar 1:1 --v 6.0 --no text, realistic photo, complex background"
+    },
+    {
+      "id": "sump-syndikatet",
+      "name": "Sump-Syndikatet",
+      "prompt": "Concept art of the symbol or emblem for Sump-Syndikatet. Symbol or headquarters of Sump-Syndikatet. Description: undefined. Minimalist fantasy icon, high contrast, suitable for a flag or shield. White background, vector style art. --ar 1:1 --v 6.0 --no text, realistic photo, complex background"
+    },
+    {
+      "id": "scroll-smedenes-laug",
+      "name": "Scroll-Smedenes Laug",
+      "prompt": "Concept art of the symbol or emblem for Scroll-Smedenes Laug. Symbol or headquarters of Scroll-Smedenes Laug. Description: undefined. Minimalist fantasy icon, high contrast, suitable for a flag or shield. White background, vector style art. --ar 1:1 --v 6.0 --no text, realistic photo, complex background"
+    },
+    {
+      "id": "gift-blandernes-cirkel",
+      "name": "Gift-Blandernes Cirkel",
+      "prompt": "Concept art of the symbol or emblem for Gift-Blandernes Cirkel. Symbol or headquarters of Gift-Blandernes Cirkel. Description: undefined. Minimalist fantasy icon, high contrast, suitable for a flag or shield. White background, vector style art. --ar 1:1 --v 6.0 --no text, realistic photo, complex background"
+    },
+    {
+      "id": "jern-vagten",
+      "name": "Jern-Vagten",
+      "prompt": "Concept art of the symbol or emblem for Jern-Vagten. Symbol or headquarters of Jern-Vagten. Description: undefined. Minimalist fantasy icon, high contrast, suitable for a flag or shield. White background, vector style art. --ar 1:1 --v 6.0 --no text, realistic photo, complex background"
+    },
+    {
+      "id": "skal-ridderne",
+      "name": "Skal-Ridderne",
+      "prompt": "Concept art of the symbol or emblem for Skal-Ridderne. Symbol or headquarters of Skal-Ridderne. Description: undefined. Minimalist fantasy icon, high contrast, suitable for a flag or shield. White background, vector style art. --ar 1:1 --v 6.0 --no text, realistic photo, complex background"
+    },
+    {
+      "id": "form-vandrerne",
+      "name": "Form-Vandrerne",
+      "prompt": "Concept art of the symbol or emblem for Form-Vandrerne. Symbol or headquarters of Form-Vandrerne. Description: undefined. Minimalist fantasy icon, high contrast, suitable for a flag or shield. White background, vector style art. --ar 1:1 --v 6.0 --no text, realistic photo, complex background"
+    }
+  ]
+}

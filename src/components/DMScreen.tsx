@@ -1,15 +1,24 @@
 import { useState } from 'react';
+import { BookOpen, Sword, Dna, Coins, Compass, Clock, RotateCcw, Trash2, Plus, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, Coins, Compass, BookOpen, Clock, Sword, Plus, RotateCcw, Dna, Trash2 } from 'lucide-react';
-import { MysticCard } from './ui/MysticCard';
 import { useGameStore } from '../store/useGameStore';
 import { useSoundEffects } from '../hooks/useSoundEffects';
+import { MysticCard } from './ui/MysticCard';
 import type { Combatant } from '../types';
 
-export const DMScreen = () => {
+export const DMScreen = ({ showTrigger = true }: { showTrigger?: boolean }) => {
     const { isDMScreenOpen, setDMScreenOpen, combatants, addCombatant, removeCombatant, updateCombatant, sortCombatants, clearCombatants } = useGameStore();
     const { playClick, playSuccess, playHover } = useSoundEffects();
     const [activeTab, setActiveTab] = useState<'initiative' | 'dice' | 'prices' | 'travel' | 'time'>('initiative');
+
+    // ... (rest of logic) ...
+
+    // Since replace_file_content works on chunks, I'll target the props and the return statement trigger.
+    // This is a bit tricky with one chunk. Let's do it in two steps or be smart.
+    // Actually, I can just replace the definition and the trigger part.
+    // But the tool says "single contiguous block". The definition and the return are not contiguous.
+    // I'll used multi_replace_file_content if I had it in the allowlist? yes I do.
+
 
     // Initiative State
     const [newCombatant, setNewCombatant] = useState<Partial<Combatant>>({ name: '', initiative: 0, hp: 10, maxHp: 10, ac: 10, type: 'monster' });
@@ -62,14 +71,16 @@ export const DMScreen = () => {
 
     return (
         <>
-            <div
-                onClick={() => { setDMScreenOpen(true); playClick(); }}
-                className="flex items-center gap-3 px-4 py-3 text-text-muted hover:text-white hover:bg-white/5 transition-all cursor-pointer border-t border-white/10 group"
-                onMouseEnter={() => playHover()}
-            >
-                <BookOpen size={18} className="text-superia/60 group-hover:text-superia transition-colors" />
-                <span className="font-serif text-sm">DM Skærm</span>
-            </div>
+            {showTrigger && (
+                <div
+                    onClick={() => { setDMScreenOpen(true); playClick(); }}
+                    className="flex items-center gap-3 px-4 py-3 text-text-muted hover:text-white hover:bg-white/5 transition-all cursor-pointer border-t border-white/10 group"
+                    onMouseEnter={() => playHover()}
+                >
+                    <BookOpen size={18} className="text-superia/60 group-hover:text-superia transition-colors" />
+                    <span className="font-serif text-sm">DM Skærm</span>
+                </div>
+            )}
 
             <AnimatePresence>
                 {isDMScreenOpen && (

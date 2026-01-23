@@ -5,6 +5,7 @@ import { getLore } from '../utils/data';
 import { BookmarkButton } from '../components/BookmarkButton';
 import { MysticCard } from '../components/ui/MysticCard';
 import { getIconForContinent } from '../utils/helpers';
+import { MapVisualizer } from '../components/world/MapVisualizer';
 
 export const PlanePage = () => {
     // 1. Get Params
@@ -44,6 +45,15 @@ export const PlanePage = () => {
                         <BookmarkButton url={`/plane/${plane.id}`} title={plane.name} type="other" />
                     </div>
                 </header>
+
+                {/* Map Visualization */}
+                <div className="mb-12 rounded-3xl overflow-hidden border border-white/10 shadow-premium">
+                    <MapVisualizer
+                        mapImage={plane.mapImage || ''}
+                        title={plane.name}
+                        className="w-full"
+                    />
+                </div>
 
                 <div className="text-lg leading-relaxed text-gray-300 space-y-4 mb-12">
                     <p><SmartLink text={plane.description || ""} /></p>

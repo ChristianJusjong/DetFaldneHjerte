@@ -1,5 +1,5 @@
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { SmartLink } from '../components/SmartLink';
 import { getLore } from '../utils/data';
 import { slugify } from '../utils/helpers';
 import { MysticCard } from '../components/ui/MysticCard';
@@ -28,32 +28,34 @@ export const RacesPage = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
                     {allRaces.map(race => (
-                        <div
+                        <Link
                             key={race.name}
-                            id={slugify(race.name)}
-                            className="bg-white/5 rounded-2xl p-6 border-l-4 hover:bg-white/10 transition-colors"
-                            style={{ borderLeftColor: race.continentColor }}
+                            to={`/lore/race/${race.id || slugify(race.name)}`}
+                            className="block no-underline group"
                         >
-                            <h3 className="text-xl font-bold text-white mb-1">{race.name}</h3>
-                            <p
-                                className="text-xs uppercase tracking-widest font-bold mb-4"
-                                style={{ color: race.continentColor }}
+                            <div
+                                id={slugify(race.name)}
+                                className="bg-white/5 rounded-2xl p-6 border-l-4 hover:bg-white/10 transition-colors h-full"
+                                style={{ borderLeftColor: race.continentColor }}
                             >
-                                {race.continentName}
-                            </p>
-
-                            <p className="text-gray-300 mb-4 leading-relaxed"><SmartLink text={race.description} /></p>
-
-                            {race.reskin && (
-                                <div className="bg-white/5 p-3 rounded text-sm text-gray-400 mb-3 border border-white/5">
-                                    <strong className="text-gray-200">Reskin:</strong> {race.reskin}
+                                <div className="flex justify-between items-start">
+                                    <h3 className="text-xl font-bold text-white mb-1 group-hover:text-blue-200 transition-colors">{race.name}</h3>
                                 </div>
-                            )}
+                                <p
+                                    className="text-xs uppercase tracking-widest font-bold mb-4"
+                                    style={{ color: race.continentColor }}
+                                >
+                                    {race.continentName}
+                                </p>
 
-                            <p className="text-sm italic text-text-dim border-t border-white/10 pt-3 mt-3">
-                                <strong className="text-gray-400 not-italic">Mekanik:</strong> {race.mechanic}
-                            </p>
-                        </div>
+                                <p className="text-gray-300 mb-4 leading-relaxed line-clamp-3">{race.description}</p>
+
+                                <div className="mt-auto pt-4 border-t border-white/5 flex justify-between items-center text-sm text-text-dim">
+                                    <span>Klik for detaljer</span>
+                                    {race.reskin && <span className="opacity-50">Reskin: {race.reskin}</span>}
+                                </div>
+                            </div>
+                        </Link>
                     ))}
                 </div>
             </MysticCard>

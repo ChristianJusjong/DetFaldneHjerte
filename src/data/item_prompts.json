@@ -1,0 +1,102 @@
+[
+  {
+    "filename": "lge-urt.png",
+    "prompt": "Fantasy RPG Item Card, Læge-urt, Stabiliserer sår.. Isolated on black background, intricate detail, magical artifact style, professional game asset --ar 1:1 --v 6.0",
+    "context": "Item: Læge-urt"
+  },
+  {
+    "filename": "lygte-olie.png",
+    "prompt": "Fantasy RPG Item Card, Lygte-olie, Brænder i 6 timer.. Isolated on black background, intricate detail, magical artifact style, professional game asset --ar 1:1 --v 6.0",
+    "context": "Item: Lygte-olie"
+  },
+  {
+    "filename": "hukommelses-krystal.png",
+    "prompt": "Fantasy RPG Item Card, Hukommelses-Krystal, Kan lagre en tanke.. Isolated on black background, intricate detail, magical artifact style, professional game asset --ar 1:1 --v 6.0",
+    "context": "Item: Hukommelses-Krystal"
+  },
+  {
+    "filename": "tom-scroll.png",
+    "prompt": "Fantasy RPG Item Card, Tom Scroll, Pergament klar til magi.. Isolated on black background, intricate detail, magical artifact style, professional game asset --ar 1:1 --v 6.0",
+    "context": "Item: Tom Scroll"
+  },
+  {
+    "filename": "fokus-linse.png",
+    "prompt": "Fantasy RPG Item Card, Fokus-Linse, Hjælper med koncentration.. Isolated on black background, intricate detail, magical artifact style, professional game asset --ar 1:1 --v 6.0",
+    "context": "Item: Fokus-Linse"
+  },
+  {
+    "filename": "rejse-beholder.png",
+    "prompt": "Fantasy RPG Item Card, Rejse-beholder, Forseglet beholder til mad og vand.. Isolated on black background, intricate detail, magical artifact style, professional game asset --ar 1:1 --v 6.0",
+    "context": "Item: Rejse-beholder"
+  },
+  {
+    "filename": "blk-bl.png",
+    "prompt": "Fantasy RPG Item Card, Blæk (Blå), Lyser svagt i mørke.. Isolated on black background, intricate detail, magical artifact style, professional game asset --ar 1:1 --v 6.0",
+    "context": "Item: Blæk (Blå)"
+  },
+  {
+    "filename": "klatre-st.png",
+    "prompt": "Fantasy RPG Item Card, Klatre-sæt, Reb, kroge og handsker.. Isolated on black background, intricate detail, magical artifact style, professional game asset --ar 1:1 --v 6.0",
+    "context": "Item: Klatre-sæt"
+  },
+  {
+    "filename": "sandheds-serum.png",
+    "prompt": "Fantasy RPG Item Card, Sandheds-Serum, Tvinger sandheden frem.. Isolated on black background, intricate detail, magical artifact style, professional game asset --ar 1:1 --v 6.0",
+    "context": "Item: Sandheds-Serum"
+  },
+  {
+    "filename": "illusion-prisme.png",
+    "prompt": "Fantasy RPG Item Card, Illusion-Prisme, Bryder lyset i farver.. Isolated on black background, intricate detail, magical artifact style, professional game asset --ar 1:1 --v 6.0",
+    "context": "Item: Illusion-Prisme"
+  },
+  {
+    "filename": "slv-spejl.png",
+    "prompt": "Fantasy RPG Item Card, Sølv-spejl, Reflekterer sjælen.. Isolated on black background, intricate detail, magical artifact style, professional game asset --ar 1:1 --v 6.0",
+    "context": "Item: Sølv-spejl"
+  },
+  {
+    "filename": "maske.png",
+    "prompt": "Fantasy RPG Item Card, Maske, Skjuler ansigtet.. Isolated on black background, intricate detail, magical artifact style, professional game asset --ar 1:1 --v 6.0",
+    "context": "Item: Maske"
+  },
+  {
+    "filename": "fljte.png",
+    "prompt": "Fantasy RPG Item Card, Fløjte, Nyttig til signalering.. Isolated on black background, intricate detail, magical artifact style, professional game asset --ar 1:1 --v 6.0",
+    "context": "Item: Fløjte"
+  },
+  {
+    "filename": "stemme-dse.png",
+    "prompt": "Fantasy RPG Item Card, Stemme-Dåse, Gemmer en lyd.. Isolated on black background, intricate detail, magical artifact style, professional game asset --ar 1:1 --v 6.0",
+    "context": "Item: Stemme-Dåse"
+  },
+  {
+    "filename": "repropper.png",
+    "prompt": "Fantasy RPG Item Card, Ørepropper, Voks.. Isolated on black background, intricate detail, magical artifact style, professional game asset --ar 1:1 --v 6.0",
+    "context": "Item: Ørepropper"
+  },
+  {
+    "filename": "lydls-stvler.png",
+    "prompt": "Fantasy RPG Item Card, Lydløs-Støvler, Dæmper fodtrin.. Isolated on black background, intricate detail, magical artifact style, professional game asset --ar 1:1 --v 6.0",
+    "context": "Item: Lydløs-Støvler"
+  },
+  {
+    "filename": "gasmaske.png",
+    "prompt": "Fantasy RPG Item Card, Gasmaske, Læder og glas.. Isolated on black background, intricate detail, magical artifact style, professional game asset --ar 1:1 --v 6.0",
+    "context": "Item: Gasmaske"
+  },
+  {
+    "filename": "rust-olie.png",
+    "prompt": "Fantasy RPG Item Card, Rust-olie, Smører gamle maskiner.. Isolated on black background, intricate detail, magical artifact style, professional game asset --ar 1:1 --v 6.0",
+    "context": "Item: Rust-olie"
+  },
+  {
+    "filename": "filter-vand.png",
+    "prompt": "Fantasy RPG Item Card, Filter-vand, Renset mudder.. Isolated on black background, intricate detail, magical artifact style, professional game asset --ar 1:1 --v 6.0",
+    "context": "Item: Filter-vand"
+  },
+  {
+    "filename": "syre-htteglas.png",
+    "prompt": "Fantasy RPG Item Card, Syre-hætteglas, Ætser metal.. Isolated on black background, intricate detail, magical artifact style, professional game asset --ar 1:1 --v 6.0",
+    "context": "Item: Syre-hætteglas"
+  }
+]

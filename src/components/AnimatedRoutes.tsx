@@ -13,6 +13,8 @@ import { TravelPage } from '../pages/TravelPage';
 import { BestiaryPage } from '../pages/BestiaryPage';
 import { CityPage } from '../pages/CityPage';
 import { RegionPage } from '../pages/RegionPage';
+import { AssetPage } from '../pages/AssetPage';
+import { LoreEntityPage } from '../pages/LoreEntityPage';
 
 const PageTransition = ({ children }: { children: React.ReactNode }) => {
     return (
@@ -39,6 +41,8 @@ export const AnimatedRoutes = () => {
                 <Route path="/continent/:continentId" element={<PageTransition><ContinentPage /></PageTransition>} />
                 <Route path="/continent/:continentId/:regionId" element={<PageTransition><RegionPage /></PageTransition>} />
                 <Route path="/continent/:continentId/:regionId/:cityId" element={<PageTransition><CityPage /></PageTransition>} />
+                <Route path="/continent/:continentId/:regionId/:cityId/:districtId/:assetId" element={<PageTransition><AssetPage /></PageTransition>} />
+                <Route path="/lore/:type/:id" element={<PageTransition><LoreEntityPage /></PageTransition>} />
                 <Route path="/conflict" element={<PageTransition><ConflictPage /></PageTransition>} />
                 <Route path="/religion" element={<PageTransition><ReligionPage /></PageTransition>} />
                 <Route path="/races" element={<PageTransition><RacesPage /></PageTransition>} />

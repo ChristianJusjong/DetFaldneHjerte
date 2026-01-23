@@ -1,0 +1,1612 @@
+{
+  "world": {
+    "id": "world-map",
+    "description": "Livshjulet (Cor)",
+    "prompt": "A flat 2D fantasy world map, complete atlas view showing all continents and oceans. Style of high-fantasy cartography, vintage parchment texture, faded ink. Distinct continental shapes, separated by clear oceans. No text labels. --ar 2:1 --v 6.0 --stylize 250 --no grid, spherical distortion, 3D"
+  },
+  "sides": [
+    {
+      "id": "lyssiden",
+      "name": "Lys-Siden (Himmelfladen)",
+      "prompt": "A fantasy map of a large hemisphere landmass. Political map style. Distinct colored regions defining borders between nations. Marked locations for capital cities using large star icons. Neutral paper background. Clean lines. --ar 16:9 --v 6.0 --no mountains, realistic terrain, text labels, grid"
+    },
+    {
+      "id": "skyggesiden",
+      "name": "Skygge-Siden (Dybets Flade)",
+      "prompt": "A fantasy map of a large hemisphere landmass. Political map style. Distinct colored regions defining borders between nations. Marked locations for capital cities using large star icons. Neutral paper background. Clean lines. --ar 16:9 --v 6.0 --no mountains, realistic terrain, text labels, grid"
+    }
+  ],
+  "continents": [
+    {
+      "id": "tanketinderne",
+      "name": "Tanke-Tinderne",
+      "prompt": "A top-down fantasy map of a single continent [frozen tundra]. Fantasy landscape with distinct magical features. Specific features: mountain.. Detailed physical geography: distinct mountain chains, winding rivers, dense swamps. Thick dark lines indicating major roads connecting specific red dot markers for cities. Parchment style with hand-drawn aesthetic. --ar 3:2 --v 6.0 --no grid, text, labels, realistic satellite"
+    },
+    {
+      "id": "spejlsoeen",
+      "name": "Spejl-Søen",
+      "prompt": "A top-down fantasy map of a single continent [frozen tundra]. Fantasy landscape with distinct magical features. Specific features: forest, light, crystal.. Detailed physical geography: distinct mountain chains, winding rivers, dense swamps. Thick dark lines indicating major roads connecting specific red dot markers for cities. Parchment style with hand-drawn aesthetic. --ar 3:2 --v 6.0 --no grid, text, labels, realistic satellite"
+    },
+    {
+      "id": "klangdalene",
+      "name": "Klang-Dalene",
+      "prompt": "A top-down fantasy map of a single continent [frozen tundra]. Fantasy landscape with distinct magical features. Specific features: mountain.. Detailed physical geography: distinct mountain chains, winding rivers, dense swamps. Thick dark lines indicating major roads connecting specific red dot markers for cities. Parchment style with hand-drawn aesthetic. --ar 3:2 --v 6.0 --no grid, text, labels, realistic satellite"
+    },
+    {
+      "id": "solvtungenaesset",
+      "name": "Sølvtunge-Næsset",
+      "prompt": "A top-down fantasy map of a single continent [frozen tundra]. Fantasy landscape with distinct magical features. Specific features: .. Detailed physical geography: distinct mountain chains, winding rivers, dense swamps. Thick dark lines indicating major roads connecting specific red dot markers for cities. Parchment style with hand-drawn aesthetic. --ar 3:2 --v 6.0 --no grid, text, labels, realistic satellite"
+    },
+    {
+      "id": "tvillingeoerne",
+      "name": "Tvillinge-Øerne",
+      "prompt": "A top-down fantasy map of a single continent [frozen tundra]. Fantasy landscape with distinct magical features. Specific features: .. Detailed physical geography: distinct mountain chains, winding rivers, dense swamps. Thick dark lines indicating major roads connecting specific red dot markers for cities. Parchment style with hand-drawn aesthetic. --ar 3:2 --v 6.0 --no grid, text, labels, realistic satellite"
+    },
+    {
+      "id": "urskoven",
+      "name": "Ur-Skoven",
+      "prompt": "A top-down fantasy map of a single continent [dense jungle swamp]. A primordial jungle of impossible scale, trees piercing the sky, red rivers of thick fluid, massive insects, savage and unchecked growth, green and crimson palette. Specific features: .. Detailed physical geography: distinct mountain chains, winding rivers, dense swamps. Thick dark lines indicating major roads connecting specific red dot markers for cities. Parchment style with hand-drawn aesthetic. --ar 3:2 --v 6.0 --no grid, text, labels, realistic satellite"
+    },
+    {
+      "id": "slamsumpen",
+      "name": "Slam-Sumpen",
+      "prompt": "A top-down fantasy map of a single continent [frozen tundra]. Fantasy landscape with distinct magical features. Specific features: city, pipes.. Detailed physical geography: distinct mountain chains, winding rivers, dense swamps. Thick dark lines indicating major roads connecting specific red dot markers for cities. Parchment style with hand-drawn aesthetic. --ar 3:2 --v 6.0 --no grid, text, labels, realistic satellite"
+    }
+  ],
+  "regions": [
+    {
+      "id": "isse-toppen",
+      "name": "Isse-Toppen",
+      "prompt": "An illustrated top-down regional map of [coastal valley]. Region in Tanke-Tinderne. Fantasy landscape with distinct magical features. Local terrain: tower, crystal.. Focus on connectivity: clear dirt roads connecting small village clusters. Varied terrain: patches of forest, farmland, and hills. Icons indicating towns (squares) and a large Capitol (castle icon). Style of a high-definition RPG game map. --ar 16:9 --v 6.0 --no grid, clouds, fog, isometric"
+    },
+    {
+      "id": "minde-dalene",
+      "name": "Minde-Dalene",
+      "prompt": "An illustrated top-down regional map of [coastal valley]. Region in Tanke-Tinderne. Fantasy landscape with distinct magical features. Local terrain: .. Focus on connectivity: clear dirt roads connecting small village clusters. Varied terrain: patches of forest, farmland, and hills. Icons indicating towns (squares) and a large Capitol (castle icon). Style of a high-definition RPG game map. --ar 16:9 --v 6.0 --no grid, clouds, fog, isometric"
+    },
+    {
+      "id": "storm-fladen",
+      "name": "Storm-Fladen",
+      "prompt": "An illustrated top-down regional map of [coastal valley]. Region in Tanke-Tinderne. Fantasy landscape with distinct magical features. Local terrain: .. Focus on connectivity: clear dirt roads connecting small village clusters. Varied terrain: patches of forest, farmland, and hills. Icons indicating towns (squares) and a large Capitol (castle icon). Style of a high-definition RPG game map. --ar 16:9 --v 6.0 --no grid, clouds, fog, isometric"
+    },
+    {
+      "id": "skygge-dalen",
+      "name": "Skygge-Dalen",
+      "prompt": "An illustrated top-down regional map of [high mountain peaks]. Region in Tanke-Tinderne. Fantasy landscape with distinct magical features. Local terrain: mountain.. Focus on connectivity: clear dirt roads connecting small village clusters. Varied terrain: patches of forest, farmland, and hills. Icons indicating towns (squares) and a large Capitol (castle icon). Style of a high-definition RPG game map. --ar 16:9 --v 6.0 --no grid, clouds, fog, isometric"
+    },
+    {
+      "id": "roden",
+      "name": "Roden",
+      "prompt": "An illustrated top-down regional map of [high mountain peaks]. Region in Tanke-Tinderne. Fantasy landscape with distinct magical features. Local terrain: mountain.. Focus on connectivity: clear dirt roads connecting small village clusters. Varied terrain: patches of forest, farmland, and hills. Icons indicating towns (squares) and a large Capitol (castle icon). Style of a high-definition RPG game map. --ar 16:9 --v 6.0 --no grid, clouds, fog, isometric"
+    },
+    {
+      "id": "prisme-ringen",
+      "name": "Prisme-Ringen",
+      "prompt": "An illustrated top-down regional map of [dense ancient forest]. Region in Spejl-Søen. Fantasy landscape with distinct magical features. Local terrain: forest, crystal.. Focus on connectivity: clear dirt roads connecting small village clusters. Varied terrain: patches of forest, farmland, and hills. Icons indicating towns (squares) and a large Capitol (castle icon). Style of a high-definition RPG game map. --ar 16:9 --v 6.0 --no grid, clouds, fog, isometric"
+    },
+    {
+      "id": "det-hvide-oede",
+      "name": "Det Hvide Øde",
+      "prompt": "An illustrated top-down regional map of [coastal valley]. Region in Spejl-Søen. Fantasy landscape with distinct magical features. Local terrain: light.. Focus on connectivity: clear dirt roads connecting small village clusters. Varied terrain: patches of forest, farmland, and hills. Icons indicating towns (squares) and a large Capitol (castle icon). Style of a high-definition RPG game map. --ar 16:9 --v 6.0 --no grid, clouds, fog, isometric"
+    },
+    {
+      "id": "dybet",
+      "name": "Dybet",
+      "prompt": "An illustrated top-down regional map of [coastal valley]. Region in Spejl-Søen. Fantasy landscape with distinct magical features. Local terrain: darkness.. Focus on connectivity: clear dirt roads connecting small village clusters. Varied terrain: patches of forest, farmland, and hills. Icons indicating towns (squares) and a large Capitol (castle icon). Style of a high-definition RPG game map. --ar 16:9 --v 6.0 --no grid, clouds, fog, isometric"
+    },
+    {
+      "id": "taare-kysten",
+      "name": "Tåre-Kysten",
+      "prompt": "An illustrated top-down regional map of [coastal valley]. Region in Spejl-Søen. Fantasy landscape with distinct magical features. Local terrain: .. Focus on connectivity: clear dirt roads connecting small village clusters. Varied terrain: patches of forest, farmland, and hills. Icons indicating towns (squares) and a large Capitol (castle icon). Style of a high-definition RPG game map. --ar 16:9 --v 6.0 --no grid, clouds, fog, isometric"
+    },
+    {
+      "id": "baglandet",
+      "name": "Baglandet",
+      "prompt": "An illustrated top-down regional map of [coastal valley]. Region in Spejl-Søen. Fantasy landscape with distinct magical features. Local terrain: .. Focus on connectivity: clear dirt roads connecting small village clusters. Varied terrain: patches of forest, farmland, and hills. Icons indicating towns (squares) and a large Capitol (castle icon). Style of a high-definition RPG game map. --ar 16:9 --v 6.0 --no grid, clouds, fog, isometric"
+    },
+    {
+      "id": "lae-kysten",
+      "name": "Læ-Kysten",
+      "prompt": "An illustrated top-down regional map of [coastal valley]. Region in Klang-Dalene. Fantasy landscape with distinct magical features. Local terrain: .. Focus on connectivity: clear dirt roads connecting small village clusters. Varied terrain: patches of forest, farmland, and hills. Icons indicating towns (squares) and a large Capitol (castle icon). Style of a high-definition RPG game map. --ar 16:9 --v 6.0 --no grid, clouds, fog, isometric"
+    },
+    {
+      "id": "hyle-kloeften",
+      "name": "Hyle-Kløften",
+      "prompt": "An illustrated top-down regional map of [coastal valley]. Region in Klang-Dalene. Fantasy landscape with distinct magical features. Local terrain: .. Focus on connectivity: clear dirt roads connecting small village clusters. Varied terrain: patches of forest, farmland, and hills. Icons indicating towns (squares) and a large Capitol (castle icon). Style of a high-definition RPG game map. --ar 16:9 --v 6.0 --no grid, clouds, fog, isometric"
+    },
+    {
+      "id": "tromme-sletten",
+      "name": "Tromme-Sletten",
+      "prompt": "An illustrated top-down regional map of [coastal valley]. Region in Klang-Dalene. Fantasy landscape with distinct magical features. Local terrain: .. Focus on connectivity: clear dirt roads connecting small village clusters. Varied terrain: patches of forest, farmland, and hills. Icons indicating towns (squares) and a large Capitol (castle icon). Style of a high-definition RPG game map. --ar 16:9 --v 6.0 --no grid, clouds, fog, isometric"
+    },
+    {
+      "id": "klang-tinderne",
+      "name": "Klang-Tinderne",
+      "prompt": "An illustrated top-down regional map of [high mountain peaks]. Region in Klang-Dalene. Fantasy landscape with distinct magical features. Local terrain: mountain.. Focus on connectivity: clear dirt roads connecting small village clusters. Varied terrain: patches of forest, farmland, and hills. Icons indicating towns (squares) and a large Capitol (castle icon). Style of a high-definition RPG game map. --ar 16:9 --v 6.0 --no grid, clouds, fog, isometric"
+    },
+    {
+      "id": "spiral-dybet",
+      "name": "Spiral-Dybet",
+      "prompt": "An illustrated top-down regional map of [coastal valley]. Region in Klang-Dalene. Fantasy landscape with distinct magical features. Local terrain: city.. Focus on connectivity: clear dirt roads connecting small village clusters. Varied terrain: patches of forest, farmland, and hills. Icons indicating towns (squares) and a large Capitol (castle icon). Style of a high-definition RPG game map. --ar 16:9 --v 6.0 --no grid, clouds, fog, isometric"
+    },
+    {
+      "id": "den-soede-kyst",
+      "name": "Den Søde Kyst",
+      "prompt": "An illustrated top-down regional map of [coastal valley]. Region in Sølvtunge-Næsset. Fantasy landscape with distinct magical features. Local terrain: .. Focus on connectivity: clear dirt roads connecting small village clusters. Varied terrain: patches of forest, farmland, and hills. Icons indicating towns (squares) and a large Capitol (castle icon). Style of a high-definition RPG game map. --ar 16:9 --v 6.0 --no grid, clouds, fog, isometric"
+    },
+    {
+      "id": "de-sure-sider",
+      "name": "De Sure Sider",
+      "prompt": "An illustrated top-down regional map of [coastal valley]. Region in Sølvtunge-Næsset. Fantasy landscape with distinct magical features. Local terrain: .. Focus on connectivity: clear dirt roads connecting small village clusters. Varied terrain: patches of forest, farmland, and hills. Icons indicating towns (squares) and a large Capitol (castle icon). Style of a high-definition RPG game map. --ar 16:9 --v 6.0 --no grid, clouds, fog, isometric"
+    },
+    {
+      "id": "det-fede-hoejland",
+      "name": "Det Fede Højland",
+      "prompt": "An illustrated top-down regional map of [coastal valley]. Region in Sølvtunge-Næsset. Fantasy landscape with distinct magical features. Local terrain: .. Focus on connectivity: clear dirt roads connecting small village clusters. Varied terrain: patches of forest, farmland, and hills. Icons indicating towns (squares) and a large Capitol (castle icon). Style of a high-definition RPG game map. --ar 16:9 --v 6.0 --no grid, clouds, fog, isometric"
+    },
+    {
+      "id": "kaede-kloeften",
+      "name": "Kæde-Kløften",
+      "prompt": "An illustrated top-down regional map of [coastal valley]. Region in Sølvtunge-Næsset. Fantasy landscape with distinct magical features. Local terrain: .. Focus on connectivity: clear dirt roads connecting small village clusters. Varied terrain: patches of forest, farmland, and hills. Icons indicating towns (squares) and a large Capitol (castle icon). Style of a high-definition RPG game map. --ar 16:9 --v 6.0 --no grid, clouds, fog, isometric"
+    },
+    {
+      "id": "bitter-sumpen",
+      "name": "Bitter-Sumpen",
+      "prompt": "An illustrated top-down regional map of [coastal valley]. Region in Sølvtunge-Næsset. Fantasy landscape with distinct magical features. Local terrain: .. Focus on connectivity: clear dirt roads connecting small village clusters. Varied terrain: patches of forest, farmland, and hills. Icons indicating towns (squares) and a large Capitol (castle icon). Style of a high-definition RPG game map. --ar 16:9 --v 6.0 --no grid, clouds, fog, isometric"
+    },
+    {
+      "id": "lys-oeen",
+      "name": "Lys-Øen",
+      "prompt": "An illustrated top-down regional map of [coastal valley]. Region in Tvillinge-Øerne. Fantasy landscape with distinct magical features. Local terrain: .. Focus on connectivity: clear dirt roads connecting small village clusters. Varied terrain: patches of forest, farmland, and hills. Icons indicating towns (squares) and a large Capitol (castle icon). Style of a high-definition RPG game map. --ar 16:9 --v 6.0 --no grid, clouds, fog, isometric"
+    },
+    {
+      "id": "sten-oeen",
+      "name": "Sten-Øen",
+      "prompt": "An illustrated top-down regional map of [coastal valley]. Region in Tvillinge-Øerne. Fantasy landscape with distinct magical features. Local terrain: .. Focus on connectivity: clear dirt roads connecting small village clusters. Varied terrain: patches of forest, farmland, and hills. Icons indicating towns (squares) and a large Capitol (castle icon). Style of a high-definition RPG game map. --ar 16:9 --v 6.0 --no grid, clouds, fog, isometric"
+    },
+    {
+      "id": "broerne",
+      "name": "Broerne",
+      "prompt": "An illustrated top-down regional map of [murky wetland]. Region in Tvillinge-Øerne. Fantasy landscape with distinct magical features. Local terrain: pipes.. Focus on connectivity: clear dirt roads connecting small village clusters. Varied terrain: patches of forest, farmland, and hills. Icons indicating towns (squares) and a large Capitol (castle icon). Style of a high-definition RPG game map. --ar 16:9 --v 6.0 --no grid, clouds, fog, isometric"
+    },
+    {
+      "id": "lagunen",
+      "name": "Lagunen",
+      "prompt": "An illustrated top-down regional map of [coastal valley]. Region in Tvillinge-Øerne. Fantasy landscape with distinct magical features. Local terrain: .. Focus on connectivity: clear dirt roads connecting small village clusters. Varied terrain: patches of forest, farmland, and hills. Icons indicating towns (squares) and a large Capitol (castle icon). Style of a high-definition RPG game map. --ar 16:9 --v 6.0 --no grid, clouds, fog, isometric"
+    },
+    {
+      "id": "gribe-armene",
+      "name": "Gribe-Armene",
+      "prompt": "An illustrated top-down regional map of [coastal valley]. Region in Tvillinge-Øerne. Fantasy landscape with distinct magical features. Local terrain: .. Focus on connectivity: clear dirt roads connecting small village clusters. Varied terrain: patches of forest, farmland, and hills. Icons indicating towns (squares) and a large Capitol (castle icon). Style of a high-definition RPG game map. --ar 16:9 --v 6.0 --no grid, clouds, fog, isometric"
+    },
+    {
+      "id": "vandfaldet",
+      "name": "Vandfaldet",
+      "prompt": "An illustrated top-down regional map of [dense ancient forest]. Region in Ur-Skoven. A primordial jungle of impossible scale, trees piercing the sky, red rivers of thick fluid, massive insects, savage and unchecked growth, green and crimson palette. Local terrain: .. Focus on connectivity: clear dirt roads connecting small village clusters. Varied terrain: patches of forest, farmland, and hills. Icons indicating towns (squares) and a large Capitol (castle icon). Style of a high-definition RPG game map. --ar 16:9 --v 6.0 --no grid, clouds, fog, isometric"
+    },
+    {
+      "id": "de-roede-sletter",
+      "name": "De Røde Sletter",
+      "prompt": "An illustrated top-down regional map of [dense ancient forest]. Region in Ur-Skoven. A primordial jungle of impossible scale, trees piercing the sky, red rivers of thick fluid, massive insects, savage and unchecked growth, green and crimson palette. Local terrain: swamp.. Focus on connectivity: clear dirt roads connecting small village clusters. Varied terrain: patches of forest, farmland, and hills. Icons indicating towns (squares) and a large Capitol (castle icon). Style of a high-definition RPG game map. --ar 16:9 --v 6.0 --no grid, clouds, fog, isometric"
+    },
+    {
+      "id": "ur-junglen",
+      "name": "Ur-Junglen",
+      "prompt": "An illustrated top-down regional map of [dense ancient forest]. Region in Ur-Skoven. A primordial jungle of impossible scale, trees piercing the sky, red rivers of thick fluid, massive insects, savage and unchecked growth, green and crimson palette. Local terrain: .. Focus on connectivity: clear dirt roads connecting small village clusters. Varied terrain: patches of forest, farmland, and hills. Icons indicating towns (squares) and a large Capitol (castle icon). Style of a high-definition RPG game map. --ar 16:9 --v 6.0 --no grid, clouds, fog, isometric"
+    },
+    {
+      "id": "muren",
+      "name": "Muren",
+      "prompt": "An illustrated top-down regional map of [dense ancient forest]. Region in Ur-Skoven. A primordial jungle of impossible scale, trees piercing the sky, red rivers of thick fluid, massive insects, savage and unchecked growth, green and crimson palette. Local terrain: .. Focus on connectivity: clear dirt roads connecting small village clusters. Varied terrain: patches of forest, farmland, and hills. Icons indicating towns (squares) and a large Capitol (castle icon). Style of a high-definition RPG game map. --ar 16:9 --v 6.0 --no grid, clouds, fog, isometric"
+    },
+    {
+      "id": "passagen",
+      "name": "Passagen",
+      "prompt": "An illustrated top-down regional map of [dense ancient forest]. Region in Ur-Skoven. A primordial jungle of impossible scale, trees piercing the sky, red rivers of thick fluid, massive insects, savage and unchecked growth, green and crimson palette. Local terrain: swamp.. Focus on connectivity: clear dirt roads connecting small village clusters. Varied terrain: patches of forest, farmland, and hills. Icons indicating towns (squares) and a large Capitol (castle icon). Style of a high-definition RPG game map. --ar 16:9 --v 6.0 --no grid, clouds, fog, isometric"
+    },
+    {
+      "id": "det-rene-rand",
+      "name": "Det Rene Rand",
+      "prompt": "An illustrated top-down regional map of [murky wetland]. Region in Slam-Sumpen. Fantasy landscape with distinct magical features. Local terrain: .. Focus on connectivity: clear dirt roads connecting small village clusters. Varied terrain: patches of forest, farmland, and hills. Icons indicating towns (squares) and a large Capitol (castle icon). Style of a high-definition RPG game map. --ar 16:9 --v 6.0 --no grid, clouds, fog, isometric"
+    },
+    {
+      "id": "roer-sumpen",
+      "name": "Rør-Sumpen",
+      "prompt": "An illustrated top-down regional map of [murky wetland]. Region in Slam-Sumpen. Fantasy landscape with distinct magical features. Local terrain: city, pipes, mud.. Focus on connectivity: clear dirt roads connecting small village clusters. Varied terrain: patches of forest, farmland, and hills. Icons indicating towns (squares) and a large Capitol (castle icon). Style of a high-definition RPG game map. --ar 16:9 --v 6.0 --no grid, clouds, fog, isometric"
+    },
+    {
+      "id": "de-gule-sletter",
+      "name": "De Gule Sletter",
+      "prompt": "An illustrated top-down regional map of [murky wetland]. Region in Slam-Sumpen. Fantasy landscape with distinct magical features. Local terrain: crystal.. Focus on connectivity: clear dirt roads connecting small village clusters. Varied terrain: patches of forest, farmland, and hills. Icons indicating towns (squares) and a large Capitol (castle icon). Style of a high-definition RPG game map. --ar 16:9 --v 6.0 --no grid, clouds, fog, isometric"
+    },
+    {
+      "id": "deltaet",
+      "name": "Deltaet",
+      "prompt": "An illustrated top-down regional map of [murky wetland]. Region in Slam-Sumpen. Fantasy landscape with distinct magical features. Local terrain: harbor.. Focus on connectivity: clear dirt roads connecting small village clusters. Varied terrain: patches of forest, farmland, and hills. Icons indicating towns (squares) and a large Capitol (castle icon). Style of a high-definition RPG game map. --ar 16:9 --v 6.0 --no grid, clouds, fog, isometric"
+    },
+    {
+      "id": "vulkanen",
+      "name": "Vulkanen",
+      "prompt": "An illustrated top-down regional map of [high mountain peaks]. Region in Slam-Sumpen. Fantasy landscape with distinct magical features. Local terrain: mountain.. Focus on connectivity: clear dirt roads connecting small village clusters. Varied terrain: patches of forest, farmland, and hills. Icons indicating towns (squares) and a large Capitol (castle icon). Style of a high-definition RPG game map. --ar 16:9 --v 6.0 --no grid, clouds, fog, isometric"
+    }
+  ],
+  "cities": [
+    {
+      "id": "neo-spiret",
+      "name": "Neo-Spiret",
+      "prompt": "A strict top-down orthographic city map of [mountain stronghold], Bygget vertikalt op ad bjergsiden med svævebaner.. Settlement located in Isse-Toppen. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city, light. Layout: Bygget vertikalt op ad bjergsiden med svævebaner... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "nord-porten",
+      "name": "Nord-Porten",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Udhugget i selve klippen i store spiralmønstre.. Fortress City located in Isse-Toppen. Aesthetic: Fantasy landscape with distinct magical features. distinct features: fortress. Layout: Udhugget i selve klippen i store spiralmønstre... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "akademiet",
+      "name": "Akademiet",
+      "prompt": "A strict top-down orthographic city map of [mystical crystal spire city], Består af høje tårne forbundet med lyn-afledere.. Settlement located in Isse-Toppen. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: Består af høje tårne forbundet med lyn-afledere... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "boghvaelvet",
+      "name": "Boghvælvet",
+      "prompt": "A strict top-down orthographic city map of [mountain stronghold], Bygget vertikalt op ad bjergsiden med svævebaner.. Settlement located in Minde-Dalene. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: Bygget vertikalt op ad bjergsiden med svævebaner... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "glemme-hullet",
+      "name": "Glemme-Hullet",
+      "prompt": "A strict top-down orthographic city map of [mystical crystal spire city], Består af høje tårne forbundet med lyn-afledere.. Settlement located in Minde-Dalene. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: Består af høje tårne forbundet med lyn-afledere... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "ekkoby",
+      "name": "Ekkoby",
+      "prompt": "A strict top-down orthographic city map of [mountain stronghold], Består af høje tårne forbundet med lyn-afledere.. Mountain City located in Minde-Dalene. Aesthetic: Fantasy landscape with distinct magical features. distinct features: mountain, city. Layout: Består af høje tårne forbundet med lyn-afledere... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "gnister",
+      "name": "Gnister",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Udhugget i selve klippen i store spiralmønstre.. Settlement located in Storm-Fladen. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: Udhugget i selve klippen i store spiralmønstre... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "banegaarden",
+      "name": "Banegården",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], En labyrint af biblioteker og læsesale.. Settlement located in Storm-Fladen. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: En labyrint af biblioteker og læsesale... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "fabrikken",
+      "name": "Fabrikken",
+      "prompt": "A strict top-down orthographic city map of [mystical crystal spire city], Består af høje tårne forbundet med lyn-afledere.. Settlement located in Storm-Fladen. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: Består af høje tårne forbundet med lyn-afledere... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "spejlet",
+      "name": "Spejlet",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], En labyrint af biblioteker og læsesale.. Settlement located in Skygge-Dalen. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city, light. Layout: En labyrint af biblioteker og læsesale... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "illusiona",
+      "name": "Illusiona",
+      "prompt": "A strict top-down orthographic city map of [mountain stronghold], Bygget vertikalt op ad bjergsiden med svævebaner.. Settlement located in Skygge-Dalen. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: Bygget vertikalt op ad bjergsiden med svævebaner... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "havne-porten",
+      "name": "Havne-Porten",
+      "prompt": "A strict top-down orthographic city map of [mountain stronghold], Bygget vertikalt op ad bjergsiden med svævebaner.. Settlement located in Roden. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: Bygget vertikalt op ad bjergsiden med svævebaner... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "skjulestedet",
+      "name": "Skjulestedet",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Udhugget i selve klippen i store spiralmønstre.. Settlement located in Roden. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: Udhugget i selve klippen i store spiralmønstre... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "regnbuen",
+      "name": "Regnbuen",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Huse lavet af envejs-spejle.. Settlement located in Prisme-Ringen. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city, light. Layout: Huse lavet af envejs-spejle... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "glimt",
+      "name": "Glimt",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Skjult bag en permanent illusion.. Settlement located in Prisme-Ringen. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: Skjult bag en permanent illusion... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "feriebyen",
+      "name": "Feriebyen",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Skjult bag en permanent illusion.. Settlement located in Prisme-Ringen. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: Skjult bag en permanent illusion... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "mosaik",
+      "name": "Mosaik",
+      "prompt": "A strict top-down orthographic city map of [mystical crystal spire city], Bygninger af krystal der bryder lyset.. Settlement located in Prisme-Ringen. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: Bygninger af krystal der bryder lyset... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "soelv-muren",
+      "name": "Sølv-Muren",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Skjult bag en permanent illusion.. Fortress City located in Det Hvide Øde. Aesthetic: Fantasy landscape with distinct magical features. distinct features: fortress. Layout: Skjult bag en permanent illusion... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "posten",
+      "name": "Posten",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Huse lavet af envejs-spejle.. Settlement located in Det Hvide Øde. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: Huse lavet af envejs-spejle... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "bruddet",
+      "name": "Bruddet",
+      "prompt": "A strict top-down orthographic city map of [mystical crystal spire city], Bygninger af krystal der bryder lyset.. Settlement located in Det Hvide Øde. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: Bygninger af krystal der bryder lyset... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "de-blindes-by",
+      "name": "De Blindes By",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Huse lavet af envejs-spejle.. Settlement located in Det Hvide Øde. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: Huse lavet af envejs-spejle... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "skygge-vuggen",
+      "name": "Skygge-Vuggen",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Huse lavet af envejs-spejle.. Settlement located in Dybet. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: Huse lavet af envejs-spejle... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "handels-bredden",
+      "name": "Handels-Bredden",
+      "prompt": "A strict top-down orthographic city map of [mystical crystal spire city], Bygninger af krystal der bryder lyset.. Settlement located in Dybet. Aesthetic: Fantasy landscape with distinct magical features. distinct features: light, darkness. Layout: Bygninger af krystal der bryder lyset... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "obsidian",
+      "name": "Obsidian",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Svævende platforme over det mørke vand.. Fortress City located in Dybet. Aesthetic: Fantasy landscape with distinct magical features. distinct features: fortress. Layout: Svævende platforme over det mørke vand... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "salt-havnen",
+      "name": "Salt-Havnen",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Svævende platforme over det mørke vand.. Settlement located in Tåre-Kysten. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: Svævende platforme over det mørke vand... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "aale-byen",
+      "name": "Åle-Byen",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Huse lavet af envejs-spejle.. Settlement located in Tåre-Kysten. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: Huse lavet af envejs-spejle... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "taagen",
+      "name": "Tågen",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Svævende platforme over det mørke vand.. Settlement located in Tåre-Kysten. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: Svævende platforme over det mørke vand... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "udkigget",
+      "name": "Udkigget",
+      "prompt": "A strict top-down orthographic city map of [mountain stronghold], Svævende platforme over det mørke vand.. Mountain City located in Baglandet. Aesthetic: Fantasy landscape with distinct magical features. distinct features: mountain. Layout: Svævende platforme over det mørke vand... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "pletten",
+      "name": "Pletten",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Skjult bag en permanent illusion.. Settlement located in Baglandet. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: Skjult bag en permanent illusion... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "vagtposten",
+      "name": "Vagtposten",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Skjult bag en permanent illusion.. Fortress City located in Baglandet. Aesthetic: Fantasy landscape with distinct magical features. distinct features: fortress. Layout: Skjult bag en permanent illusion... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "raabe-havn",
+      "name": "Råbe-Havn",
+      "prompt": "A strict top-down orthographic city map of [bustling port city], Bygget af hule sten, der synger i vinden.. Port City located in Læ-Kysten. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city, harbor. Layout: Bygget af hule sten, der synger i vinden... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "odden",
+      "name": "Odden",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Formet som et amfiteater for at fange lyden.. Settlement located in Læ-Kysten. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: Formet som et amfiteater for at fange lyden... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "vagten",
+      "name": "Vagten",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Hænger som vindspil fra klipperne.. Fortress City located in Læ-Kysten. Aesthetic: Fantasy landscape with distinct magical features. distinct features: fortress. Layout: Hænger som vindspil fra klipperne... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "moellerne",
+      "name": "Møllerne",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], En tavs by under jorden.. Settlement located in Læ-Kysten. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: En tavs by under jorden... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "den-haengende-by",
+      "name": "Den Hængende By",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], En tavs by under jorden.. Settlement located in Hyle-Kløften. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: En tavs by under jorden... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "voks-minen",
+      "name": "Voks-Minen",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], En tavs by under jorden.. Settlement located in Hyle-Kløften. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: En tavs by under jorden... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "vind-stop",
+      "name": "Vind-Stop",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Formet som et amfiteater for at fange lyden.. Settlement located in Hyle-Kløften. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: Formet som et amfiteater for at fange lyden... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "telt-byen",
+      "name": "Telt-Byen",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], En tavs by under jorden.. Settlement located in Tromme-Sletten. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: En tavs by under jorden... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "klokke-by",
+      "name": "Klokke-By",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Formet som et amfiteater for at fange lyden.. Settlement located in Tromme-Sletten. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: Formet som et amfiteater for at fange lyden... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "dyb-bas",
+      "name": "Dyb-Bas",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], En tavs by under jorden.. Settlement located in Tromme-Sletten. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: En tavs by under jorden... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "linedanseren",
+      "name": "Linedanseren",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Bygget af hule sten, der synger i vinden.. Settlement located in Klang-Tinderne. Aesthetic: Fantasy landscape with distinct magical features. distinct features: tower. Layout: Bygget af hule sten, der synger i vinden... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "smedjen",
+      "name": "Smedjen",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Formet som et amfiteater for at fange lyden.. Settlement located in Klang-Tinderne. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: Formet som et amfiteater for at fange lyden... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "klosteret",
+      "name": "Klosteret",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Hænger som vindspil fra klipperne.. Settlement located in Klang-Tinderne. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: Hænger som vindspil fra klipperne... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "sneglehuset",
+      "name": "Sneglehuset",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Hænger som vindspil fra klipperne.. Settlement located in Spiral-Dybet. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: Hænger som vindspil fra klipperne... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "hyletonen",
+      "name": "Hyletonen",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Hænger som vindspil fra klipperne.. Settlement located in Spiral-Dybet. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: Hænger som vindspil fra klipperne... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "glas-byen",
+      "name": "Glas-Byen",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], En tavs by under jorden.. Settlement located in Spiral-Dybet. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: En tavs by under jorden... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "sukker-havn",
+      "name": "Sukker-Havn",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Store åbne markedspladser og banket-haller.. Settlement located in Den Søde Kyst. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city, light. Layout: Store åbne markedspladser og banket-haller... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "karamel",
+      "name": "Karamel",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Store åbne markedspladser og banket-haller.. Settlement located in Den Søde Kyst. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: Store åbne markedspladser og banket-haller... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "smiger",
+      "name": "Smiger",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Huse bygget ovenpå gamle kæmperuiner.. Settlement located in Den Søde Kyst. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: Huse bygget ovenpå gamle kæmperuiner... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "slik-byen",
+      "name": "Slik-Byen",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Vandveje i stedet for gader (Venedig-stil).. Settlement located in Den Søde Kyst. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: Vandveje i stedet for gader (Venedig-stil)... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "lage-byen",
+      "name": "Lage-Byen",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Befæstet mod jordskælv med tunge jernkæder.. Settlement located in De Sure Sider. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: Befæstet mod jordskælv med tunge jernkæder... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "citron-lunden",
+      "name": "Citron-Lunden",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Store åbne markedspladser og banket-haller.. Settlement located in De Sure Sider. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: Store åbne markedspladser og banket-haller... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "gaeringen",
+      "name": "Gæringen",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Befæstet mod jordskælv med tunge jernkæder.. Settlement located in De Sure Sider. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: Befæstet mod jordskælv med tunge jernkæder... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "krydderiet",
+      "name": "Krydderiet",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Befæstet mod jordskælv med tunge jernkæder.. Settlement located in De Sure Sider. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: Befæstet mod jordskælv med tunge jernkæder... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "banketten",
+      "name": "Banketten",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Store åbne markedspladser og banket-haller.. Settlement located in Det Fede Højland. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: Store åbne markedspladser og banket-haller... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "kvaeg-markedet",
+      "name": "Kvæg-Markedet",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Huse bygget ovenpå gamle kæmperuiner.. Settlement located in Det Fede Højland. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: Huse bygget ovenpå gamle kæmperuiner... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "suppe-badet",
+      "name": "Suppe-Badet",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Vandveje i stedet for gader (Venedig-stil).. Settlement located in Det Fede Højland. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: Vandveje i stedet for gader (Venedig-stil)... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "troeffel-skoven",
+      "name": "Trøffel-Skoven",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Store åbne markedspladser og banket-haller.. Settlement located in Det Fede Højland. Aesthetic: Fantasy landscape with distinct magical features. distinct features: forest. Layout: Store åbne markedspladser og banket-haller... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "ankeret",
+      "name": "Ankeret",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Store åbne markedspladser og banket-haller.. Settlement located in Kæde-Kløften. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: Store åbne markedspladser og banket-haller... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "lejren",
+      "name": "Lejren",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Store åbne markedspladser og banket-haller.. Settlement located in Kæde-Kløften. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: Store åbne markedspladser og banket-haller... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "knuden",
+      "name": "Knuden",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Store åbne markedspladser og banket-haller.. Settlement located in Kæde-Kløften. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: Store åbne markedspladser og banket-haller... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "gift-fortet",
+      "name": "Gift-Fortet",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Store åbne markedspladser og banket-haller.. Fortress City located in Bitter-Sumpen. Aesthetic: Fantasy landscape with distinct magical features. distinct features: fortress. Layout: Store åbne markedspladser og banket-haller... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "laboratoriet",
+      "name": "Laboratoriet",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Store åbne markedspladser og banket-haller.. Settlement located in Bitter-Sumpen. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: Store åbne markedspladser og banket-haller... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "smugler-hulen",
+      "name": "Smugler-Hulen",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Vandveje i stedet for gader (Venedig-stil).. Settlement located in Bitter-Sumpen. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: Vandveje i stedet for gader (Venedig-stil)... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "urtesamlerne",
+      "name": "Urtesamlerne",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Store åbne markedspladser og banket-haller.. Settlement located in Bitter-Sumpen. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: Store åbne markedspladser og banket-haller... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "tvillinge-taarnet",
+      "name": "Tvillinge-Tårnet",
+      "prompt": "A strict top-down orthographic city map of [mystical crystal spire city], Bygget på undersiden af en svæve-ø.. Settlement located in Lys-Øen. Aesthetic: Fantasy landscape with distinct magical features. distinct features: tower, light, crystal. Layout: Bygget på undersiden af en svæve-ø... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "blomsten",
+      "name": "Blomsten",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Huse der ændrer form efter beboernes humør.. Settlement located in Lys-Øen. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: Huse der ændrer form efter beboernes humør... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "boblerne",
+      "name": "Boblerne",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Svævende øer forbundet med energibroer.. Settlement located in Lys-Øen. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: Svævende øer forbundet med energibroer... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "lunden",
+      "name": "Lunden",
+      "prompt": "A strict top-down orthographic city map of [mystical crystal spire city], Krystallinske strukturer der vokser organisk.. Settlement located in Lys-Øen. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: Krystallinske strukturer der vokser organisk... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "skjold-borgen",
+      "name": "Skjold-Borgen",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Svævende øer forbundet med energibroer.. Fortress City located in Sten-Øen. Aesthetic: Fantasy landscape with distinct magical features. distinct features: fortress. Layout: Svævende øer forbundet med energibroer... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "sten-bruddet",
+      "name": "Sten-Bruddet",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Huse der ændrer form efter beboernes humør.. Settlement located in Sten-Øen. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: Huse der ændrer form efter beboernes humør... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "reden",
+      "name": "Reden",
+      "prompt": "A strict top-down orthographic city map of [mystical crystal spire city], Krystallinske strukturer der vokser organisk.. Settlement located in Sten-Øen. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: Krystallinske strukturer der vokser organisk... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "hav-udkigget",
+      "name": "Hav-Udkigget",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Bygget på undersiden af en svæve-ø.. Settlement located in Sten-Øen. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: Bygget på undersiden af en svæve-ø... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "flimmer-by",
+      "name": "Flimmer-By",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Huse der ændrer form efter beboernes humør.. Settlement located in Broerne. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: Huse der ændrer form efter beboernes humør... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "pumpen",
+      "name": "Pumpen",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Huse der ændrer form efter beboernes humør.. Settlement located in Broerne. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: Huse der ændrer form efter beboernes humør... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "toldboden",
+      "name": "Toldboden",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Bygget på undersiden af en svæve-ø.. Settlement located in Broerne. Aesthetic: Fantasy landscape with distinct magical features. distinct features: tower. Layout: Bygget på undersiden af en svæve-ø... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "den-formloese-by",
+      "name": "Den Formløse By",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Bygget på undersiden af en svæve-ø.. Settlement located in Lagunen. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: Bygget på undersiden af en svæve-ø... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "markedet",
+      "name": "Markedet",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Svævende øer forbundet med energibroer.. Settlement located in Lagunen. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: Svævende øer forbundet med energibroer... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "boblen",
+      "name": "Boblen",
+      "prompt": "A strict top-down orthographic city map of [mystical crystal spire city], Krystallinske strukturer der vokser organisk.. Settlement located in Lagunen. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: Krystallinske strukturer der vokser organisk... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "faestet",
+      "name": "Fæstet",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Huse der ændrer form efter beboernes humør.. Fortress City located in Gribe-Armene. Aesthetic: Fantasy landscape with distinct magical features. distinct features: fortress. Layout: Huse der ændrer form efter beboernes humør... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "svampen",
+      "name": "Svampen",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Bygget på undersiden af en svæve-ø.. Settlement located in Gribe-Armene. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: Bygget på undersiden af en svæve-ø... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "kanten",
+      "name": "Kanten",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Svævende øer forbundet med energibroer.. Settlement located in Gribe-Armene. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: Svævende øer forbundet med energibroer... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "nedslaget",
+      "name": "Nedslaget",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Huler bag ved blod-røde vandfald.. Settlement located in Vandfaldet. Aesthetic: A primordial jungle of impossible scale, trees piercing the sky, red rivers of thick fluid, massive insects, savage and unchecked growth, green and crimson palette. distinct features: city. Layout: Huler bag ved blod-røde vandfald... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "skummet",
+      "name": "Skummet",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Huler bag ved blod-røde vandfald.. Settlement located in Vandfaldet. Aesthetic: A primordial jungle of impossible scale, trees piercing the sky, red rivers of thick fluid, massive insects, savage and unchecked growth, green and crimson palette. distinct features: city. Layout: Huler bag ved blod-røde vandfald... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "daemningen",
+      "name": "Dæmningen",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Huler bag ved blod-røde vandfald.. Fortress City located in Vandfaldet. Aesthetic: A primordial jungle of impossible scale, trees piercing the sky, red rivers of thick fluid, massive insects, savage and unchecked growth, green and crimson palette. distinct features: fortress. Layout: Huler bag ved blod-røde vandfald... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "ly",
+      "name": "Ly",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Platforme i trækronerne.. Settlement located in Vandfaldet. Aesthetic: A primordial jungle of impossible scale, trees piercing the sky, red rivers of thick fluid, massive insects, savage and unchecked growth, green and crimson palette. distinct features: city. Layout: Platforme i trækronerne... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "blod-staden",
+      "name": "Blod-Staden",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Huler bag ved blod-røde vandfald.. Settlement located in De Røde Sletter. Aesthetic: A primordial jungle of impossible scale, trees piercing the sky, red rivers of thick fluid, massive insects, savage and unchecked growth, green and crimson palette. distinct features: city, bones. Layout: Huler bag ved blod-røde vandfald... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "slammet",
+      "name": "Slammet",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Bygget af levende knogler og planter.. Settlement located in De Røde Sletter. Aesthetic: A primordial jungle of impossible scale, trees piercing the sky, red rivers of thick fluid, massive insects, savage and unchecked growth, green and crimson palette. distinct features: . Layout: Bygget af levende knogler og planter... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "salven",
+      "name": "Salven",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Platforme i trækronerne.. Settlement located in De Røde Sletter. Aesthetic: A primordial jungle of impossible scale, trees piercing the sky, red rivers of thick fluid, massive insects, savage and unchecked growth, green and crimson palette. distinct features: . Layout: Platforme i trækronerne... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "toerken",
+      "name": "Tørken",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Platforme i trækronerne.. Settlement located in De Røde Sletter. Aesthetic: A primordial jungle of impossible scale, trees piercing the sky, red rivers of thick fluid, massive insects, savage and unchecked growth, green and crimson palette. distinct features: city. Layout: Platforme i trækronerne... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "lys-dalen",
+      "name": "Lys-Dalen",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Bygget af levende knogler og planter.. Settlement located in Ur-Junglen. Aesthetic: A primordial jungle of impossible scale, trees piercing the sky, red rivers of thick fluid, massive insects, savage and unchecked growth, green and crimson palette. distinct features: city. Layout: Bygget af levende knogler og planter... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "jungle-lejren",
+      "name": "Jungle-Lejren",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Træhuse bygget ind i gigantiske trærødder.. Settlement located in Ur-Junglen. Aesthetic: A primordial jungle of impossible scale, trees piercing the sky, red rivers of thick fluid, massive insects, savage and unchecked growth, green and crimson palette. distinct features: . Layout: Træhuse bygget ind i gigantiske trærødder... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "mutation",
+      "name": "Mutation",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Bygget af levende knogler og planter.. Settlement located in Ur-Junglen. Aesthetic: A primordial jungle of impossible scale, trees piercing the sky, red rivers of thick fluid, massive insects, savage and unchecked growth, green and crimson palette. distinct features: city. Layout: Bygget af levende knogler og planter... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "spiren",
+      "name": "Spiren",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Huler bag ved blod-røde vandfald.. Settlement located in Ur-Junglen. Aesthetic: A primordial jungle of impossible scale, trees piercing the sky, red rivers of thick fluid, massive insects, savage and unchecked growth, green and crimson palette. distinct features: . Layout: Huler bag ved blod-røde vandfald... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "bjergborgen",
+      "name": "Bjergborgen",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Huler bag ved blod-røde vandfald.. Fortress City located in Muren. Aesthetic: A primordial jungle of impossible scale, trees piercing the sky, red rivers of thick fluid, massive insects, savage and unchecked growth, green and crimson palette. distinct features: fortress. Layout: Huler bag ved blod-røde vandfald... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "mur-minen",
+      "name": "Mur-Minen",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Platforme i trækronerne.. Settlement located in Muren. Aesthetic: A primordial jungle of impossible scale, trees piercing the sky, red rivers of thick fluid, massive insects, savage and unchecked growth, green and crimson palette. distinct features: . Layout: Platforme i trækronerne... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "mur-udkigget",
+      "name": "Mur-Udkigget",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Huler bag ved blod-røde vandfald.. Settlement located in Muren. Aesthetic: A primordial jungle of impossible scale, trees piercing the sky, red rivers of thick fluid, massive insects, savage and unchecked growth, green and crimson palette. distinct features: . Layout: Huler bag ved blod-røde vandfald... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "vaeveren",
+      "name": "Væveren",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Platforme i trækronerne.. Settlement located in Muren. Aesthetic: A primordial jungle of impossible scale, trees piercing the sky, red rivers of thick fluid, massive insects, savage and unchecked growth, green and crimson palette. distinct features: . Layout: Platforme i trækronerne... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "skov-porten",
+      "name": "Skov-Porten",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Træhuse bygget ind i gigantiske trærødder.. Settlement located in Passagen. Aesthetic: A primordial jungle of impossible scale, trees piercing the sky, red rivers of thick fluid, massive insects, savage and unchecked growth, green and crimson palette. distinct features: light. Layout: Træhuse bygget ind i gigantiske trærødder... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "komposten",
+      "name": "Komposten",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Træhuse bygget ind i gigantiske trærødder.. Settlement located in Passagen. Aesthetic: A primordial jungle of impossible scale, trees piercing the sky, red rivers of thick fluid, massive insects, savage and unchecked growth, green and crimson palette. distinct features: city. Layout: Træhuse bygget ind i gigantiske trærødder... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "mose-taagen",
+      "name": "Mose-Tågen",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Træhuse bygget ind i gigantiske trærødder.. Settlement located in Passagen. Aesthetic: A primordial jungle of impossible scale, trees piercing the sky, red rivers of thick fluid, massive insects, savage and unchecked growth, green and crimson palette. distinct features: . Layout: Træhuse bygget ind i gigantiske trærødder... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "skov-udloebet",
+      "name": "Skov-Udløbet",
+      "prompt": "A strict top-down orthographic city map of [bustling port city], Træhuse bygget ind i gigantiske trærødder.. Port City located in Passagen. Aesthetic: A primordial jungle of impossible scale, trees piercing the sky, red rivers of thick fluid, massive insects, savage and unchecked growth, green and crimson palette. distinct features: swamp, harbor. Layout: Træhuse bygget ind i gigantiske trærødder... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "det-hvide-taarn",
+      "name": "Det Hvide Tårn",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Underjordiske bunkere.. Settlement located in Det Rene Rand. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: Underjordiske bunkere... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "renseren",
+      "name": "Renseren",
+      "prompt": "A strict top-down orthographic city map of [mystical crystal spire city], Hermetisk lukkede glastårne.. Settlement located in Det Rene Rand. Aesthetic: Fantasy landscape with distinct magical features. distinct features: pipes. Layout: Hermetisk lukkede glastårne... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "kapslen",
+      "name": "Kapslen",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Underjordiske bunkere.. Fortress City located in Det Rene Rand. Aesthetic: Fantasy landscape with distinct magical features. distinct features: fortress. Layout: Underjordiske bunkere... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "karantaenen",
+      "name": "Karantænen",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Flydende platforme på syre-søer.. Settlement located in Det Rene Rand. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: Flydende platforme på syre-søer... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "klumpe-by",
+      "name": "Klumpe-By",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Underjordiske bunkere.. Settlement located in Rør-Sumpen. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city, pipes. Layout: Underjordiske bunkere... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "goedningen",
+      "name": "Gødningen",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Rustne metalstrukturer og rør-systemer.. Settlement located in Rør-Sumpen. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: Rustne metalstrukturer og rør-systemer... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "ventilen",
+      "name": "Ventilen",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Rustne metalstrukturer og rør-systemer.. Settlement located in Rør-Sumpen. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: Rustne metalstrukturer og rør-systemer... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "syre-badet",
+      "name": "Syre-Badet",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Rustne metalstrukturer og rør-systemer.. Settlement located in Rør-Sumpen. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: Rustne metalstrukturer og rør-systemer... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "stenbruddet",
+      "name": "Stenbruddet",
+      "prompt": "A strict top-down orthographic city map of [mountain stronghold], Hermetisk lukkede glastårne.. Mountain City located in De Gule Sletter. Aesthetic: Fantasy landscape with distinct magical features. distinct features: mountain, crystal. Layout: Hermetisk lukkede glastårne... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "salt-byen",
+      "name": "Salt-Byen",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Flydende platforme på syre-søer.. Settlement located in De Gule Sletter. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: Flydende platforme på syre-søer... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "arenaen",
+      "name": "Arenaen",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Rustne metalstrukturer og rør-systemer.. Settlement located in De Gule Sletter. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: Rustne metalstrukturer og rør-systemer... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "passet",
+      "name": "Passet",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Flydende platforme på syre-søer.. Fortress City located in De Gule Sletter. Aesthetic: Fantasy landscape with distinct magical features. distinct features: fortress. Layout: Flydende platforme på syre-søer... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "den-gyldne-havn",
+      "name": "Den Gyldne Havn",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Flydende platforme på syre-søer.. Settlement located in Deltaet. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: Flydende platforme på syre-søer... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "bunden",
+      "name": "Bunden",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Flydende platforme på syre-søer.. Settlement located in Deltaet. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: Flydende platforme på syre-søer... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "giften",
+      "name": "Giften",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Underjordiske bunkere.. Settlement located in Deltaet. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: Underjordiske bunkere... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "puls-byen",
+      "name": "Puls-Byen",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Flydende platforme på syre-søer.. Settlement located in Vulkanen. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: Flydende platforme på syre-søer... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "kuren",
+      "name": "Kuren",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Flydende platforme på syre-søer.. Settlement located in Vulkanen. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: Flydende platforme på syre-søer... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    },
+    {
+      "id": "minen",
+      "name": "Minen",
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Rustne metalstrukturer og rør-systemer.. Settlement located in Vulkanen. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: Rustne metalstrukturer og rør-systemer... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+    }
+  ],
+  "battlemaps": [
+    {
+      "id": "isse-toppen-encounter",
+      "name": "Isse-Toppen Encounter",
+      "prompt": "A top-down tabletop RPG battlemap of [coastal valley wilderness ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: sunlit day. Texture: grass and dirt. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "neo-spiret-encounter",
+      "name": "Neo-Spiret Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [mountain stronghold street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "nord-porten-encounter",
+      "name": "Nord-Porten Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "akademiet-encounter",
+      "name": "Akademiet Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [mystical crystal spire city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "minde-dalene-encounter",
+      "name": "Minde-Dalene Encounter",
+      "prompt": "A top-down tabletop RPG battlemap of [coastal valley wilderness ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: sunlit day. Texture: grass and dirt. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "boghvaelvet-encounter",
+      "name": "Boghvælvet Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [mountain stronghold street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "glemme-hullet-encounter",
+      "name": "Glemme-Hullet Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [mystical crystal spire city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "ekkoby-encounter",
+      "name": "Ekkoby Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [mountain stronghold street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "storm-fladen-encounter",
+      "name": "Storm-Fladen Encounter",
+      "prompt": "A top-down tabletop RPG battlemap of [coastal valley wilderness ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: sunlit day. Texture: grass and dirt. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "gnister-encounter",
+      "name": "Gnister Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "banegaarden-encounter",
+      "name": "Banegården Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "fabrikken-encounter",
+      "name": "Fabrikken Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [mystical crystal spire city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "skygge-dalen-encounter",
+      "name": "Skygge-Dalen Encounter",
+      "prompt": "A top-down tabletop RPG battlemap of [high mountain peaks wilderness ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: windy and cold. Texture: cracked stone and snow. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "spejlet-encounter",
+      "name": "Spejlet Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "illusiona-encounter",
+      "name": "Illusiona Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [mountain stronghold street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "roden-encounter",
+      "name": "Roden Encounter",
+      "prompt": "A top-down tabletop RPG battlemap of [high mountain peaks wilderness ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: windy and cold. Texture: cracked stone and snow. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "havne-porten-encounter",
+      "name": "Havne-Porten Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [mountain stronghold street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "skjulestedet-encounter",
+      "name": "Skjulestedet Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "prisme-ringen-encounter",
+      "name": "Prisme-Ringen Encounter",
+      "prompt": "A top-down tabletop RPG battlemap of [dense ancient forest wilderness ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: dappled sunlight through leaves. Texture: forest floor with roots. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "regnbuen-encounter",
+      "name": "Regnbuen Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "glimt-encounter",
+      "name": "Glimt Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "feriebyen-encounter",
+      "name": "Feriebyen Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "mosaik-encounter",
+      "name": "Mosaik Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [mystical crystal spire city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "det-hvide-oede-encounter",
+      "name": "Det Hvide Øde Encounter",
+      "prompt": "A top-down tabletop RPG battlemap of [coastal valley wilderness ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: sunlit day. Texture: grass and dirt. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "soelv-muren-encounter",
+      "name": "Sølv-Muren Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "posten-encounter",
+      "name": "Posten Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "bruddet-encounter",
+      "name": "Bruddet Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [mystical crystal spire city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "de-blindes-by-encounter",
+      "name": "De Blindes By Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "dybet-encounter",
+      "name": "Dybet Encounter",
+      "prompt": "A top-down tabletop RPG battlemap of [coastal valley wilderness ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: sunlit day. Texture: grass and dirt. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "skygge-vuggen-encounter",
+      "name": "Skygge-Vuggen Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "handels-bredden-encounter",
+      "name": "Handels-Bredden Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [mystical crystal spire city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "obsidian-encounter",
+      "name": "Obsidian Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "taare-kysten-encounter",
+      "name": "Tåre-Kysten Encounter",
+      "prompt": "A top-down tabletop RPG battlemap of [coastal valley wilderness ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: sunlit day. Texture: grass and dirt. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "salt-havnen-encounter",
+      "name": "Salt-Havnen Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "aale-byen-encounter",
+      "name": "Åle-Byen Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "taagen-encounter",
+      "name": "Tågen Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "baglandet-encounter",
+      "name": "Baglandet Encounter",
+      "prompt": "A top-down tabletop RPG battlemap of [coastal valley wilderness ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: sunlit day. Texture: grass and dirt. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "udkigget-encounter",
+      "name": "Udkigget Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [mountain stronghold street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "pletten-encounter",
+      "name": "Pletten Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "vagtposten-encounter",
+      "name": "Vagtposten Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "lae-kysten-encounter",
+      "name": "Læ-Kysten Encounter",
+      "prompt": "A top-down tabletop RPG battlemap of [coastal valley wilderness ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: sunlit day. Texture: grass and dirt. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "raabe-havn-encounter",
+      "name": "Råbe-Havn Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [bustling port city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "odden-encounter",
+      "name": "Odden Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "vagten-encounter",
+      "name": "Vagten Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "moellerne-encounter",
+      "name": "Møllerne Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "hyle-kloeften-encounter",
+      "name": "Hyle-Kløften Encounter",
+      "prompt": "A top-down tabletop RPG battlemap of [coastal valley wilderness ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: sunlit day. Texture: grass and dirt. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "den-haengende-by-encounter",
+      "name": "Den Hængende By Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "voks-minen-encounter",
+      "name": "Voks-Minen Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "vind-stop-encounter",
+      "name": "Vind-Stop Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "tromme-sletten-encounter",
+      "name": "Tromme-Sletten Encounter",
+      "prompt": "A top-down tabletop RPG battlemap of [coastal valley wilderness ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: sunlit day. Texture: grass and dirt. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "telt-byen-encounter",
+      "name": "Telt-Byen Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "klokke-by-encounter",
+      "name": "Klokke-By Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "dyb-bas-encounter",
+      "name": "Dyb-Bas Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "klang-tinderne-encounter",
+      "name": "Klang-Tinderne Encounter",
+      "prompt": "A top-down tabletop RPG battlemap of [high mountain peaks wilderness ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: windy and cold. Texture: cracked stone and snow. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "linedanseren-encounter",
+      "name": "Linedanseren Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "smedjen-encounter",
+      "name": "Smedjen Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "klosteret-encounter",
+      "name": "Klosteret Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "spiral-dybet-encounter",
+      "name": "Spiral-Dybet Encounter",
+      "prompt": "A top-down tabletop RPG battlemap of [coastal valley wilderness ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: sunlit day. Texture: grass and dirt. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "sneglehuset-encounter",
+      "name": "Sneglehuset Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "hyletonen-encounter",
+      "name": "Hyletonen Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "glas-byen-encounter",
+      "name": "Glas-Byen Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "den-soede-kyst-encounter",
+      "name": "Den Søde Kyst Encounter",
+      "prompt": "A top-down tabletop RPG battlemap of [coastal valley wilderness ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: sunlit day. Texture: grass and dirt. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "sukker-havn-encounter",
+      "name": "Sukker-Havn Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "karamel-encounter",
+      "name": "Karamel Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "smiger-encounter",
+      "name": "Smiger Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "slik-byen-encounter",
+      "name": "Slik-Byen Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "de-sure-sider-encounter",
+      "name": "De Sure Sider Encounter",
+      "prompt": "A top-down tabletop RPG battlemap of [coastal valley wilderness ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: sunlit day. Texture: grass and dirt. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "lage-byen-encounter",
+      "name": "Lage-Byen Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "citron-lunden-encounter",
+      "name": "Citron-Lunden Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "gaeringen-encounter",
+      "name": "Gæringen Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "krydderiet-encounter",
+      "name": "Krydderiet Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "det-fede-hoejland-encounter",
+      "name": "Det Fede Højland Encounter",
+      "prompt": "A top-down tabletop RPG battlemap of [coastal valley wilderness ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: sunlit day. Texture: grass and dirt. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "banketten-encounter",
+      "name": "Banketten Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "kvaeg-markedet-encounter",
+      "name": "Kvæg-Markedet Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "suppe-badet-encounter",
+      "name": "Suppe-Badet Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "troeffel-skoven-encounter",
+      "name": "Trøffel-Skoven Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "kaede-kloeften-encounter",
+      "name": "Kæde-Kløften Encounter",
+      "prompt": "A top-down tabletop RPG battlemap of [coastal valley wilderness ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: sunlit day. Texture: grass and dirt. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "ankeret-encounter",
+      "name": "Ankeret Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "lejren-encounter",
+      "name": "Lejren Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "knuden-encounter",
+      "name": "Knuden Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "bitter-sumpen-encounter",
+      "name": "Bitter-Sumpen Encounter",
+      "prompt": "A top-down tabletop RPG battlemap of [coastal valley wilderness ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: sunlit day. Texture: grass and dirt. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "gift-fortet-encounter",
+      "name": "Gift-Fortet Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "laboratoriet-encounter",
+      "name": "Laboratoriet Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "smugler-hulen-encounter",
+      "name": "Smugler-Hulen Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "urtesamlerne-encounter",
+      "name": "Urtesamlerne Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "lys-oeen-encounter",
+      "name": "Lys-Øen Encounter",
+      "prompt": "A top-down tabletop RPG battlemap of [coastal valley wilderness ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: sunlit day. Texture: grass and dirt. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "tvillinge-taarnet-encounter",
+      "name": "Tvillinge-Tårnet Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [mystical crystal spire city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "blomsten-encounter",
+      "name": "Blomsten Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "boblerne-encounter",
+      "name": "Boblerne Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "lunden-encounter",
+      "name": "Lunden Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [mystical crystal spire city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "sten-oeen-encounter",
+      "name": "Sten-Øen Encounter",
+      "prompt": "A top-down tabletop RPG battlemap of [coastal valley wilderness ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: sunlit day. Texture: grass and dirt. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "skjold-borgen-encounter",
+      "name": "Skjold-Borgen Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "sten-bruddet-encounter",
+      "name": "Sten-Bruddet Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "reden-encounter",
+      "name": "Reden Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [mystical crystal spire city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "hav-udkigget-encounter",
+      "name": "Hav-Udkigget Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "broerne-encounter",
+      "name": "Broerne Encounter",
+      "prompt": "A top-down tabletop RPG battlemap of [murky wetland wilderness ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: eerie green mist. Texture: mud and dark water. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "flimmer-by-encounter",
+      "name": "Flimmer-By Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "pumpen-encounter",
+      "name": "Pumpen Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "toldboden-encounter",
+      "name": "Toldboden Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "lagunen-encounter",
+      "name": "Lagunen Encounter",
+      "prompt": "A top-down tabletop RPG battlemap of [coastal valley wilderness ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: sunlit day. Texture: grass and dirt. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "den-formloese-by-encounter",
+      "name": "Den Formløse By Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "markedet-encounter",
+      "name": "Markedet Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "boblen-encounter",
+      "name": "Boblen Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [mystical crystal spire city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "gribe-armene-encounter",
+      "name": "Gribe-Armene Encounter",
+      "prompt": "A top-down tabletop RPG battlemap of [coastal valley wilderness ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: sunlit day. Texture: grass and dirt. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "faestet-encounter",
+      "name": "Fæstet Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "svampen-encounter",
+      "name": "Svampen Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "kanten-encounter",
+      "name": "Kanten Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "vandfaldet-encounter",
+      "name": "Vandfaldet Encounter",
+      "prompt": "A top-down tabletop RPG battlemap of [dense ancient forest wilderness ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: dappled sunlight through leaves. Texture: forest floor with roots. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "nedslaget-encounter",
+      "name": "Nedslaget Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "skummet-encounter",
+      "name": "Skummet Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "daemningen-encounter",
+      "name": "Dæmningen Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "ly-encounter",
+      "name": "Ly Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "de-roede-sletter-encounter",
+      "name": "De Røde Sletter Encounter",
+      "prompt": "A top-down tabletop RPG battlemap of [dense ancient forest wilderness ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: dappled sunlight through leaves. Texture: forest floor with roots. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "blod-staden-encounter",
+      "name": "Blod-Staden Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "slammet-encounter",
+      "name": "Slammet Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "salven-encounter",
+      "name": "Salven Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "toerken-encounter",
+      "name": "Tørken Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "ur-junglen-encounter",
+      "name": "Ur-Junglen Encounter",
+      "prompt": "A top-down tabletop RPG battlemap of [dense ancient forest wilderness ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: dappled sunlight through leaves. Texture: forest floor with roots. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "lys-dalen-encounter",
+      "name": "Lys-Dalen Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "jungle-lejren-encounter",
+      "name": "Jungle-Lejren Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "mutation-encounter",
+      "name": "Mutation Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "spiren-encounter",
+      "name": "Spiren Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "muren-encounter",
+      "name": "Muren Encounter",
+      "prompt": "A top-down tabletop RPG battlemap of [dense ancient forest wilderness ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: dappled sunlight through leaves. Texture: forest floor with roots. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "bjergborgen-encounter",
+      "name": "Bjergborgen Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "mur-minen-encounter",
+      "name": "Mur-Minen Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "mur-udkigget-encounter",
+      "name": "Mur-Udkigget Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "vaeveren-encounter",
+      "name": "Væveren Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "passagen-encounter",
+      "name": "Passagen Encounter",
+      "prompt": "A top-down tabletop RPG battlemap of [dense ancient forest wilderness ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: dappled sunlight through leaves. Texture: forest floor with roots. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "skov-porten-encounter",
+      "name": "Skov-Porten Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "komposten-encounter",
+      "name": "Komposten Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "mose-taagen-encounter",
+      "name": "Mose-Tågen Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "skov-udloebet-encounter",
+      "name": "Skov-Udløbet Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [bustling port city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "det-rene-rand-encounter",
+      "name": "Det Rene Rand Encounter",
+      "prompt": "A top-down tabletop RPG battlemap of [murky wetland wilderness ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: eerie green mist. Texture: mud and dark water. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "det-hvide-taarn-encounter",
+      "name": "Det Hvide Tårn Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "renseren-encounter",
+      "name": "Renseren Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [mystical crystal spire city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "kapslen-encounter",
+      "name": "Kapslen Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "karantaenen-encounter",
+      "name": "Karantænen Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "roer-sumpen-encounter",
+      "name": "Rør-Sumpen Encounter",
+      "prompt": "A top-down tabletop RPG battlemap of [murky wetland wilderness ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: eerie green mist. Texture: mud and dark water. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "klumpe-by-encounter",
+      "name": "Klumpe-By Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "goedningen-encounter",
+      "name": "Gødningen Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "ventilen-encounter",
+      "name": "Ventilen Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "syre-badet-encounter",
+      "name": "Syre-Badet Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "de-gule-sletter-encounter",
+      "name": "De Gule Sletter Encounter",
+      "prompt": "A top-down tabletop RPG battlemap of [murky wetland wilderness ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: eerie green mist. Texture: mud and dark water. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "stenbruddet-encounter",
+      "name": "Stenbruddet Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [mountain stronghold street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "salt-byen-encounter",
+      "name": "Salt-Byen Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "arenaen-encounter",
+      "name": "Arenaen Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "passet-encounter",
+      "name": "Passet Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "deltaet-encounter",
+      "name": "Deltaet Encounter",
+      "prompt": "A top-down tabletop RPG battlemap of [murky wetland wilderness ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: eerie green mist. Texture: mud and dark water. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "den-gyldne-havn-encounter",
+      "name": "Den Gyldne Havn Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "bunden-encounter",
+      "name": "Bunden Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "giften-encounter",
+      "name": "Giften Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "vulkanen-encounter",
+      "name": "Vulkanen Encounter",
+      "prompt": "A top-down tabletop RPG battlemap of [high mountain peaks wilderness ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: windy and cold. Texture: cracked stone and snow. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "puls-byen-encounter",
+      "name": "Puls-Byen Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "kuren-encounter",
+      "name": "Kuren Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    },
+    {
+      "id": "minen-encounter",
+      "name": "Minen Street Fight",
+      "prompt": "A top-down tabletop RPG battlemap of [medieval fortified city street ambush]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: torchlit night. Texture: cobblestone and stone walls. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid"
+    }
+  ]
+}

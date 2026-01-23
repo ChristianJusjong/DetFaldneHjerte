@@ -28,7 +28,6 @@ export const SmartLink = ({ text, context }: SmartLinkProps) => {
 
         const addTerm = (term: string, candidate: TermCandidate) => {
             if (!term) return;
-            // Clean term? strictly, we use it as is for matching
             const existing = map.get(term) || [];
             existing.push(candidate);
             map.set(term, existing);
@@ -36,28 +35,33 @@ export const SmartLink = ({ text, context }: SmartLinkProps) => {
 
         // Planes & Continents
         data.planes.forEach(p => {
-            addTerm(p.name, { url: `/plane/${p.id}`, type: 'plane' });
+            if (p.name) addTerm(p.name, { url: `/plane/${p.id}`, type: 'plane' });
 
             p.continents.forEach(c => {
-                addTerm(c.name, { url: `/continent/${c.id}`, type: 'continent', continentId: c.id });
+                if (c.name) addTerm(c.name, { url: `/continent/${c.id}`, type: 'continent', continentId: c.id });
 
-                // Races
+                // Races linked to continents
                 c.races.forEach(r => {
-                    addTerm(r.name, { url: `/races#${slugify(r.name)}`, type: 'race', continentId: c.id });
+                    if (r.name) addTerm(r.name, { url: `/lore/race/${r.id || slugify(r.name)}`, type: 'race', continentId: c.id });
                 });
 
                 // Regions
                 c.regions.forEach(reg => {
-                    addTerm(reg.name, { url: `/continent/${c.id}/${slugify(reg.name)}`, type: 'region', continentId: c.id, regionId: slugify(reg.name) });
+                    if (reg.name) addTerm(reg.name, { url: `/continent/${c.id}/${slugify(reg.name)}`, type: 'region', continentId: c.id, regionId: slugify(reg.name) });
 
                     // Cities
                     reg.cities.forEach(city => {
-                        addTerm(city.name, {
-                            url: `/continent/${c.id}/${slugify(reg.name)}/${slugify(city.name)}`,
-                            type: 'city',
-                            continentId: c.id,
-                            regionId: slugify(reg.name)
-                        });
+                        if (city.name) {
+                            addTerm(city.name, {
+                                url: `/continent/${c.id}/${slugify(reg.name)}/${slugify(city.name)}`,
+                                type: 'city',
+                                continentId: c.id,
+                                regionId: slugify(reg.name)
+                            });
+                        }
+
+                        // Also add assets from districts to SmartLink? Might be too many terms.
+                        // Let's stick to high level for now.
                     });
                 });
             });
@@ -65,13 +69,20 @@ export const SmartLink = ({ text, context }: SmartLinkProps) => {
 
         // Gods
         data.religion.gods.forEach(g => {
-            const name = g.name.split(' (')[0];
-            addTerm(name, { url: `/religion#${slugify(g.name)}`, type: 'god' });
+            if (g.name) {
+                const name = g.name.split(' (')[0];
+                addTerm(name, { url: `/lore/god/${g.id || slugify(g.name)}`, type: 'god' });
+            }
         });
 
         // Organizations
         data.organizations?.forEach(o => {
-            addTerm(o.name, { url: `/organizations#${slugify(o.name)}`, type: 'org' });
+            if (o.name) addTerm(o.name, { url: `/lore/organization/${o.id || slugify(o.name)}`, type: 'org' });
+        });
+
+        // Bestiary
+        data.bestiary?.forEach(b => {
+            if (b.name) addTerm(b.name, { url: `/lore/bestiary/${b.id || slugify(b.name)}`, type: 'bestiary' });
         });
 
         return map;
@@ -82,31 +93,19 @@ export const SmartLink = ({ text, context }: SmartLinkProps) => {
         const sortedTerms = Array.from(termMap.keys()).sort((a, b) => b.length - a.length);
         if (sortedTerms.length === 0) return [text];
 
-        // Create a single regex pattern: \b(Term1|Term2|Term3)\b
-        // We escape special chars (like parens in names)
+        // Escape regex special chars
         const pattern = sortedTerms.map(t => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|');
-        // Use word boundaries to prevent partial matches like "Ly" inside "Lys-Siden"
-        // Note: Special handling might be needed for terms with special chars at boundaries, but standard \b works for most names.
-        // However, some fantasy names might have hyphens or other symbols. \b matches between word \w and non-word \W.
-        // If a name ends in a vowel and the text continues with a hyphen, \b might match or not depending on context.
-        // For "Lys-Siden", "Ly" matches part of "Lys". "s" is a word char, so \bLy\b would NOT match "Lys".
         const regex = new RegExp(`\\b(${pattern})\\b`, 'gi');
 
         const split = text.split(regex);
 
         return split.map((part, i) => {
-            // Check if this part matches any term (case insensitive)
-            // We need to find the exact key that matched (since we use 'gi', the casing in 'part' might differ from key)
             const matchedKey = sortedTerms.find(t => t.toLowerCase() === part.toLowerCase());
 
             if (matchedKey) {
                 const candidates = termMap.get(matchedKey) || [];
 
-                // Context Resolution Strategy:
-                // 1. Exact match on RegionID (most specific)
-                // 2. Exact match on ContinentID
-                // 3. First available
-
+                // Context Resolution Strategy
                 let bestMatch = candidates[0];
                 if (context && candidates.length > 1) {
                     const regionMatch = candidates.find(c => c.regionId && c.regionId === context.regionId);
@@ -126,6 +125,7 @@ export const SmartLink = ({ text, context }: SmartLinkProps) => {
                     if (bestMatch.type === 'continent') color = '#f1c40f';
                     if (bestMatch.type === 'god') color = 'var(--color-accent-superia)';
                     if (bestMatch.type === 'region' || bestMatch.type === 'city') color = '#2ecc71';
+                    if (bestMatch.type === 'race') color = '#e67e22';
 
                     return (
                         <Link

@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowLeft, Map as MapIcon, ShoppingBag, Users, Info } from 'lucide-react';
+import { ArrowLeft, Info } from 'lucide-react';
+import { MapVisualizer } from '../components/world/MapVisualizer';
 import type { City, Continent, Region } from '../types';
 import { slugify } from '../utils/helpers';
 import { getLore } from '../utils/data';
@@ -59,7 +60,12 @@ export const CityPage = () => {
     }
 
     const continentColor = continent.color || '#fff';
-    const mapPath = `/assets/cities/${slugify(city.name)}.png`;
+    const mapPath = city.mapImage || `/assets/cities/${slugify(city.name)}.png`;
+
+    // Flatten assets for display in current UI structure
+    // const allAssets = city.districts.flatMap(d => d.assets);
+    // const shops = allAssets.filter(a => a.type === 'shop');
+    // const npcs = allAssets.filter(a => a.type === 'npc');
 
     return (
         <motion.div
@@ -103,10 +109,36 @@ export const CityPage = () => {
                             </h3>
                             <p className="text-gray-300 leading-relaxed mb-6"><SmartLink text={city.desc} context={linkContext} /></p>
 
+                            {city.atmosphere && (
+                                <div className="mb-6 pl-4 border-l-2 border-white/10 italic text-gray-400">
+                                    "{city.atmosphere}"
+                                </div>
+                            )}
+
+                            {city.architecture && (
+                                <div className="mb-6">
+                                    <h4 className="text-sm font-bold text-text-dim uppercase tracking-wider mb-2">Arkitektur</h4>
+                                    <p className="text-gray-300 leading-relaxed text-sm"><SmartLink text={city.architecture} context={linkContext} /></p>
+                                </div>
+                            )}
+
                             {city.layout && (
                                 <div className="mb-6">
-                                    <h4 className="text-lg font-bold text-white mb-2">Byens Struktur</h4>
-                                    <p className="text-gray-300 leading-relaxed"><SmartLink text={city.layout} context={linkContext} /></p>
+                                    <h4 className="text-sm font-bold text-text-dim uppercase tracking-wider mb-2">Struktur</h4>
+                                    <p className="text-gray-300 leading-relaxed text-sm"><SmartLink text={city.layout} context={linkContext} /></p>
+                                </div>
+                            )}
+
+                            {city.pointsOfInterest && city.pointsOfInterest.length > 0 && (
+                                <div className="mb-6">
+                                    <h4 className="text-sm font-bold text-text-dim uppercase tracking-wider mb-2">Interessepunkter</h4>
+                                    <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                                        {city.pointsOfInterest.map((poi, idx) => (
+                                            <li key={idx} className="flex items-start gap-2 text-sm text-gray-300">
+                                                <span className="text-superia mt-1">•</span> {poi}
+                                            </li>
+                                        ))}
+                                    </ul>
                                 </div>
                             )}
 
@@ -117,63 +149,51 @@ export const CityPage = () => {
                             )}
                         </MysticCard>
 
-                        {/* Shops Grid */}
-                        {city.shops && city.shops.length > 0 && (
-                            <div className="flex flex-col gap-4">
-                                <h3 className="flex items-center gap-2 text-xl font-bold ml-2" style={{ color: continentColor }}>
-                                    <ShoppingBag size={18} /> Butikker & Etablissementer
-                                </h3>
+                        {/* Districts Loop */}
+                        {city.districts.map((district) => (
+                            <div key={district.id} className="flex flex-col gap-6">
+                                <div className="flex items-center gap-3 border-b border-white/10 pb-2">
+                                    <h3 className="text-2xl font-serif text-white">{district.name}</h3>
+                                    <Badge variant="default">{district.assets.length} steder</Badge>
+                                </div>
+
+                                {district.desc && <p className="text-text-dim italic">{district.desc}</p>}
+
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                    {city.shops.map((shop, i) => (
-                                        <div key={i} className="bg-surface/60 border border-white/5 p-6 rounded-2xl hover:bg-surface/80 transition-all">
-                                            <div className="flex justify-between items-start mb-3">
-                                                <strong className="text-lg text-white">{shop.name}</strong>
-                                                <Badge variant="outline">{shop.type}</Badge>
+                                    {district.assets.map((asset, i) => (
+                                        <Link
+                                            key={i}
+                                            to={`/continent/${continent.id}/${slugify(region?.name || '')}/${slugify(city.name)}/${district.id}/${asset.id}`}
+                                            className="block group"
+                                        >
+                                            <div className="bg-surface/60 border border-white/5 p-6 rounded-2xl group-hover:bg-surface/80 group-hover:border-white/20 transition-all h-full">
+                                                <div className="flex justify-between items-start mb-3">
+                                                    <strong className="text-lg text-white group-hover:text-blue-200 transition-colors">{asset.name}</strong>
+                                                    <Badge variant="outline">{asset.subtype || asset.type}</Badge>
+                                                </div>
+                                                <p className="text-sm text-gray-400 mb-3 line-clamp-2">{asset.desc}</p>
+                                                <div className="flex items-center text-xs text-text-dim text-blue-400 group-hover:text-blue-300">
+                                                    Læs mere <ArrowLeft className="rotate-180 ml-1 w-3 h-3" />
+                                                </div>
                                             </div>
-                                            <p className="text-sm text-gray-400 mb-3">{shop.desc}</p>
-                                            {shop.owner && <div className="text-xs text-text-dim border-t border-white/5 pt-2">Ejer: {shop.owner}</div>}
-                                        </div>
+                                        </Link>
                                     ))}
                                 </div>
                             </div>
-                        )}
+                        ))}
                     </div>
 
                     {/* Sidebar / Map Column */}
                     <div className="flex flex-col gap-8">
                         {/* Map Card */}
                         <div className="bg-surface/60 backdrop-blur-xl border border-white/10 rounded-3xl overflow-hidden shadow-premium">
-                            <div className="p-4 border-b border-white/10 font-bold flex items-center gap-2 text-white" style={{ background: `${continentColor}20` }}>
-                                <MapIcon size={16} /> Taktisk Kort
-                            </div>
-                            <div className="aspect-square bg-black/40">
-                                <ImageWithFallback
-                                    src={mapPath}
-                                    alt={`Kort over ${city.name}`}
-                                    className="w-full h-full object-cover"
-                                    fallbackText={`Kort over ${city.name} genereres...`}
-                                />
-                            </div>
+                            <MapVisualizer
+                                mapImage={mapPath}
+                                scenicImage={city.image}
+                                battlemapImage={city.battlemapImage}
+                                title={city.name}
+                            />
                         </div>
-
-                        {/* NPCs List */}
-                        {city.inhabitants && city.inhabitants.length > 0 && (
-                            <MysticCard className="flex flex-col gap-4">
-                                <h3 className="flex items-center gap-2 text-xl font-bold" style={{ color: continentColor }}>
-                                    <Users size={18} /> Vigtige Personer
-                                </h3>
-                                <div className="flex flex-col gap-4">
-                                    {city.inhabitants.map((npc, i) => (
-                                        <div key={i} className="bg-white/5 p-4 rounded-xl border border-white/5 hover:bg-white/10 transition-colors">
-                                            <div className="font-bold text-white text-lg">{npc.name}</div>
-                                            <div className="text-sm font-semibold mb-2" style={{ color: continentColor }}>{npc.role}</div>
-                                            <p className="text-sm text-gray-400 mb-2">{npc.desc}</p>
-                                            {npc.wants && <div className="text-xs italic text-text-dim border-t border-white/10 pt-2 mt-2">Vil: {npc.wants}</div>}
-                                        </div>
-                                    ))}
-                                </div>
-                            </MysticCard>
-                        )}
                     </div>
                 </div>
             </div>

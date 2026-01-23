@@ -4,9 +4,9 @@ import { ArrowLeft } from 'lucide-react';
 import { SmartLink } from '../components/SmartLink';
 import { slugify } from '../utils/helpers';
 import { getLore } from '../utils/data';
-import { ImageWithFallback } from '../components/ImageWithFallback';
 import { BookmarkButton } from '../components/BookmarkButton';
 import { MysticCard } from '../components/ui/MysticCard';
+import { MapVisualizer } from '../components/world/MapVisualizer';
 
 export const ContinentPage = () => {
     // 1. Get Params
@@ -64,8 +64,12 @@ export const ContinentPage = () => {
                 </header>
 
                 {hasImage && (
-                    <div className="w-full aspect-[21/9] bg-black rounded-2xl overflow-hidden border-4 border-white/5 mb-8 shadow-2xl">
-                        <ImageWithFallback src={imagePath} alt={continent.name} className="w-full h-full object-cover opacity-90 hover:opacity-100 transition-opacity duration-500" />
+                    <div className="w-full rounded-2xl overflow-hidden border border-white/10 shadow-premium mb-8">
+                        <MapVisualizer
+                            mapImage={imagePath}
+                            title={continent.name}
+                            className="w-full"
+                        />
                     </div>
                 )}
 

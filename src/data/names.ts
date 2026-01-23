@@ -3,6 +3,19 @@ export const RACE_NAMES = {
         first: ["Aelric", "Borin", "Caelum", "Doric", "Elander", "Faren", "Garrick", "Horgus", "Ivar", "Joran", "Kaelen", "Loric", "Marek", "Noris", "Orin", "Parrick", "Quinten", "Roric", "Soren", "Toric", "Ulric", "Valen", "Warran", "Xander", "Yoric", "Zarek"],
         last: ["Storm", "Blackwood", "Ironheart", "Crow", "Winter", "Thorn", "Steel", "Swift", "Light", "Shadow", "Frost", "Fire", "Stone", "River", "Wood", "Star", "Moon", "Sun"]
     },
+    "Høj-Vismændene": {
+        first: ["Aethon", "Bryn", "Caelestra", "Dorael", "Elandor", "Faenon", "Gael", "Haelen", "Iola", "Jorael", "Kaelen", "Lorael", "Maelis", "Naelor", "Olan", "Paelon", "Quael", "Raelis", "Solael", "Taelon", "Ulael", "Vaelis", "Waelon", "Xael", "Yaelis", "Zaelon"],
+        last: ["Storm-Caller", "Mind-Weaver", "Sky-Watcher", "Thought-Spinner", "Cloud-Walker", "Lightning-Binder", "Void-Seer", "Star-Reader", "Crystal-Heart", "Rain-Dancer"]
+    },
+    "Husk-Dværgene": {
+        first: ["Balin", "Dorin", "Farin", "Gorin", "Harin", "Korin", "Lorin", "Norin", "Orin", "Torin", "Valin", "Zorin", "Bargu", "Dargu", "Fargu", "Gargu", "Hargu", "Kargu", "Largu", "Nargu", "Orgu", "Targu", "Vargu", "Zargu"],
+        last: ["Stone-Memory", "Deep-Thought", "Echo-Finder", "Rune-Keeper", "Cave-Walker", "Gem-Heart", "Rock-Soul", "Titan-Bond", "Shard-Master", "Fossil-Hunter"]
+    },
+    "Glimt-Gnomer": {
+        first: ["Zix", "Wix", "Vix", "Tix", "Rix", "Pix", "Nix", "Mix", "Lix", "Kix", "Jix", "Hix", "Gix", "Fix", "Dix", "Cix", "Bix", "Ax", "Zan", "Wan", "Van", "Tan", "Ran", "Pan", "Nan", "Man", "Lan", "Kan"],
+        last: ["Spark-Plug", "Gear-Grinder", "Volt-Switch", "Wire-Walker", "Battery-Pack", "Fusion-Core", "Static-Shock", "Neon-Glow", "Flash-Bang", "Zap-Master", "Flux-Capacitor"]
+    },
+    // Fallbacks for compatibility
     Yverin: { // Elf-like
         first: ["Aelindel", "Brynmor", "Caelen", "Daeori", "Elandorr", "Faenor", "Gaerwn", "Haerel", "Ildar", "Jae'll", "Kaelthas", "Lia", "Myrin", "Naerel", "Orophin", "Paeris", "Qebrand", "Rael", "Saeril", "Taenor", "Uthil", "Vaeril", "Waelyn", "Xil", "Yaeril", "Zaor"],
         last: ["Moonwhisper", "Starlight", "Dewdrop", "Silverleaf", "Nightshade", "Sunfire", "Windrunner", "Riverdancer", "Forestwalker", "Skywatcher", "Dawnseeker", "Duskbringer"]
@@ -35,7 +48,7 @@ export const RACE_NAMES = {
 
 export const ROLES = [
     "Købmand", "Vagt", "Lejesoldat", "Præst", "Tyv", "Bonde", "Adelig", "Scholar", "Smed", "Kroejer", "Kunstner", "Tigger",
-    "Jæger", "Fisker", "Minearbejder", "Soldat", "Politiker", "Diplomat", "Spion", "Alkymist", "Barde", "Gøgler"
+    "Jæger", "Fisker", "Minearbejder", "Soldat", "Politiker", "Diplomat", "Spion", "Alkymist", "Barde", "Gøgler", "Krystal-Sliber", "Lyn-Fanger", "Hukommelses-Arkivar"
 ];
 
 export const QUIRKS = [
@@ -43,6 +56,7 @@ export const QUIRKS = [
     "Mistillidsfuld overfor fremmede", "Meget religiøs", "Har en tam rotte", "Bander konstant",
     "Taler i gåder", "Halter på venstre ben", "Har tatoveringer i ansigtet", "Lugter af svovl",
     "Bider negle", "Har nervøse trækninger", "Klør sig konstant", "Retter på tøjet", "Nynner melodier",
-    "Smasker når de spiser", "Piller næse", "Rynker på næsen", "Kniber øjnene sammen", "Læspende",
-    "Stammende", "Højlydt", "Mumler", "Griner på upassende tidspunkter", "Glor stift"
+    "Stammende", "Højlydt", "Mumler", "Griner på upassende tidspunkter", "Glor stift",
+    "Får stød når de bliver begejstret", "Glemmer midt i sætninger", "Noterer alt du siger", "Ser lyn overalt",
+    "Har krystaller flettet i håret", "Lyser svagt i mørke", "Kan høre elektricitet", "Mummer om logik"
 ];

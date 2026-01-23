@@ -8,73 +8,71 @@ import { useGameStore } from '../store/useGameStore';
 import { useSoundEffects } from '../hooks/useSoundEffects';
 import type { GeneratedNPC } from '../types';
 
-export const NPCGenerator = () => {
+export const NPCGenerator = ({ showTrigger = true }: { showTrigger?: boolean }) => {
     const { isNPCGeneratorOpen, setNPCGeneratorOpen, savedNPCs, saveNPC, deleteNPC } = useGameStore();
     const { playClick, playSuccess, playHover } = useSoundEffects();
     const [activeTab, setActiveTab] = useState<'generate' | 'saved'>('generate');
 
-    // Generator State
     const [generatedNPC, setGeneratedNPC] = useState<GeneratedNPC | null>(null);
 
-    const data = getLore();
+    const generate = (forceRace?: string) => {
+        const lore = getLore();
 
-    const generateStats = (role: string) => {
-        // Base stats
-        const stats = { str: 10, dex: 10, con: 10, int: 10, wis: 10, cha: 10 };
-        const bonus = 4; // Add this many points to key stats based on role
+        // 1. Pick Race
+        // Use keys from names.ts which now includes specific races
+        const raceKeys = Object.keys(RACE_NAMES);
+        let race = forceRace;
 
-        switch (role) {
-            case "Vagt": case "Lejesoldat": case "Soldat":
-                stats.str += bonus; stats.con += bonus; break;
-            case "Tyv": case "Jæger": case "Spion":
-                stats.dex += bonus; stats.wis += bonus; break;
-            case "Præst": case "Druide":
-                stats.wis += bonus; stats.cha += bonus; break;
-            case "Scholar": case "Alkymist": case "Politiker":
-                stats.int += bonus; stats.wis += bonus; break;
-            case "Købmand": case "Adelig": case "Kroejer": case "Barde":
-                stats.cha += bonus; stats.int += bonus; break;
-            default: // Random for others
-                stats.con += 2; stats.cha += 2;
+        if (!race) {
+            // Weighted random? Or just pure random from available name lists
+            race = raceKeys[Math.floor(Math.random() * raceKeys.length)];
         }
 
-        // Add some random variation (-1 to +2)
-        Object.keys(stats).forEach(k => {
-            (stats as any)[k] += Math.floor(Math.random() * 4) - 1;
-        });
+        // 2. Pick Name
+        // Safe access with fallback to Menneske
+        const nameData = RACE_NAMES[race as keyof typeof RACE_NAMES] || RACE_NAMES['Menneske'];
+        const firstName = nameData.first[Math.floor(Math.random() * nameData.first.length)];
+        const lastName = nameData.last[Math.floor(Math.random() * nameData.last.length)];
+        const fullName = `${firstName} ${lastName}`;
 
-        return stats;
-    };
-
-    const generate = () => {
-        const allContinents = data.planes.flatMap(p => p.continents);
-        const continent = allContinents[Math.floor(Math.random() * allContinents.length)];
-        const race = continent.races[Math.floor(Math.random() * continent.races.length)];
-
-        // Get name list or fallback to Human
-        const raceNameList = (RACE_NAMES as any)[race.name] || RACE_NAMES['Menneske'];
-        const firstName = raceNameList.first[Math.floor(Math.random() * raceNameList.first.length)];
-        const lastName = raceNameList.last[Math.floor(Math.random() * raceNameList.last.length)];
+        // 3. Pick Role & Quirk
         const role = ROLES[Math.floor(Math.random() * ROLES.length)];
+        const quirk = QUIRKS[Math.floor(Math.random() * QUIRKS.length)];
+
+        // 4. Generate Stats (Heroic roll: 4d6 drop lowest, approx 8-16 range)
+        const rollStat = () => Math.floor(Math.random() * 6) + Math.floor(Math.random() * 6) + Math.floor(Math.random() * 6) + 3;
+        const stats = {
+            str: rollStat(),
+            dex: rollStat(),
+            con: rollStat(),
+            int: rollStat(),
+            wis: rollStat(),
+            cha: rollStat(),
+        };
+
+        // 5. Context (Continent) - Default to Tanke-Tinderne for now
+        const continent = lore.planes[0]?.continents[0]?.name || "Ukendt";
 
         const newNPC: GeneratedNPC = {
             id: crypto.randomUUID(),
-            name: `${firstName} ${lastName}`,
-            race: race.name,
-            role,
-            quirk: QUIRKS[Math.floor(Math.random() * QUIRKS.length)],
-            continent: continent.name,
-            stats: generateStats(role),
+            name: fullName,
+            race: race,
+            role: role,
+            quirk: quirk,
+            stats: stats,
+            continent: continent,
+            description: `En ${race} ${role}, kendt for: ${quirk}.`,
             createdAt: Date.now()
         };
 
         setGeneratedNPC(newNPC);
-        playClick();
+        playSuccess();
     };
 
     const handleSave = () => {
         if (generatedNPC) {
             saveNPC(generatedNPC);
+            setActiveTab('saved');
             playSuccess();
         }
     };
@@ -82,14 +80,16 @@ export const NPCGenerator = () => {
     return (
         <>
             {/* Sidebar Trigger */}
-            <div
-                onClick={() => { setNPCGeneratorOpen(true); if (!generatedNPC) generate(); playClick(); }}
-                className="flex items-center gap-3 px-4 py-3 text-text-muted hover:text-white hover:bg-white/5 transition-all cursor-pointer mt-auto border-t border-white/10 group"
-                onMouseEnter={() => playHover()}
-            >
-                <UserPlus size={18} className="text-superia/60 group-hover:text-superia transition-colors" />
-                <span className="font-serif text-sm">NPC Generator</span>
-            </div>
+            {showTrigger && (
+                <div
+                    onClick={() => { setNPCGeneratorOpen(true); if (!generatedNPC) generate(); playClick(); }}
+                    className="flex items-center gap-3 px-4 py-3 text-text-muted hover:text-white hover:bg-white/5 transition-all cursor-pointer mt-auto border-t border-white/10 group"
+                    onMouseEnter={() => playHover()}
+                >
+                    <UserPlus size={18} className="text-superia/60 group-hover:text-superia transition-colors" />
+                    <span className="font-serif text-sm">NPC Generator</span>
+                </div>
+            )}
 
             <AnimatePresence>
                 {isNPCGeneratorOpen && (
@@ -163,7 +163,7 @@ export const NPCGenerator = () => {
 
                                             <div className="mt-6 flex gap-3">
                                                 <button
-                                                    onClick={generate}
+                                                    onClick={() => generate()}
                                                     className="flex-1 py-3 px-4 rounded-lg bg-superia text-black font-bold font-serif uppercase tracking-wider hover:bg-white hover:shadow-[0_0_15px_rgba(255,215,0,0.3)] transition-all flex items-center justify-center gap-2"
                                                 >
                                                     <RefreshCw size={18} /> Generer Ny

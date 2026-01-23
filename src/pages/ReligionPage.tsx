@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Sun } from 'lucide-react';
 import loreData from '../data/lore.json';
@@ -22,19 +23,26 @@ export const ReligionPage = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     {data.religion.gods.map(god => (
-                        <div
+                        <Link
                             key={god.name}
-                            id={slugify(god.name)}
-                            className="bg-white/5 border border-white/10 rounded-2xl p-6 text-center hover:bg-white/10 transition-colors scroll-mt-24"
+                            to={`/lore/god/${god.id || slugify(god.name)}`}
+                            className="block no-underline"
                         >
-                            <h3 className="text-xl font-bold mb-2 text-white">{god.name}</h3>
-                            <p className="text-xs uppercase tracking-widest text-text-dim mb-4">{god.domain}</p>
+                            <div
+                                id={slugify(god.name)}
+                                className="bg-white/5 border border-white/10 rounded-2xl p-6 text-center hover:bg-white/10 hover:border-superia/30 transition-all scroll-mt-24 h-full flex flex-col items-center"
+                            >
+                                <h3 className="text-xl font-bold mb-2 text-white">{god.name}</h3>
+                                <p className="text-xs uppercase tracking-widest text-text-dim mb-4">{god.domain}</p>
 
-                            <div className="mt-4 text-superia flex flex-col items-center gap-2">
-                                <Sun size={32} className="opacity-80" />
-                                <p className="text-sm font-medium opacity-90">Symbol: {god.symbol}</p>
+                                <div className="mt-auto text-superia flex flex-col items-center gap-2">
+                                    <Sun size={32} className="opacity-80" />
+                                    <p className="text-sm font-medium opacity-90">Symbol: {god.symbol}</p>
+                                </div>
+
+                                <span className="text-xs text-blue-400 mt-4 underline opacity-0 group-hover:opacity-100 transition-opacity">Læs mere</span>
                             </div>
-                        </div>
+                        </Link>
                     ))}
                 </div>
             </MysticCard>
