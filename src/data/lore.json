@@ -7,11 +7,13 @@
       "name": "Lys-Siden (Himmelfladen)",
       "theme": "Orden, Hukommelse, Diplomati",
       "description": "Hvor solen altid skinner klart og civilisationens tårne stræber mod stjernerne. Her hersker logik, lærdom og loven.",
+      "mapImage": "/assets/maps/sides/lyssiden.png",
       "continents": [
         {
           "id": "tanketinderne",
           "name": "Tanke-Tinderne",
           "title": "Vismændenes Bjerge",
+          "mapImage": "/assets/maps/continents/tanke-tinderne.png",
           "description": "Mod nord ligger en spiralformet bjergkæde, hvor lynene altid slår ned. Det siges, at selve bjergene husker alt, der sker. Stormene her giver ideer, og bibliotekerne er dybere end minerne. Det er et køligt sted præget af tåge og intens studeren.",
           "culturalQuote": "Tanken er hurtigere end lynet.",
           "color": "#7ccef3",
@@ -300,12 +302,12 @@
                       ]
                     }
                   ],
-                  "atmosphere": "Luften er tynd og elektrisk. Det lugter af ozon og gammelt papir.",
-                  "architecture": "Høje, snoede tårne af hvid marmor og blåt glas.",
+                  "atmosphere": "Luften summer af statisk elektricitet og hviskende bønner til logikken. En svag duft af ozon og dyrt blæk hænger overalt.",
+                  "architecture": "Spiralformede tårne af hvidt marmor, der ser ud til at trodse tyngdekraften. Krystalbroer forbinder bygningsværkerne højt over skyerne.",
                   "pointsOfInterest": [
-                    "Det lokale marked",
-                    "Vagttårnet",
-                    "Kroen 'Den Hurtige Hvil'"
+                    "Den Evige Flamme for Tanken",
+                    "Råds-Spiralen",
+                    "Krystal-Pladsen"
                   ],
                   "mapImage": "/assets/maps/cities/neo-spiret.png",
                   "visualSummary": "Hovedstaden Neo-Spiret. En by bygget som en enorm spiral, der snor sig op mod himlen. Tårnene er af hvidt marmor med guld-ornamenter. Luften sitrer af magi.",
@@ -827,6 +829,7 @@
                 {
                   "mapImage": "/assets/maps/cities/boghvaelvet.png",
                   "desc": "Verdens største bibliotek, hugget ind i klippen.",
+                  "rumor": "En hel sektion af biblioteket er forsvundet over natten - eller også har folk bare glemt, den var der.",
                   "layout": "Bygget vertikalt op ad bjergsiden med svævebaner.",
                   "districts": [
                     {
@@ -964,12 +967,12 @@
                       ]
                     }
                   ],
-                  "atmosphere": "Luften er tynd og elektrisk. Det lugter af ozon og gammelt papir.",
-                  "architecture": "Høje, snoede tårne af hvid marmor og blåt glas.",
+                  "atmosphere": "En ærbødig stilhed, kun brudt af lyden af sider, der vendes. Luften er tør, kølig og lugter af årtusinders støv og pergament.",
+                  "architecture": "Hele byen er hugget direkte ind i de massive klippevægge i dalen. Facaderne ligner bogrygge, og gaderne er hylder i gigantisk skala.",
                   "pointsOfInterest": [
-                    "Det lokale marked",
-                    "Vagttårnet",
-                    "Kroen 'Den Hurtige Hvil'"
+                    "De Tavse Arkiver",
+                    "Blæk-Kilden",
+                    "Hukommelses-Muren"
                   ],
                   "mapImage": "/assets/maps/cities/boghvaelvet.png",
                   "visualSummary": "Settlement located in Minde-Dalene. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: Bygget vertikalt op ad bjergsiden med svævebaner..",
@@ -978,6 +981,7 @@
                 {
                   "name": "Glemme-Hullet",
                   "desc": "Fængsel hvor fanger får slettet hukommelsen.",
+                  "rumor": "Fangevogterne er begyndt at glemme deres egne navne.",
                   "layout": "Består af høje tårne forbundet med lyn-afledere.",
                   "districts": [
                     {
@@ -994,10 +998,10 @@
                           "subtype": "Boghandel",
                           "inventory": [
                             {
-                              "name": "Lygte-olie",
-                              "price": "1sp",
-                              "desc": "Brænder i 6 timer.",
-                              "image": "/assets/items/lygte-olie.png"
+                              "name": "Glemsels-Drik",
+                              "price": "50gp",
+                              "desc": "Fjerner den sidste time fra hukommelsen.",
+                              "image": "/assets/items/glemsels-drik.png"
                             },
                             {
                               "name": "Klatre-sæt",
@@ -1209,12 +1213,12 @@
                       ]
                     }
                   ],
-                  "atmosphere": "Luften er tynd og elektrisk. Det lugter af ozon og gammelt papir.",
-                  "architecture": "Høje, snoede tårne af hvid marmor og blåt glas.",
+                  "atmosphere": "Trykkende og tung. Tågen i dalbunden sluger al lyd. Folk taler sjældent, og når de gør, er det med dæmpede stemmer.",
+                  "architecture": "Glatslebne, sorte monolitter uden vinduer. Bygningerne har ingen skarpe hjørner, så tankerne glider af dem.",
                   "pointsOfInterest": [
-                    "Det lokale marked",
-                    "Vagttårnet",
-                    "Kroen 'Den Hurtige Hvil'"
+                    "Nul-Punktet (Cellen for total sletning)",
+                    "De Navnløses Gravplads",
+                    "Slørspejlet"
                   ],
                   "mapImage": "/assets/maps/cities/glemme-hullet.png",
                   "visualSummary": "Settlement located in Minde-Dalene. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: Består af høje tårne forbundet med lyn-afledere..",
@@ -1223,6 +1227,7 @@
                 {
                   "name": "Ekkoby",
                   "desc": "Grænseby hvor man kommunikerer via bjerg-ekko.",
+                  "rumor": "Bjergenes ekko er begyndt at svare igen med ord, ingen har sagt.",
                   "layout": "Består af høje tårne forbundet med lyn-afledere.",
                   "districts": [
                     {
@@ -1371,12 +1376,12 @@
                       ]
                     }
                   ],
-                  "atmosphere": "Luften er tynd og elektrisk. Det lugter af ozon og gammelt papir.",
-                  "architecture": "Høje, snoede tårne af hvid marmor og blåt glas.",
+                  "atmosphere": "Larmende og kaotisk på en organiseret måde. Vinden bærer brudstykker af samtaler fra miles omkreds. Klokker og fløjter lyder konstant.",
+                  "architecture": "Bygningerne er formet som tragte og rør for at fange og lede lyden. Store paraboler af kobber dominerer hustagene.",
                   "pointsOfInterest": [
-                    "Det lokale marked",
-                    "Vagttårnet",
-                    "Kroen 'Den Hurtige Hvil'"
+                    "Hviske-Galleriet",
+                    "Storm-Varslerens Tårn",
+                    "Ekko-Kløften"
                   ],
                   "mapImage": "/assets/maps/cities/ekkoby.png",
                   "visualSummary": "Mountain City located in Minde-Dalene. Aesthetic: Fantasy landscape with distinct magical features. distinct features: mountain, city. Layout: Består af høje tårne forbundet med lyn-afledere..",
@@ -1395,6 +1400,7 @@
                 {
                   "mapImage": "/assets/maps/cities/gnister.png",
                   "desc": "By af kobber og lynafledere. Larmer konstant.",
+                  "rumor": "Lynene taler med stemmer fra dem, vi har mistet.",
                   "layout": "Udhugget i selve klippen i store spiralmønstre.",
                   "districts": [
                     {
@@ -2693,6 +2699,7 @@
           "id": "spejlsoeen",
           "name": "Spejl-Søen",
           "title": "Det Vågende Øje",
+          "mapImage": "/assets/maps/continents/spejl-soeen.png",
           "description": "Et cirkulært land omkring en bundløs, mørk indsø. Landet er præget af krystalskove og lys-magi, men pas på - det smukke kan være en illusion. Her afsløres alle hemmeligheder.",
           "culturalQuote": "Lyset blænder, mørket afslører.",
           "color": "#9b59b6",
@@ -6442,6 +6449,7 @@
           "id": "klangdalene",
           "name": "Klang-Dalene",
           "title": "Vindens Sang",
+          "mapImage": "/assets/maps/continents/klang-dalene.png",
           "description": "Et land formet som en muslingeskal, der fanger al verdens lyd. Her synger bjergene, når vinden blæser. Stilhed er den dyreste vare, og rygter er valuta.",
           "culturalQuote": "Verden er en sang.",
           "color": "#f1c40f",
@@ -9825,6 +9833,7 @@
           "id": "solvtungenaesset",
           "name": "Sølvtunge-Næsset",
           "title": "Diplomatiets Rige",
+          "mapImage": "/assets/maps/continents/soelvtunge-naesset.png",
           "description": "Et langt, frodigt næs kendt for mad, handel og løgne. Jorden er ustabil og rammes tit af skælv, men maden er så god, at folk bliver. Her er ord våben.",
           "culturalQuote": "En god løgn smager sødt.",
           "color": "#e67e22",
@@ -13742,12 +13751,14 @@
       "id": "skyggesiden",
       "name": "Skygge-Siden (Dybets Flade)",
       "theme": "Kaos, Natur, Vækst",
+      "mapImage": "/assets/maps/sides/skyggesiden.png",
       "description": "Hvor en bleg måne lyser over en vild og utæmmet verden. Her hersker instinkter, magisk natur og naturens egen orden.",
       "continents": [
         {
           "id": "tvillingeoerne",
           "name": "Tvillinge-Øerne",
           "title": "Magien Vugge",
+          "mapImage": "/assets/maps/continents/tvillinge-oerne.png",
           "description": "To store svævende øer forbundet med magiske broer. Her opstår nye sjæle og ideer. Landet er foranderligt, drømmeagtigt og fyldt med rå magi.",
           "culturalQuote": "Ting tager tid.",
           "color": "#ff7f50",
@@ -13811,7 +13822,8 @@
                 "ecology": "Vandrer frit og har ingen faste hjem."
               },
               "id": "form-vandrere",
-              "image": "/assets/races/form-vandrere.png"
+              "image": "/assets/organizations/form-vandrerne.png",
+              "symbol": "En maske der skifter udtryk."
             },
             {
               "name": "Skal-Riddere",
@@ -13834,8 +13846,9 @@
                 ],
                 "ecology": "Lever i klostre og fungerer som vogtere for de svage."
               },
-              "id": "skal-riddere",
-              "image": "/assets/races/skal-riddere.png"
+              "id": "skal-ridderne",
+              "image": "/assets/organizations/skal-ridderne.png",
+              "symbol": "En tohovedet havskildpadde i sølv og blåt."
             }
           ],
           "regions": [
@@ -17267,6 +17280,7 @@
           "id": "urskoven",
           "name": "Ur-Skoven",
           "title": "Livets Kilde",
+          "mapImage": "/assets/maps/continents/ur-skoven.png",
           "description": "En gigantisk, overgroet jungle hvor alt vokser med dobbelt hastighed. Floderne er røde og tykke. Det er et farligt, vildt sted fyldt med monstre og druider.",
           "culturalQuote": "Lev stærkt, dø så nyt kan spire.",
           "color": "#e63946",
@@ -21532,6 +21546,7 @@
           "id": "slamsumpen",
           "name": "Slam-Sumpen",
           "title": "Alkymiens Rige",
+          "mapImage": "/assets/maps/continents/slam-sumpen.png",
           "description": "Verdens losseplads og rensningsanlæg. Et barskt land af syresøer, rør-labyrinter og neontåger. Her renses alt affald, og her laves de farligste eliksirer.",
           "culturalQuote": "Jeres affald er vores guld.",
           "color": "#2ecc71",
