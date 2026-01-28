@@ -69,6 +69,16 @@ export const ContinentPage = () => {
                             mapImage={imagePath}
                             title={continent.name}
                             className="w-full"
+                            pins={continent.regions
+                                .filter(r => r.coordinates)
+                                .map(r => ({
+                                    id: r.name,
+                                    x: r.coordinates!.x,
+                                    y: r.coordinates!.y,
+                                    label: r.name,
+                                    type: 'region',
+                                    link: `/continent/${continent.id}/${slugify(r.name)}`
+                                }))}
                         />
                     </div>
                 )}

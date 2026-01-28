@@ -192,31 +192,37 @@ export const AssetPage = () => {
                                 <h4 className="font-bold text-white mb-6 flex items-center gap-2 text-xl">
                                     <ShoppingBag size={20} /> Varekatalog
                                 </h4>
-                                <div className="grid grid-cols-1 gap-3">
-                                    {asset.inventory.map((item, idx) => (
-                                        <div key={idx} className="group relative flex gap-4 p-4 bg-black/20 rounded-xl border border-white/5 hover:bg-black/40 hover:border-superia/30 transition-all">
-                                            {/* Item Art (Thumbnail) */}
-                                            {item.image && (
-                                                <div className="w-16 h-16 shrink-0 rounded-lg overflow-hidden bg-black/50 border border-white/10">
-                                                    <ImageWithFallback src={item.image} alt={item.name} className="w-full h-full object-cover" fallbackText="" />
-                                                </div>
-                                            )}
-
-                                            <div className="flex-1 min-w-0">
-                                                <div className="flex justify-between items-start">
-                                                    <h5 className="text-superia font-bold text-lg leading-tight group-hover:text-white transition-colors">{item.name}</h5>
-                                                    <Badge variant="outline" className="text-yellow-500 border-yellow-500/30 bg-yellow-500/5 font-mono ml-2 shrink-0">
+                                <div className="overflow-hidden rounded-xl border border-white/5 bg-black/20">
+                                    <table className="w-full text-left text-sm">
+                                        <thead className="bg-white/5 text-text-dim uppercase tracking-wider font-semibold">
+                                            <tr>
+                                                <th className="p-3">Vare</th>
+                                                <th className="p-3 text-right">Pris</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody className="divide-y divide-white/5">
+                                            {asset.inventory.map((item, idx) => (
+                                                <tr key={idx} className="group hover:bg-white/5 transition-colors">
+                                                    <td className="p-3">
+                                                        <div className="flex items-center gap-3">
+                                                            {item.image && (
+                                                                <div className="w-10 h-10 rounded bg-black/50 overflow-hidden border border-white/10 shrink-0">
+                                                                    <ImageWithFallback src={item.image} alt={item.name} className="w-full h-full object-cover" />
+                                                                </div>
+                                                            )}
+                                                            <div>
+                                                                <div className="font-bold text-white group-hover:text-superia transition-colors">{item.name}</div>
+                                                                {item.desc && <div className="text-xs text-gray-400 mt-0.5 line-clamp-1">{item.desc}</div>}
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td className="p-3 text-right font-mono text-superia whitespace-nowrap">
                                                         {item.price}
-                                                    </Badge>
-                                                </div>
-                                                {item.desc && <p className="text-sm text-text-dim mt-1 line-clamp-2">{item.desc}</p>}
-
-                                                {item.rarity && (
-                                                    <div className="mt-2 text-xs text-gray-500 uppercase tracking-widest font-semibold">{item.rarity}</div>
-                                                )}
-                                            </div>
-                                        </div>
-                                    ))}
+                                                    </td>
+                                                </tr>
+                                            ))}
+                                        </tbody>
+                                    </table>
                                 </div>
                             </MysticCard>
                         )}

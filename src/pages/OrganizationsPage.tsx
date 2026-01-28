@@ -22,7 +22,7 @@ export const OrganizationsPage = () => {
                 />
 
                 <div className="grid gap-6 mb-16">
-                    {data.organizations?.map((org: any) => (
+                    {data.organizations?.map((org) => (
                         <Link
                             key={org.name}
                             to={`/lore/organization/${org.id || slugify(org.name)}`}

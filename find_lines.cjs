@@ -13,7 +13,7 @@ async function processLineByLine() {
     let lineNumber = 0;
     for await (const line of rl) {
         lineNumber++;
-        if (line.includes('"name":')) console.log(`${lineNumber}: ${line.trim()}`);
+        if (line.includes('Spejl')) console.log(`${lineNumber}: ${line.trim()}`);
     }
 }
 

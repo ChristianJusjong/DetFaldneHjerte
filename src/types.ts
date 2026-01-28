@@ -40,6 +40,7 @@ export interface Asset {
     };
 }
 
+
 export interface District {
     id: string; // URL-friendly ID
     name: string;
@@ -57,6 +58,7 @@ export interface City {
     // shops?: Shop[]; // DEPRECATED: usage migrated to districts
     // inhabitants?: Npc[]; // DEPRECATED: usage migrated to districts
     districts: District[]; // NEW: container for all content
+    coordinates?: { x: number; y: number }; // Percentage 0-100
     image?: string; // Scenic image of the city
     mapImage?: string; // Orthographic map
     battlemapImage?: string; // Encounter map
@@ -80,6 +82,7 @@ export interface Region {
     capital: string;
     desc: string;
     battlemapImage?: string; // Encounter map
+    coordinates?: { x: number; y: number }; // Percentage 0-100
     cities: City[];
 }
 

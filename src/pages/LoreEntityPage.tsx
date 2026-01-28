@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useMemo } from 'react';
 import { useParams } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { BookOpen, Skull, Users, Shield, Globe } from 'lucide-react';
@@ -9,21 +9,18 @@ import { Badge } from '../components/ui/Badge';
 
 export const LoreEntityPage = () => {
     const { type, id } = useParams<{ type: string; id: string }>();
-    const [entity, setEntity] = useState<any>(null);
 
-    useEffect(() => {
+
+    const entity = useMemo(() => {
         const data = getLore();
         let found: any = null;
 
-        // Route map: /:type/:id
-        // types: religion (god), organization, race, conflict, bestiary
-
         if (type === 'god') {
             found = data.religion.gods.find(g => g.id === id);
-            if (found) found._typeLabel = "Guddom";
+            if (found) found = { ...found, _typeLabel: "Guddom" };
         } else if (type === 'organization') {
             found = data.organizations?.find(o => o.id === id);
-            if (found) found._typeLabel = "Organisation";
+            if (found) found = { ...found, _typeLabel: "Organisation" };
         } else if (type === 'race') {
             data.planes.forEach(p => p.continents.forEach(c => {
                 const r = c.races.find(r => r.id === id);
@@ -31,17 +28,16 @@ export const LoreEntityPage = () => {
             }));
         } else if (type === 'bestiary') {
             found = data.bestiary?.find(b => b.id === id);
-            if (found) found._typeLabel = "Bæst";
+            if (found) found = { ...found, _typeLabel: "Bæst" };
         } else if (type === 'conflict') {
             if (id === 'main') {
                 found = { ...data.conflict, _typeLabel: "Konflikt" };
             } else {
                 found = data.conflict.fractions.find(f => f.id === id);
-                if (found) found._typeLabel = "Fraktion";
+                if (found) found = { ...found, _typeLabel: "Fraktion" };
             }
         }
-
-        setEntity(found);
+        return found;
     }, [type, id]);
 
     if (!entity) return <div className="p-12 text-center text-white/50">Ingen optegnelser fundet...</div>;
