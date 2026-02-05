@@ -2,8 +2,8 @@ import { useState, useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Sparkles, X, Send } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { getLore } from '../utils/data';
 import { getContextFromPath } from '../utils/contextHelper';
+import { queryOracle } from '../utils/oracleEngine';
 import { clsx } from 'clsx';
 import { MysticCard } from './ui/MysticCard';
 
@@ -24,81 +24,27 @@ export const AIOracle = () => {
         scrollToBottom();
     }, [messages, isOpen]);
 
-    const handleSend = () => {
+    const handleSend = async () => {
         if (!input.trim()) return;
 
-        const newMessages = [...messages, { role: 'user', text: input }];
-        setMessages(newMessages);
+        const userMsg = { role: 'user', text: input };
+        setMessages(prev => [...prev, userMsg]);
         setInput('');
 
-        // Local RAG Logic
-        const query = input.toLowerCase();
-        let answer = "Jeg ser tåge... Spørg mere specifikt.";
-        const data = getLore();
-        let found = false;
-
-        // 0. Check Context First
+        // Context Logic
         const currentContext = getContextFromPath(location.pathname);
-        if (currentContext && (query.includes('her') || query.includes('dette') || query.includes('denne') || query.includes('by') || query.includes('hvem'))) {
-            // If user asks about "here", "this", etc., and we have context, use it.
-            // Simple heuristic: if we have context and regular search yields nothing specific, we might pivot to context.
-            // But let's prioritize direct matches first, then context fallback or enhancement.
 
-            // Actually, let's mix it in. If the query implies context ("Hvad sker der her?"), we use it.
-            if (query.includes('her') || query.includes('rygte') || query.includes('fortæl')) {
-                answer = `${currentContext} \n\n(Kontekstuel viden)`;
-                found = true;
-            }
-        }
+        // Simulate thinking delay + Get Answer
+        // We put the delay here or inside the engine? 
+        // Engine is async now, so we can just await it, maybe add artificial delay if too fast.
 
-        // 1. Check Gods
-        if (!found) {
-            data.religion.gods.forEach(g => {
-                if (query.includes(g.name.toLowerCase()) || query.includes(g.domain.toLowerCase())) {
-                    answer = `Ah, **${g.name}**. Guden for ${g.domain}. Deres symbol er ${g.symbol}. ${g.followers ? `De følges af ${g.followers}.` : ''}`;
-                    found = true;
-                }
-            });
-        }
-
-        // 2. Check Continents & Races
-        if (!found) {
-            data.planes.forEach(p => p.continents.forEach(c => {
-                if (query.includes(c.name.toLowerCase())) {
-                    answer = `${c.name}, også kendt som "${c.title}". ${c.description.substring(0, 150)}... ${c.culturalQuote ? `Som de siger: "${c.culturalQuote}"` : ''}`;
-                    found = true;
-                }
-                c.races.forEach(r => {
-                    if (query.includes(r.name.toLowerCase())) {
-                        answer = `**${r.name}**. ${r.description} (Mekanik: ${r.mechanic})`;
-                        found = true;
-                    }
-                });
-            }));
-        }
-
-        // 3. Check Conflict
-        if (!found && (query.includes('konflikt') || query.includes('krig') || query.includes('sygdom') || query.includes('autoimmun'))) {
-            answer = `Du spørger om **${data.conflict.title}**. ${data.conflict.description}`;
-            found = true;
-        }
-
-        // 4. Default Mysticism + Context Fallback
-        if (!found) {
-            if (currentContext) {
-                answer = `Jeg er ikke sikker på præcis hvad du mener, men du befinder dig et sted med historie: ${currentContext}`;
-            } else {
-                answer = `Jeg hører din stemme, men ${query} er skjult for mig i øjeblikket. Prøv at spørge om en Gud, en Race eller et Kontinent.`;
-            }
-        }
-
-        // Simulate AI response delay
-        setTimeout(() => {
+        setTimeout(async () => {
+            const response = await queryOracle(userMsg.text, currentContext || undefined);
             setMessages(prev => [...prev, {
                 role: 'ai',
-                text: answer
+                text: response.text
             }]);
-        }, 800);
+        }, 600);
     };
 
     return (

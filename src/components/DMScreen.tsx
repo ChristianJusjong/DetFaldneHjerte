@@ -1,24 +1,17 @@
 import { useState } from 'react';
-import { BookOpen, Sword, Dna, Coins, Compass, Clock, RotateCcw, Trash2, Plus, X } from 'lucide-react';
+import { BookOpen, Sword, Dna, Coins, Compass, Clock, RotateCcw, Trash2, Plus, X, Map, CloudRain, Mic2 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useGameStore } from '../store/useGameStore';
 import { useSoundEffects } from '../hooks/useSoundEffects';
 import { MysticCard } from './ui/MysticCard';
+import { BattleMap } from './tools/BattleMap';
+import { AmbientMixer } from './tools/AmbientMixer';
 import type { Combatant } from '../types';
 
 export const DMScreen = ({ showTrigger = true }: { showTrigger?: boolean }) => {
-    const { isDMScreenOpen, setDMScreenOpen, combatants, addCombatant, removeCombatant, updateCombatant, sortCombatants, clearCombatants } = useGameStore();
+    const { isDMScreenOpen, setDMScreenOpen, combatants, addCombatant, removeCombatant, updateCombatant, sortCombatants, clearCombatants, weather, setWeather } = useGameStore();
     const { playClick, playSuccess, playHover } = useSoundEffects();
-    const [activeTab, setActiveTab] = useState<'initiative' | 'dice' | 'prices' | 'travel' | 'time'>('initiative');
-
-    // ... (rest of logic) ...
-
-    // Since replace_file_content works on chunks, I'll target the props and the return statement trigger.
-    // This is a bit tricky with one chunk. Let's do it in two steps or be smart.
-    // Actually, I can just replace the definition and the trigger part.
-    // But the tool says "single contiguous block". The definition and the return are not contiguous.
-    // I'll used multi_replace_file_content if I had it in the allowlist? yes I do.
-
+    const [activeTab, setActiveTab] = useState<'initiative' | 'dice' | 'prices' | 'travel' | 'time' | 'battlemap' | 'weather' | 'mixer'>('initiative');
 
     // Initiative State
     const [newCombatant, setNewCombatant] = useState<Partial<Combatant>>({ name: '', initiative: 0, hp: 10, maxHp: 10, ac: 10, type: 'monster' });
@@ -45,7 +38,6 @@ export const DMScreen = ({ showTrigger = true }: { showTrigger?: boolean }) => {
         combatants.forEach(c => {
             if (c.type !== 'player') {
                 const roll = Math.floor(Math.random() * 20) + 1;
-                // Simple dex mod estimation or just raw roll for now
                 updateCombatant(c.id, { initiative: roll });
             }
         });
@@ -58,13 +50,15 @@ export const DMScreen = ({ showTrigger = true }: { showTrigger?: boolean }) => {
         { id: 'dice', label: 'Terninger', icon: <Dna size={18} /> },
         { id: 'prices', label: 'Handel', icon: <Coins size={18} /> },
         { id: 'travel', label: 'Rejse', icon: <Compass size={18} /> },
-        { id: 'time', label: 'Tid', icon: <Clock size={18} /> }
+        { id: 'time', label: 'Tid', icon: <Clock size={18} /> },
+        { id: 'battlemap', label: 'Kort', icon: <Map size={18} /> },
+        { id: 'weather', label: 'Vejr', icon: <CloudRain size={18} /> },
+        { id: 'mixer', label: 'Lyd', icon: <Mic2 size={18} /> }
     ];
 
     // Dice Roller
     const [rollResult, setRollResult] = useState<string | null>(null);
     const rollDice = (sides: number) => {
-        // eslint-disable-next-line react-hooks/purity
         const result = Math.floor(Math.random() * sides) + 1;
         setRollResult(`d${sides}: ${result}`);
         playClick();
@@ -95,11 +89,11 @@ export const DMScreen = ({ showTrigger = true }: { showTrigger?: boolean }) => {
                         >
                             <MysticCard noPadding className="h-full flex flex-col overflow-hidden shadow-2xl border-superia/20">
                                 <div className="p-4 border-b border-border bg-black/40 flex justify-between items-center shrink-0">
-                                    <div className="flex gap-2 overflow-x-auto pb-1">
+                                    <div className="flex gap-2 overflow-x-auto pb-1 no-scrollbar">
                                         {tabs.map(tab => (
                                             <button
                                                 key={tab.id}
-                                                onClick={() => { setActiveTab(tab.id as 'initiative' | 'dice' | 'prices' | 'travel' | 'time'); playClick(); }}
+                                                onClick={() => { setActiveTab(tab.id as any); playClick(); }}
                                                 className={`
                                                     flex items-center gap-2 px-4 py-2 rounded-lg font-serif text-sm transition-all whitespace-nowrap
                                                     ${activeTab === tab.id ? 'bg-superia/20 text-superia border border-superia/30' : 'text-text-dim hover:text-white hover:bg-white/5 border border-transparent'}
@@ -125,7 +119,7 @@ export const DMScreen = ({ showTrigger = true }: { showTrigger?: boolean }) => {
                                                     </div>
                                                 </div>
 
-                                                <div className="space-y-2 overflow-y-auto pr-2 max-h-[500px]">
+                                                <div className="space-y-2 overflow-y-auto pr-2 max-h-[500px] custom-scrollbar">
                                                     {combatants.map((c) => (
                                                         <div key={c.id} className={`flex items-center gap-4 p-3 rounded-lg border ${c.type === 'player' ? 'bg-blue-900/20 border-blue-500/30' : 'bg-red-900/10 border-red-500/20'} transition-all`}>
                                                             <div className="font-bold text-2xl w-12 text-center text-white/50">{c.initiative}</div>
@@ -325,6 +319,50 @@ export const DMScreen = ({ showTrigger = true }: { showTrigger?: boolean }) => {
                                             </div>
                                         </div>
                                     )}
+
+                                    {activeTab === 'battlemap' && (
+                                        <div className="h-full flex flex-col">
+                                            <h3 className="text-superia font-bold text-lg mb-4">Battle Map (Fog of War)</h3>
+                                            <div className="flex-1 min-h-0">
+                                                <BattleMap />
+                                            </div>
+                                        </div>
+                                    )}
+
+                                    {activeTab === 'weather' && (
+                                        <div className="h-full flex flex-col items-center justify-center p-8">
+                                            <h3 className="text-superia font-bold text-2xl mb-8">Atmosfærisk Kontrol</h3>
+                                            <div className="grid grid-cols-2 lg:grid-cols-5 gap-4">
+                                                {[
+                                                    { id: 'clear', label: 'Klart' },
+                                                    { id: 'rain', label: 'Regn' },
+                                                    { id: 'snow', label: 'Sne' },
+                                                    { id: 'fog', label: 'Tåge' },
+                                                    { id: 'ash', label: 'Aske' }
+                                                ].map(w => (
+                                                    <button
+                                                        key={w.id}
+                                                        onClick={() => { setWeather(w.id as any); playSuccess(); }}
+                                                        className={`
+                                                            w-32 h-32 rounded-xl flex flex-col items-center justify-center gap-2 border transition-all
+                                                            ${weather === w.id ? 'bg-superia/20 border-superia text-superia shadow-[0_0_20px_rgba(212,175,55,0.2)]' : 'bg-white/5 border-white/10 text-text-dim hover:bg-white/10 hover:text-white'}
+                                                        `}
+                                                    >
+                                                        <span className="text-lg font-bold">{w.label}</span>
+                                                    </button>
+                                                ))}
+                                            </div>
+                                            <p className="mt-8 text-text-dim max-w-md text-center">
+                                                Vælger du noget andet end 'Klart', vil en overlay-effekt blive vist over hele skærmen for at sætte stemningen.
+                                            </p>
+                                        </div>
+                                    )}
+
+                                    {activeTab === 'mixer' && (
+                                        <div className="h-full">
+                                            <AmbientMixer />
+                                        </div>
+                                    )}
                                 </div>
                             </MysticCard>
                         </motion.div>
@@ -334,4 +372,3 @@ export const DMScreen = ({ showTrigger = true }: { showTrigger?: boolean }) => {
         </>
     );
 };
-

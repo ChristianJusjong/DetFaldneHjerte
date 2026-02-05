@@ -15,7 +15,17 @@ export const SearchModal = () => {
     const { playClick, playHover } = useSoundEffects();
     const [query, setQuery] = useState('');
     // results is derived now
+    // results is derived now
     const [selectedIndex, setSelectedIndex] = useState(0);
+    const [activeFilter, setActiveFilter] = useState<string>('all');
+
+    const filters = [
+        { id: 'all', label: 'Alt' },
+        { id: 'city', label: 'Byer', icon: <MapPin size={12} /> },
+        { id: 'god', label: 'Guder', icon: <Star size={12} /> },
+        { id: 'organization', label: 'Org', icon: <Book size={12} /> },
+        { id: 'bestiary', label: 'Monstre', icon: <Skull size={12} /> }
+    ];
 
     // Focus input when opened
     useEffect(() => {
@@ -25,7 +35,7 @@ export const SearchModal = () => {
     }, [isSearchOpen]);
 
     // Derived Results
-    const results = query.trim().length > 1 ? searchLore(query).slice(0, 8) : [];
+    const results = query.trim().length > 1 ? searchLore(query, activeFilter).slice(0, 8) : [];
 
     const handleSelect = (result: SearchResult) => {
         addRecentSearch(result.title);
@@ -119,6 +129,24 @@ export const SearchModal = () => {
                                 />
                                 <div className="text-xs text-text-dim border border-white/10 px-2 py-1 rounded bg-black/20 hidden md:block">ESC</div>
                                 <X size={24} className="cursor-pointer text-text-dim hover:text-white" onClick={() => setSearchOpen(false)} />
+                            </div>
+
+                            {/* Filters */}
+                            <div className="flex gap-2 p-4 pt-2 border-b border-white/5 overflow-x-auto no-scrollbar">
+                                {filters.map(f => (
+                                    <button
+                                        key={f.id}
+                                        onClick={() => { setActiveFilter(f.id); inputRef.current?.focus(); }}
+                                        className={clsx(
+                                            "flex items-center gap-2 px-3 py-1 rounded-full text-xs font-serif transition-all border",
+                                            activeFilter === f.id
+                                                ? "bg-superia/20 border-superia text-superia"
+                                                : "bg-white/5 border-transparent text-text-dim hover:bg-white/10 hover:text-white"
+                                        )}
+                                    >
+                                        {f.icon} {f.label}
+                                    </button>
+                                ))}
                             </div>
 
                             {/* Results / History */}

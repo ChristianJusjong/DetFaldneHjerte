@@ -1,7 +1,6 @@
 import { useMemo } from 'react';
 import { Link } from 'react-router-dom';
-import { getLore } from '../utils/data';
-import { slugify } from '../utils/helpers';
+import { getSmartTokens, getTermData } from '../utils/smartTextEngine';
 
 interface SmartLinkProps {
     text: string;
@@ -11,100 +10,19 @@ interface SmartLinkProps {
     };
 }
 
-interface TermCandidate {
-    url: string;
-    type: string;
-    continentId?: string;
-    regionId?: string;
-}
+
 
 export const SmartLink = ({ text, context }: SmartLinkProps) => {
-    // Memoize the terms dictionary so it's only built once
-    const termMap = useMemo(() => {
-        if (!text) return new Map<string, TermCandidate[]>(); // Return empty map if no text
-
-        const data = getLore();
-        const map = new Map<string, TermCandidate[]>();
-
-        const addTerm = (term: string, candidate: TermCandidate) => {
-            if (!term) return;
-            const existing = map.get(term) || [];
-            existing.push(candidate);
-            map.set(term, existing);
-        };
-
-        // Planes & Continents
-        data.planes.forEach(p => {
-            if (p.name) addTerm(p.name, { url: `/plane/${p.id}`, type: 'plane' });
-
-            p.continents.forEach(c => {
-                if (c.name) addTerm(c.name, { url: `/continent/${c.id}`, type: 'continent', continentId: c.id });
-
-                // Races linked to continents
-                c.races.forEach(r => {
-                    if (r.name) addTerm(r.name, { url: `/lore/race/${r.id || slugify(r.name)}`, type: 'race', continentId: c.id });
-                });
-
-                // Regions
-                c.regions.forEach(reg => {
-                    if (reg.name) addTerm(reg.name, { url: `/continent/${c.id}/${slugify(reg.name)}`, type: 'region', continentId: c.id, regionId: slugify(reg.name) });
-
-                    // Cities
-                    reg.cities.forEach(city => {
-                        if (city.name) {
-                            addTerm(city.name, {
-                                url: `/continent/${c.id}/${slugify(reg.name)}/${slugify(city.name)}`,
-                                type: 'city',
-                                continentId: c.id,
-                                regionId: slugify(reg.name)
-                            });
-                        }
-                    });
-                });
-            });
-        });
-
-        // Gods
-        data.religion.gods.forEach(g => {
-            if (g.name) {
-                const name = g.name.split(' (')[0];
-                addTerm(name, { url: `/lore/god/${g.id || slugify(g.name)}`, type: 'god' });
-            }
-        });
-
-        // Organizations
-        data.organizations?.forEach(o => {
-            if (o.name) addTerm(o.name, { url: `/lore/organization/${o.id || slugify(o.name)}`, type: 'org' });
-        });
-
-        // Bestiary
-        data.bestiary?.forEach(b => {
-            if (b.name) addTerm(b.name, { url: `/lore/bestiary/${b.id || slugify(b.name)}`, type: 'bestiary' });
-        });
-
-        return map;
-    }, [text]); // Added text dependency to re-run if text exists check changes? Actually empty deps is better but we use 'text' check inside.
-    // Actually, termMap doesn't depend on 'text' content, but I added a guard. Let's make it independent of text again.
-
-    // Create a master regex for all terms
     const parts = useMemo(() => {
         if (!text) return null;
 
-        const sortedTerms = Array.from(termMap.keys()).sort((a, b) => b.length - a.length);
-        if (sortedTerms.length === 0) return [text];
+        const tokens = getSmartTokens(text);
 
-        // Escape regex special chars
-        const pattern = sortedTerms.map(t => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|');
-        const regex = new RegExp(`\\b(${pattern})\\b`, 'gi');
+        return tokens.map((part, i) => {
+            // Check if this part is a term
+            const candidates = getTermData(part);
 
-        const split = text.split(regex);
-
-        return split.map((part, i) => {
-            const matchedKey = sortedTerms.find(t => t.toLowerCase() === part.toLowerCase());
-
-            if (matchedKey) {
-                const candidates = termMap.get(matchedKey) || [];
-
+            if (candidates) {
                 // Context Resolution Strategy
                 let bestMatch = candidates[0];
                 if (context && candidates.length > 1) {
@@ -129,10 +47,10 @@ export const SmartLink = ({ text, context }: SmartLinkProps) => {
 
                     return (
                         <Link
-                            key={`${matchedKey}-${i}`}
+                            key={`${bestMatch.url}-${i}`}
                             to={bestMatch.url}
                             style={{ color: color, fontWeight: 500, textDecoration: 'none', borderBottom: `1px dotted ${color}` }}
-                            title={`${bestMatch.type} (${matchedKey})`}
+                            title={`${bestMatch.type} (${part})`}
                         >
                             {part}
                         </Link>
@@ -141,7 +59,7 @@ export const SmartLink = ({ text, context }: SmartLinkProps) => {
             }
             return part;
         });
-    }, [text, termMap, context]);
+    }, [text, context]);
 
     if (!text) return null;
 

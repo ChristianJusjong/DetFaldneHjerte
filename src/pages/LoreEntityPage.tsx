@@ -1,14 +1,17 @@
 import { useMemo } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { BookOpen, Skull, Users, Shield, Globe } from 'lucide-react';
 import { getLore } from '../utils/data';
 import { ImageWithFallback } from '../components/ImageWithFallback';
 import { MysticCard } from '../components/ui/MysticCard';
 import { Badge } from '../components/ui/Badge';
+import { SmartLink } from '../components/SmartLink';
+import { BookmarkButton } from '../components/BookmarkButton';
 
 export const LoreEntityPage = () => {
     const { type, id } = useParams<{ type: string; id: string }>();
+    const location = useLocation();
 
 
     const entity = useMemo(() => {
@@ -70,6 +73,10 @@ export const LoreEntityPage = () => {
                     )}
                     <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent" />
 
+                    <div className="absolute top-4 right-4 z-10">
+                        <BookmarkButton url={location.pathname} title={entity.name} type="other" />
+                    </div>
+
                     <div className="absolute bottom-0 left-0 p-8 w-full flex items-end justify-between">
                         <div className="flex items-center gap-4">
                             <div className="p-4 bg-white/10 rounded-2xl backdrop-blur-md border border-white/20 text-white shadow-lg">
@@ -86,9 +93,9 @@ export const LoreEntityPage = () => {
                 <div className="p-8 space-y-8">
                     <MysticCard>
                         <h3 className="text-xl font-bold text-white mb-4">Beskrivelse</h3>
-                        <p className="text-gray-300 leading-relaxed text-lg">
-                            {entity.desc || entity.description}
-                        </p>
+                        <div className="text-gray-300 leading-relaxed text-lg whitespace-pre-line">
+                            <SmartLink text={entity.desc || entity.description} />
+                        </div>
                     </MysticCard>
 
                     {/* Dynamic Fields */}

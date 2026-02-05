@@ -1,0 +1,58 @@
+[
+  {
+    "name": "De Hvide Vogtere",
+    "desc": "Soldater i hvidt panser der 'renser' verden for kaos og følelser.",
+    "loyalty": "Tanke-Tinderne",
+    "id": "de-hvide-vogtere",
+    "image": "/assets/organizations/de-hvide-vogtere.png",
+    "visualSummary": "Symbol or headquarters of De Hvide Vogtere. Description: undefined"
+  },
+  {
+    "name": "Sump-Syndikatet",
+    "desc": "Kriminelle der sælger ulovlige eliksirer.",
+    "loyalty": "Profit",
+    "id": "sump-syndikatet",
+    "image": "/assets/organizations/sump-syndikatet.png",
+    "visualSummary": "Symbol or headquarters of Sump-Syndikatet. Description: undefined"
+  },
+  {
+    "name": "Scroll-Smedenes Laug",
+    "desc": "De magiske skrivere der styrer al viden i Tanke-Tinderne. De kan omskrive love og hukommelse.",
+    "loyalty": "Tanke-Tinderne",
+    "id": "scroll-smedenes-laug",
+    "image": "/assets/organizations/scroll-smedenes-laug.png",
+    "visualSummary": "Symbol or headquarters of Scroll-Smedenes Laug. Description: undefined"
+  },
+  {
+    "name": "Gift-Blandernes Cirkel",
+    "desc": "En hemmelig orden i Skygge-Siden, der mestrer kunsten at helbrede og dræbe uden spor.",
+    "loyalty": "Ur-Skoven",
+    "id": "gift-blandernes-cirkel",
+    "image": "/assets/organizations/gift-blandernes-cirkel.png",
+    "visualSummary": "Symbol or headquarters of Gift-Blandernes Cirkel. Description: undefined"
+  },
+  {
+    "name": "Jern-Vagten",
+    "desc": "Beskytterne af handelsruterne, der rider på pansrede kæmpe-biller. De er neutrale i konflikten.",
+    "loyalty": "Neutral",
+    "id": "jern-vagten",
+    "image": "/assets/organizations/jern-vagten.png",
+    "visualSummary": "Symbol or headquarters of Jern-Vagten. Description: undefined"
+  },
+  {
+    "name": "Skal-Ridderne",
+    "desc": "En orden af krigere på Tvillinge-�~erne, der bærer rustning lavet af gigantiske krabbe-skaller. De beskytter 'Orden'.",
+    "loyalty": "Tvillinge-�~erne (Orden)",
+    "id": "skal-ridderne",
+    "image": "/assets/organizations/skal-ridderne.png",
+    "visualSummary": "Symbol or headquarters of Skal-Ridderne. Description: undefined"
+  },
+  {
+    "name": "Form-Vandrerne",
+    "desc": "En sekt af Sjæle-Tvillinger, der har mestret kunsten at ændre fysisk form. De tilbeder 'Kaos'.",
+    "loyalty": "Tvillinge-�~erne (Kaos)",
+    "id": "form-vandrerne",
+    "image": "/assets/organizations/form-vandrerne.png",
+    "visualSummary": "Symbol or headquarters of Form-Vandrerne. Description: undefined"
+  }
+]

@@ -1,5 +1,6 @@
 import Fuse from 'fuse.js';
 import { getLore } from './data';
+import { slugify } from './helpers';
 
 export interface SearchResult {
     id: string;
@@ -30,7 +31,7 @@ const getSearchIndex = (): SearchResult[] => {
                 title: r.name,
                 description: r.desc.substring(0, 100),
                 type: 'region',
-                path: `/continent/${c.id}/${r.name.toLowerCase().replace(/ /g, '-')}`
+                path: `/continent/${c.id}/${slugify(r.name)}`
             });
 
             // Index Cities
@@ -40,7 +41,7 @@ const getSearchIndex = (): SearchResult[] => {
                     title: city.name,
                     description: city.desc.substring(0, 100),
                     type: 'city',
-                    path: `/continent/${c.id}/${r.name.toLowerCase().replace(/ /g, '-')}/${city.name.toLowerCase().replace(/ /g, '-')}`
+                    path: `/continent/${c.id}/${slugify(r.name)}/${slugify(city.name)}`
                 });
             });
         });
@@ -95,12 +96,18 @@ const options = {
 
 let fuseInstance: Fuse<SearchResult> | null = null;
 
-export const searchLore = (query: string): SearchResult[] => {
+export const searchLore = (query: string, typeFilter?: string): SearchResult[] => {
     if (!fuseInstance) {
         fuseInstance = new Fuse(getSearchIndex(), options);
     }
 
     if (!query.trim()) return [];
 
-    return fuseInstance.search(query).map(result => result.item);
+    let results = fuseInstance.search(query).map(result => result.item);
+
+    if (typeFilter && typeFilter !== 'all') {
+        results = results.filter(r => r.type === typeFilter);
+    }
+
+    return results;
 };

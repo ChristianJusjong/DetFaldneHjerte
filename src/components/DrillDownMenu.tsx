@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { ChevronRight, ChevronDown, Home, Globe, Map, Star, BookOpen, UserPlus } from 'lucide-react';
+import { ChevronRight, ChevronDown, Home, Globe, Map, Star, BookOpen, UserPlus, Clock } from 'lucide-react';
 import { clsx } from 'clsx';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useGameStore } from '../store/useGameStore';
@@ -321,6 +321,30 @@ export const DrillDownMenu = () => {
                         >
                             <BookOpen size={18} />
                         </button>
+                        <Link
+                            to="/web"
+                            className="p-2 text-[#8b8b8b] hover:text-superia hover:bg-superia/5 rounded-sm transition-all"
+                            title="Vidensnet (Graph)"
+                        >
+                            <Globe size={18} />
+                        </Link>
+                        <Link
+                            to="/timeline"
+                            className="p-2 text-[#8b8b8b] hover:text-superia hover:bg-superia/5 rounded-sm transition-all"
+                            title="Tidslinje"
+                        >
+                            <Clock size={18} />
+                        </Link>
+                        <Link
+                            to="/map"
+                            className="p-2 text-[#8b8b8b] hover:text-superia hover:bg-superia/5 rounded-sm transition-all"
+                            title="Verdenskort"
+                        >
+                            <Map size={18} />
+                        </Link>
+                        {/* Note: The Dice Roller has its own internal toggle, but we could add one here too if we connected it to global state. 
+                            For now, the Dice Roller uses its own floating active state, but we'll integrate properly in App.tsx. 
+                        */}
                     </div>
                 </div>
             </div>

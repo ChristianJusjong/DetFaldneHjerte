@@ -5,6 +5,7 @@ import { SmartLink } from '../components/SmartLink';
 import { MysticCard } from '../components/ui/MysticCard';
 import { PageHeader } from '../components/ui/PageHeader';
 import { Badge } from '../components/ui/Badge';
+import { TravelCalculator } from '../components/TravelCalculator';
 
 export const TravelPage = () => {
     const data = loreData as unknown as LoreData;
@@ -21,6 +22,10 @@ export const TravelPage = () => {
                 />
 
                 <div className="flex flex-col gap-8">
+                    {/* New Calculator */}
+                    <TravelCalculator />
+
+                    <h2 className="text-2xl font-bold text-white mt-8 px-2">Kendte Rejseruter</h2>
                     {data.travel.map(t => (
                         <div key={t.name} className="p-6 rounded-2xl bg-yellow-500/5 border border-yellow-500/10">
                             <h3 className="text-2xl font-serif font-bold text-yellow-500 mb-2">{t.name}</h3>

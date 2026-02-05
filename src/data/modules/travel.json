@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Verdenskanten",
+    "desc": "Sejlads ud over kanten hvor tyngdekraften vender. Farligt men billigt.",
+    "cost": "Billigst / Livsfarlig"
+  },
+  {
+    "name": "Vandfaldet",
+    "desc": "En magisk vandrutsjebane gennem verdens indre.",
+    "cost": "Dyr (Told)"
+  },
+  {
+    "name": "Lyn-Portene",
+    "desc": "Teleportering. �~jeblikkelig rejse.",
+    "cost": "Kun for eliten (Kræver pas)"
+  },
+  {
+    "name": "Luftskibe",
+    "desc": "Skibe hængt op i store balloner af let-gas eller bundet til tæmmede sky-hvaler. Rejser mellem bjergtoppene.",
+    "cost": "Middel (Udsat for pirater)"
+  },
+  {
+    "name": "Kæmpe-Biller",
+    "desc": "Karavaner på ryggen af enorme, pansrede biller. Det sikreste valg gennem junglen og sumpen.",
+    "cost": "Lav (Langsomt)"
+  },
+  {
+    "name": "Skygge-Vandring",
+    "desc": "En farlig genvej gennem skygge-planet. Bruges af spioner og smuglere, men man risikerer at fare vild for evigt.",
+    "cost": "Sjæle-fragmenter"
+  }
+]

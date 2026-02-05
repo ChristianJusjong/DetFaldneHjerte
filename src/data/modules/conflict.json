@@ -1,0 +1,55 @@
+{
+  "title": "Den Frosne Strid",
+  "description": "En kold krig mellem Lys-Siden og Skygge-Siden. Vismændene i nord frygter, at vildskaben i syd vil opsluge verdenen, og forsøger at lukke de magiske forbindelser (Protokol Stilhed).",
+  "effects": [
+    {
+      "name": "Magisk Kulde",
+      "desc": "Magi fra nord føles kød og beregnende. Helbredelse er svagere."
+    },
+    {
+      "name": "Grå-Sygen",
+      "desc": "Folk i nord mister viljen til at leve og bliver apatiske."
+    },
+    {
+      "name": "Vildtvoks",
+      "desc": "I syd går naturen amok og skaber monstre."
+    }
+  ],
+  "fractions": [
+    {
+      "name": "Tanke-Kollektivet",
+      "leader": "Stor-Vismand Neuro",
+      "goal": "Isolation af Lys-Siden. Afskæring af Dybets 'kaos'.",
+      "assets": "De Hvide Vogtere og teknologi.",
+      "id": "tanke-kollektivet",
+      "desc": "En indflydelsesrig gruppe ledet af Stor-Vismand Neuro. Deres ultimative mål er isolation af lys-siden. De opererer primært i skyggerne, men deres indflydelse mærkes overalt. Medlemmer kendes på deres logiske tilgang.",
+      "image": "/images/generated/tanke-kollektivet.png"
+    },
+    {
+      "name": "Guld-Lauget",
+      "leader": "Fyrstinde Silke",
+      "goal": "Profit. Holder handlen åben i hemmelighed.",
+      "assets": "Lejesoldater og smuglere.",
+      "id": "guld-lauget",
+      "desc": "En indflydelsesrig gruppe ledet af Fyrstinde Silke. Deres ultimative mål er profit. De opererer primært i skyggerne, men deres indflydelse mærkes overalt. Medlemmer kendes på deres rigdom.",
+      "image": "/images/generated/guld-lauget.png"
+    },
+    {
+      "name": "Ur-Stammen",
+      "leader": "Matriark Gorm",
+      "goal": "Invasion af nord. Knus 'De Kolde'.",
+      "assets": "Monstre og naturkræfter.",
+      "id": "ur-stammen",
+      "desc": "En indflydelsesrig gruppe ledet af Matriark Gorm. Deres ultimative mål er invasion af nord. De opererer primært i skyggerne, men deres indflydelse mærkes overalt. Medlemmer kendes på deres styrke."
+    },
+    {
+      "name": "Fantom-Oprøret",
+      "leader": "Nerven",
+      "goal": "Genopret balancen.",
+      "assets": "Spioner og idealister.",
+      "id": "fantom-oprret",
+      "desc": "En indflydelsesrig gruppe ledet af Nerven. Deres ultimative mål er at genoprette balancen. De opererer primært i skyggerne, men deres indflydelse mærkes overalt. Medlemmer kendes på deres idealisme.",
+      "image": "/assets/organizations/fantom-oprroeret.png"
+    }
+  ]
+}

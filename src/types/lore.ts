@@ -5,31 +5,29 @@ export interface InventoryItem {
     price: string;
     desc?: string;
     rarity?: 'common' | 'uncommon' | 'rare' | 'legendary' | 'artifact';
-    image?: string; // New: Item Card Art
+    image?: string;
 }
 
 export interface Asset {
-    id: string; // Unique identifier for routing
+    id: string;
     name: string;
-    type: AssetType; // "shop", "npc", etc.
-    subtype?: string; // "Blacksmith", "Captain of the Guard"
+    type: AssetType;
+    subtype?: string;
     desc: string;
-    image?: string; // Specific image for this asset (Portrait for NPC, Exterior for Shop)
-    tokenImage?: string; // New: VTT Token for NPC
-    interiorImage?: string; // New: Interior view for Shop/Location
-    // Shop specific
+    image?: string;
+    tokenImage?: string;
+    interiorImage?: string;
     owner?: string;
     inventory?: InventoryItem[];
     shopkeeper?: {
         name: string;
         desc: string;
         quirk?: string;
-        image?: string; // New: Shopkeeper Portrait
+        image?: string;
     };
-    // NPC specific
     role?: string;
     wants?: string;
-    appearance?: string; // Visual description
+    appearance?: string;
     stats?: {
         str: number;
         dex: number;
@@ -40,13 +38,12 @@ export interface Asset {
     };
 }
 
-
 export interface District {
-    id: string; // URL-friendly ID
+    id: string;
     name: string;
     desc: string;
-    image?: string; // Scenic image
-    mapImage?: string; // Orthographic map
+    image?: string;
+    mapImage?: string;
     assets: Asset[];
 }
 
@@ -55,21 +52,17 @@ export interface City {
     desc: string;
     rumor?: string;
     layout?: string;
-    // shops?: Shop[]; // DEPRECATED: usage migrated to districts
-    // inhabitants?: Npc[]; // DEPRECATED: usage migrated to districts
-    districts: District[]; // NEW: container for all content
-    coordinates?: { x: number; y: number }; // Percentage 0-100
-    image?: string; // Scenic image of the city
-    mapImage?: string; // Orthographic map
-    battlemapImage?: string; // Encounter map
-    // Descriptive extensions
+    districts: District[];
+    coordinates?: { x: number; y: number };
+    image?: string;
+    mapImage?: string;
+    battlemapImage?: string;
     architecture?: string;
     atmosphere?: string;
     pointsOfInterest?: string[];
 }
 
-// Keeping old interfaces for backward compatibility during migration if needed, 
-// but strictly they should be replaced by Asset.
+// Legacy interfaces
 export interface Shop extends Asset {
     type: 'shop';
 }
@@ -81,19 +74,19 @@ export interface Region {
     name: string;
     capital: string;
     desc: string;
-    battlemapImage?: string; // Encounter map
-    coordinates?: { x: number; y: number }; // Percentage 0-100
+    battlemapImage?: string;
+    coordinates?: { x: number; y: number };
     cities: City[];
 }
 
 export interface Race {
-    id: string; // New
+    id: string;
     name: string;
     description: string;
     mechanic: string;
     reskin?: string;
     motto?: string;
-    image?: string; // Standardize image
+    image?: string;
 }
 
 export interface SocialDynamics {
@@ -114,8 +107,9 @@ export interface Continent {
     name: string;
     title: string;
     description: string;
-    culturalQuote?: string; // Added field
+    culturalQuote?: string;
     color: string;
+    coordinates?: { x: number; y: number };
     socialDynamics?: SocialDynamics;
     races: Race[];
     regions: Region[];
@@ -126,18 +120,18 @@ export interface Plane {
     name: string;
     theme: string;
     description?: string;
-    mapImage?: string; // New field
+    mapImage?: string;
     continents: Continent[];
 }
 
 export interface God {
-    id: string; // New
+    id: string;
     name: string;
     domain: string;
     symbol: string;
     followers?: string;
-    desc?: string; // Standardize desc
-    image?: string; // Standardize image
+    desc?: string;
+    image?: string;
 }
 
 export interface Religion {
@@ -147,12 +141,12 @@ export interface Religion {
 }
 
 export interface Faction {
-    id: string; // New
+    id: string;
     name: string;
     leader: string;
     goal: string;
     assets?: string;
-    desc?: string; // Standardize
+    desc?: string;
 }
 
 export interface ConflictEffect {
@@ -161,7 +155,7 @@ export interface ConflictEffect {
 }
 
 export interface Conflict {
-    id: string; // New
+    id: string;
     title: string;
     description: string;
     effects?: ConflictEffect[];
@@ -170,7 +164,7 @@ export interface Conflict {
 }
 
 export interface Organization {
-    id: string; // New
+    id: string;
     name: string;
     desc: string;
     loyalty: string;
@@ -178,7 +172,7 @@ export interface Organization {
 }
 
 export interface BestiaryEntry {
-    id: string; // New
+    id: string;
     name: string;
     desc: string;
     ability: string;
@@ -200,42 +194,4 @@ export interface LoreData {
     bestiary?: BestiaryEntry[];
     travel: TravelMethod[];
     religion: Religion;
-}
-
-export interface Bookmark {
-    url: string;
-    title: string;
-    type: 'continent' | 'region' | 'city' | 'district' | 'asset' | 'other';
-}
-
-export interface GeneratedNPC {
-    id: string;
-    name: string;
-    race: string;
-    role: string;
-    quirk: string;
-    continent: string;
-    description: string; // Added description
-    alignment?: string; // Added alignment
-    stats: {
-        str: number;
-        dex: number;
-        con: number;
-        int: number;
-        wis: number;
-        cha: number;
-    };
-    notes?: string;
-    createdAt: number;
-}
-
-export interface Combatant {
-    id: string;
-    name: string;
-    initiative: number;
-    hp: number;
-    maxHp: number;
-    ac: number;
-    type: 'player' | 'monster' | 'npc';
-    condition?: string;
 }

@@ -9,6 +9,16 @@ interface GameState {
     removeBookmark: (url: string) => void;
     isBookmarked: (url: string) => boolean;
 
+    // Active Note / Weather (Fixed missing props)
+    activeNoteId: string | null;
+    weather: 'clear' | 'rain' | 'snow' | 'fog' | 'ash';
+    setWeather: (weather: 'clear' | 'rain' | 'snow' | 'fog' | 'ash') => void;
+
+    // Audio Mixer
+    mixerChannels: { id: string; name: string; volume: number; muted: boolean; src: string }[];
+    setChannelVolume: (id: string, volume: number) => void;
+    toggleChannelMute: (id: string) => void;
+
     // Saved NPCs
     savedNPCs: GeneratedNPC[];
     saveNPC: (npc: GeneratedNPC) => void;
@@ -23,9 +33,7 @@ interface GameState {
     clearCombatants: () => void;
 
     // UI State
-    isSidebarOpen: boolean;
-    setSidebarOpen: (isOpen: boolean) => void;
-    toggleSidebar: () => void;
+
 
     // Tools State
     isNPCGeneratorOpen: boolean;
@@ -50,6 +58,23 @@ export const useGameStore = create<GameState>()(
         (set, get) => ({
             // Bookmarks
             bookmarks: [],
+            activeNoteId: null,
+            weather: 'clear',
+            setWeather: (weather) => set({ weather }),
+
+            mixerChannels: [
+                { id: 'music', name: 'Musik', volume: 0.5, muted: false, src: '/assets/audio/music.mp3' },
+                { id: 'ambience', name: 'Atmosfære', volume: 0.6, muted: false, src: '/assets/audio/ambience.mp3' },
+                { id: 'weather', name: 'Vejr (Regn/Vind)', volume: 0.0, muted: false, src: '/assets/audio/rain.mp3' },
+                { id: 'fx', name: 'Lydeffekter', volume: 0.8, muted: false, src: '/assets/audio/fx.mp3' }
+            ],
+            setChannelVolume: (id, volume) => set(state => ({
+                mixerChannels: state.mixerChannels.map(c => c.id === id ? { ...c, volume } : c)
+            })),
+            toggleChannelMute: (id) => set(state => ({
+                mixerChannels: state.mixerChannels.map(c => c.id === id ? { ...c, muted: !c.muted } : c)
+            })),
+
             addBookmark: (bookmark) => set((state) => {
                 if (state.bookmarks.some(b => b.url === bookmark.url)) return state;
                 return { bookmarks: [...state.bookmarks, bookmark] };
@@ -86,9 +111,7 @@ export const useGameStore = create<GameState>()(
             clearCombatants: () => set({ combatants: [] }),
 
             // UI State
-            isSidebarOpen: true, // Default open on desktop
-            setSidebarOpen: (isOpen) => set({ isSidebarOpen: isOpen }),
-            toggleSidebar: () => set((state) => ({ isSidebarOpen: !state.isSidebarOpen })),
+
 
             // Tools State
             isNPCGeneratorOpen: false,

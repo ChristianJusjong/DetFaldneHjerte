@@ -29,12 +29,43 @@ function generatePrompt(type, entity, context) {
 
     const fullPrompt = `${base} ${desc}, detailed, 8k, concept art`;
 
+    let folder = 'misc';
+    if (type === 'God') folder = 'gods';
+    if (type === 'Bestiary') folder = 'bestiary';
+    if (type === 'Organization') folder = 'organizations';
+    if (type === 'District') folder = 'districts';
+    if (type === 'Shop' || type === 'Asset') folder = 'shops';
+
+    let id = entity.id;
+
+    // Force context prefix for Districts/Shops to ensure unique filenames/paths
+    // even if they have an ID (like 'centrum') which is shared across cities.
+    if ((type === 'District' || type === 'Shop' || type === 'Asset') && context) {
+        const cityContext = context.split(',')[0].toLowerCase().replace(/\s/g, '-').replace(/[^a-z0-9-]/g, '');
+        let base = id || entity.name.toLowerCase();
+        base = base.replace(/\s/g, '-').replace(/[^a-z0-9-]/g, '');
+        // Avoid double prefix if ID already includes it (unlikely but safe)
+        if (!base.startsWith(cityContext)) {
+            id = `${cityContext}-${base}`;
+        } else {
+            id = base;
+        }
+    }
+
+    if (!id) {
+        id = entity.name.toLowerCase().replace(/\s/g, '-').replace(/[^a-z0-9-]/g, '');
+    }
+
+    const filename = `${id}.png`;
+    const targetPath = `/assets/${folder}/${filename}`;
+
     prompts.push({
-        id: entity.id || entity.name.toLowerCase().replace(/\s/g, '-'),
+        id: id,
         name: entity.name,
         type: type,
         context: context,
-        prompt: fullPrompt
+        prompt: fullPrompt,
+        targetPath: targetPath
     });
 }
 

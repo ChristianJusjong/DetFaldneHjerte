@@ -1,0 +1,80 @@
+{
+  "name": "De Tre Kræfter og De Glemte",
+  "description": "Guderne er aspekter af verdens balance, men der findes utallige mindre kulter.",
+  "gods": [
+    {
+      "name": "Arkitekten (Orden)",
+      "domain": "Logik, Magi, Struktur",
+      "symbol": "Blå krystal",
+      "followers": "Tanke-Tinderne, Spejl-Søen",
+      "id": "arkitekten-orden",
+      "desc": "En mægtig guddom der repræsenterer logik og magi. Arkitekten kræver absolut præcision.",
+      "rituals": "Bygning af geometriske altre. Korsang i primtal.",
+      "orders": [
+        "Logikkens Vogtere",
+        "Det Krystallinske Broderskab"
+      ],
+      "holidays": [
+        "Jævndøgns-Beregningen",
+        "Det Store System-Tjek"
+      ],
+      "image": "/images/generated/arkitekten-orden.png"
+    },
+    {
+      "name": "Moderen (Liv)",
+      "domain": "Natur, Blod, Vækst",
+      "symbol": "Rødt træ",
+      "followers": "Ur-Skoven, Sølvtunge-Næsset",
+      "id": "moderen-liv",
+      "desc": "Repræsentanten for ukontrolleret liv og instinkt.",
+      "rituals": "Blodofring af kvæg. Plantning af hellige frø i levende kød.",
+      "orders": [
+        "De Røde Druider",
+        "Sølvtungerne"
+      ],
+      "holidays": [
+        "Blomstrings-Natten",
+        "Slagte-Festen"
+      ],
+      "image": "/images/generated/moderen-liv.png"
+    },
+    {
+      "name": "Vandreren (Ånd)",
+      "domain": "Frihed, Vind, Rejse",
+      "symbol": "Sølvfløjte",
+      "followers": "Klang-Dalene, Tvillinge-Øerne",
+      "id": "vandreren-nd",
+      "desc": "Guddommen for dem der aldrig stopper op.",
+      "rituals": "At gå 100 mil uden at sove. At spille fløjte i stormvejr.",
+      "orders": [
+        "Vind-Vandrerne",
+        "De Tavse Budbringere"
+      ],
+      "holidays": [
+        "Storm-Dansen",
+        "Den Lange Vandring"
+      ],
+      "image": "/images/generated/vandreren-nd.png"
+    }
+  ],
+  "minorDeities": [
+    {
+      "name": "Rust-Herren",
+      "domain": "Forfald, Metal, Tid",
+      "desc": "Tilbedes i Kæde-Kløften. Sigis at spise metal og tid.",
+      "symbol": "Et rustent tandhjul"
+    },
+    {
+      "name": "Den Sovende",
+      "domain": "Drømme, Mareridt",
+      "desc": "En guddom der siges at sove under Spejl-Søen. Hans drømme bliver virkelighed.",
+      "symbol": "Et lukket øje"
+    },
+    {
+      "name": "Det Tomme Ansigt",
+      "domain": "Glemsel, Intethed",
+      "desc": "Nihilistisk kult der tror at verden er en fejl.",
+      "symbol": "En hvid maske uden træk"
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const promptsPath = path.join(__dirname, '../src/data/generated_prompts.json');
+const promptsPath = path.join(__dirname, '../src/data/image_prompts.json');
 const publicDir = path.join(__dirname, '../public');
 
 if (!fs.existsSync(promptsPath)) {
@@ -13,7 +13,7 @@ const allPrompts = JSON.parse(fs.readFileSync(promptsPath, 'utf8'));
 const queue = [];
 
 for (const p of allPrompts) {
-    const fullPath = path.join(publicDir, p.id);
+    const fullPath = path.join(publicDir, p.targetPath);
     if (!fs.existsSync(fullPath)) {
         queue.push(p);
     }

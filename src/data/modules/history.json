@@ -1,0 +1,57 @@
+{
+    "eras": [
+        {
+            "id": "creation",
+            "name": "Skabelsens Tid",
+            "color": "#fbbf24",
+            "events": [
+                {
+                    "year": -10000,
+                    "title": "Verdens Skabelse",
+                    "description": "Guderne former Kor af stjernestøv og drømme."
+                },
+                {
+                    "year": -9000,
+                    "title": "De Første Racer",
+                    "description": "Elvere og Drager opstår."
+                }
+            ]
+        },
+        {
+            "id": "fall",
+            "name": "Det Faldne Hjerte",
+            "color": "#ef4444",
+            "events": [
+                {
+                    "year": 0,
+                    "title": "Hjertet Falder",
+                    "description": "Kors hjerte knuses og verden splittes i planer.",
+                    "major": true
+                },
+                {
+                    "year": 15,
+                    "title": "Den Første Krig",
+                    "description": "Racerne kæmper om ressourcer i ruinerne."
+                }
+            ]
+        },
+        {
+            "id": "current",
+            "name": "Nutiden (Aethelgard)",
+            "color": "#3b82f6",
+            "events": [
+                {
+                    "year": 1240,
+                    "title": "Kampagnens Start",
+                    "description": "Vore helte mødes i Bittersumpen.",
+                    "major": true
+                },
+                {
+                    "year": 1241,
+                    "title": "Tårnet Falder",
+                    "description": "Tårnet i vest kollapser."
+                }
+            ]
+        }
+    ]
+}

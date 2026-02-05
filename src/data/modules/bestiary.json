@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Sten-Zombier",
+    "desc": "Folk der er blevet til levende statuer af for meget orden-magi.",
+    "ability": "Forstening ved berøring.",
+    "id": "sten-zombier",
+    "image": "/images/generated/sten-zombier.png"
+  },
+  {
+    "name": "Kød-Klumper",
+    "desc": "Monstre af ukontrolleret vækst.",
+    "ability": "Eksploderer ved død.",
+    "id": "kd-klumper",
+    "image": "/images/generated/kd-klumper.png"
+  },
+  {
+    "name": "Skygger",
+    "desc": "Væsener der suger farve og glæde ud af verden.",
+    "ability": "Spreder fortvivlelse.",
+    "id": "skygger",
+    "image": "/images/generated/skygger.png"
+  },
+  {
+    "name": "Prisme-Falk",
+    "desc": "Rovfugle af levende glas, der jager over Lys-Siden. De er usynlige i direkte sollys.",
+    "ability": "Blænder bytte med lysglimt.",
+    "id": "prisme-falk",
+    "image": "/images/generated/prisme-falk.png"
+  },
+  {
+    "name": "Logik-Golem",
+    "desc": "Automatoner bygget til at opretholde ro og orden. De forstår ikke nåde, kun regler.",
+    "ability": "Immun overfor illusioner.",
+    "id": "logik-golem",
+    "image": "/images/generated/logik-golem.png"
+  },
+  {
+    "name": "Storm-�.l",
+    "desc": "Gigantiske elektriske ål, der svømmer i skyerne omkring Storm-Fladen.",
+    "ability": "Kan udløse kæde-lyn.",
+    "id": "storm-l",
+    "image": "/images/generated/storm-l.png"
+  },
+  {
+    "name": "Mycelium-Hund",
+    "desc": "�.dselædere skabt af knogler og svampevækst. De jager i flok og lugter frygt.",
+    "ability": "Inficerer sår med sporer.",
+    "id": "mycelium-hund",
+    "image": "/images/generated/mycelium-hund.png"
+  },
+  {
+    "name": "Ekko-Skygge",
+    "desc": "Væsener der gemmer sig i grotter og efterligner stemmer for at lokke rejsende i døden.",
+    "ability": "Stemme-mimikry.",
+    "id": "ekko-skygge",
+    "image": "/images/generated/ekko-skygge.png"
+  },
+  {
+    "name": "Sump-Drage",
+    "desc": "Små, vingeløse drager der lever i Slam-Sumpen. Deres spyt er stærkt ætsende.",
+    "ability": "Spytter syre.",
+    "id": "sump-drage",
+    "image": "/images/generated/sump-drage.png"
+  }
+]

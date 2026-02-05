@@ -52,6 +52,16 @@ export const PlanePage = () => {
                         mapImage={plane.mapImage || ''}
                         title={plane.name}
                         className="w-full"
+                        pins={plane.continents
+                            .filter(c => c.coordinates)
+                            .map(c => ({
+                                id: c.id,
+                                x: c.coordinates!.x,
+                                y: c.coordinates!.y,
+                                label: c.name,
+                                type: 'region', // Reusing region style for continents
+                                link: `/continent/${c.id}`
+                            }))}
                     />
                 </div>
 

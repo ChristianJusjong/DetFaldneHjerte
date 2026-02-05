@@ -7,6 +7,7 @@ import { slugify } from '../utils/helpers';
 import { getLore } from '../utils/data';
 import { BookmarkButton } from '../components/BookmarkButton';
 import { MysticCard } from '../components/ui/MysticCard';
+import { MapVisualizer } from '../components/world/MapVisualizer';
 
 export const RegionPage = () => {
     const { continentId, regionId } = useParams<{ continentId: string; regionId: string }>();
@@ -53,6 +54,24 @@ export const RegionPage = () => {
                         <BookmarkButton url={`/continent/${continent.id}/${slugify(region.name)}`} title={region.name} type="region" />
                     </div>
                     <p className="text-xl text-text-dim italic font-serif ml-14">Region i {continent.name}</p>
+                </div>
+
+                <div className="mb-12 rounded-3xl overflow-hidden border border-white/10 shadow-premium w-full">
+                    <MapVisualizer
+                        mapImage={`/assets/maps/regions/${slugify(region.name)}.png`} // Assuming standard path, fallback checks handled by component
+                        title={region.name}
+                        className="w-full"
+                        pins={region.cities
+                            .filter(c => c.coordinates)
+                            .map(c => ({
+                                id: slugify(c.name),
+                                x: c.coordinates!.x,
+                                y: c.coordinates!.y,
+                                label: c.name,
+                                type: 'city',
+                                link: `/continent/${continentId}/${regionId}/${slugify(c.name)}`
+                            }))}
+                    />
                 </div>
 
                 <div className="mb-8">
