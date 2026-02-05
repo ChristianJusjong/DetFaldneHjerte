@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Sparkles, Scroll } from 'lucide-react';
@@ -8,10 +8,8 @@ import { MysticCard } from '../components/ui/MysticCard';
 
 export const HomePage = () => {
     const data = getLore();
-    const [rumor, setRumor] = useState<{ text: string; city: string; region: string } | null>(null);
-
     // Get a random rumor on mount
-    useEffect(() => {
+    const [rumor] = useState<{ text: string; city: string; region: string } | null>(() => {
         const allRumors: { text: string; city: string; region: string }[] = [];
         data.planes.forEach(p => p.continents.forEach(c => {
             c.regions.forEach(r => {
@@ -24,10 +22,10 @@ export const HomePage = () => {
         }));
 
         if (allRumors.length > 0) {
-            const random = allRumors[Math.floor(Math.random() * allRumors.length)];
-            setRumor(random);
+            return allRumors[Math.floor(Math.random() * allRumors.length)];
         }
-    }, [data.planes]);
+        return null;
+    });
 
     return (
         <motion.div

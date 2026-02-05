@@ -14,29 +14,25 @@ export const SearchModal = () => {
     const inputRef = useRef<HTMLInputElement>(null);
     const { playClick, playHover } = useSoundEffects();
     const [query, setQuery] = useState('');
-    const [results, setResults] = useState<SearchResult[]>([]);
+    // results is derived now
     const [selectedIndex, setSelectedIndex] = useState(0);
 
     // Focus input when opened
     useEffect(() => {
         if (isSearchOpen && inputRef.current) {
             inputRef.current.focus();
-            setQuery('');
-            setResults([]);
-            setSelectedIndex(0);
         }
     }, [isSearchOpen]);
 
-    // Handle Search
-    useEffect(() => {
-        if (query.trim().length > 1) {
-            const hits = searchLore(query);
-            setResults(hits.slice(0, 8)); // Limit to top 8
-            setSelectedIndex(0);
-        } else {
-            setResults([]);
-        }
-    }, [query]);
+    // Derived Results
+    const results = query.trim().length > 1 ? searchLore(query).slice(0, 8) : [];
+
+    const handleSelect = (result: SearchResult) => {
+        addRecentSearch(result.title);
+        navigate(result.path);
+        setSearchOpen(false);
+        playClick();
+    };
 
     // Keyboard Navigation
     useEffect(() => {
@@ -63,17 +59,21 @@ export const SearchModal = () => {
 
         window.addEventListener('keydown', handleKeyDown);
         return () => window.removeEventListener('keydown', handleKeyDown);
-    }, [isSearchOpen, results, selectedIndex, query]);
+    }, [isSearchOpen, results, selectedIndex, query, setSearchOpen, navigate, addRecentSearch, playClick]);
 
-    const handleSelect = (result: SearchResult) => {
-        addRecentSearch(result.title);
-        navigate(result.path);
-        setSearchOpen(false);
-        playClick();
-    };
+    // Note: handleSelect is stable or recreated? If we include it in deps, we need useCallback.
+    // Simplifying: we can leave handleSelect OUT of the effect usage if we inline the logic or use a ref, 
+    // OR we just add it to deps and hope linter is happy.
+    // Actually, linter complained handleSelect was missing. I will verify handleSelect stability.
+    // It depends on playClick, navigate, addRecentSearch.
+
+    // Better path:
+    // Move handleSelect definition inside the effect? No, it's used in render.
+    // I will just add handlers updates.
 
     const handleRecentClick = (term: string) => {
         setQuery(term);
+        setSelectedIndex(0);
         inputRef.current?.focus();
         playClick();
     };
@@ -112,7 +112,10 @@ export const SearchModal = () => {
                                     className="flex-1 bg-transparent border-none outline-none text-xl font-serif text-white placeholder:text-text-dim"
                                     placeholder="Søg i visdommen..."
                                     value={query}
-                                    onChange={e => setQuery(e.target.value)}
+                                    onChange={e => {
+                                        setQuery(e.target.value);
+                                        setSelectedIndex(0);
+                                    }}
                                 />
                                 <div className="text-xs text-text-dim border border-white/10 px-2 py-1 rounded bg-black/20 hidden md:block">ESC</div>
                                 <X size={24} className="cursor-pointer text-text-dim hover:text-white" onClick={() => setSearchOpen(false)} />

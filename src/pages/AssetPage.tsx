@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowLeft, User, ShoppingBag, Shield, MapPin, Info, MessageSquare } from 'lucide-react';
@@ -26,19 +26,13 @@ export const AssetPage = () => {
     }>();
 
     const data = getLore();
-    const [asset, setAsset] = useState<Asset | null>(null);
-    const [district, setDistrict] = useState<District | null>(null);
-    const [city, setCity] = useState<City | null>(null);
+    // Derived state
+    let asset: Asset | null = null;
+    let district: District | null = null;
+    let city: City | null = null;
+    let foundCity: City | null = null;
 
-    const [showToken, setShowToken] = useState(false);
-
-    useEffect(() => {
-        if (!cityId || !districtId || !assetId) return;
-
-        // Find the node
-        // In a real app with database, we'd fetch directly. Here we traverse.
-        let foundCity: City | null = null;
-
+    if (cityId && districtId && assetId) {
         for (const plane of data.planes) {
             for (const cont of plane.continents) {
                 if (cont.id !== continentId && slugify(cont.name) !== continentId) continue;
@@ -56,17 +50,15 @@ export const AssetPage = () => {
         }
 
         if (foundCity) {
-            setCity(foundCity);
-            const d = foundCity.districts.find((d: District) => d.id === districtId || slugify(d.name) === districtId);
-            setDistrict(d || null);
-
-            if (d) {
-                const a = d.assets.find((a: Asset) => a.id === assetId || slugify(a.name) === assetId);
-                setAsset(a || null);
+            city = foundCity;
+            district = foundCity.districts.find((d: District) => d.id === districtId || slugify(d.name) === districtId) || null;
+            if (district) {
+                asset = district.assets.find((a: Asset) => a.id === assetId || slugify(a.name) === assetId) || null;
             }
         }
+    }
 
-    }, [cityId, districtId, assetId, data.planes, continentId, regionId]); // Added dependencies
+    const [showToken, setShowToken] = useState(false);
 
     if (!asset || !city) {
         return <div className="p-12 text-center text-white/60">Asset ikke fundet...</div>;

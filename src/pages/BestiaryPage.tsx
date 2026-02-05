@@ -21,7 +21,7 @@ export const BestiaryPage = () => {
                 />
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {data.bestiary?.map((beast: any) => (
+                    {data.bestiary?.map((beast) => (
                         <Link
                             key={beast.name}
                             to={`/lore/bestiary/${beast.id || slugify(beast.name)}`}

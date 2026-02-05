@@ -33,7 +33,7 @@ export const DMScreen = ({ showTrigger = true }: { showTrigger?: boolean }) => {
             hp: Number(newCombatant.hp) || 10,
             maxHp: Number(newCombatant.maxHp) || Number(newCombatant.hp) || 10,
             ac: Number(newCombatant.ac) || 10,
-            type: newCombatant.type as any || 'monster',
+            type: (newCombatant.type as Combatant['type']) || 'monster',
             condition: ''
         });
 
@@ -64,6 +64,7 @@ export const DMScreen = ({ showTrigger = true }: { showTrigger?: boolean }) => {
     // Dice Roller
     const [rollResult, setRollResult] = useState<string | null>(null);
     const rollDice = (sides: number) => {
+        // eslint-disable-next-line react-hooks/purity
         const result = Math.floor(Math.random() * sides) + 1;
         setRollResult(`d${sides}: ${result}`);
         playClick();
@@ -98,7 +99,7 @@ export const DMScreen = ({ showTrigger = true }: { showTrigger?: boolean }) => {
                                         {tabs.map(tab => (
                                             <button
                                                 key={tab.id}
-                                                onClick={() => { setActiveTab(tab.id as any); playClick(); }}
+                                                onClick={() => { setActiveTab(tab.id as 'initiative' | 'dice' | 'prices' | 'travel' | 'time'); playClick(); }}
                                                 className={`
                                                     flex items-center gap-2 px-4 py-2 rounded-lg font-serif text-sm transition-all whitespace-nowrap
                                                     ${activeTab === tab.id ? 'bg-superia/20 text-superia border border-superia/30' : 'text-text-dim hover:text-white hover:bg-white/5 border border-transparent'}
@@ -196,7 +197,7 @@ export const DMScreen = ({ showTrigger = true }: { showTrigger?: boolean }) => {
                                                             <label className="text-xs text-text-dim uppercase">Type</label>
                                                             <select
                                                                 value={newCombatant.type}
-                                                                onChange={e => setNewCombatant({ ...newCombatant, type: e.target.value as any })}
+                                                                onChange={e => setNewCombatant({ ...newCombatant, type: e.target.value as Combatant['type'] })}
                                                                 className="w-full bg-black/40 border border-white/10 rounded px-3 py-2 text-white"
                                                             >
                                                                 <option value="monster">Monster</option>

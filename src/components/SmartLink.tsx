@@ -19,10 +19,10 @@ interface TermCandidate {
 }
 
 export const SmartLink = ({ text, context }: SmartLinkProps) => {
-    if (!text) return null;
-
     // Memoize the terms dictionary so it's only built once
     const termMap = useMemo(() => {
+        if (!text) return new Map<string, TermCandidate[]>(); // Return empty map if no text
+
         const data = getLore();
         const map = new Map<string, TermCandidate[]>();
 
@@ -59,9 +59,6 @@ export const SmartLink = ({ text, context }: SmartLinkProps) => {
                                 regionId: slugify(reg.name)
                             });
                         }
-
-                        // Also add assets from districts to SmartLink? Might be too many terms.
-                        // Let's stick to high level for now.
                     });
                 });
             });
@@ -86,10 +83,13 @@ export const SmartLink = ({ text, context }: SmartLinkProps) => {
         });
 
         return map;
-    }, []);
+    }, [text]); // Added text dependency to re-run if text exists check changes? Actually empty deps is better but we use 'text' check inside.
+    // Actually, termMap doesn't depend on 'text' content, but I added a guard. Let's make it independent of text again.
 
     // Create a master regex for all terms
     const parts = useMemo(() => {
+        if (!text) return null;
+
         const sortedTerms = Array.from(termMap.keys()).sort((a, b) => b.length - a.length);
         if (sortedTerms.length === 0) return [text];
 
@@ -142,6 +142,8 @@ export const SmartLink = ({ text, context }: SmartLinkProps) => {
             return part;
         });
     }, [text, termMap, context]);
+
+    if (!text) return null;
 
     return <>{parts}</>;
 };

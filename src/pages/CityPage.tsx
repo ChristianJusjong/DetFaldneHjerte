@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowLeft, Info } from 'lucide-react';
@@ -15,31 +14,21 @@ import { Badge } from '../components/ui/Badge';
 export const CityPage = () => {
     const { id } = useParams<{ id: string }>();
     const data = getLore();
-    const [city, setCity] = useState<City | null>(null);
-    const [region, setRegion] = useState<Region | null>(null);
-    const [continent, setContinent] = useState<Continent | null>(null);
 
-    // Memoize context for SmartLinks
-    const linkContext = continent ? {
-        continentId: continent.id,
-        regionId: region ? slugify(region.name) : undefined
-    } : undefined;
+    let city: City | null = null;
+    let region: Region | null = null;
+    let continent: Continent | null = null;
 
-    useEffect(() => {
-        if (!id) return;
-
+    if (id) {
         let foundCity: City | null = null;
-        let foundRegion: Region | null = null;
-        let foundContinent: Continent | null = null;
-
         for (const plane of data.planes) {
             for (const cont of plane.continents) {
                 for (const reg of cont.regions) {
                     const match = reg.cities.find(c => slugify(c.name) === id);
                     if (match) {
                         foundCity = match;
-                        foundRegion = reg;
-                        foundContinent = cont;
+                        region = reg;
+                        continent = cont;
                         break;
                     }
                 }
@@ -47,13 +36,14 @@ export const CityPage = () => {
             }
             if (foundCity) break;
         }
+        city = foundCity;
+    }
 
-        if (foundCity) {
-            setCity(foundCity);
-            setRegion(foundRegion);
-            setContinent(foundContinent);
-        }
-    }, [id]);
+    // Memoize context for SmartLinks
+    const linkContext = continent ? {
+        continentId: continent.id,
+        regionId: region ? slugify(region.name) : undefined
+    } : undefined;
 
     if (!city || !continent) {
         return <div className="p-8 text-center text-white">Byen blev ikke fundet...</div>;

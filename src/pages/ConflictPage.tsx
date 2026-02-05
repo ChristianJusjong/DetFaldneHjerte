@@ -24,7 +24,7 @@ export const ConflictPage = () => {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-                    {data.conflict.effects?.map((eff: any) => (
+                    {data.conflict.effects?.map((eff) => (
                         <div key={eff.name} className="bg-inferia/10 p-6 rounded-lg border-l-4 border-inferia">
                             <strong className="block text-xl text-white mb-2">{eff.name}</strong>
                             <p className="text-sm text-gray-300"><SmartLink text={eff.desc} /></p>
@@ -48,7 +48,7 @@ export const ConflictPage = () => {
                     <>
                         <h2 className="text-3xl font-serif font-bold text-white mb-8 border-b border-white/10 pb-2">Organisationer</h2>
                         <div className="grid gap-6">
-                            {data.organizations.map((org: any) => (
+                            {data.organizations.map((org) => (
                                 <MysticCard key={org.name} className="bg-black/20" noPadding>
                                     <div className="p-6">
                                         <div className="flex justify-between items-start mb-4">

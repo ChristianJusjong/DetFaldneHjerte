@@ -13,6 +13,7 @@ export const LoreEntityPage = () => {
 
     const entity = useMemo(() => {
         const data = getLore();
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         let found: any = null;
 
         if (type === 'god') {
