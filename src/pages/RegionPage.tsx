@@ -17,7 +17,7 @@ export const RegionPage = () => {
 
     // 1. Find Continent
     const continent = data.planes
-        .flatMap(p => p.continents)
+        .flatMap(p => p.continents || [])
         .find(c => c.id === continentId);
 
     if (!continent) {
@@ -25,7 +25,7 @@ export const RegionPage = () => {
     }
 
     // 2. Find Region
-    const region = continent.regions.find(r => slugify(r.name) === regionId);
+    const region = continent.regions?.find(r => slugify(r.name) === regionId);
 
     if (!region) {
         return <div className="p-8 text-white">Region ikke fundet (ID: {regionId}) i {continent.name}</div>;

@@ -26,8 +26,8 @@ export const LoreEntityPage = () => {
             found = data.organizations?.find(o => o.id === id);
             if (found) found = { ...found, _typeLabel: "Organisation" };
         } else if (type === 'race') {
-            data.planes.forEach(p => p.continents.forEach(c => {
-                const r = c.races.find(r => r.id === id);
+            data.planes.forEach(p => p.continents?.forEach(c => {
+                const r = c.races?.find(r => r.id === id);
                 if (r) found = { ...r, _typeLabel: "Race" };
             }));
         } else if (type === 'bestiary') {

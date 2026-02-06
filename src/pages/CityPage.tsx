@@ -22,9 +22,11 @@ export const CityPage = () => {
     if (id) {
         let foundCity: City | null = null;
         for (const plane of data.planes) {
+            if (!plane.continents) continue;
             for (const cont of plane.continents) {
+                if (!cont.regions) continue;
                 for (const reg of cont.regions) {
-                    const match = reg.cities.find(c => slugify(c.name) === id);
+                    const match = reg.cities?.find(c => slugify(c.name) === id);
                     if (match) {
                         foundCity = match;
                         region = reg;
