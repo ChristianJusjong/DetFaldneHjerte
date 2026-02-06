@@ -11,15 +11,20 @@ export const HomePage = () => {
     // Get a random rumor on mount
     const [rumor] = useState<{ text: string; city: string; region: string } | null>(() => {
         const allRumors: { text: string; city: string; region: string }[] = [];
-        data.planes.forEach(p => p.continents.forEach(c => {
-            c.regions.forEach(r => {
-                r.cities.forEach(city => {
-                    if (city.rumor) {
-                        allRumors.push({ text: city.rumor, city: city.name, region: r.name });
-                    }
+        data.planes.forEach(p => {
+            if (!p.continents) return;
+            p.continents.forEach(c => {
+                if (!c.regions) return;
+                c.regions.forEach(r => {
+                    if (!r.cities) return;
+                    r.cities.forEach(city => {
+                        if (city.rumor) {
+                            allRumors.push({ text: city.rumor, city: city.name, region: r.name });
+                        }
+                    });
                 });
             });
-        }));
+        });
 
         if (allRumors.length > 0) {
             return allRumors[Math.floor(Math.random() * allRumors.length)];
