@@ -68,7 +68,7 @@ export const DrillDownMenu = () => {
             let foundCont: Continent | undefined;
 
             for (const plane of data.planes) {
-                const c = plane.continents.find(c => c.id === contId || slugify(c.name) === contId);
+                const c = plane.continents?.find(c => c.id === contId || slugify(c.name) === contId);
                 if (c) {
                     foundCont = c;
                     break;
@@ -82,7 +82,7 @@ export const DrillDownMenu = () => {
                     label: foundCont.name,
                     type: 'continent',
                     url: `/continent/${foundCont.id}`, // Planes are often implicit in this routing structure
-                    siblings: data.planes.flatMap(p => p.continents).map(c => ({
+                    siblings: data.planes.flatMap(p => p.continents || []).map(c => ({
                         id: c.id,
                         label: c.name,
                         url: `/continent/${c.id}`
@@ -92,7 +92,7 @@ export const DrillDownMenu = () => {
                 // 2. Region
                 if (pathSegments[2]) {
                     const regId = pathSegments[2];
-                    const foundReg = foundCont.regions.find(r => slugify(r.name) === regId);
+                    const foundReg = foundCont.regions?.find(r => slugify(r.name) === regId);
 
                     if (foundReg) {
                         crumbs.push({
@@ -100,17 +100,17 @@ export const DrillDownMenu = () => {
                             label: foundReg.name,
                             type: 'region',
                             url: `/continent/${foundCont.id}/${regId}`,
-                            siblings: foundCont.regions.map(r => ({
+                            siblings: foundCont.regions?.map(r => ({
                                 id: slugify(r.name),
                                 label: r.name,
                                 url: `/continent/${foundCont.id}/${slugify(r.name)}`
-                            }))
+                            })) || []
                         });
 
                         // 3. City
                         if (pathSegments[3]) {
                             const cityId = pathSegments[3];
-                            const foundCity = foundReg.cities.find(c => slugify(c.name) === cityId);
+                            const foundCity = foundReg.cities?.find(c => slugify(c.name) === cityId);
 
                             if (foundCity) {
                                 crumbs.push({
@@ -118,7 +118,7 @@ export const DrillDownMenu = () => {
                                     label: foundCity.name,
                                     type: 'city',
                                     url: `/continent/${foundCont.id}/${regId}/${cityId}`,
-                                    siblings: foundReg.cities.map(c => ({
+                                    siblings: foundReg.cities?.map(c => ({
                                         id: slugify(c.name),
                                         label: c.name,
                                         url: `/continent/${foundCont.id}/${regId}/${slugify(c.name)}`

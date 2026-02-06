@@ -33,20 +33,20 @@ const initializeEngine = () => {
     data.planes.forEach(p => {
         if (p.name) addTerm(p.name, { url: `/plane/${p.id}`, type: 'plane' });
 
-        p.continents.forEach(c => {
+        p.continents?.forEach(c => {
             if (c.name) addTerm(c.name, { url: `/continent/${c.id}`, type: 'continent', continentId: c.id });
 
             // Races
-            c.races.forEach(r => {
+            c.races?.forEach(r => {
                 if (r.name) addTerm(r.name, { url: `/lore/race/${r.id || slugify(r.name)}`, type: 'race', continentId: c.id });
             });
 
             // Regions
-            c.regions.forEach(reg => {
+            c.regions?.forEach(reg => {
                 if (reg.name) addTerm(reg.name, { url: `/continent/${c.id}/${slugify(reg.name)}`, type: 'region', continentId: c.id, regionId: slugify(reg.name) });
 
                 // Cities
-                reg.cities.forEach(city => {
+                reg.cities?.forEach(city => {
                     if (city.name) {
                         addTerm(city.name, {
                             url: `/continent/${c.id}/${slugify(reg.name)}/${slugify(city.name)}`,
