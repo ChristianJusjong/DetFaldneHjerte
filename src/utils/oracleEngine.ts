@@ -90,7 +90,7 @@ export const queryOracle = async (query: string, context?: string): Promise<Orac
         const data = await response.json();
         return { text: data.text };
 
-    } catch (e) {
+    } catch {
         // Fallback to local engine
         return queryLocalLore(query, context);
     }

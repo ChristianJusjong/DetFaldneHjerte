@@ -12,11 +12,17 @@ import type { LoreData } from '../types';
 // Aggregation
 const aggregatedLore: LoreData = {
     ...meta,
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     planes: planes as any,
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     religion: religion as any,
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     bestiary: bestiary as any,
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     organizations: organizations as any,
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     conflict: conflict as any,
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     travel: travel as any
 };
 

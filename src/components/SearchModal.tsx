@@ -1,4 +1,4 @@
-import { useRef, useEffect, useState } from 'react';
+import { useRef, useEffect, useState, useCallback, useMemo } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { Search, X, MapPin, Skull, Book, Users, Star, History, Trash2, ArrowRight } from 'lucide-react';
 import { useGameStore } from '../store/useGameStore';
@@ -35,14 +35,14 @@ export const SearchModal = () => {
     }, [isSearchOpen]);
 
     // Derived Results
-    const results = query.trim().length > 1 ? searchLore(query, activeFilter).slice(0, 8) : [];
+    const results = useMemo(() => query.trim().length > 1 ? searchLore(query, activeFilter).slice(0, 8) : [], [query, activeFilter]);
 
-    const handleSelect = (result: SearchResult) => {
+    const handleSelect = useCallback((result: SearchResult) => {
         addRecentSearch(result.title);
         navigate(result.path);
         setSearchOpen(false);
         playClick();
-    };
+    }, [addRecentSearch, navigate, setSearchOpen, playClick]);
 
     // Keyboard Navigation
     useEffect(() => {
@@ -69,7 +69,7 @@ export const SearchModal = () => {
 
         window.addEventListener('keydown', handleKeyDown);
         return () => window.removeEventListener('keydown', handleKeyDown);
-    }, [isSearchOpen, results, selectedIndex, query, setSearchOpen, navigate, addRecentSearch, playClick]);
+    }, [isSearchOpen, handleSelect, results, selectedIndex, query, setSearchOpen, navigate, addRecentSearch, playClick]);
 
     // Note: handleSelect is stable or recreated? If we include it in deps, we need useCallback.
     // Simplifying: we can leave handleSelect OUT of the effect usage if we inline the logic or use a ref, 

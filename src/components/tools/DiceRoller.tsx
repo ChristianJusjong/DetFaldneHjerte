@@ -12,7 +12,7 @@ export const DiceRoller = () => {
         reactDice.current?.rollAll();
     };
 
-    const rollDone = (totalValue: number, _values: number[]) => {
+    const rollDone = (totalValue: number) => {
         setTotal(totalValue);
     };
 

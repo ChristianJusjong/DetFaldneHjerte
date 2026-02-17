@@ -7,7 +7,7 @@ export const BattleMap = () => {
     const [isDrawing, setIsDrawing] = useState(false);
     const [brushSize, setBrushSize] = useState(50);
     // Default placeholder map (e.g., a dungeon or wilderness)
-    const [mapUrl, _setMapUrl] = useState('https://images.unsplash.com/photo-1626084798734-75480ba08785?q=80&w=1000&auto=format&fit=crop');
+    const [mapUrl] = useState('https://images.unsplash.com/photo-1626084798734-75480ba08785?q=80&w=1000&auto=format&fit=crop');
 
     const initFog = () => {
         const canvas = canvasRef.current;

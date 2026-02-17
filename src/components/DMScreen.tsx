@@ -8,6 +8,14 @@ import { BattleMap } from './tools/BattleMap';
 import { AmbientMixer } from './tools/AmbientMixer';
 import type { Combatant } from '../types';
 
+const weatherOptions = [
+    { id: 'clear', label: 'Klart' },
+    { id: 'rain', label: 'Regn' },
+    { id: 'snow', label: 'Sne' },
+    { id: 'fog', label: 'Tåge' },
+    { id: 'ash', label: 'Aske' }
+] as const;
+
 export const DMScreen = ({ showTrigger = true }: { showTrigger?: boolean }) => {
     const { isDMScreenOpen, setDMScreenOpen, combatants, addCombatant, removeCombatant, updateCombatant, sortCombatants, clearCombatants, weather, setWeather } = useGameStore();
     const { playClick, playSuccess, playHover } = useSoundEffects();
@@ -54,11 +62,12 @@ export const DMScreen = ({ showTrigger = true }: { showTrigger?: boolean }) => {
         { id: 'battlemap', label: 'Kort', icon: <Map size={18} /> },
         { id: 'weather', label: 'Vejr', icon: <CloudRain size={18} /> },
         { id: 'mixer', label: 'Lyd', icon: <Mic2 size={18} /> }
-    ];
+    ] as const;
 
     // Dice Roller
     const [rollResult, setRollResult] = useState<string | null>(null);
     const rollDice = (sides: number) => {
+        // eslint-disable-next-line react-hooks/purity
         const result = Math.floor(Math.random() * sides) + 1;
         setRollResult(`d${sides}: ${result}`);
         playClick();
@@ -93,7 +102,7 @@ export const DMScreen = ({ showTrigger = true }: { showTrigger?: boolean }) => {
                                         {tabs.map(tab => (
                                             <button
                                                 key={tab.id}
-                                                onClick={() => { setActiveTab(tab.id as any); playClick(); }}
+                                                onClick={() => { setActiveTab(tab.id); playClick(); }}
                                                 className={`
                                                     flex items-center gap-2 px-4 py-2 rounded-lg font-serif text-sm transition-all whitespace-nowrap
                                                     ${activeTab === tab.id ? 'bg-superia/20 text-superia border border-superia/30' : 'text-text-dim hover:text-white hover:bg-white/5 border border-transparent'}
@@ -333,16 +342,10 @@ export const DMScreen = ({ showTrigger = true }: { showTrigger?: boolean }) => {
                                         <div className="h-full flex flex-col items-center justify-center p-8">
                                             <h3 className="text-superia font-bold text-2xl mb-8">Atmosfærisk Kontrol</h3>
                                             <div className="grid grid-cols-2 lg:grid-cols-5 gap-4">
-                                                {[
-                                                    { id: 'clear', label: 'Klart' },
-                                                    { id: 'rain', label: 'Regn' },
-                                                    { id: 'snow', label: 'Sne' },
-                                                    { id: 'fog', label: 'Tåge' },
-                                                    { id: 'ash', label: 'Aske' }
-                                                ].map(w => (
+                                                {weatherOptions.map(w => (
                                                     <button
                                                         key={w.id}
-                                                        onClick={() => { setWeather(w.id as any); playSuccess(); }}
+                                                        onClick={() => { setWeather(w.id); playSuccess(); }}
                                                         className={`
                                                             w-32 h-32 rounded-xl flex flex-col items-center justify-center gap-2 border transition-all
                                                             ${weather === w.id ? 'bg-superia/20 border-superia text-superia shadow-[0_0_20px_rgba(212,175,55,0.2)]' : 'bg-white/5 border-white/10 text-text-dim hover:bg-white/10 hover:text-white'}

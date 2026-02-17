@@ -7,11 +7,13 @@ import { Maximize, Minimize } from 'lucide-react';
 export const LoreGraph = () => {
     const navigate = useNavigate();
     const [isFullscreen, setIsFullscreen] = useState(false);
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const graphRef = useRef<any>(null);
 
     // Memoize data so it doesn't rebuild on every render
     const graphData = useMemo(() => buildLoreGraph(), []);
 
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const handleNodeClick = (node: any) => {
         // Zoom to node
         graphRef.current?.centerAt(node.x, node.y, 1000);

@@ -20,14 +20,14 @@ Verdenen er splittet, mørk og fyldt med magi.
 Din stemme skal være atmosfærisk, mystisk og kortfattet.
 Besvar spillerens spørgsmål baseret på din viden.
 Hvis context er givet, brug det.
-Context: \${context || 'Ingen specifik kontekst.'}
+Context: ${context || 'Ingen specifik kontekst.'}
 `;
 
         const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'Authorization': `Bearer \${process.env.GROQ_API_KEY}`,
+                'Authorization': `Bearer ${process.env.GROQ_API_KEY}`,
             },
             body: JSON.stringify({
                 model: 'llama-3.3-70b-versatile', // Fast, cheap, and very smart
@@ -52,7 +52,8 @@ Context: \${context || 'Ingen specifik kontekst.'}
             headers: { 'Content-Type': 'application/json' },
         });
 
-    } catch (error: any) {
-        return new Response(JSON.stringify({ error: error.message }), { status: 500 });
+    } catch (error: unknown) {
+        const message = error instanceof Error ? error.message : 'Unknown error';
+        return new Response(JSON.stringify({ error: message }), { status: 500 });
     }
 }

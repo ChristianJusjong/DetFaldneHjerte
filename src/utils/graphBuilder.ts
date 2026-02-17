@@ -55,9 +55,10 @@ export const buildLoreGraph = () => {
     });
 
     // 3. Organizations
-    // Handle both array or object structure depending on data.ts
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const orgs = Array.isArray(data.organizations) ? data.organizations : (data.organizations as any).factions || [];
 
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     orgs.forEach((org: any) => {
         const orgId = `org-${org.name}`;
         nodes.push({ id: orgId, name: org.name, group: 'org', val: 8, color: '#ef4444' }); // Red
