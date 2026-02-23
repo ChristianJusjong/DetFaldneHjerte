@@ -10,7 +10,12 @@
     "preview": "vite preview",
     "test": "vitest",
     "test:ui": "vitest --ui",
-    "test:run": "vitest run"
+    "test:run": "vitest run",
+    "analyze:lore": "node scripts/analyze_lore.cjs",
+    "generate:maps": "node scripts/generate_map_prompts.cjs",
+    "generate:images": "node scripts/generate_image_prompts.cjs",
+    "generate:npcs": "node scripts/generate_npc_prompts.cjs",
+    "audit:assets": "node scripts/audit_assets.cjs"
   },
   "dependencies": {
     "clsx": "^2.1.1",

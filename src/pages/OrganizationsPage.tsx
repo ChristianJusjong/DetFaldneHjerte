@@ -1,14 +1,36 @@
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import loreData from '../data/lore.json';
-import type { LoreData } from '../types';
-import { slugify } from '../utils/helpers';
-import { MysticCard } from '../components/ui/MysticCard';
-import { PageHeader } from '../components/ui/PageHeader';
-import { Badge } from '../components/ui/Badge';
+import { getOrganizations, getConflict } from '@/utils/data';
+import type { Organization, Conflict } from '@/types';
+import { slugify } from '@/utils/helpers';
+import { MysticCard } from '@/components/ui/MysticCard';
+import { PageHeader } from '@/components/ui/PageHeader';
+import { Badge } from '@/components/ui/Badge';
+import { LoadingSpinner } from '@/components/ui/LoadingSpinner';
 
 export const OrganizationsPage = () => {
-    const data = loreData as unknown as LoreData;
+    const [organizations, setOrganizations] = useState<Organization[]>([]);
+    const [conflict, setConflict] = useState<Conflict | null>(null);
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        const loadData = async () => {
+            const [orgsData, conflictData] = await Promise.all([
+                getOrganizations(),
+                getConflict()
+            ]);
+            setOrganizations(orgsData);
+            setConflict(conflictData);
+            setLoading(false);
+        };
+        loadData();
+    }, []);
+
+    if (loading || !conflict) {
+        return <LoadingSpinner />;
+    }
+
     return (
         <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
@@ -22,7 +44,7 @@ export const OrganizationsPage = () => {
                 />
 
                 <div className="grid gap-6 mb-16">
-                    {data.organizations?.map((org) => (
+                    {organizations.map((org) => (
                         <Link
                             key={org.name}
                             to={`/lore/organization/${org.id || slugify(org.name)}`}
@@ -42,10 +64,10 @@ export const OrganizationsPage = () => {
 
                 <h2 className="text-3xl font-serif font-bold text-white mb-8 border-b border-white/10 pb-2">Fraktioner i Konflikten</h2>
                 <div className="grid md:grid-cols-2 gap-8">
-                    {data.conflict.fractions.map(f => (
+                    {conflict.fractions.map(f => (
                         <Link
                             key={f.name}
-                            to={`/lore/conflict/${f.id || slugify(f.name)}`} // Assuming we treat factions as conflict entities or similar
+                            to={`/lore/conflict/${f.id || slugify(f.name)}`}
                             className="block no-underline group"
                         >
                             <div className="flex flex-col gap-2 p-6 rounded-2xl border border-inferia/20 bg-inferia/5 group-hover:bg-inferia/10 transition-colors h-full">

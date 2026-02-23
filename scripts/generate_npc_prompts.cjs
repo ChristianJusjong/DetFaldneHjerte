@@ -15,54 +15,56 @@ function processLore() {
             const dominantRace = continent.races && continent.races.length > 0 ? continent.races[0].reskin : "Human";
             const continentName = continent.name;
 
-            continent.regions.forEach(region => {
-                region.cities.forEach(city => {
-                    if (!city.districts) return;
+            if (continent.regions) {
+                continent.regions.forEach(region => {
+                    if (region.cities) {
+                        region.cities.forEach(city => {
+                            if (!city.districts) return;
 
-                    city.districts.forEach(district => {
-                        if (!district.assets) return;
+                            city.districts.forEach(district => {
+                                if (!district.assets) return;
 
-                        district.assets.forEach(asset => {
-                            // NPCs and Guards
-                            if (asset.type === 'npc' || asset.type === 'guard') {
-                                const race = dominantRace; // Default to dominant race
-                                const role = asset.role || asset.type;
-                                const desc = asset.desc || "";
-                                const appearance = asset.appearance || "";
+                                district.assets.forEach(asset => {
+                                    // NPCs and Guards
+                                    if (asset.type === 'npc' || asset.type === 'guard') {
+                                        const race = dominantRace; // Default to dominant race
+                                        const role = asset.role || asset.type;
+                                        const desc = asset.desc || "";
+                                        const appearance = asset.appearance || "";
 
-                                // Build Prompt
-                                const prompt = `Digital Art, RPG Portrait, ${race} ${role}, ${appearance}, ${desc}. Detailed face, character concept art, dark fantasy style, solid background --ar 2:3 --v 6.0`;
+                                        // Build Prompt
+                                        const prompt = `Digital Art, RPG Portrait, ${race} ${role}, ${appearance}, ${desc}. Detailed face, character concept art, dark fantasy style, solid background --ar 2:3 --v 6.0`;
 
-                                prompts.push({
-                                    id: asset.id,
-                                    filename: path.basename(asset.image),
-                                    prompt: prompt,
-                                    context: `${continentName} - ${city.name}`
+                                        prompts.push({
+                                            id: asset.id,
+                                            filename: asset.image ? path.basename(asset.image) : `${asset.id}.png`,
+                                            prompt: prompt,
+                                            context: `${continentName} - ${city.name}`
+                                        });
+                                    }
+
+                                    // Shopkeepers
+                                    if (asset.shopkeeper && asset.shopkeeper.image) {
+                                        const race = dominantRace;
+                                        const role = "Shopkeeper";
+                                        const desc = asset.shopkeeper.desc || "";
+                                        const quirk = asset.shopkeeper.quirk || "";
+
+                                        const prompt = `Digital Art, RPG Portrait, ${race} ${role}, ${desc}, ${quirk}. Detailed face, character concept art, dark fantasy style, solid background --ar 2:3 --v 6.0`;
+
+                                        prompts.push({
+                                            id: `${asset.id}_shopkeeper`,
+                                            filename: path.basename(asset.shopkeeper.image),
+                                            prompt: prompt,
+                                            context: `${continentName} - ${city.name} (Shop: ${asset.name})`
+                                        });
+                                    }
                                 });
-                            }
-
-                            // Shopkeepers
-                            if (asset.shopkeeper && asset.shopkeeper.image) {
-                                const race = dominantRace;
-                                const role = "Shopkeeper";
-                                const desc = asset.shopkeeper.desc || "";
-                                const quirk = asset.shopkeeper.quirk || "";
-
-                                const prompt = `Digital Art, RPG Portrait, ${race} ${role}, ${desc}, ${quirk}. Detailed face, character concept art, dark fantasy style, solid background --ar 2:3 --v 6.0`;
-
-                                // Use the simplified ID from the asset for context tracking if needed, 
-                                // but we need to match the filename we generated in backfill
-                                prompts.push({
-                                    id: `${asset.id}_shopkeeper`,
-                                    filename: path.basename(asset.shopkeeper.image),
-                                    prompt: prompt,
-                                    context: `${continentName} - ${city.name} (Shop: ${asset.name})`
-                                });
-                            }
+                            });
                         });
-                    });
+                    }
                 });
-            });
+            }
         });
     });
 

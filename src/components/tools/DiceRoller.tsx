@@ -21,7 +21,7 @@ export const DiceRoller = () => {
             {/* Toggle Button (Floating) */}
             <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="fixed bottom-20 right-4 z-40 p-3 rounded-full bg-surface border border-border text-superia shadow-lg hover:bg-surface-light transition-colors"
+                className="fixed bottom-20 right-4 z-40 p-3 rounded-full bg-surface border border-border text-superia shadow-lg hover:bg-surface-highlight transition-colors"
                 title="Terninger"
             >
                 <Dices size={24} />
@@ -33,7 +33,7 @@ export const DiceRoller = () => {
                         initial={{ opacity: 0, y: 50, scale: 0.9 }}
                         animate={{ opacity: 1, y: 0, scale: 1 }}
                         exit={{ opacity: 0, y: 50, scale: 0.9 }}
-                        className="fixed bottom-36 right-4 z-50 w-72 bg-surface-dark border border-superia/30 rounded-lg shadow-2xl overflow-hidden backdrop-blur-md"
+                        className="fixed bottom-36 right-4 z-50 w-72 bg-surface border border-superia/30 rounded-lg shadow-2xl overflow-hidden backdrop-blur-md"
                     >
                         <div className="flex items-center justify-between p-3 bg-black/40 border-b border-white/10">
                             <h3 className="text-superia font-serif font-bold">Skæbnen</h3>

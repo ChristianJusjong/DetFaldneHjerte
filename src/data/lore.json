@@ -3950,7 +3950,7 @@
                 }
               ],
               "visualSummary": "Region in Spejl-Søen. Fantasy landscape with distinct magical features. Local terrain: light.",
-              "battlemapImage": "/assets/maps/battlemaps/det-hvide-oede-encounter.png",
+              "battlemapImage": "/assets/maps/battlemaps/det-hvide-de-encounter.png",
               "coordinates": {
                 "x": 65,
                 "y": 65
@@ -5119,7 +5119,7 @@
                   ],
                   "mapImage": "/assets/maps/cities/aale-byen.png",
                   "visualSummary": "Settlement located in Tåre-Kysten. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: Huse lavet af envejs-spejle..",
-                  "battlemapImage": "/assets/maps/battlemaps/aale-byen-encounter.png"
+                  "battlemapImage": "/assets/maps/battlemaps/le-byen-encounter.png"
                 },
                 {
                   "name": "Tågen",
@@ -12440,14 +12440,15 @@
                     }
                   ],
                   "visualSummary": "Region in Sølvtunge-Næsset. Fantasy landscape with distinct magical features. Local terrain: .",
-                  "battlemapImage": "/assets/maps/battlemaps/kaede-kloeften-encounter.png"
+                  "battlemapImage": "/assets/maps/battlemaps/ankeret-encounter.png"
                 }
               ],
               "visualSummary": "Fantasy landscape with distinct magical features. Specific features: .",
               "coordinates": {
                 "x": 51,
                 "y": 63
-              }
+              },
+              "battlemapImage": "/assets/maps/battlemaps/kaede-kloeften-encounter.png"
             }
           ],
           "coordinates": {

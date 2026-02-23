@@ -1,13 +1,30 @@
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import loreData from '../data/lore.json';
-import type { LoreData } from '../types';
-import { slugify } from '../utils/helpers';
-import { MysticCard } from '../components/ui/MysticCard';
-import { PageHeader } from '../components/ui/PageHeader';
+import { getBestiary } from '@/utils/data';
+import type { BestiaryEntry } from '@/types';
+import { slugify } from '@/utils/helpers';
+import { MysticCard } from '@/components/ui/MysticCard';
+import { PageHeader } from '@/components/ui/PageHeader';
+import { LoadingSpinner } from '@/components/ui/LoadingSpinner';
 
 export const BestiaryPage = () => {
-    const data = loreData as unknown as LoreData;
+    const [bestiary, setBestiary] = useState<BestiaryEntry[]>([]);
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        const loadData = async () => {
+            const data = await getBestiary();
+            setBestiary(data);
+            setLoading(false);
+        };
+        loadData();
+    }, []);
+
+    if (loading) {
+        return <LoadingSpinner />;
+    }
+
     return (
         <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
@@ -21,7 +38,7 @@ export const BestiaryPage = () => {
                 />
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {data.bestiary?.map((beast) => (
+                    {bestiary.map((beast) => (
                         <Link
                             key={beast.name}
                             to={`/lore/bestiary/${beast.id || slugify(beast.name)}`}

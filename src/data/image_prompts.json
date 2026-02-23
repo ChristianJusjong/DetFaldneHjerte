@@ -1,37 +1,5 @@
 [
   {
-    "id": "neo-spiret-centrum",
-    "name": "Centrum",
-    "type": "District",
-    "context": "Neo-Spiret, Isse-Toppen",
-    "prompt": "fantasy art, District, Centrum, Neo-Spiret, Isse-Toppen, city street, architecture, atmosphere, establishing shot,  Det bankende hjerte i Neo-Spiret. Her mødes alle veje, og luften er præget af frygt. Markedet er fyldt med varer fra hele Isse-Toppen., detailed, 8k, concept art",
-    "targetPath": "/assets/districts/neo-spiret-centrum.png"
-  },
-  {
-    "id": "neo-spiret-det-glemte-ord",
-    "name": "Det Glemte Ord",
-    "type": "Shop",
-    "context": "Neo-Spiret",
-    "prompt": "fantasy art, Shop, Det Glemte Ord, Neo-Spiret, interior view, items on display, detailed shelves, cozy lighting,  En støvet butik der lugter af ozon., detailed, 8k, concept art",
-    "targetPath": "/assets/shops/neo-spiret-det-glemte-ord.png"
-  },
-  {
-    "id": "neo-spiret-tankens-flugt",
-    "name": "Tankens Flugt",
-    "type": "Shop",
-    "context": "Neo-Spiret",
-    "prompt": "fantasy art, Shop, Tankens Flugt, Neo-Spiret, interior view, items on display, detailed shelves, cozy lighting,  En mystisk butik der lugter af svovl., detailed, 8k, concept art",
-    "targetPath": "/assets/shops/neo-spiret-tankens-flugt.png"
-  },
-  {
-    "id": "neo-spiret-stormens-je",
-    "name": "Stormens �~je",
-    "type": "Shop",
-    "context": "Neo-Spiret",
-    "prompt": "fantasy art, Shop, Stormens �~je, Neo-Spiret, interior view, items on display, detailed shelves, cozy lighting,  En uhyggelig butik der lugter af svovl., detailed, 8k, concept art",
-    "targetPath": "/assets/shops/neo-spiret-stormens-je.png"
-  },
-  {
     "id": "nord-porten-centrum",
     "name": "Centrum",
     "type": "District",
