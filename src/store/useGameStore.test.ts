@@ -1,7 +1,7 @@
 import { describe, it, expect, beforeEach } from 'vitest';
 import { renderHook, act } from '@testing-library/react';
 import { useGameStore } from './useGameStore';
-import type { Bookmark, Combatant } from '../types';
+import type { Bookmark, Combatant } from '@/shared/types';
 
 // Mock persist middleware to avoid actual localStorage usage during tests if needed,
 // but usually jsdom handles localStorage fine. We just need to clear it.

@@ -7,43 +7,62 @@ export default {
     theme: {
         extend: {
             colors: {
-                bg: '#121212', // Deepest dungeon black
-                surface: '#1e1e1e', // Dark stone
-                'surface-highlight': '#2d2d2d', // Lighter stone for hover
-                superia: '#d4af37', // Metallic Gold
-                inferia: '#8a0d0d', // Deep Blood Red
-                'text-main': '#e0d8c3', // Parchment Text
-                'text-dim': '#8b8b8b', // Dimmed Text
-                border: '#3d342b', // Dark Wood/Leather Border
+                bg: '#0A0A0F', // Deeper obsidian for more contrast
+                surface: 'rgba(25, 25, 35, 0.45)', // Slightly more opaque glass
+                'surface-highlight': 'rgba(50, 50, 70, 0.6)', 
+                superia: '#fcd34d', // Bright premium Gold
+                'superia-light': '#fef3c7',
+                superia_dim: '#b48a1d', // Metallic Gold
+                inferia: '#ef4444', // Bright Blood Red
+                'inferia-light': '#fee2e2',
+                inferia_dim: '#7f1d1d', // Deep Blood Red
+                'text-main': '#f9fafb', // Brighter text
+                'text-dim': '#9ca3af', 
+                border: 'rgba(255, 255, 255, 0.08)', 
             },
             fontFamily: {
-                main: ['"Crimson Pro"', 'serif'],
+                main: ['"Inter"', 'sans-serif'],
                 serif: ['"Cinzel"', 'serif'],
             },
             boxShadow: {
-                premium: '0 0 20px rgba(212, 175, 55, 0.1)', // Subtle gold glow
-                'premium-hover': '0 0 30px rgba(212, 175, 55, 0.25)',
-                paper: '0 2px 10px rgba(0,0,0,0.5)',
-                inset: 'inset 0 2px 4px rgba(0,0,0,0.6)',
+                premium: '0 10px 40px -10px rgba(0, 0, 0, 0.7)', 
+                'premium-hover': '0 0 30px rgba(252, 211, 77, 0.12)',
+                glass: '0 8px 32px 0 rgba(0, 0, 0, 0.5)',
+                'glass-gold': '0 8px 32px 0 rgba(180, 138, 29, 0.15)',
+                'glass-red': '0 8px 32px 0 rgba(127, 29, 29, 0.15)',
             },
-            backgroundImage: {
-                'parchment': "url('https://www.transparenttextures.com/patterns/aged-paper.png')",
-                'leather': "url('https://www.transparenttextures.com/patterns/black-scales.png')",
-                'wood': "url('https://www.transparenttextures.com/patterns/wood-pattern.png')",
+            backdropBlur: {
+                xs: '2px',
+                '2xl': '40px',
             },
             animation: {
-                'fade-in': 'fadeIn 0.5s ease-out forwards',
-                'slide-down': 'slideDown 0.3s ease-out forwards',
+                'fade-in': 'fadeIn 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards',
+                'slide-down': 'slideDown 0.4s cubic-bezier(0.22, 1, 0.36, 1) forwards',
+                'pulse-slow': 'pulseSlow 6s ease-in-out infinite',
+                'float': 'float 6s ease-in-out infinite',
+                'glow-pulse': 'glowPulse 3s ease-in-out infinite',
             },
             keyframes: {
                 fadeIn: {
-                    '0%': { opacity: '0' },
-                    '100%': { opacity: '1' },
+                    '0%': { opacity: '0', transform: 'translateY(10px)' },
+                    '100%': { opacity: '1', transform: 'translateY(0)' },
                 },
                 slideDown: {
-                    '0%': { transform: 'translateY(-10px)', opacity: '0' },
+                    '0%': { transform: 'translateY(-20px)', opacity: '0' },
                     '100%': { transform: 'translateY(0)', opacity: '1' },
                 },
+                pulseSlow: {
+                    '0%, 100%': { opacity: '1' },
+                    '50%': { opacity: '0.8' },
+                },
+                float: {
+                    '0%, 100%': { transform: 'translateY(0)' },
+                    '50%': { transform: 'translateY(-10px)' },
+                },
+                glowPulse: {
+                    '0%, 100%': { opacity: '0.3', filter: 'blur(8px)' },
+                    '50%': { opacity: '0.6', filter: 'blur(12px)' },
+                }
             }
         },
     },

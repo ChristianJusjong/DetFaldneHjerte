@@ -1,32 +1,32 @@
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowLeft, Info } from 'lucide-react';
-import { MapVisualizer } from '../components/world/MapVisualizer';
-import type { City, Continent, Region } from '../types';
-import { slugify } from '../utils/helpers';
-import { getLore } from '../utils/data';
-import { SmartLink } from '../components/SmartLink';
-import { ImageWithFallback } from '../components/ImageWithFallback';
-import { BookmarkButton } from '../components/BookmarkButton';
-import { MysticCard } from '../components/ui/MysticCard';
-import { Badge } from '../components/ui/Badge';
+import { MapVisualizer } from '@/features/map/components/MapVisualizer';
+import type { City, Continent, Region } from '@/shared/types';
+import { slugify } from '@/shared/utils/helpers';
+import { getLore } from '@/features/lore/utils/data';
+import { SmartLink } from '@/features/lore/components/SmartLink';
+import { ImageWithFallback } from '@/shared/components/ImageWithFallback';
+import { BookmarkButton } from '@/shared/components/BookmarkButton';
+import { MysticCard } from '@/shared/components/MysticCard';
+import { Badge } from '@/shared/components/Badge';
 
 export const CityPage = () => {
-    const { id } = useParams<{ id: string }>();
+    const { cityId } = useParams<{ cityId: string }>();
     const data = getLore();
 
     let city: City | null = null;
     let region: Region | null = null;
     let continent: Continent | null = null;
 
-    if (id) {
+    if (cityId) {
         let foundCity: City | null = null;
         for (const plane of data.planes) {
             if (!plane.continents) continue;
             for (const cont of plane.continents) {
                 if (!cont.regions) continue;
                 for (const reg of cont.regions) {
-                    const match = reg.cities?.find(c => slugify(c.name) === id);
+                    const match = reg.cities?.find(c => slugify(c.name) === cityId);
                     if (match) {
                         foundCity = match;
                         region = reg;
@@ -69,25 +69,25 @@ export const CityPage = () => {
             <div className="w-full">
                 <Link
                     to={`/continent/${continent.id}/${slugify(region?.name || '')}`}
-                    className="flex items-center gap-2 text-text-dim hover:text-white transition-colors mb-6 no-underline"
+                    className="flex items-center gap-2 text-text-dim hover:text-superia transition-colors mb-6 no-underline font-main font-medium"
                 >
-                    <ArrowLeft size={20} />
+                    <ArrowLeft size={18} />
                     Tilbage til {region?.name}
                 </Link>
 
-                <div className="relative w-full h-80 rounded-3xl overflow-hidden mb-8 border border-white/10 shadow-premium">
+                <div className="relative w-full h-80 rounded-2xl overflow-hidden mb-10 border border-border shadow-glass">
                     <ImageWithFallback
                         src={heroImage}
                         alt={city.name}
                         className="w-full h-full object-cover"
                         fallbackText={`Kort over ${city.name}`}
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
 
                     <div className="absolute bottom-0 left-0 p-8 w-full z-10 flex justify-between items-end">
                         <div>
-                            <h1 className="text-5xl md:text-6xl font-serif font-bold text-white mb-2 leading-none" style={{ color: continentColor }}>{city.name}</h1>
-                            <p className="text-white/80 font-serif italic text-lg">{region?.name}, {continent.name}</p>
+                            <h1 className="text-5xl md:text-6xl font-serif font-bold text-white mb-2 leading-none tracking-wide" style={{ color: continentColor }}>{city.name}</h1>
+                            <p className="text-white/80 font-main italic text-lg">{region?.name}, {continent.name}</p>
                         </div>
                         <BookmarkButton url={`/continent/${continent.id}/${slugify(region?.name || '')}/${slugify(city.name)}`} title={city.name} type="city" />
                     </div>
@@ -97,38 +97,38 @@ export const CityPage = () => {
                     {/* Main Info Column */}
                     <div className="lg:col-span-2 flex flex-col gap-8">
                         <MysticCard>
-                            <h3 className="flex items-center gap-2 text-xl font-bold mb-4" style={{ color: continentColor }}>
-                                <Info size={18} /> Om Byen
+                            <h3 className="flex items-center gap-2 text-2xl font-serif font-bold mb-5 tracking-wide" style={{ color: continentColor }}>
+                                <Info size={22} className="text-superia" /> Om Byen
                             </h3>
-                            <p className="text-gray-300 leading-relaxed mb-6"><SmartLink text={city.desc} context={linkContext} /></p>
+                            <p className="text-text-main leading-relaxed mb-8 font-main"><SmartLink text={city.desc} context={linkContext} /></p>
 
                             {city.atmosphere && (
-                                <div className="mb-6 pl-4 border-l-2 border-white/10 italic text-gray-400">
+                                <div className="mb-8 pl-6 border-l-[3px] border-superia/30 italic text-text-dim font-serif text-lg py-1">
                                     "{city.atmosphere}"
                                 </div>
                             )}
 
                             {city.architecture && (
                                 <div className="mb-6">
-                                    <h4 className="text-sm font-bold text-text-dim uppercase tracking-wider mb-2">Arkitektur</h4>
-                                    <p className="text-gray-300 leading-relaxed text-sm"><SmartLink text={city.architecture} context={linkContext} /></p>
+                                    <h4 className="text-xs font-bold text-superia uppercase tracking-widest mb-2 font-main">Arkitektur</h4>
+                                    <p className="text-text-main leading-relaxed text-sm font-main"><SmartLink text={city.architecture} context={linkContext} /></p>
                                 </div>
                             )}
 
                             {city.layout && (
                                 <div className="mb-6">
-                                    <h4 className="text-sm font-bold text-text-dim uppercase tracking-wider mb-2">Struktur</h4>
-                                    <p className="text-gray-300 leading-relaxed text-sm"><SmartLink text={city.layout} context={linkContext} /></p>
+                                    <h4 className="text-xs font-bold text-superia uppercase tracking-widest mb-2 font-main">Struktur</h4>
+                                    <p className="text-text-main leading-relaxed text-sm font-main"><SmartLink text={city.layout} context={linkContext} /></p>
                                 </div>
                             )}
 
                             {city.pointsOfInterest && city.pointsOfInterest.length > 0 && (
                                 <div className="mb-6">
-                                    <h4 className="text-sm font-bold text-text-dim uppercase tracking-wider mb-2">Interessepunkter</h4>
-                                    <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                                    <h4 className="text-xs font-bold text-superia uppercase tracking-widest mb-3 font-main">Interessepunkter</h4>
+                                    <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
                                         {city.pointsOfInterest.map((poi, idx) => (
-                                            <li key={idx} className="flex items-start gap-2 text-sm text-gray-300">
-                                                <span className="text-superia mt-1">•</span> {poi}
+                                            <li key={idx} className="flex items-start gap-3 text-sm text-text-main font-main">
+                                                <span className="text-superia mt-0.5 opacity-80">•</span> {poi}
                                             </li>
                                         ))}
                                     </ul>
@@ -136,37 +136,37 @@ export const CityPage = () => {
                             )}
 
                             {city.rumor && (
-                                <div className="p-4 bg-orange-500/10 border border-orange-500/20 rounded-xl italic text-gray-200">
-                                    <strong className="text-orange-500 not-italic mr-2">Rygte:</strong> "{city.rumor}"
+                                <div className="p-5 bg-superia/5 border border-superia/20 rounded-2xl italic text-text-main shadow-glass mt-8">
+                                    <strong className="text-superia not-italic mr-2 font-main font-semibold">Rygte:</strong> <span className="font-serif">"{city.rumor}"</span>
                                 </div>
                             )}
                         </MysticCard>
 
                         {/* Districts Loop */}
                         {city.districts.map((district) => (
-                            <div key={district.id} className="flex flex-col gap-6">
-                                <div className="flex items-center gap-3 border-b border-white/10 pb-2">
-                                    <h3 className="text-2xl font-serif text-white">{district.name}</h3>
-                                    <Badge variant="default">{district.assets.length} steder</Badge>
+                            <div key={district.id} className="flex flex-col gap-6 mt-4">
+                                <div className="flex items-center gap-4 border-b border-border/50 pb-3">
+                                    <h3 className="text-3xl font-serif text-white">{district.name}</h3>
+                                    <Badge variant="default" className="text-xs">{district.assets.length} steder</Badge>
                                 </div>
 
-                                {district.desc && <p className="text-text-dim italic">{district.desc}</p>}
+                                {district.desc && <p className="text-text-main font-main italic leading-relaxed">{district.desc}</p>}
 
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                                     {district.assets.map((asset, i) => (
                                         <Link
                                             key={i}
                                             to={`/continent/${continent.id}/${slugify(region?.name || '')}/${slugify(city.name)}/${district.id}/${asset.id}`}
                                             className="block group"
                                         >
-                                            <div className="bg-surface/60 border border-white/5 p-6 rounded-2xl group-hover:bg-surface/80 group-hover:border-white/20 transition-all h-full">
+                                            <div className="bg-black/20 backdrop-blur-xl border border-border p-6 rounded-2xl group-hover:bg-white/5 group-hover:border-superia/50 transition-all h-full shadow-glass group-hover:shadow-[0_10px_30px_rgba(0,0,0,0.5)] group-hover:-translate-y-1">
                                                 <div className="flex justify-between items-start mb-3">
-                                                    <strong className="text-lg text-white group-hover:text-blue-200 transition-colors">{asset.name}</strong>
-                                                    <Badge variant="outline">{asset.subtype || asset.type}</Badge>
+                                                    <strong className="text-xl font-serif text-white group-hover:text-superia transition-colors tracking-wide">{asset.name}</strong>
+                                                    <Badge variant="outline" className="border-border/50 text-text-dim">{asset.subtype || asset.type}</Badge>
                                                 </div>
-                                                <p className="text-sm text-gray-400 mb-3 line-clamp-2">{asset.desc}</p>
-                                                <div className="flex items-center text-xs text-text-dim text-blue-400 group-hover:text-blue-300">
-                                                    Læs mere <ArrowLeft className="rotate-180 ml-1 w-3 h-3" />
+                                                <p className="text-sm text-text-main mb-4 font-main line-clamp-2 leading-relaxed">{asset.desc}</p>
+                                                <div className="flex items-center text-xs font-main font-semibold text-superia opacity-80 group-hover:opacity-100 transition-opacity">
+                                                    Læs mere <ArrowLeft className="rotate-180 ml-1.5 w-3 h-3" />
                                                 </div>
                                             </div>
                                         </Link>
@@ -179,7 +179,7 @@ export const CityPage = () => {
                     {/* Sidebar / Map Column */}
                     <div className="flex flex-col gap-8">
                         {/* Map Card */}
-                        <div className="bg-surface/60 backdrop-blur-xl border border-white/10 rounded-3xl overflow-hidden shadow-premium">
+                        <div className="bg-black/20 backdrop-blur-xl border border-border rounded-2xl overflow-hidden shadow-glass sticky top-24">
                             <MapVisualizer
                                 mapImage={mapPath}
                                 scenicImage={city.image}

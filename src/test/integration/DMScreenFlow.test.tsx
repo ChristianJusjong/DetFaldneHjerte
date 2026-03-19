@@ -1,7 +1,7 @@
 import { describe, it, expect, beforeEach, vi } from 'vitest';
 import { render, screen, fireEvent } from '@testing-library/react';
-import { DMScreen } from '../../components/DMScreen';
-import { useGameStore } from '../../store/useGameStore';
+import { DMScreen } from '@/features/dm-tools/components/DMScreen';
+import { useGameStore } from '@/app/store/useGameStore';
 
 // Mock dependencies
 vi.mock('../../hooks/useSoundEffects', () => ({

@@ -2,12 +2,12 @@ import { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowLeft, User, ShoppingBag, Shield, MapPin, Info, MessageSquare } from 'lucide-react';
-import type { Asset, City, District } from '../types';
-import { slugify } from '../utils/helpers';
-import { getLore } from '../utils/data';
-import { MysticCard } from '../components/ui/MysticCard';
-import { Badge } from '../components/ui/Badge';
-import { ImageWithFallback } from '../components/ImageWithFallback';
+import type { Asset, City, District } from '@/shared/types';
+import { slugify } from '@/shared/utils/helpers';
+import { getLore } from '@/features/lore/utils/data';
+import { MysticCard } from '@/shared/components/MysticCard';
+import { Badge } from '@/shared/components/Badge';
+import { ImageWithFallback } from '@/shared/components/ImageWithFallback';
 
 export const AssetPage = () => {
     // ... (rest of component) ...
@@ -91,7 +91,7 @@ export const AssetPage = () => {
             </Link>
 
             {/* HERO HEADER */}
-            <div className="relative rounded-3xl overflow-visible border border-white/10 bg-surface/50 mt-8">
+            <div className="relative rounded-2xl overflow-visible border border-border shadow-glass bg-surface/50 mt-8">
                 {/* Background Image Container */}
                 <div className="h-64 md:h-80 bg-gradient-to-r from-slate-900 to-slate-800 relative rounded-t-3xl overflow-hidden">
                     {headerBg && (
@@ -105,7 +105,7 @@ export const AssetPage = () => {
 
                     {/* Interior Label */}
                     {asset.interiorImage && (
-                        <div className="absolute top-4 right-4 bg-black/60 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-white uppercase tracking-wider border border-white/10">
+                        <div className="absolute top-4 right-4 bg-black/40 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-white uppercase tracking-wider font-main border border-border/50 shadow-glass">
                             Interior View
                         </div>
                     )}
@@ -135,7 +135,7 @@ export const AssetPage = () => {
                             {asset.tokenImage && (
                                 <button
                                     onClick={() => setShowToken(!showToken)}
-                                    className="absolute bottom-2 right-2 p-2 bg-black/60 hover:bg-superia text-white rounded-lg backdrop-blur-md transition-colors border border-white/10"
+                                    className="absolute bottom-2 right-2 p-2 bg-black/40 hover:bg-superia/80 text-white rounded-lg backdrop-blur-md transition-colors border border-border/50 shadow-glass"
                                     title="Toggle Token View"
                                 >
                                     {showToken ? <User size={16} /> : <div className="w-4 h-4 rounded-full border-2 border-current" />}
@@ -160,9 +160,9 @@ export const AssetPage = () => {
                 <div className="p-8 pt-0 grid grid-cols-1 md:grid-cols-3 gap-8">
                     {/* LEFT COLUMN: Main Content */}
                     <div className="md:col-span-2 space-y-8">
-                        <section className="bg-white/5 p-6 rounded-2xl border border-white/5">
-                            <h3 className="text-xl font-bold text-white mb-3 flex items-center gap-2">
-                                <Info size={18} /> Beskrivelse
+                        <section className="bg-black/20 backdrop-blur-xl p-6 rounded-2xl border border-border shadow-glass">
+                            <h3 className="text-xl font-serif font-bold text-white mb-3 flex items-center gap-2 tracking-wide">
+                                <Info size={20} className="text-superia" /> Beskrivelse
                             </h3>
                             <p className="text-gray-300 leading-relaxed text-lg whitespace-pre-line">
                                 {asset.desc}
@@ -181,12 +181,12 @@ export const AssetPage = () => {
                         {/* SHOP: Inventory */}
                         {asset.inventory && asset.inventory.length > 0 && (
                             <MysticCard>
-                                <h4 className="font-bold text-white mb-6 flex items-center gap-2 text-xl">
-                                    <ShoppingBag size={20} /> Varekatalog
+                                <h4 className="font-serif font-bold text-white mb-6 flex items-center gap-2 text-2xl tracking-wide">
+                                    <ShoppingBag size={22} className="text-superia" /> Varekatalog
                                 </h4>
-                                <div className="overflow-hidden rounded-xl border border-white/5 bg-black/20">
-                                    <table className="w-full text-left text-sm">
-                                        <thead className="bg-white/5 text-text-dim uppercase tracking-wider font-semibold">
+                                <div className="overflow-hidden rounded-xl border border-border shadow-glass bg-black/20">
+                                    <table className="w-full text-left font-main text-sm">
+                                        <thead className="bg-white/5 text-text-dim uppercase tracking-wider font-semibold border-b border-border/50">
                                             <tr>
                                                 <th className="p-3">Vare</th>
                                                 <th className="p-3 text-right">Pris</th>
@@ -198,7 +198,7 @@ export const AssetPage = () => {
                                                     <td className="p-3">
                                                         <div className="flex items-center gap-3">
                                                             {item.image && (
-                                                                <div className="w-10 h-10 rounded bg-black/50 overflow-hidden border border-white/10 shrink-0">
+                                                                <div className="w-10 h-10 rounded-lg bg-black/50 overflow-hidden border border-border/50 shrink-0">
                                                                     <ImageWithFallback src={item.image} alt={item.name} className="w-full h-full object-cover" />
                                                                 </div>
                                                             )}
@@ -222,31 +222,31 @@ export const AssetPage = () => {
                         {/* NPC: Stats & Role */}
                         {(asset.type === 'npc' || asset.type === 'guard' || asset.stats) && (
                             <MysticCard>
-                                <h4 className="font-bold text-white mb-4 flex items-center gap-2">
-                                    <Shield size={18} /> {asset.type === 'guard' ? 'Vagt Detaljer' : 'Karakter Data'}
+                                <h4 className="font-serif font-bold text-white mb-5 flex items-center gap-2 text-2xl tracking-wide">
+                                    <Shield size={22} className="text-superia" /> {asset.type === 'guard' ? 'Vagt Detaljer' : 'Karakter Data'}
                                 </h4>
-                                <div className="space-y-6">
+                                <div className="space-y-6 font-main">
                                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                         {asset.role && (
-                                            <div className="bg-white/5 p-3 rounded-lg border border-white/5">
-                                                <div className="text-xs text-text-dim uppercase tracking-wider mb-1">Rolle</div>
-                                                <div className="text-white font-medium">{asset.role}</div>
+                                            <div className="bg-black/20 p-4 rounded-xl border border-border shadow-glass">
+                                                <div className="text-xs text-superia font-semibold uppercase tracking-widest mb-1.5">Rolle</div>
+                                                <div className="text-white font-medium text-lg">{asset.role}</div>
                                             </div>
                                         )}
                                         {asset.wants && (
-                                            <div className="bg-white/5 p-3 rounded-lg border border-white/5">
-                                                <div className="text-xs text-text-dim uppercase tracking-wider mb-1">Motivation</div>
-                                                <div className="text-white italic">"{asset.wants}"</div>
+                                            <div className="bg-black/20 p-4 rounded-xl border border-border shadow-glass">
+                                                <div className="text-xs text-superia font-semibold uppercase tracking-widest mb-1.5">Motivation</div>
+                                                <div className="text-white italic text-lg font-serif">"{asset.wants}"</div>
                                             </div>
                                         )}
                                     </div>
 
                                     {asset.stats && (
-                                        <div className="grid grid-cols-6 gap-2 mt-4 text-center select-none">
+                                        <div className="grid grid-cols-6 gap-3 mt-6 text-center select-none">
                                             {Object.entries(asset.stats).map(([stat, val]) => (
-                                                <div key={stat} className="bg-black/40 rounded-lg p-2 border border-white/5 flex flex-col items-center">
-                                                    <div className="text-[10px] text-text-dim uppercase tracking-wider font-bold mb-1">{stat}</div>
-                                                    <div className="font-mono text-white text-xl">{val}</div>
+                                                <div key={stat} className="bg-black/40 rounded-xl p-3 border border-border shadow-[inset_0_2px_10px_rgba(0,0,0,0.2)] flex flex-col items-center">
+                                                    <div className="text-[10px] text-superia uppercase tracking-widest font-bold mb-1.5">{stat}</div>
+                                                    <div className="font-mono text-white text-2xl font-bold">{val}</div>
                                                 </div>
                                             ))}
                                         </div>
@@ -260,9 +260,9 @@ export const AssetPage = () => {
                     <div className="space-y-6">
                         {/* SHOPKEEPER / OWNER CARD */}
                         {(asset.shopkeeper || asset.owner) && (
-                            <div className="bg-surface/40 backdrop-blur-md p-6 rounded-2xl border border-white/10 shadow-lg">
-                                <h4 className="text-xs text-text-dim uppercase tracking-wider font-bold mb-4 flex items-center gap-2">
-                                    <User size={14} /> {asset.shopkeeper ? 'Indehaver' : 'Ejer'}
+                            <div className="bg-black/30 backdrop-blur-xl p-6 rounded-2xl border border-border shadow-glass">
+                                <h4 className="text-xs text-superia uppercase tracking-widest font-bold mb-5 flex items-center gap-2 font-main">
+                                    <User size={16} /> {asset.shopkeeper ? 'Indehaver' : 'Ejer'}
                                 </h4>
 
                                 <div className="flex items-start gap-4 mb-4">
@@ -282,10 +282,10 @@ export const AssetPage = () => {
                                 </div>
 
                                 {asset.shopkeeper && (
-                                    <div className="space-y-3 text-sm border-t border-white/10 pt-4 mt-2">
-                                        <p className="text-gray-300 leading-relaxed">{asset.shopkeeper.desc}</p>
+                                    <div className="space-y-4 font-main text-sm border-t border-border/50 pt-5 mt-2">
+                                        <p className="text-text-main leading-relaxed">{asset.shopkeeper.desc}</p>
                                         {asset.shopkeeper.quirk && (
-                                            <div className="bg-black/30 p-3 rounded-lg border-l-2 border-yellow-500 text-yellow-200/90 italic text-xs">
+                                            <div className="bg-superia/10 p-4 rounded-xl border-l-[3px] border-superia text-superia/90 italic text-sm">
                                                 "{asset.shopkeeper.quirk}"
                                             </div>
                                         )}
@@ -295,11 +295,11 @@ export const AssetPage = () => {
                         )}
 
                         {/* RUMORS Placeholder */}
-                        <div className="bg-indigo-500/5 p-6 rounded-2xl border border-indigo-500/20">
-                            <div className="text-sm text-indigo-300 font-bold mb-3 flex items-center gap-2">
-                                <MessageSquare size={14} /> Rygtet siger...
+                        <div className="bg-black/20 backdrop-blur-xl p-6 rounded-2xl border border-border shadow-glass font-main">
+                            <div className="text-sm text-superia font-semibold uppercase tracking-widest mb-3 flex items-center gap-2">
+                                <MessageSquare size={16} /> Rygtet siger...
                             </div>
-                            <p className="text-sm text-indigo-100/70 italic leading-relaxed">
+                            <p className="text-sm text-text-main italic leading-relaxed font-serif text-lg">
                                 "Der hviskes i krogene om dette steds sande natur..."
                             </p>
                         </div>

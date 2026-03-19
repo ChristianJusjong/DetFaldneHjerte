@@ -1,4 +1,4 @@
-import { LoreGraph } from "../components/visual/LoreGraph";
+import { LoreGraph } from '@/features/lore/components/LoreGraph';
 import { motion } from "framer-motion";
 
 export const LoreWebPage = () => {

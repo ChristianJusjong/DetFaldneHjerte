@@ -1,8 +1,8 @@
 import { describe, it, expect, beforeEach, vi } from 'vitest';
 import { render, screen, fireEvent } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
-import { SearchModal } from '../../components/SearchModal';
-import { useGameStore } from '../../store/useGameStore';
+import { SearchModal } from '@/features/search/components/SearchModal';
+import { useGameStore } from '@/app/store/useGameStore';
 
 // Mock dependencies
 vi.mock('../../hooks/useSoundEffects', () => ({

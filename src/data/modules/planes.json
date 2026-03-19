@@ -347,6 +347,19 @@
                 "battlemapImage": "/assets/maps/battlemaps/neo-spiret-encounter.png"
               },
               {
+                "name": "Aethelgard",
+                "desc": "En ældgammel by bygget ind i de hvide klipper. Kendt som 'Hukommelsens Vogter'.",
+                "rumor": "Det siges, at byens mure hvisker historier til dem, der lytter længe nok.",
+                "layout": "Cirkulære niveauer hugget ind i bjerget.",
+                "districts": [],
+                "atmosphere": "Seren og tidløs.",
+                "architecture": "Hvid sten med guldindlæg.",
+                "pointsOfInterest": ["Den Store Arkiv", "Minde-Haven"],
+                "mapImage": "/assets/maps/cities/aethelgard.png",
+                "visualSummary": "En by hugget ind i hvide klipper.",
+                "battlemapImage": "/assets/maps/battlemaps/aethelgard-encounter.png"
+              },
+              {
                 "name": "Nord-Porten",
                 "desc": "Fæstning af bureaukrati. Man skal bestå en eksamen for at komme ind.",
                 "rumor": "Vagterne bestikkes ikke med guld, men med sjældne bøger.",
@@ -12451,9 +12464,11 @@
           "x": 64,
           "y": 52
         }
-      },
-      {
-        "id": "skyggesiden",
+      }
+    ]
+  },
+  {
+    "id": "skyggesiden",
         "name": "Skygge-Siden (Dybets Flade)",
         "theme": "Kaos, Natur, Vækst",
         "mapImage": "/assets/maps/sides/skyggesiden.png",
@@ -24026,28 +24041,26 @@
         "coordinates": {
           "x": 22,
           "y": 46
+      },
+      "battles": [
+        {
+          "name": "Slaget ved Sol-Porten",
+          "date": "For 200 år siden",
+          "desc": "Hvor en invasion fra Skygge-Siden blev stoppet af Arkitektens lys-kastere.",
+          "outcome": "Lys-Siden sejrede, men porten blev forseglet."
+        },
+        {
+          "name": "Kæde-Bruddet",
+          "date": "For 50 år siden",
+          "desc": "Terrorister forsøgte at sprænge et led i Verdenskæden.",
+          "outcome": "Mislykkedes. Kæden holdt, men Anker-Byen tog skade."
+        },
+        {
+          "name": "Den Røde Høst",
+          "date": "For 10 år siden",
+          "desc": "En massakre i Sølvtunge-Næsset hvor oprørske bønder blev 'høstet' af lejesoldater.",
+          "outcome": "Oprøret blev knust midlertidigt. Skabte stor bitterhed."
         }
-      }
-    ],
-    "battles": [
-      {
-        "name": "Slaget ved Sol-Porten",
-        "date": "For 200 år siden",
-        "desc": "Hvor en invasion fra Skygge-Siden blev stoppet af Arkitektens lys-kastere.",
-        "outcome": "Lys-Siden sejrede, men porten blev forseglet."
-      },
-      {
-        "name": "Kæde-Bruddet",
-        "date": "For 50 år siden",
-        "desc": "Terrorister forsøgte at sprænge et led i Verdenskæden.",
-        "outcome": "Mislykkedes. Kæden holdt, men Anker-Byen tog skade."
-      },
-      {
-        "name": "Den Røde Høst",
-        "date": "For 10 år siden",
-        "desc": "En massakre i Sølvtunge-Næsset hvor oprørske bønder blev 'høstet' af lejesoldater.",
-        "outcome": "Oprøret blev knust midlertidigt. Skabte stor bitterhed."
-      }
-    ]
-  }
+      ]
+    }
 ]

@@ -1,11 +1,11 @@
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { SmartLink } from '../components/SmartLink';
-import { getLore } from '../utils/data';
-import { BookmarkButton } from '../components/BookmarkButton';
-import { MysticCard } from '../components/ui/MysticCard';
-import { getIconForContinent } from '../utils/helpers';
-import { MapVisualizer } from '../components/world/MapVisualizer';
+import { SmartLink } from '@/features/lore/components/SmartLink';
+import { getLore } from '@/features/lore/utils/data';
+import { BookmarkButton } from '@/shared/components/BookmarkButton';
+import { MysticCard } from '@/shared/components/MysticCard';
+import { getIconForContinent } from '@/shared/utils/helpers';
+import { MapVisualizer } from '@/features/map/components/MapVisualizer';
 
 export const PlanePage = () => {
     // 1. Get Params
@@ -47,7 +47,7 @@ export const PlanePage = () => {
                 </header>
 
                 {/* Map Visualization */}
-                <div className="mb-12 rounded-3xl overflow-hidden border border-white/10 shadow-premium">
+                <div className="mb-12 rounded-2xl overflow-hidden border border-border shadow-glass bg-black/20">
                     <MapVisualizer
                         mapImage={plane.mapImage || ''}
                         title={plane.name}
@@ -70,7 +70,7 @@ export const PlanePage = () => {
                 </div>
 
                 {/* Continents Section */}
-                <h2 className="text-3xl font-serif font-bold text-white mt-16 mb-6 pb-2 border-b border-white/10">Kontinenter</h2>
+                <h2 className="text-3xl font-serif font-bold text-white mt-16 mb-6 pb-3 border-b border-border/50">Kontinenter</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {plane.continents.map(continent => (
                         <Link
@@ -79,7 +79,7 @@ export const PlanePage = () => {
                             className="block group"
                         >
                             <div
-                                className="h-full bg-white/5 border border-white/10 rounded-2xl p-6 transition-all duration-300 hover:bg-white/10 hover:translate-x-1 flex items-start gap-4"
+                                className="h-full bg-black/20 backdrop-blur-xl border border-border rounded-2xl p-6 transition-all duration-300 hover:bg-white/5 hover:border-superia/50 hover:-translate-y-1 shadow-glass group-hover:shadow-[0_10px_30px_rgba(0,0,0,0.5)] flex items-start gap-5"
                                 style={{ borderLeft: `3px solid ${continent.color}` }}
                             >
                                 <div className="text-4xl opacity-80 group-hover:scale-110 transition-transform">

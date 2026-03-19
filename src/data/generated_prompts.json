@@ -240,12 +240,6 @@
     "context": "Battlemap: Minde-Dalene"
   },
   {
-    "id": "/assets/maps/cities/glemme-hullet.png",
-    "filename": "glemme-hullet.png",
-    "prompt": "A strict top-down orthographic city map of [medieval city], Består af høje tårne forbundet med lyn-afledere.. Settlement located in Minde-Dalene. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: Består af høje tårne forbundet med lyn-afledere... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: market square. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text",
-    "context": "City Map: Glemme-Hullet"
-  },
-  {
     "id": "/assets/maps/battlemaps/glemme-hullet-encounter.png",
     "filename": "glemme-hullet-encounter.png",
     "prompt": "A top-down tabletop RPG battlemap of [Glemme-Hullet]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: dramatic lighting. Texture: varied terrain. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid",
@@ -390,12 +384,6 @@
     "context": "NPC: Lyoton"
   },
   {
-    "id": "/assets/maps/cities/ekkoby.png",
-    "filename": "ekkoby.png",
-    "prompt": "A strict top-down orthographic city map of [medieval city], Består af høje tårne forbundet med lyn-afledere.. Mountain City located in Minde-Dalene. Aesthetic: Fantasy landscape with distinct magical features. distinct features: mountain, city. Layout: Består af høje tårne forbundet med lyn-afledere... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: market square. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text",
-    "context": "City Map: Ekkoby"
-  },
-  {
     "id": "/assets/maps/battlemaps/ekkoby-encounter.png",
     "filename": "ekkoby-encounter.png",
     "prompt": "A top-down tabletop RPG battlemap of [Ekkoby]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: dramatic lighting. Texture: varied terrain. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid",
@@ -496,12 +484,6 @@
     "filename": "storm-fladen-encounter.png",
     "prompt": "A top-down tabletop RPG battlemap of [Storm-Fladen]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: dramatic lighting. Texture: varied terrain. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid",
     "context": "Battlemap: Storm-Fladen"
-  },
-  {
-    "id": "/assets/maps/cities/banegaarden.png",
-    "filename": "banegaarden.png",
-    "prompt": "A strict top-down orthographic city map of [medieval city], En labyrint af biblioteker og læsesale.. Settlement located in Storm-Fladen. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: En labyrint af biblioteker og læsesale... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: market square. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text",
-    "context": "City Map: Banegården"
   },
   {
     "id": "/assets/maps/battlemaps/banegaarden-encounter.png",
@@ -616,12 +598,6 @@
     "filename": "lyoix.png",
     "prompt": "Digital Art, RPG Portrait, Human Logiker, Klædt i kåber. Ser mummer om logik ud., En smuk person med skiftende øjne.. Detailed face, character concept art, dark fantasy style, solid background --ar 2:3 --v 6.0 --stylize 200",
     "context": "NPC: Lyoix"
-  },
-  {
-    "id": "/assets/maps/cities/fabrikken.png",
-    "filename": "fabrikken.png",
-    "prompt": "A strict top-down orthographic city map of [medieval city], Består af høje tårne forbundet med lyn-afledere.. Settlement located in Storm-Fladen. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: Består af høje tårne forbundet med lyn-afledere... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: market square. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text",
-    "context": "City Map: Fabrikken"
   },
   {
     "id": "/assets/maps/battlemaps/fabrikken-encounter.png",
@@ -774,18 +750,6 @@
     "context": "Battlemap: Skygge-Dalen"
   },
   {
-    "id": "/assets/maps/cities/illusiona.png",
-    "filename": "illusiona.png",
-    "prompt": "A strict top-down orthographic city map of [medieval city], Bygget vertikalt op ad bjergsiden med svævebaner.. Settlement located in Skygge-Dalen. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: Bygget vertikalt op ad bjergsiden med svævebaner... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: market square. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text",
-    "context": "City Map: Illusiona"
-  },
-  {
-    "id": "/assets/cities/illusiona.png",
-    "filename": "illusiona.png",
-    "prompt": "Atmospheric concept art of Illusiona. Luften er tynd og elektrisk. Det lugter af ozon og gammelt papir.. Høje, snoede tårne af hvid marmor og blåt glas.. Cinematic lighting, establishing shot, immersive perspective, dark fantasy RPG style. --ar 16:9 --v 6.0 --stylize 250",
-    "context": "City Scenic: Illusiona"
-  },
-  {
     "id": "/assets/maps/battlemaps/illusiona-encounter.png",
     "filename": "illusiona-encounter.png",
     "prompt": "A top-down tabletop RPG battlemap of [Illusiona]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: dramatic lighting. Texture: varied terrain. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid",
@@ -874,18 +838,6 @@
     "filename": "roden-encounter.png",
     "prompt": "A top-down tabletop RPG battlemap of [Roden]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: dramatic lighting. Texture: varied terrain. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid",
     "context": "Battlemap: Roden"
-  },
-  {
-    "id": "/assets/maps/cities/skjulestedet.png",
-    "filename": "skjulestedet.png",
-    "prompt": "A strict top-down orthographic city map of [medieval city], Udhugget i selve klippen i store spiralmønstre.. Settlement located in Roden. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: Udhugget i selve klippen i store spiralmønstre... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: market square. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text",
-    "context": "City Map: Skjulestedet"
-  },
-  {
-    "id": "/assets/cities/skjulestedet.png",
-    "filename": "skjulestedet.png",
-    "prompt": "Atmospheric concept art of Skjulestedet. Luften er tynd og elektrisk. Det lugter af ozon og gammelt papir.. Høje, snoede tårne af hvid marmor og blåt glas.. Cinematic lighting, establishing shot, immersive perspective, dark fantasy RPG style. --ar 16:9 --v 6.0 --stylize 250",
-    "context": "City Scenic: Skjulestedet"
   },
   {
     "id": "/assets/maps/battlemaps/skjulestedet-encounter.png",
@@ -1092,12 +1044,6 @@
     "context": "NPC: Lyoth"
   },
   {
-    "id": "/assets/maps/cities/glimt.png",
-    "filename": "glimt.png",
-    "prompt": "A strict top-down orthographic city map of [medieval city], Skjult bag en permanent illusion.. Settlement located in Prisme-Ringen. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: Skjult bag en permanent illusion... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: market square. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text",
-    "context": "City Map: Glimt"
-  },
-  {
     "id": "/assets/maps/battlemaps/glimt-encounter.png",
     "filename": "glimt-encounter.png",
     "prompt": "A top-down tabletop RPG battlemap of [Glimt]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: dramatic lighting. Texture: varied terrain. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid",
@@ -1192,12 +1138,6 @@
     "filename": "lyora.png",
     "prompt": "Digital Art, RPG Portrait, Human Lys-formeren, Klædt i læder og stof. Ser bærer maske ud., En smuk person med skiftende øjne.. Detailed face, character concept art, dark fantasy style, solid background --ar 2:3 --v 6.0 --stylize 200",
     "context": "NPC: Lyora"
-  },
-  {
-    "id": "/assets/maps/cities/feriebyen.png",
-    "filename": "feriebyen.png",
-    "prompt": "A strict top-down orthographic city map of [medieval city], organic. Settlement located in Prisme-Ringen. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: Skjult bag en permanent illusion... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: market square. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text",
-    "context": "City Map: Feriebyen"
   },
   {
     "id": "/assets/maps/battlemaps/feriebyen-encounter.png",
@@ -1296,12 +1236,6 @@
     "context": "NPC: Lyoix"
   },
   {
-    "id": "/assets/maps/cities/mosaik.png",
-    "filename": "mosaik.png",
-    "prompt": "A strict top-down orthographic city map of [medieval city], Bygninger af krystal der bryder lyset.. Settlement located in Prisme-Ringen. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: Bygninger af krystal der bryder lyset... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: market square. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text",
-    "context": "City Map: Mosaik"
-  },
-  {
     "id": "/assets/maps/battlemaps/mosaik-encounter.png",
     "filename": "mosaik-encounter.png",
     "prompt": "A top-down tabletop RPG battlemap of [Mosaik]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: dramatic lighting. Texture: varied terrain. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid",
@@ -1354,12 +1288,6 @@
     "filename": "det-hvide-de-encounter.png",
     "prompt": "A top-down tabletop RPG battlemap of [Det Hvide �~de]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: dramatic lighting. Texture: varied terrain. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid",
     "context": "Battlemap: Det Hvide �~de"
-  },
-  {
-    "id": "/assets/cities/soelv-muren.png",
-    "filename": "soelv-muren.png",
-    "prompt": "Atmospheric concept art of Sølv-Muren. Lyset reflekteres fra alle overflader. Det er svært at se forskel på virkelighed og spejling.. Krystalstrukturer og envejs-spejle.. Cinematic lighting, establishing shot, immersive perspective, dark fantasy RPG style. --ar 16:9 --v 6.0 --stylize 250",
-    "context": "City Scenic: Sølv-Muren"
   },
   {
     "id": "/assets/maps/battlemaps/soelv-muren-encounter.png",
@@ -1450,12 +1378,6 @@
     "filename": "fenix.png",
     "prompt": "Digital Art, RPG Portrait, Human Glas-ridder, Klædt i læder og stof. Ser stirrer intenst ud., En arret person med lysende øjne.. Detailed face, character concept art, dark fantasy style, solid background --ar 2:3 --v 6.0 --stylize 200",
     "context": "NPC: Fenix"
-  },
-  {
-    "id": "/assets/maps/cities/posten.png",
-    "filename": "posten.png",
-    "prompt": "A strict top-down orthographic city map of [medieval city], Bunkers gravet ned i saltet.. Settlement located in Det Hvide �~de. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: Huse lavet af envejs-spejle... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: market square. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text",
-    "context": "City Map: Posten"
   },
   {
     "id": "/assets/cities/posten.png",
@@ -1554,18 +1476,6 @@
     "context": "NPC: Fenos"
   },
   {
-    "id": "/assets/maps/cities/bruddet.png",
-    "filename": "bruddet.png",
-    "prompt": "A strict top-down orthographic city map of [medieval city], Bygninger af krystal der bryder lyset.. Settlement located in Det Hvide �~de. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: Bygninger af krystal der bryder lyset... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: market square. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text",
-    "context": "City Map: Bruddet"
-  },
-  {
-    "id": "/assets/cities/bruddet.png",
-    "filename": "bruddet.png",
-    "prompt": "Atmospheric concept art of Bruddet. Lyset reflekteres fra alle overflader. Det er svært at se forskel på virkelighed og spejling.. Krystalstrukturer og envejs-spejle.. Cinematic lighting, establishing shot, immersive perspective, dark fantasy RPG style. --ar 16:9 --v 6.0 --stylize 250",
-    "context": "City Scenic: Bruddet"
-  },
-  {
     "id": "/assets/maps/battlemaps/bruddet-encounter.png",
     "filename": "bruddet-encounter.png",
     "prompt": "A top-down tabletop RPG battlemap of [Bruddet]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: dramatic lighting. Texture: varied terrain. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid",
@@ -1656,18 +1566,6 @@
     "context": "NPC: Xalia"
   },
   {
-    "id": "/assets/maps/cities/de-blindes-by.png",
-    "filename": "de-blindes-by.png",
-    "prompt": "A strict top-down orthographic city map of [medieval city], Huse lavet af envejs-spejle.. Settlement located in Det Hvide �~de. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: Huse lavet af envejs-spejle... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: market square. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text",
-    "context": "City Map: De Blindes By"
-  },
-  {
-    "id": "/assets/cities/de-blindes-by.png",
-    "filename": "de-blindes-by.png",
-    "prompt": "Atmospheric concept art of De Blindes By. Lyset reflekteres fra alle overflader. Det er svært at se forskel på virkelighed og spejling.. Krystalstrukturer og envejs-spejle.. Cinematic lighting, establishing shot, immersive perspective, dark fantasy RPG style. --ar 16:9 --v 6.0 --stylize 250",
-    "context": "City Scenic: De Blindes By"
-  },
-  {
     "id": "/assets/maps/battlemaps/de-blindes-by-encounter.png",
     "filename": "de-blindes-by-encounter.png",
     "prompt": "A top-down tabletop RPG battlemap of [De Blindes By]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: dramatic lighting. Texture: varied terrain. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid",
@@ -1738,12 +1636,6 @@
     "filename": "dybet-encounter.png",
     "prompt": "A top-down tabletop RPG battlemap of [Dybet]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: dramatic lighting. Texture: varied terrain. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid",
     "context": "Battlemap: Dybet"
-  },
-  {
-    "id": "/assets/maps/cities/skygge-vuggen.png",
-    "filename": "skygge-vuggen.png",
-    "prompt": "A strict top-down orthographic city map of [medieval city], Huse lavet af envejs-spejle.. Settlement located in Dybet. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: Huse lavet af envejs-spejle... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: market square. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text",
-    "context": "City Map: Skygge-Vuggen"
   },
   {
     "id": "/assets/cities/skygge-vuggen.png",
@@ -1836,12 +1728,6 @@
     "context": "NPC: Moros"
   },
   {
-    "id": "/assets/maps/cities/handels-bredden.png",
-    "filename": "handels-bredden.png",
-    "prompt": "A strict top-down orthographic city map of [medieval city], Bygninger af krystal der bryder lyset.. Settlement located in Dybet. Aesthetic: Fantasy landscape with distinct magical features. distinct features: light, darkness. Layout: Bygninger af krystal der bryder lyset... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: market square. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text",
-    "context": "City Map: Handels-Bredden"
-  },
-  {
     "id": "/assets/cities/handels-bredden.png",
     "filename": "handels-bredden.png",
     "prompt": "Atmospheric concept art of Handels-Bredden. Lyset reflekteres fra alle overflader. Det er svært at se forskel på virkelighed og spejling.. Krystalstrukturer og envejs-spejle.. Cinematic lighting, establishing shot, immersive perspective, dark fantasy RPG style. --ar 16:9 --v 6.0 --stylize 250",
@@ -1912,12 +1798,6 @@
     "filename": "kasmund.png",
     "prompt": "Digital Art, RPG Portrait, Human Drømme-tyder, Klædt i læder og stof. Ser stirrer intenst ud., En lav person med trætte øjne.. Detailed face, character concept art, dark fantasy style, solid background --ar 2:3 --v 6.0 --stylize 200",
     "context": "NPC: Kasmund"
-  },
-  {
-    "id": "/assets/maps/cities/obsidian.png",
-    "filename": "obsidian.png",
-    "prompt": "A strict top-down orthographic city map of [medieval city], Svævende platforme over det mørke vand.. Fortress City located in Dybet. Aesthetic: Fantasy landscape with distinct magical features. distinct features: fortress. Layout: Svævende platforme over det mørke vand... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: market square. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text",
-    "context": "City Map: Obsidian"
   },
   {
     "id": "/assets/cities/obsidian.png",
@@ -2046,18 +1926,6 @@
     "context": "Battlemap: Tåre-Kysten"
   },
   {
-    "id": "/assets/maps/cities/salt-havnen.png",
-    "filename": "salt-havnen.png",
-    "prompt": "A strict top-down orthographic city map of [medieval city], Svævende platforme over det mørke vand.. Settlement located in Tåre-Kysten. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: Svævende platforme over det mørke vand... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: market square. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text",
-    "context": "City Map: Salt-Havnen"
-  },
-  {
-    "id": "/assets/cities/salt-havnen.png",
-    "filename": "salt-havnen.png",
-    "prompt": "Atmospheric concept art of Salt-Havnen. Lyset reflekteres fra alle overflader. Det er svært at se forskel på virkelighed og spejling.. Krystalstrukturer og envejs-spejle.. Cinematic lighting, establishing shot, immersive perspective, dark fantasy RPG style. --ar 16:9 --v 6.0 --stylize 250",
-    "context": "City Scenic: Salt-Havnen"
-  },
-  {
     "id": "/assets/maps/battlemaps/salt-havnen-encounter.png",
     "filename": "salt-havnen-encounter.png",
     "prompt": "A top-down tabletop RPG battlemap of [Salt-Havnen]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: dramatic lighting. Texture: varied terrain. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid",
@@ -2122,18 +1990,6 @@
     "filename": "xalix.png",
     "prompt": "Digital Art, RPG Portrait, Human Lys-formeren, Klædt i læder og stof. Ser bærer maske ud., En høj person med lysende øjne.. Detailed face, character concept art, dark fantasy style, solid background --ar 2:3 --v 6.0 --stylize 200",
     "context": "NPC: Xalix"
-  },
-  {
-    "id": "/assets/maps/cities/le-byen.png",
-    "filename": "le-byen.png",
-    "prompt": "A strict top-down orthographic city map of [medieval city], Huse lavet af envejs-spejle.. Settlement located in Tåre-Kysten. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: Huse lavet af envejs-spejle... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: market square. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text",
-    "context": "City Map: �.le-Byen"
-  },
-  {
-    "id": "/assets/cities/le-byen.png",
-    "filename": "le-byen.png",
-    "prompt": "Atmospheric concept art of �.le-Byen. Lyset reflekteres fra alle overflader. Det er svært at se forskel på virkelighed og spejling.. Krystalstrukturer og envejs-spejle.. Cinematic lighting, establishing shot, immersive perspective, dark fantasy RPG style. --ar 16:9 --v 6.0 --stylize 250",
-    "context": "City Scenic: �.le-Byen"
   },
   {
     "id": "/assets/maps/battlemaps/le-byen-encounter.png",
@@ -2224,18 +2080,6 @@
     "filename": "drara.png",
     "prompt": "Digital Art, RPG Portrait, Human Drømme-tyder, Klædt i læder og stof. Ser skifter øjenfarve ud., En høj person med intense øjne.. Detailed face, character concept art, dark fantasy style, solid background --ar 2:3 --v 6.0 --stylize 200",
     "context": "NPC: Drara"
-  },
-  {
-    "id": "/assets/maps/cities/taagen.png",
-    "filename": "taagen.png",
-    "prompt": "A strict top-down orthographic city map of [medieval city], Svævende platforme over det mørke vand.. Settlement located in Tåre-Kysten. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: Svævende platforme over det mørke vand... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: market square. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text",
-    "context": "City Map: Tågen"
-  },
-  {
-    "id": "/assets/cities/taagen.png",
-    "filename": "taagen.png",
-    "prompt": "Atmospheric concept art of Tågen. Lyset reflekteres fra alle overflader. Det er svært at se forskel på virkelighed og spejling.. Krystalstrukturer og envejs-spejle.. Cinematic lighting, establishing shot, immersive perspective, dark fantasy RPG style. --ar 16:9 --v 6.0 --stylize 250",
-    "context": "City Scenic: Tågen"
   },
   {
     "id": "/assets/maps/battlemaps/taagen-encounter.png",
@@ -2332,12 +2176,6 @@
     "filename": "baglandet-encounter.png",
     "prompt": "A top-down tabletop RPG battlemap of [Baglandet]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: dramatic lighting. Texture: varied terrain. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid",
     "context": "Battlemap: Baglandet"
-  },
-  {
-    "id": "/assets/maps/cities/udkigget.png",
-    "filename": "udkigget.png",
-    "prompt": "A strict top-down orthographic city map of [medieval city], Svævende platforme over det mørke vand.. Mountain City located in Baglandet. Aesthetic: Fantasy landscape with distinct magical features. distinct features: mountain. Layout: Svævende platforme over det mørke vand... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: market square. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text",
-    "context": "City Map: Udkigget"
   },
   {
     "id": "/assets/cities/udkigget.png",
@@ -2448,12 +2286,6 @@
     "context": "NPC: Briwen"
   },
   {
-    "id": "/assets/maps/cities/pletten.png",
-    "filename": "pletten.png",
-    "prompt": "A strict top-down orthographic city map of [medieval city], Skjult bag en permanent illusion.. Settlement located in Baglandet. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: Skjult bag en permanent illusion... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: market square. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text",
-    "context": "City Map: Pletten"
-  },
-  {
     "id": "/assets/cities/pletten.png",
     "filename": "pletten.png",
     "prompt": "Atmospheric concept art of Pletten. Lyset reflekteres fra alle overflader. Det er svært at se forskel på virkelighed og spejling.. Krystalstrukturer og envejs-spejle.. Cinematic lighting, establishing shot, immersive perspective, dark fantasy RPG style. --ar 16:9 --v 6.0 --stylize 250",
@@ -2512,12 +2344,6 @@
     "filename": "mormund.png",
     "prompt": "Digital Art, RPG Portrait, Human Spejl-vagt, Klædt i læder og stof. Ser skifter øjenfarve ud., En høj person med blinde øjne.. Detailed face, character concept art, dark fantasy style, solid background --ar 2:3 --v 6.0 --stylize 200",
     "context": "NPC: Mormund"
-  },
-  {
-    "id": "/assets/maps/cities/vagtposten.png",
-    "filename": "vagtposten.png",
-    "prompt": "A strict top-down orthographic city map of [medieval city], Skjult bag en permanent illusion.. Fortress City located in Baglandet. Aesthetic: Fantasy landscape with distinct magical features. distinct features: fortress. Layout: Skjult bag en permanent illusion... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: market square. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text",
-    "context": "City Map: Vagtposten"
   },
   {
     "id": "/assets/cities/vagtposten.png",
@@ -2628,12 +2454,6 @@
     "context": "Battlemap: Læ-Kysten"
   },
   {
-    "id": "/assets/maps/cities/raabe-havn.png",
-    "filename": "raabe-havn.png",
-    "prompt": "A strict top-down orthographic city map of [port city], Bygget af hule sten, der synger i vinden.. Port City located in Læ-Kysten. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city, harbor. Layout: Bygget af hule sten, der synger i vinden... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: market square. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text",
-    "context": "City Map: Råbe-Havn"
-  },
-  {
     "id": "/assets/cities/raabe-havn.png",
     "filename": "raabe-havn.png",
     "prompt": "Atmospheric concept art of Råbe-Havn. Vinden hyler i kløfterne. Ekkoer forvrænger al tale.. Udhugget i klippen for at forstærke lyd.. Cinematic lighting, establishing shot, immersive perspective, dark fantasy RPG style. --ar 16:9 --v 6.0 --stylize 250",
@@ -2722,12 +2542,6 @@
     "filename": "vinus.png",
     "prompt": "Digital Art, RPG Portrait, Human Vind-danser, Har brækkede vinger (metaforisk eller ej) og ser altid mod himlen., En ung Vind-Danser, der er faldet ned fra bjergene.. Detailed face, character concept art, dark fantasy style, solid background --ar 2:3 --v 6.0 --stylize 200",
     "context": "NPC: Vinus"
-  },
-  {
-    "id": "/assets/maps/cities/odden.png",
-    "filename": "odden.png",
-    "prompt": "A strict top-down orthographic city map of [medieval city], Formet som et amfiteater for at fange lyden.. Settlement located in Læ-Kysten. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: Formet som et amfiteater for at fange lyden... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: market square. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text",
-    "context": "City Map: Odden"
   },
   {
     "id": "/assets/cities/odden.png",
@@ -2862,12 +2676,6 @@
     "context": "NPC: Draton"
   },
   {
-    "id": "/assets/maps/cities/vagten.png",
-    "filename": "vagten.png",
-    "prompt": "A strict top-down orthographic city map of [medieval city], Hænger som vindspil fra klipperne.. Fortress City located in Læ-Kysten. Aesthetic: Fantasy landscape with distinct magical features. distinct features: fortress. Layout: Hænger som vindspil fra klipperne... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: market square. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text",
-    "context": "City Map: Vagten"
-  },
-  {
     "id": "/assets/cities/vagten.png",
     "filename": "vagten.png",
     "prompt": "Atmospheric concept art of Vagten. Vinden hyler i kløfterne. Ekkoer forvrænger al tale.. Udhugget i klippen for at forstærke lyd.. Cinematic lighting, establishing shot, immersive perspective, dark fantasy RPG style. --ar 16:9 --v 6.0 --stylize 250",
@@ -2958,12 +2766,6 @@
     "context": "NPC: Gordor"
   },
   {
-    "id": "/assets/maps/cities/moellerne.png",
-    "filename": "moellerne.png",
-    "prompt": "A strict top-down orthographic city map of [medieval city], En tavs by under jorden.. Settlement located in Læ-Kysten. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: En tavs by under jorden... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: market square. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text",
-    "context": "City Map: Møllerne"
-  },
-  {
     "id": "/assets/cities/moellerne.png",
     "filename": "moellerne.png",
     "prompt": "Atmospheric concept art of Møllerne. Vinden hyler i kløfterne. Ekkoer forvrænger al tale.. Udhugget i klippen for at forstærke lyd.. Cinematic lighting, establishing shot, immersive perspective, dark fantasy RPG style. --ar 16:9 --v 6.0 --stylize 250",
@@ -3052,12 +2854,6 @@
     "filename": "hyle-kloeften-encounter.png",
     "prompt": "A top-down tabletop RPG battlemap of [Hyle-Kløften]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: dramatic lighting. Texture: varied terrain. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid",
     "context": "Battlemap: Hyle-Kløften"
-  },
-  {
-    "id": "/assets/maps/cities/den-haengende-by.png",
-    "filename": "den-haengende-by.png",
-    "prompt": "A strict top-down orthographic city map of [medieval city], En tavs by under jorden.. Settlement located in Hyle-Kløften. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: En tavs by under jorden... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: market square. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text",
-    "context": "City Map: Den Hængende By"
   },
   {
     "id": "/assets/cities/den-haengende-by.png",
@@ -3184,12 +2980,6 @@
     "filename": "draos.png",
     "prompt": "Digital Art, RPG Portrait, Human Stilheds-munk, Klædt i læder og stof. Ser lytter til vinden ud., En høj person med skiftende øjne.. Detailed face, character concept art, dark fantasy style, solid background --ar 2:3 --v 6.0 --stylize 200",
     "context": "NPC: Draos"
-  },
-  {
-    "id": "/assets/maps/cities/voks-minen.png",
-    "filename": "voks-minen.png",
-    "prompt": "A strict top-down orthographic city map of [medieval city], En tavs by under jorden.. Settlement located in Hyle-Kløften. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: En tavs by under jorden... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: market square. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text",
-    "context": "City Map: Voks-Minen"
   },
   {
     "id": "/assets/cities/voks-minen.png",
@@ -3342,12 +3132,6 @@
     "context": "NPC: Vinus"
   },
   {
-    "id": "/assets/maps/cities/vind-stop.png",
-    "filename": "vind-stop.png",
-    "prompt": "A strict top-down orthographic city map of [medieval city], Formet som et amfiteater for at fange lyden.. Settlement located in Hyle-Kløften. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: Formet som et amfiteater for at fange lyden... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: market square. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text",
-    "context": "City Map: Vind-Stop"
-  },
-  {
     "id": "/assets/cities/vind-stop.png",
     "filename": "vind-stop.png",
     "prompt": "Atmospheric concept art of Vind-Stop. Vinden hyler i kløfterne. Ekkoer forvrænger al tale.. Udhugget i klippen for at forstærke lyd.. Cinematic lighting, establishing shot, immersive perspective, dark fantasy RPG style. --ar 16:9 --v 6.0 --stylize 250",
@@ -3486,18 +3270,6 @@
     "context": "Battlemap: Tromme-Sletten"
   },
   {
-    "id": "/assets/maps/cities/telt-byen.png",
-    "filename": "telt-byen.png",
-    "prompt": "A strict top-down orthographic city map of [medieval city], En tavs by under jorden.. Settlement located in Tromme-Sletten. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: En tavs by under jorden... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: market square. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text",
-    "context": "City Map: Telt-Byen"
-  },
-  {
-    "id": "/assets/cities/telt-byen.png",
-    "filename": "telt-byen.png",
-    "prompt": "Atmospheric concept art of Telt-Byen. Vinden hyler i kløfterne. Ekkoer forvrænger al tale.. Udhugget i klippen for at forstærke lyd.. Cinematic lighting, establishing shot, immersive perspective, dark fantasy RPG style. --ar 16:9 --v 6.0 --stylize 250",
-    "context": "City Scenic: Telt-Byen"
-  },
-  {
     "id": "/assets/maps/battlemaps/telt-byen-encounter.png",
     "filename": "telt-byen-encounter.png",
     "prompt": "A top-down tabletop RPG battlemap of [Telt-Byen]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: dramatic lighting. Texture: varied terrain. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid",
@@ -3604,12 +3376,6 @@
     "filename": "kasia.png",
     "prompt": "Digital Art, RPG Portrait, Human Stilheds-munk, Klædt i læder og stof. Ser lytter til vinden ud., En lav person med trætte øjne.. Detailed face, character concept art, dark fantasy style, solid background --ar 2:3 --v 6.0 --stylize 200",
     "context": "NPC: Kasia"
-  },
-  {
-    "id": "/assets/maps/cities/klokke-by.png",
-    "filename": "klokke-by.png",
-    "prompt": "A strict top-down orthographic city map of [medieval city], Formet som et amfiteater for at fange lyden.. Settlement located in Tromme-Sletten. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: Formet som et amfiteater for at fange lyden... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: market square. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text",
-    "context": "City Map: Klokke-By"
   },
   {
     "id": "/assets/cities/klokke-by.png",
@@ -3766,12 +3532,6 @@
     "filename": "fenth.png",
     "prompt": "Digital Art, RPG Portrait, Human Tromme-vagt, Klædt i læder og stof. Ser bruger tegnsprog ud., En høj person med blinde øjne.. Detailed face, character concept art, dark fantasy style, solid background --ar 2:3 --v 6.0 --stylize 200",
     "context": "NPC: Fenth"
-  },
-  {
-    "id": "/assets/maps/cities/dyb-bas.png",
-    "filename": "dyb-bas.png",
-    "prompt": "A strict top-down orthographic city map of [medieval city], En tavs by under jorden.. Settlement located in Tromme-Sletten. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: En tavs by under jorden... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: market square. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text",
-    "context": "City Map: Dyb-Bas"
   },
   {
     "id": "/assets/cities/dyb-bas.png",
@@ -3948,12 +3708,6 @@
     "context": "City Map: Trøffel-Skoven"
   },
   {
-    "id": "/assets/cities/troeffel-skoven.png",
-    "filename": "troeffel-skoven.png",
-    "prompt": "Atmospheric concept art of Trøffel-Skoven. Mørkt og fugtigt. Svampene lyser svagt. Grynt fra mørket.. Organisk svampe-arkitektur.. Cinematic lighting, establishing shot, immersive perspective, dark fantasy RPG style. --ar 16:9 --v 6.0 --stylize 250",
-    "context": "City Scenic: Trøffel-Skoven"
-  },
-  {
     "id": "/assets/maps/battlemaps/troeffel-skoven-encounter.png",
     "filename": "troeffel-skoven-encounter.png",
     "prompt": "A top-down tabletop RPG battlemap of [Trøffel-Skoven]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: dramatic lighting. Texture: varied terrain. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid",
@@ -4006,12 +3760,6 @@
     "filename": "linedanseren.png",
     "prompt": "A strict top-down orthographic city map of [medieval city], Bygget af hule sten, der synger i vinden.. Settlement located in Klang-Tinderne. Aesthetic: Fantasy landscape with distinct magical features. distinct features: tower. Layout: Bygget af hule sten, der synger i vinden... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: market square. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text",
     "context": "City Map: Linedanseren"
-  },
-  {
-    "id": "/assets/cities/linedanseren.png",
-    "filename": "linedanseren.png",
-    "prompt": "Atmospheric concept art of Linedanseren. Vinden hyler i kløfterne. Ekkoer forvrænger al tale.. Udhugget i klippen for at forstærke lyd.. Cinematic lighting, establishing shot, immersive perspective, dark fantasy RPG style. --ar 16:9 --v 6.0 --stylize 250",
-    "context": "City Scenic: Linedanseren"
   },
   {
     "id": "/assets/maps/battlemaps/linedanseren-encounter.png",
@@ -4558,12 +4306,6 @@
     "filename": "hyletonen.png",
     "prompt": "A strict top-down orthographic city map of [medieval city], Hænger som vindspil fra klipperne.. Settlement located in Spiral-Dybet. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: Hænger som vindspil fra klipperne... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: market square. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text",
     "context": "City Map: Hyletonen"
-  },
-  {
-    "id": "/assets/cities/hyletonen.png",
-    "filename": "hyletonen.png",
-    "prompt": "Atmospheric concept art of Hyletonen. Vinden hyler i kløfterne. Ekkoer forvrænger al tale.. Udhugget i klippen for at forstærke lyd.. Cinematic lighting, establishing shot, immersive perspective, dark fantasy RPG style. --ar 16:9 --v 6.0 --stylize 250",
-    "context": "City Scenic: Hyletonen"
   },
   {
     "id": "/assets/maps/battlemaps/hyletonen-encounter.png",
@@ -5736,12 +5478,6 @@
     "context": "City Map: Trøffel-Skoven"
   },
   {
-    "id": "/assets/cities/troeffel-skoven.png",
-    "filename": "troeffel-skoven.png",
-    "prompt": "Atmospheric concept art of Trøffel-Skoven. Dæmpet lys (bioluminescens). Sporer i luften. Stilhed.. Organisk forms.. Cinematic lighting, establishing shot, immersive perspective, dark fantasy RPG style. --ar 16:9 --v 6.0 --stylize 250",
-    "context": "City Scenic: Trøffel-Skoven"
-  },
-  {
     "id": "/assets/maps/battlemaps/troeffel-skoven-encounter.png",
     "filename": "troeffel-skoven-encounter.png",
     "prompt": "A top-down tabletop RPG battlemap of [Trøffel-Skoven]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: dramatic lighting. Texture: varied terrain. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid",
@@ -5806,12 +5542,6 @@
     "filename": "ankeret.png",
     "prompt": "A strict top-down orthographic city map of [medieval city], Store åbne markedspladser og banket-haller.. Region in Sølvtunge-Næsset. Fantasy landscape with distinct magical features. Local terrain: .. View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: market square. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text",
     "context": "City Map: Ankeret"
-  },
-  {
-    "id": "/assets/cities/ankeret.png",
-    "filename": "ankeret.png",
-    "prompt": "Atmospheric concept art of Ankeret. mysterious. fantasy. Cinematic lighting, establishing shot, immersive perspective, dark fantasy RPG style. --ar 16:9 --v 6.0 --stylize 250",
-    "context": "City Scenic: Ankeret"
   },
   {
     "id": "/assets/maps/battlemaps/ankeret-encounter.png",

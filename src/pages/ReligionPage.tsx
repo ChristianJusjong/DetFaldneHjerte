@@ -1,14 +1,15 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Sun } from 'lucide-react';
-import loreData from '../data/lore.json';
-import { slugify } from '../utils/helpers';
-import type { LoreData } from '../types';
-import { MysticCard } from '../components/ui/MysticCard';
-import { PageHeader } from '../components/ui/PageHeader';
+import { getLore } from '@/features/lore/utils/data';
+import { slugify } from '@/shared/utils/helpers';
+import type { LoreData } from '@/shared/types';
+import { MysticCard } from '@/shared/components/MysticCard';
+import { LoreCard } from '@/shared/components/LoreCard';
+import { PageHeader } from '@/shared/components/PageHeader';
 
 export const ReligionPage = () => {
-    const data = loreData as unknown as LoreData;
+    const data = getLore();
     return (
         <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
@@ -26,22 +27,17 @@ export const ReligionPage = () => {
                         <Link
                             key={god.name}
                             to={`/lore/god/${god.id || slugify(god.name)}`}
-                            className="block no-underline"
+                            className="block no-underline group"
                         >
-                            <div
-                                id={slugify(god.name)}
-                                className="bg-white/5 border border-white/10 rounded-2xl p-6 text-center hover:bg-white/10 hover:border-superia/30 transition-all scroll-mt-24 h-full flex flex-col items-center"
-                            >
-                                <h3 className="text-xl font-bold mb-2 text-white">{god.name}</h3>
-                                <p className="text-xs uppercase tracking-widest text-text-dim mb-4">{god.domain}</p>
+                            <LoreCard accentColor="superia">
+                                <h3 className="text-2xl font-serif font-bold mb-3 text-white tracking-wide group-hover:text-superia transition-colors font-serif">{god.name}</h3>
+                                <p className="text-xs uppercase tracking-widest font-bold text-text-dim mb-5 bg-black/40 px-3 py-1 rounded-full border border-border/50">{god.domain}</p>
 
-                                <div className="mt-auto text-superia flex flex-col items-center gap-2">
-                                    <Sun size={32} className="opacity-80" />
-                                    <p className="text-sm font-medium opacity-90">Symbol: {god.symbol}</p>
+                                <div className="mt-auto text-superia flex flex-col items-center gap-3">
+                                    <Sun size={32} className="opacity-80 group-hover:scale-110 group-hover:opacity-100 transition-all duration-500" />
+                                    <p className="text-sm font-medium opacity-90 font-main"><span className="text-white/60 text-xs">Symbol:</span> {god.symbol}</p>
                                 </div>
-
-                                <span className="text-xs text-blue-400 mt-4 underline opacity-0 group-hover:opacity-100 transition-opacity">Læs mere</span>
-                            </div>
+                            </LoreCard>
                         </Link>
                     ))}
                 </div>

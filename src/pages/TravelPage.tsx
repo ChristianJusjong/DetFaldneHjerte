@@ -1,14 +1,13 @@
 import { motion } from 'framer-motion';
-import loreData from '../data/lore.json';
-import type { LoreData } from '../types';
-import { SmartLink } from '../components/SmartLink';
-import { MysticCard } from '../components/ui/MysticCard';
-import { PageHeader } from '../components/ui/PageHeader';
-import { Badge } from '../components/ui/Badge';
-import { TravelCalculator } from '../components/TravelCalculator';
+import { getLore } from '@/features/lore/utils/data';
+import { SmartLink } from '@/features/lore/components/SmartLink';
+import { MysticCard } from '@/shared/components/MysticCard';
+import { PageHeader } from '@/shared/components/PageHeader';
+import { Badge } from '@/shared/components/Badge';
+import { TravelCalculator } from '@/features/travel/components/TravelCalculator';
 
 export const TravelPage = () => {
-    const data = loreData as unknown as LoreData;
+    const data = getLore();
     return (
         <motion.div
             initial={{ opacity: 0, x: 20 }}

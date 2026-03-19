@@ -2,12 +2,12 @@ import { useMemo } from 'react';
 import { useParams, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { BookOpen, Skull, Users, Shield, Globe } from 'lucide-react';
-import { getLore } from '../utils/data';
-import { ImageWithFallback } from '../components/ImageWithFallback';
-import { MysticCard } from '../components/ui/MysticCard';
-import { Badge } from '../components/ui/Badge';
-import { SmartLink } from '../components/SmartLink';
-import { BookmarkButton } from '../components/BookmarkButton';
+import { getLore } from '@/features/lore/utils/data';
+import { ImageWithFallback } from '@/shared/components/ImageWithFallback';
+import { MysticCard } from '@/shared/components/MysticCard';
+import { Badge } from '@/shared/components/Badge';
+import { SmartLink } from '@/features/lore/components/SmartLink';
+import { BookmarkButton } from '@/shared/components/BookmarkButton';
 
 export const LoreEntityPage = () => {
     const { type, id } = useParams<{ type: string; id: string }>();
@@ -61,7 +61,7 @@ export const LoreEntityPage = () => {
             animate={{ opacity: 1, y: 0 }}
             className="max-w-4xl mx-auto flex flex-col gap-8"
         >
-            <div className="relative rounded-3xl overflow-hidden border border-white/10 bg-surface/50">
+            <div className="relative rounded-2xl overflow-hidden border border-border bg-surface/50 shadow-glass">
                 <div className="h-48 md:h-64 bg-gradient-to-r from-indigo-900 to-purple-900 relative">
                     {entity.image && (
                         <ImageWithFallback
@@ -79,7 +79,7 @@ export const LoreEntityPage = () => {
 
                     <div className="absolute bottom-0 left-0 p-8 w-full flex items-end justify-between">
                         <div className="flex items-center gap-4">
-                            <div className="p-4 bg-white/10 rounded-2xl backdrop-blur-md border border-white/20 text-white shadow-lg">
+                            <div className="p-4 bg-black/40 rounded-2xl backdrop-blur-xl border border-border shadow-glass text-white">
                                 {getIcon()}
                             </div>
                             <div>
@@ -101,43 +101,43 @@ export const LoreEntityPage = () => {
                     {/* Dynamic Fields */}
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         {entity.domain && (
-                            <div className="bg-white/5 p-4 rounded-xl border border-white/5">
+                            <div className="bg-black/20 p-5 rounded-xl border border-border shadow-[inset_0_2px_10px_rgba(0,0,0,0.2)] font-main">
                                 <div className="text-text-dim text-sm uppercase tracking-wider mb-1">Domæne</div>
                                 <div className="text-white font-serif text-xl">{entity.domain}</div>
                             </div>
                         )}
                         {entity.symbol && (
-                            <div className="bg-white/5 p-4 rounded-xl border border-white/5">
+                            <div className="bg-black/20 p-5 rounded-xl border border-border shadow-[inset_0_2px_10px_rgba(0,0,0,0.2)] font-main">
                                 <div className="text-text-dim text-sm uppercase tracking-wider mb-1">Symbol</div>
                                 <div className="text-white font-serif text-xl">{entity.symbol}</div>
                             </div>
                         )}
                         {entity.leader && (
-                            <div className="bg-white/5 p-4 rounded-xl border border-white/5">
+                            <div className="bg-black/20 p-5 rounded-xl border border-border shadow-[inset_0_2px_10px_rgba(0,0,0,0.2)] font-main">
                                 <div className="text-text-dim text-sm uppercase tracking-wider mb-1">Leder</div>
                                 <div className="text-white font-serif text-xl">{entity.leader}</div>
                             </div>
                         )}
                         {entity.loyalty && (
-                            <div className="bg-white/5 p-4 rounded-xl border border-white/5">
+                            <div className="bg-black/20 p-5 rounded-xl border border-border shadow-[inset_0_2px_10px_rgba(0,0,0,0.2)] font-main">
                                 <div className="text-text-dim text-sm uppercase tracking-wider mb-1">Loyalitet</div>
                                 <div className="text-white font-serif text-xl">{entity.loyalty}</div>
                             </div>
                         )}
                         {entity.goal && (
-                            <div className="bg-white/5 p-4 rounded-xl border border-white/5 col-span-full">
+                            <div className="bg-black/20 p-5 rounded-xl border border-border shadow-[inset_0_2px_10px_rgba(0,0,0,0.2)] font-main col-span-full">
                                 <div className="text-text-dim text-sm uppercase tracking-wider mb-1">Mål</div>
                                 <p className="text-white">{entity.goal}</p>
                             </div>
                         )}
                         {entity.ability && (
-                            <div className="bg-white/5 p-4 rounded-xl border border-white/5 col-span-full">
+                            <div className="bg-black/20 p-5 rounded-xl border border-border shadow-[inset_0_2px_10px_rgba(0,0,0,0.2)] font-main col-span-full">
                                 <div className="text-text-dim text-sm uppercase tracking-wider mb-1">Evner</div>
                                 <p className="text-white">{entity.ability}</p>
                             </div>
                         )}
                         {entity.mechanic && (
-                            <div className="bg-white/5 p-4 rounded-xl border border-white/5 col-span-full">
+                            <div className="bg-black/20 p-5 rounded-xl border border-border shadow-[inset_0_2px_10px_rgba(0,0,0,0.2)] font-main col-span-full">
                                 <div className="text-text-dim text-sm uppercase tracking-wider mb-1">Spilmekanik</div>
                                 <p className="text-white">{entity.mechanic}</p>
                             </div>
