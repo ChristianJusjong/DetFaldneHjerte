@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { TransformWrapper, TransformComponent } from 'react-zoom-pan-pinch';
-import { MapPin, X, ZoomIn, ZoomOut, Maximize } from 'lucide-react';
+import { MapPin, ZoomIn, ZoomOut, Maximize } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import clsx from 'clsx';

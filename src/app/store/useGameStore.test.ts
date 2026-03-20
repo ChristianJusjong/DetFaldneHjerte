@@ -73,7 +73,7 @@ describe('useGameStore', () => {
             act(() => {
                 result.current.updateCombatant('1', { hp: 5 });
             });
-            expect(result.current.combatants.find(c => c.id === '1')?.hp).toBe(5);
+            expect(result.current.combatants.find((c: Combatant) => c.id === '1')?.hp).toBe(5);
 
             act(() => {
                 result.current.removeCombatant('1');

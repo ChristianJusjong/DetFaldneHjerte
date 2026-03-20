@@ -1,7 +1,6 @@
 import { useMemo, useRef, useState } from 'react';
 import ForceGraph2D from 'react-force-graph-2d';
 import { buildLoreGraph } from '../utils/graphBuilder';
-import { getLore } from '../utils/data';
 import { useNavigate } from 'react-router-dom';
 import { Maximize, Minimize } from 'lucide-react';
 

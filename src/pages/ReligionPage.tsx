@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 import { Sun } from 'lucide-react';
 import { getLore } from '@/features/lore/utils/data';
 import { slugify } from '@/shared/utils/helpers';
-import type { LoreData } from '@/shared/types';
 import { MysticCard } from '@/shared/components/MysticCard';
 import { LoreCard } from '@/shared/components/LoreCard';
 import { PageHeader } from '@/shared/components/PageHeader';
