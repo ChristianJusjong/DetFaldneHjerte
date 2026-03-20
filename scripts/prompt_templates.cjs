@@ -7,19 +7,19 @@ module.exports = {
     // --- MAPS ---
     maps: {
         world: {
-            prompt: "A flat 2D fantasy world map, complete atlas view showing all continents and oceans. Style of high-fantasy cartography, vintage parchment texture, faded ink. Distinct continental shapes, separated by clear oceans. No text labels. --ar 2:1 --v 6.0 --stylize 250 --no grid, spherical distortion, 3D"
+            prompt: "A high-detail 2D fantasy world map illustration in the style of Inkarnate. Complete atlas view showing all continents and oceans. Vibrant and saturated biome colors (deep green forests, snowy white peaks, sandy tan deserts). Highly detailed hand-drawn icons for mountain ranges, pine forests, and fortified castles. Stylized coastlines with subtle depth shadows and rippling water effects. Professional tabletop game aesthetic. --ar 2:1 --v 6.0 --stylize 300 --no grid, text, labels, realistic satellite, 3D"
         },
         side: {
-            prompt: "A fantasy map of a large hemisphere landmass. Political map style. Distinct colored regions defining borders between nations. Marked locations for capital cities using large star icons. Neutral paper background. Clean lines. --ar 16:9 --v 6.0 --no mountains, realistic terrain, text labels, grid"
+            prompt: "A detailed fantasy map illustration of a large hemisphere landmass, D&D old-school style. Distinct colored regions with clean-line borders. Stylized illustrated icons for capital cities (towers and citadels). Clear geography with hand-drawn mountains and rivers. Vibrant fantasy aesthetic on a clean background. --ar 16:9 --v 6.0 --stylize 250 --no realistic terrain, text labels, grid, 3D"
         },
         continent: (biome, visualSummary) => {
-            return `A top-down fantasy map of a single continent [${biome}]. ${visualSummary}. Detailed physical geography: distinct mountain chains, winding rivers, dense swamps. Thick dark lines indicating major roads connecting specific red dot markers for cities. Parchment style with hand-drawn aesthetic. --ar 3:2 --v 6.0 --no grid, text, labels, realistic satellite`;
+            return `A high-detail top-down fantasy map illustration of the continent [${biome}]. ${visualSummary}. Style of an Inkarnate regional map. Detailed illustrated physical geography: hand-drawn mountain chains, winding vibrant rivers, dense illustrated forests. Stylistic icons for cities (castles and towers). Vibrant colors, clean lines, high-contrast tabletop RPG aesthetic. --ar 3:2 --v 6.0 --stylize 300 --no grid, text, labels, realistic satellite, 3D`;
         },
         region: (areaType, visualSummary) => {
-            return `An illustrated top-down regional map of [${areaType}]. ${visualSummary}. Focus on connectivity: clear dirt roads connecting small village clusters. Varied terrain: patches of forest, farmland, and hills. Icons indicating towns (squares) and a large Capitol (castle icon). Style of a high-definition RPG game map. --ar 16:9 --v 6.0 --no grid, clouds, fog, isometric`;
+            return `An illustrated top-down regional fantasy map of [${areaType}]. ${visualSummary}. Focus on landmarks: highly detailed illustrated icons for village clusters, ancient groves, and stone bridges. Varied vibrant terrain: distinct patches of autumn forest, rolling hills, and farmland. Bold castle icons for capitals. Style of a modern high-definition tabletop RPG game map (Inkarnate style). --ar 16:9 --v 6.0 --stylize 250 --no grid, realistic clouds, side-view`;
         },
         city: (cityType, layout, visualSummary, landmarks) => {
-            return `A strict top-down orthographic city map of [${cityType}], ${layout}. ${visualSummary}. View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: ${landmarks}. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text`;
+            return `A strict top-down orthographic illustrated city map of [${cityType}], ${layout}. ${visualSummary}. View from directly above (90 degrees). Hand-drawn rooftops, distinct paved streets, lush gardens. Clear illustrated landmarks: ${landmarks}. Vibrant, high contrast, clean miniature style. --ar 4:3 --v 6.0 --no side-view, perspective, grid, text, 3D`;
         },
         battlemap: (context, mood, texture) => {
             return `A top-down tabletop RPG battlemap of [${context}]. Strictly orthographic projection, 90-degree angle looking down. Flat 2D floorplan. High contrast between floor and walls. Lighting: ${mood}. Texture: ${texture}. --ar 16:9 --v 6.0 --no isometric, 3D, perspective, angled, roof, ceiling, overlay, grid`;

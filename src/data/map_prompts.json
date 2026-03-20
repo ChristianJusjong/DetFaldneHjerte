@@ -2,419 +2,419 @@
   "world": {
     "id": "world-map",
     "description": "Livshjulet (Cor)",
-    "prompt": "A flat 2D fantasy world map, complete atlas view showing all continents and oceans. Style of high-fantasy cartography, vintage parchment texture, faded ink. Distinct continental shapes, separated by clear oceans. No text labels. --ar 2:1 --v 6.0 --stylize 250 --no grid, spherical distortion, 3D"
+    "prompt": "A high-detail 2D fantasy world map illustration in the style of Inkarnate. Complete atlas view showing all continents and oceans. Vibrant and saturated biome colors (deep green forests, snowy white peaks, sandy tan deserts). Highly detailed hand-drawn icons for mountain ranges, pine forests, and fortified castles. Stylized coastlines with subtle depth shadows and rippling water effects. Professional tabletop game aesthetic. --ar 2:1 --v 6.0 --stylize 300 --no grid, text, labels, realistic satellite, 3D"
   },
   "sides": [
     {
       "id": "lyssiden",
       "name": "Lys-Siden (Himmelfladen)",
-      "prompt": "A fantasy map of a large hemisphere landmass. Political map style. Distinct colored regions defining borders between nations. Marked locations for capital cities using large star icons. Neutral paper background. Clean lines. --ar 16:9 --v 6.0 --no mountains, realistic terrain, text labels, grid"
+      "prompt": "A detailed fantasy map illustration of a large hemisphere landmass, D&D old-school style. Distinct colored regions with clean-line borders. Stylized illustrated icons for capital cities (towers and citadels). Clear geography with hand-drawn mountains and rivers. Vibrant fantasy aesthetic on a clean background. --ar 16:9 --v 6.0 --stylize 250 --no realistic terrain, text labels, grid, 3D"
     }
   ],
   "continents": [
     {
       "id": "tanketinderne",
       "name": "Tanke-Tinderne",
-      "prompt": "A top-down fantasy map of a single continent [frozen tundra]. Fantasy landscape with distinct magical features. Specific features: mountain.. Detailed physical geography: distinct mountain chains, winding rivers, dense swamps. Thick dark lines indicating major roads connecting specific red dot markers for cities. Parchment style with hand-drawn aesthetic. --ar 3:2 --v 6.0 --no grid, text, labels, realistic satellite"
+      "prompt": "A top-down fantasy map of a single continent [frozen tundra]. Fantasy landscape with distinct magical features. Specific features: mountain.. Style of an Inkarnate regional map. Detailed illustrated physical geography: hand-drawn mountain chains, winding vibrant rivers, dense illustrated forests. Stylistic icons for cities (castles and towers). Vibrant colors, clean lines, high-contrast tabletop RPG aesthetic. --ar 3:2 --v 6.0 --stylize 300 --no grid, text, labels, realistic satellite, 3D"
     },
     {
       "id": "spejlsoeen",
       "name": "Spejl-Søen",
-      "prompt": "A top-down fantasy map of a single continent [frozen tundra]. Fantasy landscape with distinct magical features. Specific features: forest, light, crystal.. Detailed physical geography: distinct mountain chains, winding rivers, dense swamps. Thick dark lines indicating major roads connecting specific red dot markers for cities. Parchment style with hand-drawn aesthetic. --ar 3:2 --v 6.0 --no grid, text, labels, realistic satellite"
+      "prompt": "A top-down fantasy map of a single continent [frozen tundra]. Fantasy landscape with distinct magical features. Specific features: forest, light, crystal.. Style of an Inkarnate regional map. Detailed illustrated physical geography: hand-drawn mountain chains, winding vibrant rivers, dense illustrated forests. Stylistic icons for cities (castles and towers). Vibrant colors, clean lines, high-contrast tabletop RPG aesthetic. --ar 3:2 --v 6.0 --stylize 300 --no grid, text, labels, realistic satellite, 3D"
     },
     {
       "id": "klangdalene",
       "name": "Klang-Dalene",
-      "prompt": "A top-down fantasy map of a single continent [frozen tundra]. Fantasy landscape with distinct magical features. Specific features: mountain.. Detailed physical geography: distinct mountain chains, winding rivers, dense swamps. Thick dark lines indicating major roads connecting specific red dot markers for cities. Parchment style with hand-drawn aesthetic. --ar 3:2 --v 6.0 --no grid, text, labels, realistic satellite"
+      "prompt": "A top-down fantasy map of a single continent [frozen tundra]. Fantasy landscape with distinct magical features. Specific features: mountain.. Style of an Inkarnate regional map. Detailed illustrated physical geography: hand-drawn mountain chains, winding vibrant rivers, dense illustrated forests. Stylistic icons for cities (castles and towers). Vibrant colors, clean lines, high-contrast tabletop RPG aesthetic. --ar 3:2 --v 6.0 --stylize 300 --no grid, text, labels, realistic satellite, 3D"
     },
     {
       "id": "solvtungenaesset",
       "name": "Sølvtunge-Næsset",
-      "prompt": "A top-down fantasy map of a single continent [temperate]. . Detailed physical geography: distinct mountain chains, winding rivers, dense swamps. Thick dark lines indicating major roads connecting specific red dot markers for cities. Parchment style with hand-drawn aesthetic. --ar 3:2 --v 6.0 --no grid, text, labels, realistic satellite"
+      "prompt": "A top-down fantasy map of a single continent [temperate]. . Style of an Inkarnate regional map. Detailed illustrated physical geography: hand-drawn mountain chains, winding vibrant rivers, dense illustrated forests. Stylistic icons for cities (castles and towers). Vibrant colors, clean lines, high-contrast tabletop RPG aesthetic. --ar 3:2 --v 6.0 --stylize 300 --no grid, text, labels, realistic satellite, 3D"
     },
     {
       "id": "skyggesiden",
       "name": "Skygge-Siden (Dybets Flade)",
-      "prompt": "A top-down fantasy map of a single continent [frozen tundra]. . Detailed physical geography: distinct mountain chains, winding rivers, dense swamps. Thick dark lines indicating major roads connecting specific red dot markers for cities. Parchment style with hand-drawn aesthetic. --ar 3:2 --v 6.0 --no grid, text, labels, realistic satellite"
+      "prompt": "A top-down fantasy map of a single continent [frozen tundra]. . Style of an Inkarnate regional map. Detailed illustrated physical geography: hand-drawn mountain chains, winding vibrant rivers, dense illustrated forests. Stylistic icons for cities (castles and towers). Vibrant colors, clean lines, high-contrast tabletop RPG aesthetic. --ar 3:2 --v 6.0 --stylize 300 --no grid, text, labels, realistic satellite, 3D"
     }
   ],
   "regions": [
     {
       "id": "isse-toppen",
       "name": "Isse-Toppen",
-      "prompt": "An illustrated top-down regional map of [coastal valley]. Region in Tanke-Tinderne. Fantasy landscape with distinct magical features. Local terrain: tower, crystal.. Focus on connectivity: clear dirt roads connecting small village clusters. Varied terrain: patches of forest, farmland, and hills. Icons indicating towns (squares) and a large Capitol (castle icon). Style of a high-definition RPG game map. --ar 16:9 --v 6.0 --no grid, clouds, fog, isometric"
+      "prompt": "An illustrated top-down regional map of [coastal valley]. Region in Tanke-Tinderne. Fantasy landscape with distinct magical features. Local terrain: tower, crystal.. Focus on landmarks: highly detailed illustrated icons for village clusters, ancient groves, and stone bridges. Varied vibrant terrain: distinct patches of autumn forest, rolling hills, and farmland. Bold castle icons for capitals. Style of a modern high-definition tabletop RPG game map (Inkarnate style). --ar 16:9 --v 6.0 --stylize 250 --no grid, realistic clouds, side-view"
     },
     {
       "id": "minde-dalene",
       "name": "Minde-Dalene",
-      "prompt": "An illustrated top-down regional map of [coastal valley]. Region in Tanke-Tinderne. Fantasy landscape with distinct magical features. Local terrain: .. Focus on connectivity: clear dirt roads connecting small village clusters. Varied terrain: patches of forest, farmland, and hills. Icons indicating towns (squares) and a large Capitol (castle icon). Style of a high-definition RPG game map. --ar 16:9 --v 6.0 --no grid, clouds, fog, isometric"
+      "prompt": "An illustrated top-down regional map of [coastal valley]. Region in Tanke-Tinderne. Fantasy landscape with distinct magical features. Local terrain: .. Focus on landmarks: highly detailed illustrated icons for village clusters, ancient groves, and stone bridges. Varied vibrant terrain: distinct patches of autumn forest, rolling hills, and farmland. Bold castle icons for capitals. Style of a modern high-definition tabletop RPG game map (Inkarnate style). --ar 16:9 --v 6.0 --stylize 250 --no grid, realistic clouds, side-view"
     },
     {
       "id": "storm-fladen",
       "name": "Storm-Fladen",
-      "prompt": "An illustrated top-down regional map of [coastal valley]. Region in Tanke-Tinderne. Fantasy landscape with distinct magical features. Local terrain: .. Focus on connectivity: clear dirt roads connecting small village clusters. Varied terrain: patches of forest, farmland, and hills. Icons indicating towns (squares) and a large Capitol (castle icon). Style of a high-definition RPG game map. --ar 16:9 --v 6.0 --no grid, clouds, fog, isometric"
+      "prompt": "An illustrated top-down regional map of [coastal valley]. Region in Tanke-Tinderne. Fantasy landscape with distinct magical features. Local terrain: .. Focus on landmarks: highly detailed illustrated icons for village clusters, ancient groves, and stone bridges. Varied vibrant terrain: distinct patches of autumn forest, rolling hills, and farmland. Bold castle icons for capitals. Style of a modern high-definition tabletop RPG game map (Inkarnate style). --ar 16:9 --v 6.0 --stylize 250 --no grid, realistic clouds, side-view"
     },
     {
       "id": "skygge-dalen",
       "name": "Skygge-Dalen",
-      "prompt": "An illustrated top-down regional map of [high mountain peaks]. Region in Tanke-Tinderne. Fantasy landscape with distinct magical features. Local terrain: mountain.. Focus on connectivity: clear dirt roads connecting small village clusters. Varied terrain: patches of forest, farmland, and hills. Icons indicating towns (squares) and a large Capitol (castle icon). Style of a high-definition RPG game map. --ar 16:9 --v 6.0 --no grid, clouds, fog, isometric"
+      "prompt": "An illustrated top-down regional map of [high mountain peaks]. Region in Tanke-Tinderne. Fantasy landscape with distinct magical features. Local terrain: mountain.. Focus on landmarks: highly detailed illustrated icons for village clusters, ancient groves, and stone bridges. Varied vibrant terrain: distinct patches of autumn forest, rolling hills, and farmland. Bold castle icons for capitals. Style of a modern high-definition tabletop RPG game map (Inkarnate style). --ar 16:9 --v 6.0 --stylize 250 --no grid, realistic clouds, side-view"
     },
     {
       "id": "roden",
       "name": "Roden",
-      "prompt": "An illustrated top-down regional map of [high mountain peaks]. Region in Tanke-Tinderne. Fantasy landscape with distinct magical features. Local terrain: mountain.. Focus on connectivity: clear dirt roads connecting small village clusters. Varied terrain: patches of forest, farmland, and hills. Icons indicating towns (squares) and a large Capitol (castle icon). Style of a high-definition RPG game map. --ar 16:9 --v 6.0 --no grid, clouds, fog, isometric"
+      "prompt": "An illustrated top-down regional map of [high mountain peaks]. Region in Tanke-Tinderne. Fantasy landscape with distinct magical features. Local terrain: mountain.. Focus on landmarks: highly detailed illustrated icons for village clusters, ancient groves, and stone bridges. Varied vibrant terrain: distinct patches of autumn forest, rolling hills, and farmland. Bold castle icons for capitals. Style of a modern high-definition tabletop RPG game map (Inkarnate style). --ar 16:9 --v 6.0 --stylize 250 --no grid, realistic clouds, side-view"
     },
     {
       "id": "prisme-ringen",
       "name": "Prisme-Ringen",
-      "prompt": "An illustrated top-down regional map of [dense ancient forest]. Region in Spejl-Søen. Fantasy landscape with distinct magical features. Local terrain: forest, crystal.. Focus on connectivity: clear dirt roads connecting small village clusters. Varied terrain: patches of forest, farmland, and hills. Icons indicating towns (squares) and a large Capitol (castle icon). Style of a high-definition RPG game map. --ar 16:9 --v 6.0 --no grid, clouds, fog, isometric"
+      "prompt": "An illustrated top-down regional map of [dense ancient forest]. Region in Spejl-Søen. Fantasy landscape with distinct magical features. Local terrain: forest, crystal.. Focus on landmarks: highly detailed illustrated icons for village clusters, ancient groves, and stone bridges. Varied vibrant terrain: distinct patches of autumn forest, rolling hills, and farmland. Bold castle icons for capitals. Style of a modern high-definition tabletop RPG game map (Inkarnate style). --ar 16:9 --v 6.0 --stylize 250 --no grid, realistic clouds, side-view"
     },
     {
       "id": "det-hvide-de",
       "name": "Det Hvide �~de",
-      "prompt": "An illustrated top-down regional map of [coastal valley]. Region in Spejl-Søen. Fantasy landscape with distinct magical features. Local terrain: light.. Focus on connectivity: clear dirt roads connecting small village clusters. Varied terrain: patches of forest, farmland, and hills. Icons indicating towns (squares) and a large Capitol (castle icon). Style of a high-definition RPG game map. --ar 16:9 --v 6.0 --no grid, clouds, fog, isometric"
+      "prompt": "An illustrated top-down regional map of [coastal valley]. Region in Spejl-Søen. Fantasy landscape with distinct magical features. Local terrain: light.. Focus on landmarks: highly detailed illustrated icons for village clusters, ancient groves, and stone bridges. Varied vibrant terrain: distinct patches of autumn forest, rolling hills, and farmland. Bold castle icons for capitals. Style of a modern high-definition tabletop RPG game map (Inkarnate style). --ar 16:9 --v 6.0 --stylize 250 --no grid, realistic clouds, side-view"
     },
     {
       "id": "dybet",
       "name": "Dybet",
-      "prompt": "An illustrated top-down regional map of [coastal valley]. Region in Spejl-Søen. Fantasy landscape with distinct magical features. Local terrain: darkness.. Focus on connectivity: clear dirt roads connecting small village clusters. Varied terrain: patches of forest, farmland, and hills. Icons indicating towns (squares) and a large Capitol (castle icon). Style of a high-definition RPG game map. --ar 16:9 --v 6.0 --no grid, clouds, fog, isometric"
+      "prompt": "An illustrated top-down regional map of [coastal valley]. Region in Spejl-Søen. Fantasy landscape with distinct magical features. Local terrain: darkness.. Focus on landmarks: highly detailed illustrated icons for village clusters, ancient groves, and stone bridges. Varied vibrant terrain: distinct patches of autumn forest, rolling hills, and farmland. Bold castle icons for capitals. Style of a modern high-definition tabletop RPG game map (Inkarnate style). --ar 16:9 --v 6.0 --stylize 250 --no grid, realistic clouds, side-view"
     },
     {
       "id": "taare-kysten",
       "name": "Tåre-Kysten",
-      "prompt": "An illustrated top-down regional map of [coastal valley]. Region in Spejl-Søen. Fantasy landscape with distinct magical features. Local terrain: .. Focus on connectivity: clear dirt roads connecting small village clusters. Varied terrain: patches of forest, farmland, and hills. Icons indicating towns (squares) and a large Capitol (castle icon). Style of a high-definition RPG game map. --ar 16:9 --v 6.0 --no grid, clouds, fog, isometric"
+      "prompt": "An illustrated top-down regional map of [coastal valley]. Region in Spejl-Søen. Fantasy landscape with distinct magical features. Local terrain: .. Focus on landmarks: highly detailed illustrated icons for village clusters, ancient groves, and stone bridges. Varied vibrant terrain: distinct patches of autumn forest, rolling hills, and farmland. Bold castle icons for capitals. Style of a modern high-definition tabletop RPG game map (Inkarnate style). --ar 16:9 --v 6.0 --stylize 250 --no grid, realistic clouds, side-view"
     },
     {
       "id": "baglandet",
       "name": "Baglandet",
-      "prompt": "An illustrated top-down regional map of [coastal valley]. Region in Spejl-Søen. Fantasy landscape with distinct magical features. Local terrain: .. Focus on connectivity: clear dirt roads connecting small village clusters. Varied terrain: patches of forest, farmland, and hills. Icons indicating towns (squares) and a large Capitol (castle icon). Style of a high-definition RPG game map. --ar 16:9 --v 6.0 --no grid, clouds, fog, isometric"
+      "prompt": "An illustrated top-down regional map of [coastal valley]. Region in Spejl-Søen. Fantasy landscape with distinct magical features. Local terrain: .. Focus on landmarks: highly detailed illustrated icons for village clusters, ancient groves, and stone bridges. Varied vibrant terrain: distinct patches of autumn forest, rolling hills, and farmland. Bold castle icons for capitals. Style of a modern high-definition tabletop RPG game map (Inkarnate style). --ar 16:9 --v 6.0 --stylize 250 --no grid, realistic clouds, side-view"
     },
     {
       "id": "lae-kysten",
       "name": "Læ-Kysten",
-      "prompt": "An illustrated top-down regional map of [coastal valley]. Region in Klang-Dalene. Fantasy landscape with distinct magical features. Local terrain: .. Focus on connectivity: clear dirt roads connecting small village clusters. Varied terrain: patches of forest, farmland, and hills. Icons indicating towns (squares) and a large Capitol (castle icon). Style of a high-definition RPG game map. --ar 16:9 --v 6.0 --no grid, clouds, fog, isometric"
+      "prompt": "An illustrated top-down regional map of [coastal valley]. Region in Klang-Dalene. Fantasy landscape with distinct magical features. Local terrain: .. Focus on landmarks: highly detailed illustrated icons for village clusters, ancient groves, and stone bridges. Varied vibrant terrain: distinct patches of autumn forest, rolling hills, and farmland. Bold castle icons for capitals. Style of a modern high-definition tabletop RPG game map (Inkarnate style). --ar 16:9 --v 6.0 --stylize 250 --no grid, realistic clouds, side-view"
     },
     {
       "id": "hyle-kloeften",
       "name": "Hyle-Kløften",
-      "prompt": "An illustrated top-down regional map of [coastal valley]. Region in Klang-Dalene. Fantasy landscape with distinct magical features. Local terrain: .. Focus on connectivity: clear dirt roads connecting small village clusters. Varied terrain: patches of forest, farmland, and hills. Icons indicating towns (squares) and a large Capitol (castle icon). Style of a high-definition RPG game map. --ar 16:9 --v 6.0 --no grid, clouds, fog, isometric"
+      "prompt": "An illustrated top-down regional map of [coastal valley]. Region in Klang-Dalene. Fantasy landscape with distinct magical features. Local terrain: .. Focus on landmarks: highly detailed illustrated icons for village clusters, ancient groves, and stone bridges. Varied vibrant terrain: distinct patches of autumn forest, rolling hills, and farmland. Bold castle icons for capitals. Style of a modern high-definition tabletop RPG game map (Inkarnate style). --ar 16:9 --v 6.0 --stylize 250 --no grid, realistic clouds, side-view"
     },
     {
       "id": "tromme-sletten",
       "name": "Tromme-Sletten",
-      "prompt": "An illustrated top-down regional map of [coastal valley]. Region in Klang-Dalene. Fantasy landscape with distinct magical features. Local terrain: .. Focus on connectivity: clear dirt roads connecting small village clusters. Varied terrain: patches of forest, farmland, and hills. Icons indicating towns (squares) and a large Capitol (castle icon). Style of a high-definition RPG game map. --ar 16:9 --v 6.0 --no grid, clouds, fog, isometric"
+      "prompt": "An illustrated top-down regional map of [coastal valley]. Region in Klang-Dalene. Fantasy landscape with distinct magical features. Local terrain: .. Focus on landmarks: highly detailed illustrated icons for village clusters, ancient groves, and stone bridges. Varied vibrant terrain: distinct patches of autumn forest, rolling hills, and farmland. Bold castle icons for capitals. Style of a modern high-definition tabletop RPG game map (Inkarnate style). --ar 16:9 --v 6.0 --stylize 250 --no grid, realistic clouds, side-view"
     },
     {
       "id": "klang-tinderne",
       "name": "Klang-Tinderne",
-      "prompt": "An illustrated top-down regional map of [high mountain peaks]. Region in Klang-Dalene. Fantasy landscape with distinct magical features. Local terrain: mountain.. Focus on connectivity: clear dirt roads connecting small village clusters. Varied terrain: patches of forest, farmland, and hills. Icons indicating towns (squares) and a large Capitol (castle icon). Style of a high-definition RPG game map. --ar 16:9 --v 6.0 --no grid, clouds, fog, isometric"
+      "prompt": "An illustrated top-down regional map of [high mountain peaks]. Region in Klang-Dalene. Fantasy landscape with distinct magical features. Local terrain: mountain.. Focus on landmarks: highly detailed illustrated icons for village clusters, ancient groves, and stone bridges. Varied vibrant terrain: distinct patches of autumn forest, rolling hills, and farmland. Bold castle icons for capitals. Style of a modern high-definition tabletop RPG game map (Inkarnate style). --ar 16:9 --v 6.0 --stylize 250 --no grid, realistic clouds, side-view"
     },
     {
       "id": "spiral-dybet",
       "name": "Spiral-Dybet",
-      "prompt": "An illustrated top-down regional map of [coastal valley]. Region in Klang-Dalene. Fantasy landscape with distinct magical features. Local terrain: city.. Focus on connectivity: clear dirt roads connecting small village clusters. Varied terrain: patches of forest, farmland, and hills. Icons indicating towns (squares) and a large Capitol (castle icon). Style of a high-definition RPG game map. --ar 16:9 --v 6.0 --no grid, clouds, fog, isometric"
+      "prompt": "An illustrated top-down regional map of [coastal valley]. Region in Klang-Dalene. Fantasy landscape with distinct magical features. Local terrain: city.. Focus on landmarks: highly detailed illustrated icons for village clusters, ancient groves, and stone bridges. Varied vibrant terrain: distinct patches of autumn forest, rolling hills, and farmland. Bold castle icons for capitals. Style of a modern high-definition tabletop RPG game map (Inkarnate style). --ar 16:9 --v 6.0 --stylize 250 --no grid, realistic clouds, side-view"
     },
     {
       "id": "den-soede-kyst",
       "name": "Den Søde Kyst",
-      "prompt": "An illustrated top-down regional map of [coastal valley]. Region in Sølvtunge-Næsset. Fantasy landscape with distinct magical features. Local terrain: .. Focus on connectivity: clear dirt roads connecting small village clusters. Varied terrain: patches of forest, farmland, and hills. Icons indicating towns (squares) and a large Capitol (castle icon). Style of a high-definition RPG game map. --ar 16:9 --v 6.0 --no grid, clouds, fog, isometric"
+      "prompt": "An illustrated top-down regional map of [coastal valley]. Region in Sølvtunge-Næsset. Fantasy landscape with distinct magical features. Local terrain: .. Focus on landmarks: highly detailed illustrated icons for village clusters, ancient groves, and stone bridges. Varied vibrant terrain: distinct patches of autumn forest, rolling hills, and farmland. Bold castle icons for capitals. Style of a modern high-definition tabletop RPG game map (Inkarnate style). --ar 16:9 --v 6.0 --stylize 250 --no grid, realistic clouds, side-view"
     },
     {
       "id": "de-sure-sider",
       "name": "De Sure Sider",
-      "prompt": "An illustrated top-down regional map of [coastal valley]. Region in Sølvtunge-Næsset. Fantasy landscape with distinct magical features. Local terrain: .. Focus on connectivity: clear dirt roads connecting small village clusters. Varied terrain: patches of forest, farmland, and hills. Icons indicating towns (squares) and a large Capitol (castle icon). Style of a high-definition RPG game map. --ar 16:9 --v 6.0 --no grid, clouds, fog, isometric"
+      "prompt": "An illustrated top-down regional map of [coastal valley]. Region in Sølvtunge-Næsset. Fantasy landscape with distinct magical features. Local terrain: .. Focus on landmarks: highly detailed illustrated icons for village clusters, ancient groves, and stone bridges. Varied vibrant terrain: distinct patches of autumn forest, rolling hills, and farmland. Bold castle icons for capitals. Style of a modern high-definition tabletop RPG game map (Inkarnate style). --ar 16:9 --v 6.0 --stylize 250 --no grid, realistic clouds, side-view"
     },
     {
       "id": "det-fede-hoejland",
       "name": "Det Fede Højland",
-      "prompt": "An illustrated top-down regional map of [coastal valley]. Region in Sølvtunge-Næsset. Fantasy landscape with distinct magical features. Local terrain: .. Focus on connectivity: clear dirt roads connecting small village clusters. Varied terrain: patches of forest, farmland, and hills. Icons indicating towns (squares) and a large Capitol (castle icon). Style of a high-definition RPG game map. --ar 16:9 --v 6.0 --no grid, clouds, fog, isometric"
+      "prompt": "An illustrated top-down regional map of [coastal valley]. Region in Sølvtunge-Næsset. Fantasy landscape with distinct magical features. Local terrain: .. Focus on landmarks: highly detailed illustrated icons for village clusters, ancient groves, and stone bridges. Varied vibrant terrain: distinct patches of autumn forest, rolling hills, and farmland. Bold castle icons for capitals. Style of a modern high-definition tabletop RPG game map (Inkarnate style). --ar 16:9 --v 6.0 --stylize 250 --no grid, realistic clouds, side-view"
     },
     {
       "id": "kaede-kloeften",
       "name": "Kæde-Kløften",
-      "prompt": "An illustrated top-down regional map of [coastal valley]. Fantasy landscape with distinct magical features. Specific features: .. Focus on connectivity: clear dirt roads connecting small village clusters. Varied terrain: patches of forest, farmland, and hills. Icons indicating towns (squares) and a large Capitol (castle icon). Style of a high-definition RPG game map. --ar 16:9 --v 6.0 --no grid, clouds, fog, isometric"
+      "prompt": "An illustrated top-down regional map of [coastal valley]. Fantasy landscape with distinct magical features. Specific features: .. Focus on landmarks: highly detailed illustrated icons for village clusters, ancient groves, and stone bridges. Varied vibrant terrain: distinct patches of autumn forest, rolling hills, and farmland. Bold castle icons for capitals. Style of a modern high-definition tabletop RPG game map (Inkarnate style). --ar 16:9 --v 6.0 --stylize 250 --no grid, realistic clouds, side-view"
     }
   ],
   "cities": [
     {
       "id": "neo-spiret",
       "name": "Neo-Spiret",
-      "prompt": "A strict top-down orthographic city map of [mystical crystal spire city], Bygget vertikalt op ad bjergsiden med svævebaner.. Hovedstaden Neo-Spiret. En by bygget som en enorm spiral, der snor sig op mod himlen. Tårnene er af hvidt marmor med guld-ornamenter. Luften sitrer af magi.. View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Den Evige Flamme for Tanken, Råds-Spiralen, Krystal-Pladsen. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+      "prompt": "A strict top-down orthographic city map of [mystical crystal spire city], Bygget vertikalt op ad bjergsiden med svævebaner.. Hovedstaden Neo-Spiret. En by bygget som en enorm spiral, der snor sig op mod himlen. Tårnene er af hvidt marmor med guld-ornamenter. Luften sitrer af magi.. View from directly above (90 degrees). Hand-drawn rooftops, distinct paved streets, lush gardens. Clear illustrated landmarks: Den Evige Flamme for Tanken, Råds-Spiralen, Krystal-Pladsen. Vibrant, high contrast, clean miniature style. --ar 4:3 --v 6.0 --no side-view, perspective, grid, text, 3D"
     },
     {
       "id": "nord-porten",
       "name": "Nord-Porten",
-      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Udhugget i selve klippen i store spiralmønstre.. Fortress City located in Isse-Toppen. Aesthetic: Fantasy landscape with distinct magical features. distinct features: fortress. Layout: Udhugget i selve klippen i store spiralmønstre... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Udhugget i selve klippen i store spiralmønstre.. Fortress City located in Isse-Toppen. Aesthetic: Fantasy landscape with distinct magical features. distinct features: fortress. Layout: Udhugget i selve klippen i store spiralmønstre... View from directly above (90 degrees). Hand-drawn rooftops, distinct paved streets, lush gardens. Clear illustrated landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Vibrant, high contrast, clean miniature style. --ar 4:3 --v 6.0 --no side-view, perspective, grid, text, 3D"
     },
     {
       "id": "glemme-hullet",
       "name": "Glemme-Hullet",
-      "prompt": "A strict top-down orthographic city map of [mystical crystal spire city], Består af høje tårne forbundet med lyn-afledere.. Settlement located in Minde-Dalene. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: Består af høje tårne forbundet med lyn-afledere... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Nul-Punktet (Cellen for total sletning), De Navnløses Gravplads, Slørspejlet. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+      "prompt": "A strict top-down orthographic city map of [mystical crystal spire city], Består af høje tårne forbundet med lyn-afledere.. Settlement located in Minde-Dalene. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: Består af høje tårne forbundet med lyn-afledere... View from directly above (90 degrees). Hand-drawn rooftops, distinct paved streets, lush gardens. Clear illustrated landmarks: Nul-Punktet (Cellen for total sletning), De Navnløses Gravplads, Slørspejlet. Vibrant, high contrast, clean miniature style. --ar 4:3 --v 6.0 --no side-view, perspective, grid, text, 3D"
     },
     {
       "id": "ekkoby",
       "name": "Ekkoby",
-      "prompt": "A strict top-down orthographic city map of [mountain stronghold], Består af høje tårne forbundet med lyn-afledere.. Mountain City located in Minde-Dalene. Aesthetic: Fantasy landscape with distinct magical features. distinct features: mountain, city. Layout: Består af høje tårne forbundet med lyn-afledere... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Hviske-Galleriet, Storm-Varslerens Tårn, Ekko-Kløften. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+      "prompt": "A strict top-down orthographic city map of [mountain stronghold], Består af høje tårne forbundet med lyn-afledere.. Mountain City located in Minde-Dalene. Aesthetic: Fantasy landscape with distinct magical features. distinct features: mountain, city. Layout: Består af høje tårne forbundet med lyn-afledere... View from directly above (90 degrees). Hand-drawn rooftops, distinct paved streets, lush gardens. Clear illustrated landmarks: Hviske-Galleriet, Storm-Varslerens Tårn, Ekko-Kløften. Vibrant, high contrast, clean miniature style. --ar 4:3 --v 6.0 --no side-view, perspective, grid, text, 3D"
     },
     {
       "id": "banegaarden",
       "name": "Banegården",
-      "prompt": "A strict top-down orthographic city map of [medieval fortified city], En labyrint af biblioteker og læsesale.. Settlement located in Storm-Fladen. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: En labyrint af biblioteker og læsesale... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], En labyrint af biblioteker og læsesale.. Settlement located in Storm-Fladen. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: En labyrint af biblioteker og læsesale... View from directly above (90 degrees). Hand-drawn rooftops, distinct paved streets, lush gardens. Clear illustrated landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Vibrant, high contrast, clean miniature style. --ar 4:3 --v 6.0 --no side-view, perspective, grid, text, 3D"
     },
     {
       "id": "fabrikken",
       "name": "Fabrikken",
-      "prompt": "A strict top-down orthographic city map of [mystical crystal spire city], Består af høje tårne forbundet med lyn-afledere.. Settlement located in Storm-Fladen. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: Består af høje tårne forbundet med lyn-afledere... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+      "prompt": "A strict top-down orthographic city map of [mystical crystal spire city], Består af høje tårne forbundet med lyn-afledere.. Settlement located in Storm-Fladen. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: Består af høje tårne forbundet med lyn-afledere... View from directly above (90 degrees). Hand-drawn rooftops, distinct paved streets, lush gardens. Clear illustrated landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Vibrant, high contrast, clean miniature style. --ar 4:3 --v 6.0 --no side-view, perspective, grid, text, 3D"
     },
     {
       "id": "illusiona",
       "name": "Illusiona",
-      "prompt": "A strict top-down orthographic city map of [mountain stronghold], Bygget vertikalt op ad bjergsiden med svævebaner.. Settlement located in Skygge-Dalen. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: Bygget vertikalt op ad bjergsiden med svævebaner... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+      "prompt": "A strict top-down orthographic city map of [mountain stronghold], Bygget vertikalt op ad bjergsiden med svævebaner.. Settlement located in Skygge-Dalen. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: Bygget vertikalt op ad bjergsiden med svævebaner... View from directly above (90 degrees). Hand-drawn rooftops, distinct paved streets, lush gardens. Clear illustrated landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Vibrant, high contrast, clean miniature style. --ar 4:3 --v 6.0 --no side-view, perspective, grid, text, 3D"
     },
     {
       "id": "skjulestedet",
       "name": "Skjulestedet",
-      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Udhugget i selve klippen i store spiralmønstre.. Settlement located in Roden. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: Udhugget i selve klippen i store spiralmønstre... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Udhugget i selve klippen i store spiralmønstre.. Settlement located in Roden. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: Udhugget i selve klippen i store spiralmønstre... View from directly above (90 degrees). Hand-drawn rooftops, distinct paved streets, lush gardens. Clear illustrated landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Vibrant, high contrast, clean miniature style. --ar 4:3 --v 6.0 --no side-view, perspective, grid, text, 3D"
     },
     {
       "id": "regnbuen",
       "name": "Regnbuen",
-      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Koncentriske ringe af farve, der matcher det sociale hierarki.. Settlement located in Prisme-Ringen. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city, light. Layout: Huse lavet af envejs-spejle... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Koncentriske ringe af farve, der matcher det sociale hierarki.. Settlement located in Prisme-Ringen. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city, light. Layout: Huse lavet af envejs-spejle... View from directly above (90 degrees). Hand-drawn rooftops, distinct paved streets, lush gardens. Clear illustrated landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Vibrant, high contrast, clean miniature style. --ar 4:3 --v 6.0 --no side-view, perspective, grid, text, 3D"
     },
     {
       "id": "glimt",
       "name": "Glimt",
-      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Skjult bag en permanent illusion.. Settlement located in Prisme-Ringen. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: Skjult bag en permanent illusion... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Skjult bag en permanent illusion.. Settlement located in Prisme-Ringen. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: Skjult bag en permanent illusion... View from directly above (90 degrees). Hand-drawn rooftops, distinct paved streets, lush gardens. Clear illustrated landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Vibrant, high contrast, clean miniature style. --ar 4:3 --v 6.0 --no side-view, perspective, grid, text, 3D"
     },
     {
       "id": "feriebyen",
       "name": "Feriebyen",
-      "prompt": "A strict top-down orthographic city map of [medieval fortified city], organic layout. Settlement located in Prisme-Ringen. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: Skjult bag en permanent illusion... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], organic layout. Settlement located in Prisme-Ringen. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: Skjult bag en permanent illusion... View from directly above (90 degrees). Hand-drawn rooftops, distinct paved streets, lush gardens. Clear illustrated landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Vibrant, high contrast, clean miniature style. --ar 4:3 --v 6.0 --no side-view, perspective, grid, text, 3D"
     },
     {
       "id": "mosaik",
       "name": "Mosaik",
-      "prompt": "A strict top-down orthographic city map of [mystical crystal spire city], Bygninger af krystal der bryder lyset.. Settlement located in Prisme-Ringen. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: Bygninger af krystal der bryder lyset... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+      "prompt": "A strict top-down orthographic city map of [mystical crystal spire city], Bygninger af krystal der bryder lyset.. Settlement located in Prisme-Ringen. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: Bygninger af krystal der bryder lyset... View from directly above (90 degrees). Hand-drawn rooftops, distinct paved streets, lush gardens. Clear illustrated landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Vibrant, high contrast, clean miniature style. --ar 4:3 --v 6.0 --no side-view, perspective, grid, text, 3D"
     },
     {
       "id": "soelv-muren",
       "name": "Sølv-Muren",
-      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Sekskantet fæstning med spejlvægge.. Fortress City located in Det Hvide �~de. Aesthetic: Fantasy landscape with distinct magical features. distinct features: fortress. Layout: Skjult bag en permanent illusion... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Sekskantet fæstning med spejlvægge.. Fortress City located in Det Hvide �~de. Aesthetic: Fantasy landscape with distinct magical features. distinct features: fortress. Layout: Skjult bag en permanent illusion... View from directly above (90 degrees). Hand-drawn rooftops, distinct paved streets, lush gardens. Clear illustrated landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Vibrant, high contrast, clean miniature style. --ar 4:3 --v 6.0 --no side-view, perspective, grid, text, 3D"
     },
     {
       "id": "posten",
       "name": "Posten",
-      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Bunkers gravet ned i saltet.. Settlement located in Det Hvide �~de. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: Huse lavet af envejs-spejle... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Bunkers gravet ned i saltet.. Settlement located in Det Hvide �~de. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: Huse lavet af envejs-spejle... View from directly above (90 degrees). Hand-drawn rooftops, distinct paved streets, lush gardens. Clear illustrated landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Vibrant, high contrast, clean miniature style. --ar 4:3 --v 6.0 --no side-view, perspective, grid, text, 3D"
     },
     {
       "id": "bruddet",
       "name": "Bruddet",
-      "prompt": "A strict top-down orthographic city map of [mystical crystal spire city], Bygninger af krystal der bryder lyset.. Settlement located in Det Hvide �~de. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: Bygninger af krystal der bryder lyset... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+      "prompt": "A strict top-down orthographic city map of [mystical crystal spire city], Bygninger af krystal der bryder lyset.. Settlement located in Det Hvide �~de. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: Bygninger af krystal der bryder lyset... View from directly above (90 degrees). Hand-drawn rooftops, distinct paved streets, lush gardens. Clear illustrated landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Vibrant, high contrast, clean miniature style. --ar 4:3 --v 6.0 --no side-view, perspective, grid, text, 3D"
     },
     {
       "id": "de-blindes-by",
       "name": "De Blindes By",
-      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Huse lavet af envejs-spejle.. Settlement located in Det Hvide �~de. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: Huse lavet af envejs-spejle... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Huse lavet af envejs-spejle.. Settlement located in Det Hvide �~de. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: Huse lavet af envejs-spejle... View from directly above (90 degrees). Hand-drawn rooftops, distinct paved streets, lush gardens. Clear illustrated landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Vibrant, high contrast, clean miniature style. --ar 4:3 --v 6.0 --no side-view, perspective, grid, text, 3D"
     },
     {
       "id": "skygge-vuggen",
       "name": "Skygge-Vuggen",
-      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Huse lavet af envejs-spejle.. Settlement located in Dybet. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: Huse lavet af envejs-spejle... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Huse lavet af envejs-spejle.. Settlement located in Dybet. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: Huse lavet af envejs-spejle... View from directly above (90 degrees). Hand-drawn rooftops, distinct paved streets, lush gardens. Clear illustrated landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Vibrant, high contrast, clean miniature style. --ar 4:3 --v 6.0 --no side-view, perspective, grid, text, 3D"
     },
     {
       "id": "handels-bredden",
       "name": "Handels-Bredden",
-      "prompt": "A strict top-down orthographic city map of [mystical crystal spire city], Bygninger af krystal der bryder lyset.. Settlement located in Dybet. Aesthetic: Fantasy landscape with distinct magical features. distinct features: light, darkness. Layout: Bygninger af krystal der bryder lyset... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+      "prompt": "A strict top-down orthographic city map of [mystical crystal spire city], Bygninger af krystal der bryder lyset.. Settlement located in Dybet. Aesthetic: Fantasy landscape with distinct magical features. distinct features: light, darkness. Layout: Bygninger af krystal der bryder lyset... View from directly above (90 degrees). Hand-drawn rooftops, distinct paved streets, lush gardens. Clear illustrated landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Vibrant, high contrast, clean miniature style. --ar 4:3 --v 6.0 --no side-view, perspective, grid, text, 3D"
     },
     {
       "id": "obsidian",
       "name": "Obsidian",
-      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Svævende platforme over det mørke vand.. Fortress City located in Dybet. Aesthetic: Fantasy landscape with distinct magical features. distinct features: fortress. Layout: Svævende platforme over det mørke vand... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Svævende platforme over det mørke vand.. Fortress City located in Dybet. Aesthetic: Fantasy landscape with distinct magical features. distinct features: fortress. Layout: Svævende platforme over det mørke vand... View from directly above (90 degrees). Hand-drawn rooftops, distinct paved streets, lush gardens. Clear illustrated landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Vibrant, high contrast, clean miniature style. --ar 4:3 --v 6.0 --no side-view, perspective, grid, text, 3D"
     },
     {
       "id": "salt-havnen",
       "name": "Salt-Havnen",
-      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Svævende platforme over det mørke vand.. Settlement located in Tåre-Kysten. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: Svævende platforme over det mørke vand... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Svævende platforme over det mørke vand.. Settlement located in Tåre-Kysten. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: Svævende platforme over det mørke vand... View from directly above (90 degrees). Hand-drawn rooftops, distinct paved streets, lush gardens. Clear illustrated landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Vibrant, high contrast, clean miniature style. --ar 4:3 --v 6.0 --no side-view, perspective, grid, text, 3D"
     },
     {
       "id": "le-byen",
       "name": "�.le-Byen",
-      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Huse lavet af envejs-spejle.. Settlement located in Tåre-Kysten. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: Huse lavet af envejs-spejle... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Huse lavet af envejs-spejle.. Settlement located in Tåre-Kysten. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: Huse lavet af envejs-spejle... View from directly above (90 degrees). Hand-drawn rooftops, distinct paved streets, lush gardens. Clear illustrated landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Vibrant, high contrast, clean miniature style. --ar 4:3 --v 6.0 --no side-view, perspective, grid, text, 3D"
     },
     {
       "id": "taagen",
       "name": "Tågen",
-      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Svævende platforme over det mørke vand.. Settlement located in Tåre-Kysten. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: Svævende platforme over det mørke vand... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Svævende platforme over det mørke vand.. Settlement located in Tåre-Kysten. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: Svævende platforme over det mørke vand... View from directly above (90 degrees). Hand-drawn rooftops, distinct paved streets, lush gardens. Clear illustrated landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Vibrant, high contrast, clean miniature style. --ar 4:3 --v 6.0 --no side-view, perspective, grid, text, 3D"
     },
     {
       "id": "udkigget",
       "name": "Udkigget",
-      "prompt": "A strict top-down orthographic city map of [mountain stronghold], Svævende platforme over det mørke vand.. Mountain City located in Baglandet. Aesthetic: Fantasy landscape with distinct magical features. distinct features: mountain. Layout: Svævende platforme over det mørke vand... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+      "prompt": "A strict top-down orthographic city map of [mountain stronghold], Svævende platforme over det mørke vand.. Mountain City located in Baglandet. Aesthetic: Fantasy landscape with distinct magical features. distinct features: mountain. Layout: Svævende platforme over det mørke vand... View from directly above (90 degrees). Hand-drawn rooftops, distinct paved streets, lush gardens. Clear illustrated landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Vibrant, high contrast, clean miniature style. --ar 4:3 --v 6.0 --no side-view, perspective, grid, text, 3D"
     },
     {
       "id": "pletten",
       "name": "Pletten",
-      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Skjult bag en permanent illusion.. Settlement located in Baglandet. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: Skjult bag en permanent illusion... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Skjult bag en permanent illusion.. Settlement located in Baglandet. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: Skjult bag en permanent illusion... View from directly above (90 degrees). Hand-drawn rooftops, distinct paved streets, lush gardens. Clear illustrated landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Vibrant, high contrast, clean miniature style. --ar 4:3 --v 6.0 --no side-view, perspective, grid, text, 3D"
     },
     {
       "id": "vagtposten",
       "name": "Vagtposten",
-      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Skjult bag en permanent illusion.. Fortress City located in Baglandet. Aesthetic: Fantasy landscape with distinct magical features. distinct features: fortress. Layout: Skjult bag en permanent illusion... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Skjult bag en permanent illusion.. Fortress City located in Baglandet. Aesthetic: Fantasy landscape with distinct magical features. distinct features: fortress. Layout: Skjult bag en permanent illusion... View from directly above (90 degrees). Hand-drawn rooftops, distinct paved streets, lush gardens. Clear illustrated landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Vibrant, high contrast, clean miniature style. --ar 4:3 --v 6.0 --no side-view, perspective, grid, text, 3D"
     },
     {
       "id": "raabe-havn",
       "name": "Råbe-Havn",
-      "prompt": "A strict top-down orthographic city map of [bustling port city], Bygget af hule sten, der synger i vinden.. Port City located in Læ-Kysten. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city, harbor. Layout: Bygget af hule sten, der synger i vinden... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+      "prompt": "A strict top-down orthographic city map of [bustling port city], Bygget af hule sten, der synger i vinden.. Port City located in Læ-Kysten. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city, harbor. Layout: Bygget af hule sten, der synger i vinden... View from directly above (90 degrees). Hand-drawn rooftops, distinct paved streets, lush gardens. Clear illustrated landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Vibrant, high contrast, clean miniature style. --ar 4:3 --v 6.0 --no side-view, perspective, grid, text, 3D"
     },
     {
       "id": "odden",
       "name": "Odden",
-      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Formet som et amfiteater for at fange lyden.. Settlement located in Læ-Kysten. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: Formet som et amfiteater for at fange lyden... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Formet som et amfiteater for at fange lyden.. Settlement located in Læ-Kysten. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: Formet som et amfiteater for at fange lyden... View from directly above (90 degrees). Hand-drawn rooftops, distinct paved streets, lush gardens. Clear illustrated landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Vibrant, high contrast, clean miniature style. --ar 4:3 --v 6.0 --no side-view, perspective, grid, text, 3D"
     },
     {
       "id": "vagten",
       "name": "Vagten",
-      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Hænger som vindspil fra klipperne.. Fortress City located in Læ-Kysten. Aesthetic: Fantasy landscape with distinct magical features. distinct features: fortress. Layout: Hænger som vindspil fra klipperne... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Hænger som vindspil fra klipperne.. Fortress City located in Læ-Kysten. Aesthetic: Fantasy landscape with distinct magical features. distinct features: fortress. Layout: Hænger som vindspil fra klipperne... View from directly above (90 degrees). Hand-drawn rooftops, distinct paved streets, lush gardens. Clear illustrated landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Vibrant, high contrast, clean miniature style. --ar 4:3 --v 6.0 --no side-view, perspective, grid, text, 3D"
     },
     {
       "id": "moellerne",
       "name": "Møllerne",
-      "prompt": "A strict top-down orthographic city map of [medieval fortified city], En tavs by under jorden.. Settlement located in Læ-Kysten. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: En tavs by under jorden... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], En tavs by under jorden.. Settlement located in Læ-Kysten. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: En tavs by under jorden... View from directly above (90 degrees). Hand-drawn rooftops, distinct paved streets, lush gardens. Clear illustrated landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Vibrant, high contrast, clean miniature style. --ar 4:3 --v 6.0 --no side-view, perspective, grid, text, 3D"
     },
     {
       "id": "den-haengende-by",
       "name": "Den Hængende By",
-      "prompt": "A strict top-down orthographic city map of [medieval fortified city], En tavs by under jorden.. Settlement located in Hyle-Kløften. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: En tavs by under jorden... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], En tavs by under jorden.. Settlement located in Hyle-Kløften. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: En tavs by under jorden... View from directly above (90 degrees). Hand-drawn rooftops, distinct paved streets, lush gardens. Clear illustrated landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Vibrant, high contrast, clean miniature style. --ar 4:3 --v 6.0 --no side-view, perspective, grid, text, 3D"
     },
     {
       "id": "voks-minen",
       "name": "Voks-Minen",
-      "prompt": "A strict top-down orthographic city map of [medieval fortified city], En tavs by under jorden.. Settlement located in Hyle-Kløften. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: En tavs by under jorden... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], En tavs by under jorden.. Settlement located in Hyle-Kløften. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: En tavs by under jorden... View from directly above (90 degrees). Hand-drawn rooftops, distinct paved streets, lush gardens. Clear illustrated landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Vibrant, high contrast, clean miniature style. --ar 4:3 --v 6.0 --no side-view, perspective, grid, text, 3D"
     },
     {
       "id": "vind-stop",
       "name": "Vind-Stop",
-      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Formet som et amfiteater for at fange lyden.. Settlement located in Hyle-Kløften. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: Formet som et amfiteater for at fange lyden... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Formet som et amfiteater for at fange lyden.. Settlement located in Hyle-Kløften. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: Formet som et amfiteater for at fange lyden... View from directly above (90 degrees). Hand-drawn rooftops, distinct paved streets, lush gardens. Clear illustrated landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Vibrant, high contrast, clean miniature style. --ar 4:3 --v 6.0 --no side-view, perspective, grid, text, 3D"
     },
     {
       "id": "telt-byen",
       "name": "Telt-Byen",
-      "prompt": "A strict top-down orthographic city map of [medieval fortified city], En tavs by under jorden.. Settlement located in Tromme-Sletten. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: En tavs by under jorden... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], En tavs by under jorden.. Settlement located in Tromme-Sletten. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: En tavs by under jorden... View from directly above (90 degrees). Hand-drawn rooftops, distinct paved streets, lush gardens. Clear illustrated landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Vibrant, high contrast, clean miniature style. --ar 4:3 --v 6.0 --no side-view, perspective, grid, text, 3D"
     },
     {
       "id": "klokke-by",
       "name": "Klokke-By",
-      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Formet som et amfiteater for at fange lyden.. Settlement located in Tromme-Sletten. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: Formet som et amfiteater for at fange lyden... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Formet som et amfiteater for at fange lyden.. Settlement located in Tromme-Sletten. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: Formet som et amfiteater for at fange lyden... View from directly above (90 degrees). Hand-drawn rooftops, distinct paved streets, lush gardens. Clear illustrated landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Vibrant, high contrast, clean miniature style. --ar 4:3 --v 6.0 --no side-view, perspective, grid, text, 3D"
     },
     {
       "id": "dyb-bas",
       "name": "Dyb-Bas",
-      "prompt": "A strict top-down orthographic city map of [medieval fortified city], En tavs by under jorden.. Settlement located in Tromme-Sletten. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: En tavs by under jorden... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], En tavs by under jorden.. Settlement located in Tromme-Sletten. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: En tavs by under jorden... View from directly above (90 degrees). Hand-drawn rooftops, distinct paved streets, lush gardens. Clear illustrated landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Vibrant, high contrast, clean miniature style. --ar 4:3 --v 6.0 --no side-view, perspective, grid, text, 3D"
     },
     {
       "id": "troeffel-skoven",
       "name": "Trøffel-Skoven",
-      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Huse bygget inde i gigantiske svampe.. City in the Forest. Giant Glowing Mushrooms.. View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Kæmpe-Trøflen, Grise-Stierne, Det Hule Træ. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Huse bygget inde i gigantiske svampe.. City in the Forest. Giant Glowing Mushrooms.. View from directly above (90 degrees). Hand-drawn rooftops, distinct paved streets, lush gardens. Clear illustrated landmarks: Kæmpe-Trøflen, Grise-Stierne, Det Hule Træ. Vibrant, high contrast, clean miniature style. --ar 4:3 --v 6.0 --no side-view, perspective, grid, text, 3D"
     },
     {
       "id": "linedanseren",
       "name": "Linedanseren",
-      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Bygget af hule sten, der synger i vinden.. Settlement located in Klang-Tinderne. Aesthetic: Fantasy landscape with distinct magical features. distinct features: tower. Layout: Bygget af hule sten, der synger i vinden... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Bygget af hule sten, der synger i vinden.. Settlement located in Klang-Tinderne. Aesthetic: Fantasy landscape with distinct magical features. distinct features: tower. Layout: Bygget af hule sten, der synger i vinden... View from directly above (90 degrees). Hand-drawn rooftops, distinct paved streets, lush gardens. Clear illustrated landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Vibrant, high contrast, clean miniature style. --ar 4:3 --v 6.0 --no side-view, perspective, grid, text, 3D"
     },
     {
       "id": "smedjen",
       "name": "Smedjen",
-      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Formet som et amfiteater for at fange lyden.. Settlement located in Klang-Tinderne. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: Formet som et amfiteater for at fange lyden... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Formet som et amfiteater for at fange lyden.. Settlement located in Klang-Tinderne. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: Formet som et amfiteater for at fange lyden... View from directly above (90 degrees). Hand-drawn rooftops, distinct paved streets, lush gardens. Clear illustrated landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Vibrant, high contrast, clean miniature style. --ar 4:3 --v 6.0 --no side-view, perspective, grid, text, 3D"
     },
     {
       "id": "klosteret",
       "name": "Klosteret",
-      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Hænger som vindspil fra klipperne.. Settlement located in Klang-Tinderne. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: Hænger som vindspil fra klipperne... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Hænger som vindspil fra klipperne.. Settlement located in Klang-Tinderne. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: Hænger som vindspil fra klipperne... View from directly above (90 degrees). Hand-drawn rooftops, distinct paved streets, lush gardens. Clear illustrated landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Vibrant, high contrast, clean miniature style. --ar 4:3 --v 6.0 --no side-view, perspective, grid, text, 3D"
     },
     {
       "id": "sneglehuset",
       "name": "Sneglehuset",
-      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Hænger som vindspil fra klipperne.. Settlement located in Spiral-Dybet. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: Hænger som vindspil fra klipperne... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Hænger som vindspil fra klipperne.. Settlement located in Spiral-Dybet. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: Hænger som vindspil fra klipperne... View from directly above (90 degrees). Hand-drawn rooftops, distinct paved streets, lush gardens. Clear illustrated landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Vibrant, high contrast, clean miniature style. --ar 4:3 --v 6.0 --no side-view, perspective, grid, text, 3D"
     },
     {
       "id": "hyletonen",
       "name": "Hyletonen",
-      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Hænger som vindspil fra klipperne.. Settlement located in Spiral-Dybet. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: Hænger som vindspil fra klipperne... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Hænger som vindspil fra klipperne.. Settlement located in Spiral-Dybet. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city. Layout: Hænger som vindspil fra klipperne... View from directly above (90 degrees). Hand-drawn rooftops, distinct paved streets, lush gardens. Clear illustrated landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Vibrant, high contrast, clean miniature style. --ar 4:3 --v 6.0 --no side-view, perspective, grid, text, 3D"
     },
     {
       "id": "glas-byen",
       "name": "Glas-Byen",
-      "prompt": "A strict top-down orthographic city map of [medieval fortified city], En tavs by under jorden.. Settlement located in Spiral-Dybet. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: En tavs by under jorden... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], En tavs by under jorden.. Settlement located in Spiral-Dybet. Aesthetic: Fantasy landscape with distinct magical features. distinct features: . Layout: En tavs by under jorden... View from directly above (90 degrees). Hand-drawn rooftops, distinct paved streets, lush gardens. Clear illustrated landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Vibrant, high contrast, clean miniature style. --ar 4:3 --v 6.0 --no side-view, perspective, grid, text, 3D"
     },
     {
       "id": "sukker-havn",
       "name": "Sukker-Havn",
-      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Store åbne markedspladser og banket-haller.. Settlement located in Den Søde Kyst. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city, light. Layout: Store åbne markedspladser og banket-haller... View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Store åbne markedspladser og banket-haller.. Settlement located in Den Søde Kyst. Aesthetic: Fantasy landscape with distinct magical features. distinct features: city, light. Layout: Store åbne markedspladser og banket-haller... View from directly above (90 degrees). Hand-drawn rooftops, distinct paved streets, lush gardens. Clear illustrated landmarks: Det lokale marked, Vagttårnet, Kroen 'Den Hurtige Hvil'. Vibrant, high contrast, clean miniature style. --ar 4:3 --v 6.0 --no side-view, perspective, grid, text, 3D"
     },
     {
       "id": "ambrosia",
       "name": "Ambrosia",
-      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Bygget i lag som en bikube, svævende over en kløft.. City of Gold and Honey. Giant wasps everywhere.. View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Dronningens Palads, Kæde-Ankeret, Nektar-Fontænen. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Bygget i lag som en bikube, svævende over en kløft.. City of Gold and Honey. Giant wasps everywhere.. View from directly above (90 degrees). Hand-drawn rooftops, distinct paved streets, lush gardens. Clear illustrated landmarks: Dronningens Palads, Kæde-Ankeret, Nektar-Fontænen. Vibrant, high contrast, clean miniature style. --ar 4:3 --v 6.0 --no side-view, perspective, grid, text, 3D"
     },
     {
       "id": "smiger",
       "name": "Smiger",
-      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Huse bygget ovenpå gamle kæmperuiner.. City of Mirrors. Extremely bright and reflective.. View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det Sande Spejl, Hviske-Torvet, Kroen 'Det Falske Smil'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Huse bygget ovenpå gamle kæmperuiner.. City of Mirrors. Extremely bright and reflective.. View from directly above (90 degrees). Hand-drawn rooftops, distinct paved streets, lush gardens. Clear illustrated landmarks: Det Sande Spejl, Hviske-Torvet, Kroen 'Det Falske Smil'. Vibrant, high contrast, clean miniature style. --ar 4:3 --v 6.0 --no side-view, perspective, grid, text, 3D"
     },
     {
       "id": "slik-byen",
       "name": "Slik-Byen",
-      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Vandveje fyldt med lyserød, klistret væske. Ingen gader, kun broer af lakridsrod.. Venice made of Candy. Pink canals.. View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Sukker-Paladset, Den Store Fontæne (Chokolade), De Klistrede Broer. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Vandveje fyldt med lyserød, klistret væske. Ingen gader, kun broer af lakridsrod.. Venice made of Candy. Pink canals.. View from directly above (90 degrees). Hand-drawn rooftops, distinct paved streets, lush gardens. Clear illustrated landmarks: Sukker-Paladset, Den Store Fontæne (Chokolade), De Klistrede Broer. Vibrant, high contrast, clean miniature style. --ar 4:3 --v 6.0 --no side-view, perspective, grid, text, 3D"
     },
     {
       "id": "lage-byen",
       "name": "Lage-Byen",
-      "prompt": "A strict top-down orthographic city map of [medieval fortified city], En labyrint af enorme glaskrukker og saltbjerge.. City of Salt and Brine. Huge glass jars everywhere.. View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det Store Saltbjerg, Eddike-Søen, De Glemte Krukker. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], En labyrint af enorme glaskrukker og saltbjerge.. City of Salt and Brine. Huge glass jars everywhere.. View from directly above (90 degrees). Hand-drawn rooftops, distinct paved streets, lush gardens. Clear illustrated landmarks: Det Store Saltbjerg, Eddike-Søen, De Glemte Krukker. Vibrant, high contrast, clean miniature style. --ar 4:3 --v 6.0 --no side-view, perspective, grid, text, 3D"
     },
     {
       "id": "citron-lunden",
       "name": "Citron-Lunden",
-      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Træerne er dækket af glaskupler for at beskytte mod regnen.. Lemon Grove in Acid Fog. Yellow and green tint.. View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Syre-Søen, Det Gule Tårn, Plantage 42. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Træerne er dækket af glaskupler for at beskytte mod regnen.. Lemon Grove in Acid Fog. Yellow and green tint.. View from directly above (90 degrees). Hand-drawn rooftops, distinct paved streets, lush gardens. Clear illustrated landmarks: Syre-Søen, Det Gule Tårn, Plantage 42. Vibrant, high contrast, clean miniature style. --ar 4:3 --v 6.0 --no side-view, perspective, grid, text, 3D"
     },
     {
       "id": "gaeringen",
       "name": "Gæringen",
-      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Store kobberkedler forbundet med rør. Damp overalt.. City of Fermentation. Copper pipes and steam.. View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Hoved-Ventilen, Gær-Kælderen, Det Sprængte Tårn. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Store kobberkedler forbundet med rør. Damp overalt.. City of Fermentation. Copper pipes and steam.. View from directly above (90 degrees). Hand-drawn rooftops, distinct paved streets, lush gardens. Clear illustrated landmarks: Hoved-Ventilen, Gær-Kælderen, Det Sprængte Tårn. Vibrant, high contrast, clean miniature style. --ar 4:3 --v 6.0 --no side-view, perspective, grid, text, 3D"
     },
     {
       "id": "krydderiet",
       "name": "Krydderiet",
-      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Smalle gyder dækket af markiser for at holde varmen ude.. City of Spice. Red dust everywhere.. View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det Røde Marked, Peber-Tårnet, Kroen 'Den Brændende Tunge'. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Smalle gyder dækket af markiser for at holde varmen ude.. City of Spice. Red dust everywhere.. View from directly above (90 degrees). Hand-drawn rooftops, distinct paved streets, lush gardens. Clear illustrated landmarks: Det Røde Marked, Peber-Tårnet, Kroen 'Den Brændende Tunge'. Vibrant, high contrast, clean miniature style. --ar 4:3 --v 6.0 --no side-view, perspective, grid, text, 3D"
     },
     {
       "id": "banketten",
       "name": "Banketten",
-      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Gaderne er lange bordrækker. Huse er anrettet som fade.. City of Eternal Feast. Golden tables as streets.. View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det Uendelige Bord, Køkken-Katedralen, Gælds-Fængslet. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Gaderne er lange bordrækker. Huse er anrettet som fade.. City of Eternal Feast. Golden tables as streets.. View from directly above (90 degrees). Hand-drawn rooftops, distinct paved streets, lush gardens. Clear illustrated landmarks: Det Uendelige Bord, Køkken-Katedralen, Gælds-Fængslet. Vibrant, high contrast, clean miniature style. --ar 4:3 --v 6.0 --no side-view, perspective, grid, text, 3D"
     },
     {
       "id": "svine-stien",
       "name": "Svine-Stien",
-      "prompt": "A strict top-down orthographic city map of [stilted swamp city], Labyrintisk rodebutik. Pas på mudderhullerne.. Village of Pigs and Mud.. View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Konge-Stien, Det Store Trug, Grisenes Hus. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+      "prompt": "A strict top-down orthographic city map of [stilted swamp city], Labyrintisk rodebutik. Pas på mudderhullerne.. Village of Pigs and Mud.. View from directly above (90 degrees). Hand-drawn rooftops, distinct paved streets, lush gardens. Clear illustrated landmarks: Konge-Stien, Det Store Trug, Grisenes Hus. Vibrant, high contrast, clean miniature style. --ar 4:3 --v 6.0 --no side-view, perspective, grid, text, 3D"
     },
     {
       "id": "kvaeg-markedet",
       "name": "Kvæg-Markedet",
-      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Huse bygget ovenpå gamle kæmperuiner. Gaderne er brede nok til mammutter.. Giant Cattle Market. Wooden structures.. View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Arenaen, Slagter-Gaden, Det Glemte Skelet. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Huse bygget ovenpå gamle kæmperuiner. Gaderne er brede nok til mammutter.. Giant Cattle Market. Wooden structures.. View from directly above (90 degrees). Hand-drawn rooftops, distinct paved streets, lush gardens. Clear illustrated landmarks: Arenaen, Slagter-Gaden, Det Glemte Skelet. Vibrant, high contrast, clean miniature style. --ar 4:3 --v 6.0 --no side-view, perspective, grid, text, 3D"
     },
     {
       "id": "suppe-badet",
       "name": "Suppe-Badet",
-      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Vandveje i stedet for gader (Venedig-stil). Damp overalt.. City of Soup. Steam and water.. View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Kogepunktet, Damp-Tårnet, Den Flydende Have. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Vandveje i stedet for gader (Venedig-stil). Damp overalt.. City of Soup. Steam and water.. View from directly above (90 degrees). Hand-drawn rooftops, distinct paved streets, lush gardens. Clear illustrated landmarks: Kogepunktet, Damp-Tårnet, Den Flydende Have. Vibrant, high contrast, clean miniature style. --ar 4:3 --v 6.0 --no side-view, perspective, grid, text, 3D"
     },
     {
       "id": "troeffel-skoven",
       "name": "Trøffel-Skoven",
-      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Huse udhulet i kæmpesvampe. Ingen lige linjer.. Giant Mushroom Forest.. View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: Det Glødende Træ, Spore-Skyen, Hekse-Ringen. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Huse udhulet i kæmpesvampe. Ingen lige linjer.. Giant Mushroom Forest.. View from directly above (90 degrees). Hand-drawn rooftops, distinct paved streets, lush gardens. Clear illustrated landmarks: Det Glødende Træ, Spore-Skyen, Hekse-Ringen. Vibrant, high contrast, clean miniature style. --ar 4:3 --v 6.0 --no side-view, perspective, grid, text, 3D"
     },
     {
       "id": "ankeret",
       "name": "Ankeret",
-      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Store åbne markedspladser og banket-haller.. Region in Sølvtunge-Næsset. Fantasy landscape with distinct magical features. Local terrain: .. View from directly above (90 degrees). Visible rooftops of houses, distinct cobblestone streets. Clear landmarks: a central market square, a large temple. Sunlit, high contrast. --ar 4:3 --v 6.0 --no isometric, angled, side-view, perspective, grid, text"
+      "prompt": "A strict top-down orthographic city map of [medieval fortified city], Store åbne markedspladser og banket-haller.. Region in Sølvtunge-Næsset. Fantasy landscape with distinct magical features. Local terrain: .. View from directly above (90 degrees). Hand-drawn rooftops, distinct paved streets, lush gardens. Clear illustrated landmarks: a central market square, a large temple. Vibrant, high contrast, clean miniature style. --ar 4:3 --v 6.0 --no side-view, perspective, grid, text, 3D"
     }
   ],
   "battlemaps": [
