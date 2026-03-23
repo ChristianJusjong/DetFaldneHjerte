@@ -46,6 +46,11 @@ interface GameState {
     addRecentSearch: (term: string) => void;
     clearRecentSearches: () => void;
 
+    isSidebarCollapsed: boolean;
+    setSidebarCollapsed: (isCollapsed: boolean) => void;
+    isMobileMenuOpen: boolean;
+    setMobileMenuOpen: (isOpen: boolean) => void;
+
     // Settings
     soundEnabled: boolean;
     toggleSound: () => void;
@@ -128,6 +133,11 @@ export const useGameStore = create<GameState>()(
                 return { recentSearches: newRecent };
             }),
             clearRecentSearches: () => set({ recentSearches: [] }),
+
+            isSidebarCollapsed: false,
+            setSidebarCollapsed: (isCollapsed) => set({ isSidebarCollapsed: isCollapsed }),
+            isMobileMenuOpen: false,
+            setMobileMenuOpen: (isOpen) => set({ isMobileMenuOpen: isOpen }),
 
             // Settings
             soundEnabled: true,
